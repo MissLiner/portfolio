@@ -1,6 +1,7 @@
 import Experience from './Experience';
 import Home from './Home';
 import './index.css';
+import Portfolio from './Portfolio';
 
 function Canvas(props) {
   const renderCanvas = () => {
@@ -14,10 +15,16 @@ function Canvas(props) {
         <Experience />
       )
     }
-    else if()
+    else if(props.view === "portfolio") {
+      return(
+        <Portfolio />
+      )
+    }
   }
   return(
     <div className="Canvas main">
+      {renderCanvas}
     </div>
   )
 }
+export default Canvas;

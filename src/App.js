@@ -1,3 +1,4 @@
+import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import './index.css';
 
@@ -12,7 +13,7 @@ function App() {
         <h1>Caroline Stephenson</h1>
         <Navbar clickFunc={handleClick} />
       </div>
-      
+      <Canvas />
     </div>
   );
 }
