@@ -26,3 +26,8 @@ h1 {
   border: none;
   font-size: 1.5em;
 }
+
+.Canvas.main {
+  border: solid;
+  border-color:antiquewhite;
+}
