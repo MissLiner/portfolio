@@ -1,3 +1,4 @@
+import Home from './Home';
 import './index.css';
 
 function Canvas(props) {
