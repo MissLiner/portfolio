@@ -1,12 +1,13 @@
+import Navbar from './components/Navbar';
 import './index.css';
 
 function App() {
-  const navButtons =  [ "home",
-                        "experience",
-                        "portfolio" ]
   return (
-    <div className="App header">
-      <h1>Caroline Stephenson</h1>
+    <div>
+      <div className="App header">
+        <h1>Caroline Stephenson</h1>
+      </div>
+      <Navbar />
     </div>
   );
 }
