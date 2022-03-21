@@ -1,7 +1,8 @@
 import Experience from './Experience';
 import Home from './Home';
-import './index.css';
+import '../index.css';
 import Portfolio from './Portfolio';
+import About from './About';
 
 function Canvas(props) {
   const renderCanvas = () => {
@@ -10,12 +11,17 @@ function Canvas(props) {
         <Home />
       )
     } 
-    else if(props.view === "experience") {
+    else if(props.view === ":about") {
+      return(
+        <About />
+      )
+    }
+    else if(props.view === ":experience") {
       return(
         <Experience />
       )
     }
-    else if(props.view === "portfolio") {
+    else if(props.view === ":portfolio") {
       return(
         <Portfolio />
       )

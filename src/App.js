@@ -1,5 +1,6 @@
 import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
+import { useState } from "react";
 import './index.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <h1>Caroline Stephenson</h1>
         <Navbar clickFunc={handleClick} />
       </div>
-      <Canvas />
+      <Canvas view={view} />
     </div>
   );
 }
