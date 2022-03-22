@@ -3,6 +3,7 @@ import Home from './Home';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
+import { activateBtn } from './components/helperFuncs'
 import { useState, useEffect } from "react";
 import React from 'react';
 import CanvasNavbar from './CanvasNavbar';
@@ -35,6 +36,10 @@ function Canvas(props) {
         break;
     }
   }
+  const handleClick = (e) => {
+    updateBtnList();
+    activateBtn(e);
+  }
   useEffect(() => {
     updateBtnList();
   })
@@ -62,7 +67,7 @@ function Canvas(props) {
   }
   return(
     <div className="Canvas screen">
-      <CanvasNavbar clickFunc={updateBtnList} btnList={btnList} />
+      <CanvasNavbar clickFunc={handleClick} btnList={btnList} />
       {renderCanvas()}
     </div>
   )

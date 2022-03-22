@@ -18,7 +18,7 @@ p {
   line-height: 1.5;
   margin-bottom: 15px;
   text-align: left;
-  width: 70%;
+  width: 90%;
 }
 
 .App.header {
@@ -37,6 +37,9 @@ p {
   border: none;
   font-size: 1.5em;
 }
+.Navbar.btn.activeBtn {
+  font-size: 1.7em;
+}
 
 .Canvas {
   background-color: rgb(255, 251, 252);
@@ -50,29 +53,21 @@ p {
   position: relative;
   width: 80%;
 }
-/* .Canvas.content {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-} */
+.Canvas.About {
+  margin-top: 30px;
+}
 .CanvasNavbar.main {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  margin-top: 15px;
+  margin-top: 70px;
 
 }
 .CanvasNavbar.btn {
   border: none;
   font-size: 1.3em;
+  margin-bottom: 15px;
   margin-left: 0;
   text-align: left;
-  /* position:absolute; */
-
-}
-.Navbar.btn.activeBtn {
-  font-size: 1.7em;
 }
 
 #root {

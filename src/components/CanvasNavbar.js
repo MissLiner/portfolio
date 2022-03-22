@@ -9,7 +9,7 @@ function CanvasNavbar(props) {
             <button className="Canvas CanvasNavbar btn" 
                     onClick={props.clickFunc} 
                     value={btn}>
-                      :{btn}
+                      .{btn}
             </button>
           )
         })
