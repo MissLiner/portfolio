@@ -17,7 +17,9 @@ h1 {
   position: fixed;
 }
 .Navbar.main {
-  display: flex;
+  display: grid;
+  height: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   width: 66%;
 }
