@@ -28,6 +28,11 @@ h1 {
   font-size: 1.5em;
 }
 
+.Canvas {
+  background-color: rgb(255, 251, 252);
+  color: rgb(32, 32, 32);
+}
+
 .Canvas.main {
   border: solid;
   border-color:antiquewhite;
