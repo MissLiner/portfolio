@@ -29,7 +29,7 @@ function Canvas(props) {
   }
   return(
     <div className="Canvas main">
-      {renderCanvas}
+      {renderCanvas()}
     </div>
   )
 }
