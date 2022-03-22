@@ -1,6 +1,6 @@
 export function activateBtn(e) {
-  const navBtns = document.querySelectorAll(".Navbar, .btn");
-  const canvasBtns = document.querySelectorAll(".Canvas, .btn");
+  const navBtns = document.querySelectorAll(".Navbar.btn");
+  const canvasBtns = document.querySelectorAll(".Canvas.btn");
 
   const removeActiveBtn = (btnGroup) => {
     btnGroup.forEach(btn => {
