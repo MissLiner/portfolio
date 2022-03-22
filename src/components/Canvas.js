@@ -10,6 +10,7 @@ import CanvasNavbar from './CanvasNavbar';
 
 function Canvas(props) {
   const [ btnList, setBtnList ] = useState("");
+  const [ screenClass, setScreenClass ] = useState("Canvas screen")
 
   const aboutBtns = [ "overview",
                       "career",
@@ -36,12 +37,20 @@ function Canvas(props) {
         break;
     }
   }
+  const adjustClass = () => {
+    if(props.view !== "home") {
+      setScreenClass("Canvas screen menu");
+    } else {
+      setScreenClass("Canvas screen");
+    }
+  }
   const handleClick = (e) => {
     updateBtnList();
     activateBtn(e);
   }
   useEffect(() => {
     updateBtnList();
+    adjustClass();
   }, [props.view],
   );
   const renderCanvas = () => {
@@ -67,7 +76,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className="Canvas screen">
+    <div className={screenClass}>
       <CanvasNavbar clickFunc={handleClick} btnList={btnList} />
       {renderCanvas()}
     </div>
