@@ -12,8 +12,8 @@ h1 {
 }
 
 .App.header {
-  margin-left: 5%;
-  margin-top: 15px;
+  left: 5%;
+  top: 15px;
   position: fixed;
 }
 .Navbar.main {
@@ -30,6 +30,11 @@ h1 {
   border: solid;
   border-color:antiquewhite;
   height: 500px;
-  margin-top: 100px;
+  margin-top: 130px;
   width: 80%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
