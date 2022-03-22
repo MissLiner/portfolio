@@ -3,7 +3,7 @@ import Home from './Home';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
-import { activateBtn } from './components/helperFuncs'
+import { activateBtn } from './helperFuncs'
 import { useState, useEffect } from "react";
 import React from 'react';
 import CanvasNavbar from './CanvasNavbar';
@@ -42,7 +42,8 @@ function Canvas(props) {
   }
   useEffect(() => {
     updateBtnList();
-  })
+  }, [props.view],
+  );
   const renderCanvas = () => {
     if(props.view === "home") {
       return(
