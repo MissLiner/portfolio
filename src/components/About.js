@@ -2,7 +2,7 @@ import '../index.css';
 
 function About() {
   return(
-    <div>
+    <div className="Canvas About content">
       <h2>About</h2>
       <p>I love puzzles: jigsaws, crosswords, sudoku, riddles, unknotting a necklace, assembling Ikea furniture . . . give me a puzzle, and the rest of the world disappears. During the forced sabbatical of the pandemic, I started learning Javascript, and found the most engaging puzzles of all.
       </p>

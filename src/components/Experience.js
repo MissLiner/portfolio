@@ -2,7 +2,7 @@ import '../index.css';
 
 function Experience() {
   return(
-    <div>Resume here . . . </div>
+    <div className="Canvas Experience content">Resume here . . . </div>
   )
 }
 export default Experience;
