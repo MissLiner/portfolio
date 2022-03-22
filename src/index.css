@@ -10,6 +10,16 @@ h1 {
   font-size: 3em;
   font-weight:300;
 }
+h2 {
+  font-weight:400;
+  margin-bottom: 15px;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 60%;
+}
 
 .App.header {
   left: 5%;
@@ -32,10 +42,7 @@ h1 {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
-
 .Canvas.main {
-  border: solid;
-  border-color:antiquewhite;
   height: 500px;
   margin-top: 130px;
   position: relative;
@@ -48,15 +55,14 @@ h1 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-h2 {
-  font-weight:400;
-  margin-bottom: 15px;
+.CanvasNavbar.main {
+  height:50px;
+  width: 100%;
 }
-p {
-  line-height: 1.5;
-  margin-bottom: 15px;
-  text-align: left;
-  width: 60%;
+.CanvasNavbar.btn {
+  border: none;
+  font-size: 1.3em;
+  position:absolute;
 }
 .Navbar.btn.activeBtn {
   font-size: 1.7em;

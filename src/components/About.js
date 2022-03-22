@@ -1,14 +1,8 @@
 import '../index.css';
-import CanvasNavbar from './CanvasNavbar';
 
 function About() {
-  const aboutBtns = [ "overview",
-                      "career",
-                      "webdev",
-                      "personal"]
   return(
     <div className="Canvas About">
-      <CanvasNavbar btnList={aboutBtns} />
       <div className="Canvas About content">
         <h2 className="Canvas">About</h2>
         <p className="Canvas">I love puzzles: jigsaws, crosswords, sudoku, riddles, unknotting a necklace, assembling Ikea furniture . . . give me a puzzle, and the rest of the world disappears. During the forced sabbatical of the pandemic, I started learning Javascript, and discovered the most engaging puzzles of all.
