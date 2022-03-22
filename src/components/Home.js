@@ -2,7 +2,9 @@ import '../index.css';
 
 function Home() {
   return(
-    <h2>Wise words here . . . </h2>
+    <div className="Home main">
+      <h2>Wise words here . . . </h2>
+    </div>
   )
 }
 export default Home;

@@ -11,17 +11,17 @@ function Canvas(props) {
         <Home />
       )
     } 
-    else if(props.view === ":about") {
+    else if(props.view === "about") {
       return(
         <About />
       )
     }
-    else if(props.view === ":experience") {
+    else if(props.view === "experience") {
       return(
         <Experience />
       )
     }
-    else if(props.view === ":portfolio") {
+    else if(props.view === "portfolio") {
       return(
         <Portfolio />
       )

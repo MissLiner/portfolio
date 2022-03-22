@@ -6,7 +6,7 @@ import './index.css';
 function App() {
   const [view, setView] = useState("home");
   const handleClick = (e) => {
-    setView(e.target.textcontent);
+    setView(e.target.value);
   }
   return (
     <div>
