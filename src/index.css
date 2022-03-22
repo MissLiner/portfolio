@@ -18,7 +18,7 @@ p {
   line-height: 1.5;
   margin-bottom: 15px;
   text-align: left;
-  width: 60%;
+  width: 70%;
 }
 
 .App.header {
@@ -42,7 +42,9 @@ p {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
-.Canvas.main {
+.Canvas.screen {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   height: 500px;
   margin-top: 130px;
   position: relative;
@@ -56,12 +58,16 @@ p {
   transform: translateY(-50%);
 } */
 .CanvasNavbar.main {
-  height:50px;
-  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+
 }
 .CanvasNavbar.btn {
   border: none;
   font-size: 1.3em;
+  margin-left: 0;
+  text-align: left;
   /* position:absolute; */
 
 }

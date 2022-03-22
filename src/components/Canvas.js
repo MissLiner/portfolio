@@ -61,7 +61,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className="Canvas main">
+    <div className="Canvas screen">
       <CanvasNavbar clickFunc={updateBtnList} btnList={btnList} />
       {renderCanvas()}
     </div>

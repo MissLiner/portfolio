@@ -6,7 +6,7 @@ function CanvasNavbar(props) {
       return(
         props.btnList.map(btn => {
           return(
-            <button className="CanvasNavbar btn" 
+            <button className="Canvas CanvasNavbar btn" 
                     onClick={props.clickFunc} 
                     value={btn}>
                       :{btn}
@@ -19,7 +19,7 @@ function CanvasNavbar(props) {
     };
    }
   return(
-    <div className="CanvasNavbar main">
+    <div className="Canvas CanvasNavbar main">
       {renderNavbar()}
     </div>
   )
