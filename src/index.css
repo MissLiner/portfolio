@@ -48,13 +48,13 @@ p {
   position: relative;
   width: 80%;
 }
-.Canvas.content {
+/* .Canvas.content {
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+} */
 .CanvasNavbar.main {
   height:50px;
   width: 100%;
@@ -62,7 +62,8 @@ p {
 .CanvasNavbar.btn {
   border: none;
   font-size: 1.3em;
-  position:absolute;
+  /* position:absolute; */
+
 }
 .Navbar.btn.activeBtn {
   font-size: 1.7em;

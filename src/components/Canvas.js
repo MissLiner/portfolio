@@ -3,13 +3,13 @@ import Home from './Home';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from 'react';
 import CanvasNavbar from './CanvasNavbar';
 
 function Canvas(props) {
   const [ btnList, setBtnList ] = useState("");
-  // const [ view, setView ] = useState("home");
+
   const aboutBtns = [ "overview",
                       "career",
                       "webdev",
@@ -20,9 +20,9 @@ function Canvas(props) {
                           "testing",
                           "react",
                           "modules"];
-  const updateBtnList = (e) => {
-    switch(e.target.value) {
-      case "home":
+  const updateBtnList = () => {
+    switch(props.view) {
+      case "about":
         setBtnList(aboutBtns);
         break;
       case "experience":
@@ -35,6 +35,9 @@ function Canvas(props) {
         break;
     }
   }
+  useEffect(() => {
+    updateBtnList();
+  })
   const renderCanvas = () => {
     if(props.view === "home") {
       return(
