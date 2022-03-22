@@ -11,10 +11,8 @@ export function activateBtn(e) {
   }
   if(e.target.classList.contains("CanvasNavbar")) {
     removeActiveBtn(canvasBtns);
-    console.log(canvasBtns);
   } else {
     removeActiveBtn(navBtns);
-    console.log(navBtns);
   }
   e.target.classList.add("activeBtn");
 }

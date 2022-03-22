@@ -37,7 +37,7 @@ p {
   border: none;
   font-size: 1.5em;
 }
-.Navbar.activeBtn, .Canvas.activeBtn {
+.activeBtn {
   font-size: 1.7em;
 }
 
