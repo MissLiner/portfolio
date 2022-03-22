@@ -37,7 +37,7 @@ h1 {
 .Canvas.content {
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -46,9 +46,13 @@ h2 {
   margin-bottom: 15px;
 }
 p {
+  line-height: 1.5;
   margin-bottom: 15px;
   text-align: left;
   width: 60%;
+}
+.Navbar.btn.activeBtn {
+  font-size: 1.7em;
 }
 
 #root {
