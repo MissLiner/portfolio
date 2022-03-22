@@ -7,10 +7,12 @@ import { activateBtn } from './helperFuncs'
 import { useState, useEffect } from "react";
 import React from 'react';
 import CanvasNavbar from './CanvasNavbar';
+import CurrentView from './CurrentView';
 
 function Canvas(props) {
   const [ btnList, setBtnList ] = useState("");
-  const [ screenClass, setScreenClass ] = useState("Canvas screen")
+  const [ screenClass, setScreenClass ] = useState("Canvas screen");
+  const [ canvasView, setCanvasView ] = useState("");
 
   const aboutBtns = [ "overview",
                       "career",
@@ -47,6 +49,7 @@ function Canvas(props) {
   const handleClick = (e) => {
     updateBtnList();
     activateBtn(e);
+    setCanvasView(e.target.value);
   }
   useEffect(() => {
     updateBtnList();
@@ -79,6 +82,7 @@ function Canvas(props) {
     <div className={screenClass}>
       <CanvasNavbar clickFunc={handleClick} btnList={btnList} />
       {renderCanvas()}
+      <CurrentView view={props.view} canvasView={canvasView} />
     </div>
   )
 }
