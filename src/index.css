@@ -54,6 +54,9 @@ q {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
+div.Canvas {
+  margin-top: 45px;
+}
 .Canvas.screen {
   display: grid;
   height: 500px;

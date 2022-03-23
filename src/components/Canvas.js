@@ -16,26 +16,26 @@ function Canvas(props) {
       </div>
       )
     } 
-    else if(props.view === "about") {
+    else if(props.mainView === "about") {
       return(
         <div className="Canvas About content">
-          <p>{screenContent.home[props.canvasView]}</p>
+          <p className="Canvas">{screenContent.about[props.canvasView]}</p>
           </div>
       )
     }
-    else if(props.view === "experience") {
+    else if(props.mainView === "experience") {
       return(
         <Experience />
       )
     }
-    else if(props.view === "portfolio") {
+    else if(props.mainView === "portfolio") {
       return(
         <Portfolio />
       )
     }
   }
   return(
-    <div className="Canvas Home">
+    <div className="Canvas">
       {renderCanvas()}
     </div>
   )
