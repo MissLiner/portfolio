@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import { activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import IconButton from '@mui/material/IconButton';
 import { useEffect, useState } from "react";
 import './index.css';
@@ -17,6 +18,9 @@ function App() {
   const handleClickHome = () => {
     setView("home");
     setCanvasView("home");
+  }
+  const handleClickEmail = () => {
+    alert("Email");
   }
   const handleClickMain = (e) => {
     setView(e.target.value);
@@ -55,6 +59,9 @@ function App() {
         <h1 className="App name">Caroline Stephenson</h1>
         <IconButton aria-label="home" onClick={handleClickHome}>
           <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
+        </IconButton>
+        <IconButton aria-label="email" onClick={handleClickEmail}>
+          <EmailRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
         </IconButton>
 
         <Navbar clickFunc={handleClickMain} 
