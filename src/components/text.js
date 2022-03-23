@@ -2,13 +2,13 @@ export const btnLabels = {
   main:          [  "about",
                     "experience",
                     "portfolio"],
-                    
+
   about:         [  "overview",
                     "career",
                     "webdev",
                     "personal"],
 
-  exp:           [  "webdev",
+  experience:           [  "webdev",
                     "sales" ],
 
   portfolio:     [  "design",
