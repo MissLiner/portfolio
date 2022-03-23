@@ -10,6 +10,7 @@ function App() {
   const [canvasView, setCanvasView] = useState("home");
   const [canvasBtns, setCanvasBtns] = useState("");
   const mainBtns = btnLabels.main;
+  const [screenClass, setScreenClass] = useState("Canvas screen")
 
 
   const handleClickMain = (e) => {
@@ -24,6 +25,10 @@ function App() {
   useEffect(() => {
     if(view !== "home") {
       setCanvasBtns(btnLabels[view]);
+      setScreenClass("Canvas screen menu");
+    } else {
+      setCanvasBtns("");
+      setScreenClass("Canvas screen");
     }
   }, [view]);
 
@@ -49,9 +54,11 @@ function App() {
                 btnList={mainBtns}
                 symbol=":" />
       </div>
+      <div className={screenClass}>
       {renderCanvasNav()}
       <Canvas mainView={view}
               canvasView={canvasView} />
+      </div>
     </div>
   );
 }

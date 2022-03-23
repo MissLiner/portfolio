@@ -3,23 +3,9 @@ import Home from './Home';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
-import { useState, useEffect } from "react";
 import React from 'react';
 
 function Canvas(props) {
-  const [ screenClass, setScreenClass ] = useState("Canvas screen");
-
-  const adjustClass = () => {
-    if(props.view !== "home") {
-      setScreenClass("Canvas screen menu");
-    } else {
-      setScreenClass("Canvas screen");
-    }
-  }
-  // useEffect(() => {
-  //   adjustClass();
-  // }, [],
-  // );
   const renderCanvas = () => {
     if(props.view === "home") {
       return(
@@ -43,7 +29,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className={screenClass}>
+    <div>
       {renderCanvas()}
     </div>
   )
