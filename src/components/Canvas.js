@@ -2,6 +2,7 @@ import Experience from './Experience';
 import { screenContent } from './text';
 import '../index.css';
 import Portfolio from './Portfolio';
+import calcScreen from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/SVG/Artboard 1.svg'
 import React from 'react';
 
 function Canvas(props) {
@@ -30,7 +31,7 @@ function Canvas(props) {
     }
     else if(props.mainView === "portfolio") {
       return(
-        <Portfolio />
+        <img src={calcScreen} alt="calculator site"></img>
       )
     }
   }
