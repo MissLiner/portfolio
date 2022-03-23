@@ -53,8 +53,8 @@ function App() {
     <div>
       <div className="App header">
         <h1 className="App name">Caroline Stephenson</h1>
-        <IconButton aria-label="home" className="homeBtn" onClick={handleClickHome}>
-          <HomeRoundedIcon />
+        <IconButton aria-label="home" onClick={handleClickHome}>
+          <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
         </IconButton>
 
         <Navbar clickFunc={handleClickMain} 

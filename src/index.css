@@ -1,11 +1,13 @@
 * {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 251, 252);
+
   font-family: 'Montserrat', sans-serif;
   margin: auto;
   text-align: center;
 }
+body {
+  background-color: rgb(32, 32, 32);
 
+}
 h1 {
   font-size: 3em;
   font-weight:300;
@@ -35,6 +37,7 @@ q {
 }
 
 .App.header {
+  color: rgb(255, 251, 252);
   display: grid;
   grid-template-columns: 10fr 1fr 1fr;
   grid-template-rows: 1.5fr 1fr;
@@ -50,7 +53,7 @@ q {
 }
 .mainNav.container {
   display: grid;
-  height: 50px;
+  height: 40px;
   grid-column: 1 / 2;
   grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr;
@@ -58,6 +61,8 @@ q {
   width: 66%;
 }
 .mainNav.btn {
+  background-color: rgb(32, 32, 32);
+  color: rgb(255, 251, 252);
   border: none;
   font-size: 1.5em;
 }
