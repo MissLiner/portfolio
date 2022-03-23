@@ -72,13 +72,13 @@ q {
 .Canvas.Home {
   margin-top: 150px;
 }
-.CanvasNavbar.main {
+.canvasNav.container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 70px;
 
 }
-.CanvasNavbar.btn {
+.canvasNav.btn {
   border: none;
   font-size: 1.3em;
   margin-bottom: 15px;

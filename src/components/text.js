@@ -8,7 +8,7 @@ export const btnLabels = {
                     "webdev",
                     "personal"],
 
-  experience:           [  "webdev",
+  experience:    [  "webdev",
                     "sales" ],
 
   portfolio:     [  "design",
