@@ -2,7 +2,7 @@ import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import { activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './index.css';
 
 function App() {
@@ -21,6 +21,12 @@ function App() {
     setCanvasBtns(btnLabels[e.target.value]);
     activateBtn(e);
   }
+  useEffect(() => {
+    if(view !== "home") {
+      setCanvasBtns(btnLabels[view]);
+    }
+  }, [view]);
+  
   const renderCanvasNav = () => {
     if(canvasBtns) {
       return(
