@@ -19,7 +19,6 @@ function App() {
   }
   const handleClickCanvas = (e) => {
     setCanvasView(e.target.value);
-    setCanvasBtns(btnLabels[e.target.value]);
     activateBtn(e);
   }
   useEffect(() => {
