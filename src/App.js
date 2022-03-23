@@ -16,9 +16,9 @@ function App() {
     activateBtn(e);
   }
   const handleClickCanvas = (e) => {
-    activateBtn(e);
     setCanvasView(e.target.value);
-    setCanvasBtns(btnLabels[e.target.value])
+    setCanvasBtns(btnLabels[e.target.value]);
+    activateBtn(e);
   }
 
   return (

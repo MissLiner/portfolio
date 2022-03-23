@@ -3,34 +3,11 @@ import Home from './Home';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
-import { activateBtn } from './helperFuncs'
 import { useState, useEffect } from "react";
 import React from 'react';
-import CanvasNavbar from './CanvasNavbar';
-import CurrentView from './CurrentView';
 
 function Canvas(props) {
-  const [ btnList, setBtnList ] = useState("");
   const [ screenClass, setScreenClass ] = useState("Canvas screen");
-  
-
-
-  const updateBtnList = () => {
-    switch(props.view) {
-      case "about":
-        setBtnList(aboutBtns);
-        break;
-      case "experience":
-        setBtnList(expBtns);
-        break;
-      case "portfolio":
-        setBtnList(portfolioBtns);
-        break;
-      default:
-        break;
-    }
-  }
-
 
   const adjustClass = () => {
     if(props.view !== "home") {
@@ -40,7 +17,6 @@ function Canvas(props) {
     }
   }
   useEffect(() => {
-    updateBtnList();
     adjustClass();
   }, [props.view],
   );
@@ -68,9 +44,7 @@ function Canvas(props) {
   }
   return(
     <div className={screenClass}>
-      <CanvasNavbar clickFunc={handleClick} btnList={btnList} />
       {renderCanvas()}
-      <CurrentView view={props.view} canvasView={canvasView} />
     </div>
   )
 }
