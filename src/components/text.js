@@ -1,10 +1,14 @@
-const aboutBtns = [ "overview",
-"career",
-"webdev",
-"personal"];
-const expBtns = [   "webdev",
-"sales" ];
-const portfolioBtns = [ "design",
-    "testing",
-    "react",
-    "modules"];
+export const btnLabels = {
+  about:         [  "overview",
+                    "career",
+                    "webdev",
+                    "personal"],
+
+  exp:           [  "webdev",
+                    "sales" ],
+
+  portfolio:     [  "design",
+                    "testing",
+                    "react",
+                    "modules"]
+}
