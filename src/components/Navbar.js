@@ -1,23 +1,25 @@
 import '../index.css';
 
 function Navbar(props) {
+  const renderNavbar = () => {
+    let counter = 0;
+    return(
+      props.btnList.map(btn => {
+        counter += 1
+        return(
+          <button className={props.navClass}
+                  onClick={props.clickFunc}
+                  value={btn}
+                  key={props.navClass + counter}>
+                    {props.symbol + btn}
+          </button>
+        )
+      })
+    )
+  }
   return(
-    <div className="Navbar main">
-      <button className="Navbar btn" 
-              onClick={props.clickFunc} 
-              value="about">
-                :about
-      </button>
-      <button className="Navbar btn" 
-              onClick={props.clickFunc}
-              value="experience">
-                :experience
-      </button>
-      <button className="Navbar btn" 
-              onClick={props.clickFunc}
-              value="portfolio">
-                :portfolio
-      </button>
+    <div className={props.navClass + "-container"}>
+      {renderNavbar()}
     </div>
   )
 }
