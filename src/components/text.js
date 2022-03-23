@@ -1,4 +1,7 @@
 export const btnLabels = {
+  main:          [  "about",
+                    "experience",
+                    "portfolio"],
   about:         [  "overview",
                     "career",
                     "webdev",
