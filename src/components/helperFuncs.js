@@ -10,7 +10,7 @@ export function activateBtn(e) {
     })
   }
   removeActiveBtn(canvasBtns);
-  if(!e.target.classList.contains("CanvasNavbar")) {
+  if(!e.target.classList.contains("canvasNav")) {
     removeActiveBtn(navBtns);
   }
   e.target.classList.add("activeBtn");
