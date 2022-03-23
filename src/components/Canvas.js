@@ -12,18 +12,9 @@ import CurrentView from './CurrentView';
 function Canvas(props) {
   const [ btnList, setBtnList ] = useState("");
   const [ screenClass, setScreenClass ] = useState("Canvas screen");
-  const [ canvasView, setCanvasView ] = useState("");
+  
 
-  const aboutBtns = [ "overview",
-                      "career",
-                      "webdev",
-                      "personal"];
-  const expBtns = [   "webdev",
-                      "sales" ];
-  const portfolioBtns = [ "design",
-                          "testing",
-                          "react",
-                          "modules"];
+
   const updateBtnList = () => {
     switch(props.view) {
       case "about":
@@ -39,17 +30,14 @@ function Canvas(props) {
         break;
     }
   }
+
+
   const adjustClass = () => {
     if(props.view !== "home") {
       setScreenClass("Canvas screen menu");
     } else {
       setScreenClass("Canvas screen");
     }
-  }
-  const handleClick = (e) => {
-    updateBtnList();
-    activateBtn(e);
-    setCanvasView(e.target.value);
   }
   useEffect(() => {
     updateBtnList();

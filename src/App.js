@@ -6,16 +6,22 @@ import './index.css';
 
 function App() {
   const [view, setView] = useState("home");
+  const [ canvasView, setCanvasView ] = useState("home");
 
-  const handleClick = (e) => {
+  const handleClickMain = (e) => {
     setView(e.target.value);
     activateBtn(e);
+  }
+  const handleClickCanvas = (e) => {
+    updateBtnList();
+    activateBtn(e);
+    setCanvasView(e.target.value);
   }
   return (
     <div>
       <div className="App header">
         <h1>Caroline Stephenson</h1>
-        <Navbar clickFunc={handleClick} view={view} />
+        <Navbar clickFunc={handleClickMain} view={view} />
       </div>
       <Canvas view={view} />
     </div>
