@@ -36,7 +36,7 @@ function App() {
     if(canvasBtns) {
       return(
         <Navbar clickFunc={handleClickCanvas} 
-        navClass="canvasNav"
+        navClass="canvasNav Canvas"
         btnList={canvasBtns}
         symbol="." />
       )
@@ -54,7 +54,7 @@ function App() {
                 btnList={mainBtns}
                 symbol=":" />
       </div>
-      <div className={screenClass}>
+      <div className={screenClass + " Canvas"}>
       {renderCanvasNav()}
       <Canvas mainView={view}
               canvasView={canvasView} />
