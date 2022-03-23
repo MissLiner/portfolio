@@ -30,18 +30,31 @@ q {
   font-size: 1.7em;
 }
 
+.homeBtn {
+  grid-column: 3;
+}
+
 .App.header {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-columns: 10fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  left: 15px;
   position: fixed;
   top: 15px;
   width: 100%;
 }
+.App.name {
+  grid-column: 1;
+  margin-left: 20px;
+  text-align: left;
+}
 .mainNav.container {
   display: grid;
   height: 50px;
+  grid-column: 1 / 2;
+  grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr;
-  position: fixed;
+  margin-left: 100px;
   width: 66%;
 }
 .mainNav.btn {

@@ -52,7 +52,7 @@ function App() {
   return (
     <div>
       <div className="App header">
-        <h1>Caroline Stephenson</h1>
+        <h1 className="App name">Caroline Stephenson</h1>
         <IconButton aria-label="home" className="homeBtn" onClick={handleClickHome}>
           <HomeRoundedIcon />
         </IconButton>
