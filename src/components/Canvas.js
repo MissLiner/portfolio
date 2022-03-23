@@ -1,5 +1,5 @@
 import Experience from './Experience';
-import Home from './Home';
+import { screenContent } from './text';
 import '../index.css';
 import Portfolio from './Portfolio';
 import About from './About';
@@ -9,7 +9,12 @@ function Canvas(props) {
   const renderCanvas = () => {
     if(props.view === "home") {
       return(
-        <Home />
+        <div className="Canvas Home content">
+          <q className="Canvas">{screenContent.quote}</q>
+          <h3 className="Canvas">{screenContent.author + ", "}
+            <i className="Canvas">{screenContent.source}</i>
+          </h3>
+      </div>
       )
     } 
     else if(props.view === "about") {

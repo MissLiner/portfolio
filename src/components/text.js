@@ -16,3 +16,8 @@ export const btnLabels = {
                     "react",
                     "modules"]
 }
+export const screenContent = {
+  home: { quote: "Make it simple, but significant", 
+          author: "Don Draper", 
+          source: "Mad Men" }
+}
