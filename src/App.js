@@ -26,12 +26,12 @@ function App() {
       setCanvasBtns(btnLabels[view]);
     }
   }, [view]);
-  
+
   const renderCanvasNav = () => {
     if(canvasBtns) {
       return(
         <Navbar clickFunc={handleClickCanvas} 
-        navclass="canvasNav"
+        navClass="canvasNav"
         btnList={canvasBtns}
         symbol="." />
       )
