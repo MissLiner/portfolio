@@ -2,7 +2,8 @@ import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import { activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
-import { IconButton, HomeIcon } from '@mui/material/Button';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import IconButton from '@mui/material/IconButton';
 import { useEffect, useState } from "react";
 import './index.css';
 
@@ -50,7 +51,7 @@ function App() {
       <div className="App header">
         <h1>Caroline Stephenson</h1>
         <IconButton aria-label="home">
-          <HomeIcon />
+          <HomeRoundedIcon />
         </IconButton>
 
         <Navbar clickFunc={handleClickMain} 
