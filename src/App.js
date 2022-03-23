@@ -2,6 +2,7 @@ import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import { activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
+import { IconButton, HomeIcon } from '@mui/material/Button';
 import { useEffect, useState } from "react";
 import './index.css';
 
@@ -48,6 +49,10 @@ function App() {
     <div>
       <div className="App header">
         <h1>Caroline Stephenson</h1>
+        <IconButton aria-label="home">
+          <HomeIcon />
+        </IconButton>
+
         <Navbar clickFunc={handleClickMain} 
                 navClass="mainNav" 
                 btnList={mainBtns}
