@@ -39,7 +39,7 @@ q {
 .App.header {
   color: rgb(255, 251, 252);
   display: grid;
-  grid-template-columns: 10fr 1fr 1fr;
+  grid-template-columns: 12fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1fr;
   left: 15px;
   position: fixed;

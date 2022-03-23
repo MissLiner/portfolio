@@ -1,6 +1,6 @@
 import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
-import { activateBtn } from './components/helperFuncs';
+import { removeAllActive, activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
@@ -18,6 +18,7 @@ function App() {
   const handleClickHome = () => {
     setView("home");
     setCanvasView("home");
+    removeAllActive();
   }
   const handleClickEmail = () => {
     alert("Email");
