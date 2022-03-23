@@ -53,7 +53,7 @@ function App() {
                 btnList={mainBtns}
                 symbol=":" />
       </div>
-      <div className={screenClass + " Canvas"}>
+      <div className={screenClass}>
       {renderCanvasNav()}
       <Canvas mainView={view}
               canvasView={canvasView} />

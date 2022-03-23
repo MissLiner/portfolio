@@ -7,12 +7,12 @@ import React from 'react';
 
 function Canvas(props) {
   const renderCanvas = () => {
-    if(props.view === "home") {
+    if(props.mainView === "home") {
       return(
         <div className="Canvas Home content">
-          <q className="Canvas">{screenContent.quote}</q>
-          <h3 className="Canvas">{screenContent.author + ", "}
-            <i className="Canvas">{screenContent.source}</i>
+          <q className="Canvas">{screenContent.home.quote}</q>
+          <h3 className="Canvas">{screenContent.home.author + ", "}
+            <i className="Canvas">{screenContent.home.source}</i>
           </h3>
       </div>
       )
@@ -34,7 +34,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className="Canvas">
+    <div className="Canvas Home">
       {renderCanvas()}
     </div>
   )

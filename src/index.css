@@ -55,22 +55,19 @@ q {
   color: rgb(32, 32, 32);
 }
 .Canvas.screen {
-  /* display: grid;
-  grid-template-columns: 1fr 5fr; */
+  display: grid;
   height: 500px;
   margin-top: 130px;
-  position: relative;
   width: 80%;
 }
 .Canvas.screen.menu {
-  display: grid;
   grid-template-columns: 1fr 5fr;
 }
 .Canvas.About {
   margin-top: 30px;
 }
 .Canvas.Home {
-  margin-top: 150px;
+  margin-top: 75px;
 }
 .canvasNav.container {
   display: grid;
