@@ -14,7 +14,10 @@ function App() {
   const mainBtns = btnLabels.main;
   const [screenClass, setScreenClass] = useState("Canvas screen")
 
-
+  const handleClickHome = () => {
+    setView("home");
+    setCanvasView("home");
+  }
   const handleClickMain = (e) => {
     setView(e.target.value);
     activateBtn(e);
@@ -50,7 +53,7 @@ function App() {
     <div>
       <div className="App header">
         <h1>Caroline Stephenson</h1>
-        <IconButton aria-label="home">
+        <IconButton aria-label="home" className="homeBtn" onClick={handleClickHome}>
           <HomeRoundedIcon />
         </IconButton>
 

@@ -31,9 +31,11 @@ q {
 }
 
 .App.header {
-  left: 5%;
-  top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
   position: fixed;
+  top: 15px;
+  width: 100%;
 }
 .mainNav.container {
   display: grid;
