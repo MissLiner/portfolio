@@ -7,7 +7,7 @@ function Navbar(props) {
       props.btnList.map(btn => {
         counter += 1
         return(
-          <button className={props.navClass}
+          <button className={props.navClass + " btn"}
                   onClick={props.clickFunc}
                   value={btn}
                   key={props.navClass + counter}>
@@ -18,7 +18,7 @@ function Navbar(props) {
     )
   }
   return(
-    <div className={props.navClass + "-container"}>
+    <div className={props.navClass + " container"}>
       {renderNavbar()}
     </div>
   )

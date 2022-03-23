@@ -21,7 +21,7 @@ function App() {
     <div>
       <div className="App header">
         <h1>Caroline Stephenson</h1>
-        <Navbar clickFunc={handleClickMain} view={view} />
+        <Navbar clickFunc={handleClickMain} navClass="mainNav" />
       </div>
       <Canvas view={view} />
     </div>

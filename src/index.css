@@ -35,14 +35,14 @@ q {
   top: 15px;
   position: fixed;
 }
-.Navbar.main {
+.mainNav.container {
   display: grid;
   height: 50px;
   grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   width: 66%;
 }
-.Navbar.btn {
+.mainNav.btn {
   border: none;
   font-size: 1.5em;
 }
