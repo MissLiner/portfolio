@@ -16,10 +16,10 @@ function Canvas(props) {
       setScreenClass("Canvas screen");
     }
   }
-  useEffect(() => {
-    adjustClass();
-  }, [props.view],
-  );
+  // useEffect(() => {
+  //   adjustClass();
+  // }, [],
+  // );
   const renderCanvas = () => {
     if(props.view === "home") {
       return(

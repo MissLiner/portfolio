@@ -2,13 +2,14 @@ import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import { activateBtn } from './components/helperFuncs';
 import { btnLabels } from './components/text';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import './index.css';
 
 function App() {
   const [view, setView] = useState("home");
   const [canvasView, setCanvasView] = useState("home");
   const [canvasBtns, setCanvasBtns] = useState("");
+  const mainBtns = btnLabels.main;
 
 
   const handleClickMain = (e) => {
@@ -20,6 +21,18 @@ function App() {
     setCanvasBtns(btnLabels[e.target.value]);
     activateBtn(e);
   }
+  const renderCanvasNav = () => {
+    if(canvasBtns) {
+      return(
+        <Navbar clickFunc={handleClickCanvas} 
+        navclass="canvasNav"
+        btnList={canvasBtns}
+        symbol="." />
+      )
+    } else {
+      return null;
+    }
+  }
 
   return (
     <div>
@@ -27,11 +40,10 @@ function App() {
         <h1>Caroline Stephenson</h1>
         <Navbar clickFunc={handleClickMain} 
                 navClass="mainNav" 
-                btnList={ btnLabels.main}/>
+                btnList={mainBtns}
+                symbol=":" />
       </div>
-      <Navbar clickFunc={handleClickCanvas} 
-              navclass="canvasNav"
-              btnList={canvasBtns} />
+      {renderCanvasNav()}
       <Canvas mainView={view}
               canvasView={canvasView} />
     </div>
