@@ -11,18 +11,21 @@ const images = [
   {
     original: FSRestImg,
     thumbnail: TNRestImg,
+    thumbnailClass: "thumbnail",
   },
   {
     original: FSBattleImg,
     thumbnail: TNBattleImg,
+    thumbnailClass: "thumbnail",
   },
   {
     original: FSCalcImg,
     thumbnail: TNCalcImg,
+    thumbnailClass: "thumbnail",
   },
 ];
 
 function ScreenGallery() {
-    return <ImageGallery items={images} />;
+    return <ImageGallery items={images} thumbnailPosition="right" />;
 }
 export default ScreenGallery;

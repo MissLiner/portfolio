@@ -13,8 +13,8 @@ img {
   border: solid;
   border-color: gray;
   border-width: 2px;
-  height: 200px;
-  width: 300px;
+  /* height: 200px;
+  width: 300px; */
 }
 h1 {
   font-size: 3em;
@@ -42,6 +42,13 @@ q {
 
 .homeBtn {
   grid-column: 3;
+}
+.thumbnail {
+  height: 80px;
+  width: 80px;
+}
+.image-gallery-thumbnail-image {
+  margin-top: 0;
 }
 
 .App.header {
