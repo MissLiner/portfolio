@@ -18,7 +18,7 @@ function ImageArray(props) {
     )
   }
   return(
-    <div id="slider">
+    <div className="slider">
       {renderImages()}
     </div>
   )

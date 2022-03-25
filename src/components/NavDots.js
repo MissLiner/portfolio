@@ -17,7 +17,7 @@ function NavDots(props) {
     )
   }
   return(
-    <div id="nav-dot-container">
+    <div className="nav-dot-container">
       {renderNavDots()}
     </div>
   )

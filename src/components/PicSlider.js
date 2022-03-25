@@ -1,5 +1,7 @@
 import "./PicSlider.css";
 import '../index.css';
+import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
+import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
 import ImageArray from "./ImageArray";
 import FSRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_restaurant.svg';
@@ -99,24 +101,19 @@ function PicSlider(props) {
     appear(currentPic);
   }
   return(
-    <div id="pic-frame-outer">
-      <div id="pic-frame-inner">
-        <ImageArray images={images} />
-      </div>
-      <div id="slider-btn-div">
-        <button 
-          id="slider-btn-left" 
-          class="slider-btn" 
+    <div className="pic-frame-outer">
+              <button 
+          className="slider-btn slider-btn-left" 
           onClick={handleLeftClick}
-          >&lt;
+          ><ArrowCircleLeftRoundedIcon />
         </button>
-        <button id="play-btn">PLAY</button>
         <button 
-          id="slider-btn-right" 
-          class="slider-btn"
+          className="slider-btn slider-btn-right"
           onClick={handleRightClick}
-          >&gt;
+          ><ArrowCircleRightRoundedIcon />
         </button>
+      <div className="pic-frame-inner">
+        <ImageArray images={images} />
       </div>
       <NavDots images={images} clickFunc={handleDotClick} />
     </div>
