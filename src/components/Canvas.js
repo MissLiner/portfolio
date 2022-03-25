@@ -1,8 +1,9 @@
 import Experience from './Experience';
 import { screenContent } from './text';
 import '../index.css';
+
 import React from 'react';
-import ScreenGallery from './ScreenGallery';
+import PicSlider from './PicSlider';
 
 function Canvas(props) {
   const renderCanvas = () => {
@@ -30,7 +31,7 @@ function Canvas(props) {
     }
     else if(props.mainView === "portfolio") {
       return(
-        <ScreenGallery />
+        <PicSlider />
       )
     }
   }

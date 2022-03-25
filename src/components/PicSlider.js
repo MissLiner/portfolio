@@ -1,4 +1,5 @@
-import "PicSlider.css";
+import "./PicSlider.css";
+import '../index.css';
 import { useEffect, useState } from "react";
 import ImageArray from "./ImageArray";
 import FSRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_restaurant.svg';
@@ -17,11 +18,11 @@ function PicSlider(props) {
 
   const slider = document.getElementById("slider");
   const container = document.getElementById("pic-frame-inner");
-  const images = {
-    image1: [ FSRestImg, "restaurant site screenshot" ],
-    image2: [ FSBattleImg, "battleship site screenshot" ],
-    image3: [ FSCalcImg, "calculator site screenshot"],
-  }
+  const images = [
+    [ FSRestImg, "restaurant site screenshot" ],
+    [ FSBattleImg, "battleship site screenshot" ],
+    [ FSCalcImg, "calculator site screenshot"],
+  ]
 
   const updateCurrentPic = () => {
     const pics = document.getElementsByClassName("slider-pic");

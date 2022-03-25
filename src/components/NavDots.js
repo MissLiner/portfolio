@@ -1,3 +1,6 @@
+import "./PicSlider.css";
+import '../index.css';
+
 function NavDots(props) {
   const renderNavDots = () => {
     return(
