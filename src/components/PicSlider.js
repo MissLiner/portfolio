@@ -1,5 +1,5 @@
 import "PicSlider.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ImageArray from "./ImageArray";
 import FSRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_restaurant.svg';
 import TNRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_restaurant.svg';
@@ -23,9 +23,6 @@ function PicSlider(props) {
     image3: [ FSCalcImg, "calculator site screenshot"],
   }
 
-  const addIndex = () => {
-    setCurrentIndex(currentIndex++);
-  }
   const updateCurrentPic = () => {
     const pics = document.getElementsByClassName("slider-pic");
     for(let pic of pics) {
@@ -35,6 +32,33 @@ function PicSlider(props) {
       }
     }
   }
+  const updateCurrentDot = () => {
+    const dots = document.getElementsByClassName("nav-dot");
+    for(let dot of dots) {
+      if(dot.dataset.index === currentIndex) {
+        setCurrentDot(dot);
+        return;
+      }
+    }
+  }
+  // SET STARTING PIC AND DOT ON MOUNT
+  useEffect(() => {
+    updateCurrentPic();
+    updateCurrentDot();
+  }, []);
+
+  const handleRightClick = () => {
+    setCurrentIndex(currentIndex + 1);
+    updateCurrentPic();
+    updateCurrentDot();
+  }
+
+  const handleLeftClick = () => {
+    setCurrentIndex(currentIndex - 1);
+    updateCurrentPic();
+    updateCurrentDot();
+  }
+
   //CENTER PICS IF FRAME IS WIDER
   function centerPic(slider, container) {
     const whiteSpace = container.scrollWidth - slider.width;
@@ -79,11 +103,21 @@ function PicSlider(props) {
         <ImageArray images={images} />
       </div>
       <div id="slider-btn-div">
-        <button id="slider-btn-left" class="slider-btn">&lt;</button>
+        <button 
+          id="slider-btn-left" 
+          class="slider-btn" 
+          onClick={handleLeftClick}
+          >&lt;
+        </button>
         <button id="play-btn">PLAY</button>
-        <button id="slider-btn-right" class="slider-btn">&gt;</button>
+        <button 
+          id="slider-btn-right" 
+          class="slider-btn"
+          onClick={handleRightClick}
+          >&gt;
+        </button>
       </div>
-      <NavDots images={images} />
+      <NavDots images={images} clickFunc={handleDotClick} />
     </div>
   )
 }
