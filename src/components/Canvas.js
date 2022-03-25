@@ -1,7 +1,7 @@
 import Experience from './Experience';
 import { screenContent } from './text';
 import '../index.css';
-
+import { screenshotArray } from "./screenshotArray";
 import React from 'react';
 import PicSlider from './PicSlider';
 
@@ -31,7 +31,7 @@ function Canvas(props) {
     }
     else if(props.mainView === "portfolio") {
       return(
-        <PicSlider />
+        <PicSlider images={screenshotArray} />
       )
     }
   }

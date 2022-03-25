@@ -4,13 +4,9 @@ import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRound
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
 import ImageArray from "./ImageArray";
-import FSRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_restaurant.svg';
-import TNRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_restaurant.svg';
-import FSBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_battleship.svg';
-import TNBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_battleship.svg';
-import FSCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_calculator.svg';
-import TNCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_calculator.svg';
 import NavDots from "./NavDots";
+
+
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,11 +16,7 @@ function PicSlider(props) {
 
   const slider = document.getElementById("slider");
   const container = document.getElementById("pic-frame-inner");
-  const images = [
-    [ FSRestImg, "restaurant site screenshot" ],
-    [ FSBattleImg, "battleship site screenshot" ],
-    [ FSCalcImg, "calculator site screenshot"],
-  ]
+
 
   const updateCurrentPic = () => {
     const pics = document.getElementsByClassName("slider-pic");
@@ -102,20 +94,20 @@ function PicSlider(props) {
   }
   return(
     <div className="pic-frame-outer">
-              <button 
-          className="slider-btn slider-btn-left" 
-          onClick={handleLeftClick}
-          ><ArrowCircleLeftRoundedIcon />
-        </button>
-        <button 
-          className="slider-btn slider-btn-right"
-          onClick={handleRightClick}
-          ><ArrowCircleRightRoundedIcon />
-        </button>
+      <button 
+        className="slider-btn slider-btn-left" 
+        onClick={handleLeftClick}
+        ><ArrowCircleLeftRoundedIcon />
+      </button>
+      <button 
+        className="slider-btn slider-btn-right"
+        onClick={handleRightClick}
+        ><ArrowCircleRightRoundedIcon />
+      </button>
       <div className="pic-frame-inner">
-        <ImageArray images={images} />
+        <ImageArray images={props.images} />
       </div>
-      <NavDots images={images} clickFunc={handleDotClick} />
+      <NavDots images={props.images} clickFunc={handleDotClick} />
     </div>
   )
 }
