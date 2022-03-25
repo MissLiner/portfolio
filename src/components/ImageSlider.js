@@ -39,7 +39,7 @@ function ImageSlider(props) {
         //CREATE NAV DOTS
         const navDot = document.createElement('input');
         navDot.id = 'nav-dot-' + i;
-        navDot.class = 'nav-dot';
+        // navDot.class = 'nav-dot';
         navDot.type = 'radio';
         navDot.name = 'nav-dot' + picArray;
         props.dotHolder.appendChild(navDot);

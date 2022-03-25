@@ -1,16 +1,39 @@
 import "PicSlider.css";
 import { useState } from "react";
+import ImageArray from "./ImageArray";
+import FSRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_restaurant.svg';
+import TNRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_restaurant.svg';
+import FSBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_battleship.svg';
+import TNBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_battleship.svg';
+import FSCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_calculator.svg';
+import TNCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_calculator.svg';
+import NavDots from "./NavDots";
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [newIndex, setNewIndex] = useState('');
+  const [currentPic, setCurrentPic] = useState('');
   const [currentDot, setCurrentDot] = useState('');
 
   const slider = document.getElementById("slider");
   const container = document.getElementById("pic-frame-inner");
+  const images = {
+    image1: [ FSRestImg, "restaurant site screenshot" ],
+    image2: [ FSBattleImg, "battleship site screenshot" ],
+    image3: [ FSCalcImg, "calculator site screenshot"],
+  }
 
   const addIndex = () => {
-    setCurrentIndex(pIndex += 1);
+    setCurrentIndex(currentIndex++);
+  }
+  const updateCurrentPic = () => {
+    const pics = document.getElementsByClassName("slider-pic");
+    for(let pic of pics) {
+      if(pic.dataset.index === currentIndex) {
+        setCurrentPic(pic);
+        return;
+      }
+    }
   }
   //CENTER PICS IF FRAME IS WIDER
   function centerPic(slider, container) {
@@ -44,5 +67,24 @@ function PicSlider(props) {
     show(slider);
     setTimeout(function() { show(slider) }, 1000);
   }
+  function handleDotClick(e) {
+    dissolve(currentPic);
+    setCurrentIndex(e.target.dataset.index);
+    updateCurrentPic();
+    appear(currentPic);
+  }
+  return(
+    <div id="pic-frame-outer">
+      <div id="pic-frame-inner">
+        <ImageArray images={images} />
+      </div>
+      <div id="slider-btn-div">
+        <button id="slider-btn-left" class="slider-btn">&lt;</button>
+        <button id="play-btn">PLAY</button>
+        <button id="slider-btn-right" class="slider-btn">&gt;</button>
+      </div>
+      <NavDots images={images} />
+    </div>
+  )
 }
 export default PicSlider;
