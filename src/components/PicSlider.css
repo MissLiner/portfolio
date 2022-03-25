@@ -29,20 +29,11 @@ h1 {
   height: 75%;
 }
 .pic-frame-outer {
-  background-color: white;
-  border: solid;
-  border-color: lightsteelblue;
+  background-color: transparent;
   height: 80%;
   margin: auto;
   margin-top: 20px;
-  width: 80%;
-}
-.play-btn {
-  background-color: white;
-  border-color:rosybrown;
-  border-radius: 10px;
-  height: 40px;
-  width: 80px;
+  width: 100%;
 }
 .slider {
   background-color:black;
@@ -57,20 +48,21 @@ h1 {
   background-color: transparent;
   border: none;
   color:darkgray;
-  font-size: 48px;
 }
-.slider-btn-div {
+/* .slider-btn-div {
   display: flex;
   justify-content: space-between;
   width: 80%;
-}
+} */
 .slider-btn-left {
   float: left;
-  margin-top: 25%;
+  margin-left: -20px;
+  margin-top: 20%;
 }
 .slider-btn-right {
   float: right;
-  margin-top: 25%;
+  margin-right: -20px;
+  margin-top: 20%;
 }
 .nav-dot-container {
   background-color: white;
