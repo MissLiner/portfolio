@@ -92,7 +92,7 @@ div.Canvas {
 }
 .Canvas.screen {
   display: grid;
-  height: 500px;
+  height: fit-content;
   margin-top: 130px;
   width: 80%;
 }
@@ -120,8 +120,10 @@ div.Canvas {
 }
 
 .Canvas.content-container {
-  margin-left: 7%;
-  width: 85%;
+  margin-bottom: 25px;
+  margin-left: 10%;
+  min-height: 400px;
+  width: 80%;
 }
 
 #root {
