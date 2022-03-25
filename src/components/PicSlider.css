@@ -1,0 +1,224 @@
+
+.hidden {
+  display: none;
+}
+.vertical {
+  display: block;
+}
+.reg-btn {
+  color: white;
+  background-color:#79658F;
+  border: none;
+  font-size: larger;
+}
+.mobile-menu {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: fit-content;
+}
+.reg-menu {
+  
+  bottom: initial;
+  right: initial;
+  width: fit-content;
+}
+#dropdown {
+  position: absolute;
+}
+
+
+
+body {
+  background-color: seashell;
+  margin: 0px;
+}
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#hide-effect {
+  display: initial;
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility 0s 5s , opacity 5s linear;
+}
+#show-effect {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 5s , opacity 5s linear;
+}
+#pic-frame-inner {
+  background-color: black;
+  border: solid;
+  border-color:darkslateblue;
+  border-width: 4px;
+  height: 400px;
+  margin: 46px;
+  width: 600px;
+}
+#pic-frame-outer {
+  background-color: white;
+  border: solid;
+  border-color: lightsteelblue;
+  height: 500px;
+  margin: auto;
+  margin-top: 20px;
+  width: 700px;
+}
+#play-btn {
+  background-color: white;
+  border-color:rosybrown;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+}
+#slider {
+  background-color:black;
+  display: flex;
+  height: 400px;
+  align-content: center;
+  justify-content: center;
+  justify-items:center;
+  position: absolute;
+  text-align: center;
+}
+.slider-btn {
+  background-color: transparent;
+  border: none;
+  color:rosybrown;
+  font-size: 48px;
+}
+#slider-btn-div {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  left: 150px;
+  position: relative;
+  top: 20px;
+  width: 400px;
+}
+#slider-btn-left {
+  float: left;
+}
+#slider-btn-right {
+  float: right;
+}
+#nav-dot-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-top: -85px;
+  position:absolute;
+  width: 400px;
+}
+.hidden {
+  display: none;
+}
+.fade-in {
+  /* display: initial; */
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.fade-out {
+  animation: fadeOut ease 1.5s;
+  -webkit-animation: fadeOut ease 1.5s;
+  -moz-animation: fadeOut ease 1.5s;
+  -o-animation: fadeOut ease 1.5s;
+  -ms-animation: fadeOut ease 1.5s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
