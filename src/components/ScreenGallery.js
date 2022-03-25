@@ -26,6 +26,6 @@ const images = [
 ];
 
 function ScreenGallery() {
-    return <ImageGallery items={images} thumbnailPosition="right" />;
+    return <ImageGallery items={images} thumbnailPosition="bottom" />;
 }
 export default ScreenGallery;
