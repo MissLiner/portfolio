@@ -29,7 +29,7 @@ function ScreenGallery() {
     return <ImageGallery 
               items={images} 
               thumbnailPosition="bottom" 
-              showPlayButton="false"
+              showPlayButton={false}
              />;
 }
 export default ScreenGallery;
