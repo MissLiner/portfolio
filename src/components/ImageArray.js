@@ -8,7 +8,7 @@ function ImageArray(props) {
       props.images.map((image, i) => {
         return(
           <img 
-            source={image[0]} 
+            src={image[0]} 
             alt={image[1]} 
             className="slider-pic hidden"
             data-index={i}

@@ -1,4 +1,4 @@
-import FSRestImg from '../images/screenshots/screengallery/FS_restaurant.svg';
+import FSRestImg from '../images/screenshots/screengallery/FS_battleship.svg';
 import TNRestImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_restaurant.svg';
 import FSBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/FS_battleship.svg';
 import TNBattleImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_battleship.svg';
