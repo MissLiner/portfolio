@@ -15,7 +15,7 @@
   border-color:darkslateblue;
   border-width: 4px;
   margin: 25px 25px 15px 25px;
-  height: 75%;
+  height: fit-content;
 }
 .pic-frame-outer {
   background-color: transparent;
@@ -30,7 +30,6 @@
   align-content: center;
   justify-content: center;
   justify-items:center;
-  /* position: absolute; */
   text-align: center;
   width: 100%;
 }
@@ -49,10 +48,6 @@
   margin-right: -20px;
   margin-top: 20%;
 }
-/* .slider-pic {
-
-  width: 100%;
-} */
 .nav-dot-container {
   background-color: white;
   display: flex;
