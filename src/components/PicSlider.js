@@ -41,6 +41,23 @@ function PicSlider(props) {
     const currentDot = returnCurrentDot();
     currentDot.checked = true;
   }
+
+  const hideCurrentPic = () => {
+    const currentPic = returnCurrentPic();
+    currentPic.classList.add("hidden");
+  }
+ function dissolve() {
+    const slider = document.getElementById("slider");
+    slider.classList.add("fade-out");
+    setTimeout(function() { hideCurrentPic() }, 1000);
+  }
+  function appear() {
+    const slider = document.getElementById("slider");
+    const currentPic = returnCurrentPic();
+    slider.classList.remove("fade-out")
+    currentPic.classList.remove("hidden");
+    slider.classList.add("fade-in");
+  }
   // SET STARTING PIC AND DOT ON MOUNT
   useEffect(() => {
     showCurrentPic();
@@ -49,17 +66,17 @@ function PicSlider(props) {
 
   const handleRightClick = () => {
     if(currentIndex <= props.images.length) {
-
+      dissolve();
       setCurrentIndex(currentIndex + 1);
-      updateCurrentPic();
-      updateCurrentDot();
     }
   }
 
   const handleLeftClick = () => {
-    setCurrentIndex(currentIndex - 1);
-    updateCurrentPic();
-    updateCurrentDot();
+    if(currentIndex >= 0) {
+      dissolve();
+      setCurrentIndex(currentIndex - 1);
+    }
+
   }
 
   //CENTER PICS IF FRAME IS WIDER
