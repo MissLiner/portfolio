@@ -62,17 +62,22 @@ function PicSlider(props) {
   useEffect(() => {
     showCurrentPic();
     checkCurrentDot();
-  });
+  }, []);
+
+  useEffect(() => {
+    appear();
+    checkCurrentDot();
+  }, [currentIndex])
 
   const handleRightClick = () => {
-    if(currentIndex <= props.images.length) {
+    if(currentIndex < props.images.length - 1) {
       dissolve();
       setCurrentIndex(currentIndex + 1);
     }
   }
 
   const handleLeftClick = () => {
-    if(currentIndex >= 0) {
+    if(currentIndex > 0) {
       dissolve();
       setCurrentIndex(currentIndex - 1);
     }
