@@ -14,26 +14,32 @@ function PicSlider(props) {
   // const [currentPic, setCurrentPic] = useState('');
   // const [currentDot, setCurrentDot] = useState('');
 
-
-  const showCurrentPic = () => {
+  const returnCurrentPic = () => {
     const pics = document.querySelectorAll(".slider-pic");
     Array.from(pics).forEach((pic) => {
       const index = parseInt(pic.dataset.index);
       if(index === currentIndex) {
-        pic.classList.remove("hidden");
-        return;
+        return pic;
       }
     })
   }
-  const checkCurrentDot = () => {
+  const returnCurrentDot = () => {
     const dots = document.querySelectorAll(".nav-dot");
     Array.from(dots).forEach((dot) => {
       const index = parseInt(dot.dataset.index);
       if(index === currentIndex) {
-        dot.checked = true;
-        return;
+        return dot;
       }
     })
+  }
+  const showCurrentPic = () => {
+    const currentPic = returnCurrentPic();
+    currentPic.classList.remove("hidden");
+  }
+
+  const checkCurrentDot = () => {
+    const currentDot = returnCurrentDot();
+    currentDot.checked = true;
   }
   // SET STARTING PIC AND DOT ON MOUNT
   useEffect(() => {
@@ -43,6 +49,7 @@ function PicSlider(props) {
 
   const handleRightClick = () => {
     if(currentIndex <= props.images.length) {
+
       setCurrentIndex(currentIndex + 1);
       updateCurrentPic();
       updateCurrentDot();
