@@ -10,28 +10,27 @@ import NavDots from "./NavDots";
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [newIndex, setNewIndex] = useState('');
-  const [currentPic, setCurrentPic] = useState('');
-  const [currentDot, setCurrentDot] = useState('');
-
-  const slider = document.querySelector(".slider");
-  const container = document.querySelector(".pic-frame-inner");
+  // const [newIndex, setNewIndex] = useState('');
+  // const [currentPic, setCurrentPic] = useState('');
+  // const [currentDot, setCurrentDot] = useState('');
 
 
   const updateCurrentPic = () => {
-    const pics = document.getElementsByClassName("slider-pic");
-    for(let pic of pics) {
-      if(pic.dataset.index === currentIndex) {
-        setCurrentPic(pic);
+    const pics = document.querySelectorAll(".slider-pic");
+    Array.from(pics).forEach((pic) => {
+      const index = parseInt(pic.dataset.index);
+      if(index === currentIndex) {
+        pic.classList.remove("hidden");
         return;
       }
-    }
+    })
   }
   const updateCurrentDot = () => {
     const dots = document.getElementsByClassName("nav-dot");
     for(let dot of dots) {
-      if(dot.dataset.index === currentIndex) {
-        setCurrentDot(dot);
+      const index = parseInt(dot.dataset.index);
+      if(index === currentIndex) {
+        dot.checked = true;
         return;
       }
     }
@@ -40,7 +39,7 @@ function PicSlider(props) {
   useEffect(() => {
     updateCurrentPic();
     updateCurrentDot();
-  }, []);
+  });
 
   const handleRightClick = () => {
     setCurrentIndex(currentIndex + 1);
@@ -55,42 +54,47 @@ function PicSlider(props) {
   }
 
   //CENTER PICS IF FRAME IS WIDER
-  function centerPic(slider, container) {
-    const whiteSpace = container.scrollWidth - slider.width;
-    if (whiteSpace > 0) {
-        slider.style.marginLeft = whiteSpace / 2;
-    }
-  }
+  // function centerPic(elem, cont) {
+  //   const whiteSpace = cont.scrollWidth - elem.width;
+  //   if (whiteSpace > 0) {
+  //       elem.style.marginLeft = whiteSpace / 2;
+  //   }
+  // }
     // setTimeout(() => {
     //     centerPic(props.picArray[currentIndex], container);
     // }, 1000);
-  function hide(element) {
-    element.classList.remove('fade-out');
-    element.classList.add('hidden');
-  }
-  function show(element) {
-    element.classList.remove('hidden');
-    setTimeout(() => {
-        centerPic(slider, container);
-    }, 250);
-    slider.classList.add('fade-in');
-  }
-  function dissolve() {
-    slider.classList.add('fade-out');
-    setTimeout(function() { hide(slider) }, 1000);
-  }
-  function appear() {
-    show(slider);
-    setTimeout(function() { show(slider) }, 1000);
-  }
-  function handleDotClick(e) {
-    dissolve(currentPic);
-    setCurrentIndex(e.target.dataset.index);
-    updateCurrentPic();
-    appear(currentPic);
-    updateCurrentDot();
-    currentDot.checked = true;
-  }
+  // function hide(element) {
+  //   element.classList.remove('fade-out');
+  //   element.classList.add('hidden');
+  // }
+  // function show(elem) {
+  //   const slider = document.getElementById("slider");
+  //   const container = document.getElementById("pic-frame-inner");
+  //   elem.classList.remove('hidden');
+  //   setTimeout(() => {
+  //       centerPic(slider, container);
+  //   }, 250);
+  //   slider.classList.add('fade-in');
+  // }
+  // function dissolve() {
+  //   const slider = document.getElementById("slider");
+
+  //   slider.classList.add('fade-out');
+  //   setTimeout(function() { hide(slider) }, 1000);
+  // }
+  // function appear() {
+  //   const slider = document.getElementById("slider");
+  //   show(slider);
+  //   setTimeout(function() { show(slider) }, 1000);
+  // }
+  // function handleDotClick(e) {
+  //   dissolve(currentPic);
+  //   setCurrentIndex(e.target.dataset.index);
+  //   updateCurrentPic();
+  //   updateCurrentDot();
+  //   appear(currentPic);
+  //   currentDot.checked = true;
+  // }
   return(
     <div className="pic-frame-outer">
       <button 
@@ -103,10 +107,10 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon />
       </button>
-      <div className="pic-frame-inner">
+      <div className="pic-frame-inner" id="pic-frame-inner">
         <ImageArray images={props.images} />
       </div>
-      <NavDots images={props.images} clickFunc={handleDotClick} />
+      <NavDots images={props.images} />
     </div>
   )
 }

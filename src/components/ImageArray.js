@@ -11,14 +11,15 @@ function ImageArray(props) {
             source={image[0]} 
             alt={image[1]} 
             className="slider-pic hidden"
-            data-index={i}>
+            data-index={i}
+            key={"slider-pic" + i}>
           </img>
         )
       })
     )
   }
   return(
-    <div className="slider">
+    <div className="slider" id="slider">
       {renderImages()}
     </div>
   )
