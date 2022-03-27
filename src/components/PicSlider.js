@@ -14,8 +14,8 @@ function PicSlider(props) {
   const [currentPic, setCurrentPic] = useState('');
   const [currentDot, setCurrentDot] = useState('');
 
-  const slider = document.getElementById("slider");
-  const container = document.getElementById("pic-frame-inner");
+  const slider = document.querySelector(".slider");
+  const container = document.querySelector(".pic-frame-inner");
 
 
   const updateCurrentPic = () => {
@@ -69,10 +69,7 @@ function PicSlider(props) {
     element.classList.add('hidden');
   }
   function show(element) {
-    const newDot = document.getElementById('nav-dot-' + currentIndex);
     element.classList.remove('hidden');
-    setCurrentDot(newDot);
-    currentDot.checked = 'true';
     setTimeout(() => {
         centerPic(slider, container);
     }, 250);
@@ -91,6 +88,8 @@ function PicSlider(props) {
     setCurrentIndex(e.target.dataset.index);
     updateCurrentPic();
     appear(currentPic);
+    updateCurrentDot();
+    currentDot.checked = true;
   }
   return(
     <div className="pic-frame-outer">

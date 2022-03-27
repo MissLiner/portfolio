@@ -10,6 +10,7 @@ function NavDots(props) {
             type="radio" 
             className="nav-dot"
             data-index={i}
+            name="nav-dot"
             onClick={props.clickFunc}>
           </input>
         )

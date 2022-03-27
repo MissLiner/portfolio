@@ -6,7 +6,7 @@ import FSCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screensho
 import TNCalcImg from '/Users/Caroline/myprojects/portfolio/src/images/screenshots/screengallery/TN_calculator.svg';
 
 
-export const images = [
+export const screenshotArray = [
   [ FSRestImg, "restaurant site screenshot", TNRestImg ],
   [ FSBattleImg, "battleship site screenshot", TNBattleImg ],
   [ FSCalcImg, "calculator site screenshot", TNCalcImg],
