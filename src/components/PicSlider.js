@@ -15,22 +15,22 @@ function PicSlider(props) {
   // const [currentDot, setCurrentDot] = useState('');
 
   const returnCurrentPic = () => {
-    const pics = document.querySelectorAll(".slider-pic");
-    Array.from(pics).forEach((pic) => {
+    const pics = Array.from(document.querySelectorAll(".slider-pic"));
+    for(let pic of pics) {
       const index = parseInt(pic.dataset.index);
       if(index === currentIndex) {
         return pic;
       }
-    })
+    }
   }
   const returnCurrentDot = () => {
-    const dots = document.querySelectorAll(".nav-dot");
-    Array.from(dots).forEach((dot) => {
+    const dots = Array.from(document.querySelectorAll(".nav-dot"));
+    for(let dot of dots) {
       const index = parseInt(dot.dataset.index);
       if(index === currentIndex) {
         return dot;
       }
-    })
+    }
   }
   const showCurrentPic = () => {
     const currentPic = returnCurrentPic();
