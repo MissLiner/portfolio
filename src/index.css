@@ -78,15 +78,14 @@ q {
 .activeBtn {
   text-decoration:underline !important;
 }
-
 .Canvas {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
 .Canvas.screen {
   display: grid;
-  height: fit-content;
   margin-top: 130px;
+  padding: 2% 2% 2% 2%;
   width: 80%;
 }
 .Canvas.screen.menu {
@@ -113,9 +112,7 @@ q {
 }
 
 .Canvas.content-container {
-  margin: 2% 0 4% 0;
-  min-height: 400px;
-  width: 95%;
+  min-height: 470px;
 }
 
 #root {

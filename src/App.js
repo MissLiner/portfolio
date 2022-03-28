@@ -75,7 +75,7 @@ function App() {
       <Canvas mainView={view}
               canvasView={canvasView} />
       </div>
-    </div>
+      </div>
   );
 }
 
