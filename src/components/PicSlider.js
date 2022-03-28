@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import ImageArray from "./ImageArray";
 import NavDots from "./NavDots";
 
-
-
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
