@@ -1,7 +1,7 @@
 import "./PicSlider.css";
 import '../index.css';
 
-function ImageArray(props) {
+function SliderImage(props) {
   const currentImage = props.images[props.index];
   return(
       <img 
@@ -13,4 +13,4 @@ function ImageArray(props) {
       </img>
   )
 }
-export default ImageArray;
+export default SliderImage;

@@ -3,7 +3,7 @@ import '../index.css';
 import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
-import ImageArray from "./ImageArray";
+import SliderImage from "./SliderImage";
 import NavDots from "./NavDots";
 
 function PicSlider(props) {
@@ -96,7 +96,7 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon />
       </button>
       <div className="pic-frame-inner" id="pic-frame-inner">
-        <ImageArray images={props.images} index={currentIndex} />
+        <SliderImage images={props.images} index={currentIndex} />
       </div>
       <NavDots images={props.images} />
     </div>
