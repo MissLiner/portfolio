@@ -26,14 +26,14 @@ function PicSlider(props) {
   }
 
  async function dissolve() {
-    const slider = document.getElementById("slider");
-    slider.classList.remove("fade-in");
-    slider.classList.add("fade-out");
+    const pic = document.getElementById("slider-pic");
+    pic.classList.remove("fade-in");
+    pic.classList.add("fade-out");
   }
   function appear() {
-    const slider = document.getElementById("slider");
-    slider.classList.remove("fade-out");
-    slider.classList.add("fade-in");
+    const pic = document.getElementById("slider-pic");
+    pic.classList.remove("fade-out");
+    pic.classList.add("fade-in");
   }
 
   // SET STARTING PIC AND DOT ON MOUNT
