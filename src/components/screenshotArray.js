@@ -4,7 +4,7 @@ import FSBattleImg from '../images/screenshots/screengallery/FS_battleship.svg';
 import TNBattleImg from '../images/screenshots/screengallery/TN_battleship.svg';
 import FSCalcImg from '../images/screenshots/screengallery/FS_calculator.svg';
 import TNCalcImg from '../images/screenshots/screengallery/TN_calculator.svg';
-import FSMemory1Img from '../images/screenshots/screengallery/FS_memory-welscome.svg';
+import FSMemory1Img from '../images/screenshots/screengallery/FS_memory-welcome.svg';
 import FSMemory2Img from '../images/screenshots/screengallery/FS_memory.svg';
 import FSCando1Img from '../images/screenshots/screengallery/FS_candolist.svg';
 import FSCando2Img from '../images/screenshots/screengallery/FS_candolist-add.svg';
