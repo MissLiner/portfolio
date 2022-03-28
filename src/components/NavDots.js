@@ -12,7 +12,9 @@ function NavDots(props) {
             data-index={i}
             name="nav-dot"
             onClick={props.clickFunc}
-            key={"nav-dot" + i}>
+            key={"nav-dot" + i}
+            disabled={props.disabled}
+            >
           </input>
         )
       })

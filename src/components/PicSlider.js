@@ -73,14 +73,24 @@ function PicSlider(props) {
 
   }
 
-  // function handleDotClick(e) {
-  //   dissolve(currentPic);
-  //   setCurrentIndex(e.target.dataset.index);
-  //   updateCurrentPic();
-  //   updateCurrentDot();
-  //   appear(currentPic);
-  //   currentDot.checked = true;
-  // }
+  function handleDotClick(e) {
+    const newIndex = parseInt(e.target.dataset.index);
+    setDisabled(true);
+    dissolve();
+    setTimeout(function() { 
+      setCurrentIndex(newIndex);
+    }, 1000);
+    setTimeout(function() {
+      setDisabled(false);
+    }, 2200);
+  }
+    // dissolve(currentPic);
+    // setCurrentIndex(e.target.dataset.index);
+    // updateCurrentPic();
+    // updateCurrentDot();
+    // appear(currentPic);
+    // currentDot.checked = true;
+  }
   return(
     <div className="pic-frame-outer">
       <button 
@@ -98,7 +108,7 @@ function PicSlider(props) {
       <div className="pic-frame-inner" id="pic-frame-inner">
         <SliderImage images={props.images} index={currentIndex} />
       </div>
-      <NavDots images={props.images} />
+      <NavDots images={props.images} disabled={disabled} clickFunc={handleDotClick} />
     </div>
   )
 }
