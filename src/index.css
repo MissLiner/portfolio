@@ -108,11 +108,15 @@ q {
   font-size: 1.3em;
   margin-bottom: 15px;
   margin-left: 0;
+  padding: 0 0 0 0;
   text-align: left;
 }
 
 .Canvas.content-container {
+  display: grid;
+  align-items: center;
   min-height: 470px;
+  width: 100%;
 }
 
 #root {
