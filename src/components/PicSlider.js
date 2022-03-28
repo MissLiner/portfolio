@@ -11,9 +11,6 @@ import NavDots from "./NavDots";
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
-  // const [newIndex, setNewIndex] = useState('');
-  // const [currentPic, setCurrentPic] = useState('');
-  // const [currentDot, setCurrentDot] = useState('');
 
   const returnCurrentPic = () => {
     const pics = Array.from(document.querySelectorAll(".slider-pic"));
