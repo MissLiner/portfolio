@@ -9,11 +9,7 @@ body {
   background-color: rgb(32, 32, 32);
 
 }
-/* img {
-  border: solid;
-  border-color: gray;
-  border-width: 2px;
-} */
+
 h1 {
   font-size: 3em;
   font-weight:300;
@@ -87,9 +83,6 @@ q {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
-div.Canvas {
-  margin-top: 45px;
-}
 .Canvas.screen {
   display: grid;
   height: fit-content;
@@ -120,10 +113,9 @@ div.Canvas {
 }
 
 .Canvas.content-container {
-  margin-bottom: 25px;
-  margin-left: 10%;
+  margin: 2% 0 4% 0;
   min-height: 400px;
-  width: 80%;
+  width: 95%;
 }
 
 #root {
