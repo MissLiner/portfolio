@@ -87,13 +87,13 @@ function PicSlider(props) {
         className="slider-btn slider-btn-left" 
         disabled={disabled}
         onClick={handleLeftClick}
-        ><ArrowCircleLeftRoundedIcon />
+        ><ArrowCircleLeftRoundedIcon fontSize="large" />
       </button>
       <button 
         className="slider-btn slider-btn-right"
         disabled={disabled}
         onClick={handleRightClick}
-        ><ArrowCircleRightRoundedIcon />
+        ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <div className="pic-frame-inner" id="pic-frame-inner">
         <SliderImage images={props.images} index={currentIndex} />
