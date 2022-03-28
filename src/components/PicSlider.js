@@ -118,7 +118,7 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon />
       </button>
       <div className="pic-frame-inner" id="pic-frame-inner">
-        <ImageArray images={props.images} />
+        <ImageArray images={props.images} index={currentIndex} />
       </div>
       <NavDots images={props.images} />
     </div>

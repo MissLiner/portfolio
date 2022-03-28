@@ -2,25 +2,15 @@ import "./PicSlider.css";
 import '../index.css';
 
 function ImageArray(props) {
-
-  const renderImages = () => {
-    return(
-      props.images.map((image, i) => {
-        return(
-          <img 
-            src={image[0]} 
-            alt={image[1]} 
-            className="slider-pic hidden"
-            data-index={i}
-            key={"slider-pic" + i}>
-          </img>
-        )
-      })
-    )
-  }
+  const currentImage = props.images[props.index];
   return(
     <div className="slider" id="slider">
-      {renderImages()}
+      <img 
+        src={currentImage[0]} 
+        alt={currentImage[1]} 
+        className="slider-pic"
+        >
+      </img>
     </div>
   )
 }
