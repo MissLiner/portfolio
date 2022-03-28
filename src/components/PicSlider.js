@@ -47,8 +47,8 @@ function PicSlider(props) {
   }, [currentIndex])
 
   const handleRightClick = (e) => {
-    setDisabled(true);
     if(currentIndex < props.images.length - 1) {
+      setDisabled(true);
       dissolve();
       setTimeout(function() { 
         setCurrentIndex(currentIndex + 1);
@@ -60,8 +60,8 @@ function PicSlider(props) {
   }
 
   const handleLeftClick = (e) => {
-    setDisabled(true);
     if(currentIndex > 0) {
+      setDisabled(true);
       dissolve();
       setTimeout(function() { 
         setCurrentIndex(currentIndex - 1);
