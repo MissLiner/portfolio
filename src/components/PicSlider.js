@@ -78,8 +78,11 @@ function PicSlider(props) {
       dissolve();
       setTimeout(function() { 
         setCurrentIndex(currentIndex + 1);
-        setDisabled(false);
+
       }, 1000);
+      setTimeout(function() {
+        setDisabled(false);
+      }, 2200);
     }
   }
 
@@ -89,8 +92,10 @@ function PicSlider(props) {
       dissolve();
       setTimeout(function() { 
         setCurrentIndex(currentIndex - 1);
-        setDisabled(false);
       }, 1000);
+      setTimeout(function() {
+        setDisabled(false);
+      }, 2200);
     }
 
   }
