@@ -100,40 +100,6 @@ function PicSlider(props) {
 
   }
 
-  //CENTER PICS IF FRAME IS WIDER
-  // function centerPic(elem, cont) {
-  //   const whiteSpace = cont.scrollWidth - elem.width;
-  //   if (whiteSpace > 0) {
-  //       elem.style.marginLeft = whiteSpace / 2;
-  //   }
-  // }
-    // setTimeout(() => {
-    //     centerPic(props.picArray[currentIndex], container);
-    // }, 1000);
-  // function hide(element) {
-  //   element.classList.remove('fade-out');
-  //   element.classList.add('hidden');
-  // }
-  // function show(elem) {
-  //   const slider = document.getElementById("slider");
-  //   const container = document.getElementById("pic-frame-inner");
-  //   elem.classList.remove('hidden');
-  //   setTimeout(() => {
-  //       centerPic(slider, container);
-  //   }, 250);
-  //   slider.classList.add('fade-in');
-  // }
-  // function dissolve() {
-  //   const slider = document.getElementById("slider");
-
-  //   slider.classList.add('fade-out');
-  //   setTimeout(function() { hide(slider) }, 1000);
-  // }
-  // function appear() {
-  //   const slider = document.getElementById("slider");
-  //   show(slider);
-  //   setTimeout(function() { show(slider) }, 1000);
-  // }
   // function handleDotClick(e) {
   //   dissolve(currentPic);
   //   setCurrentIndex(e.target.dataset.index);
