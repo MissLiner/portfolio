@@ -10,15 +10,6 @@ function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
 
-  const returnCurrentPic = () => {
-    const pics = Array.from(document.querySelectorAll(".slider-pic"));
-    for(let pic of pics) {
-      const index = parseInt(pic.dataset.index);
-      if(index === currentIndex) {
-        return pic;
-      }
-    }
-  }
   const returnCurrentDot = () => {
     const dots = Array.from(document.querySelectorAll(".nav-dot"));
     for(let dot of dots) {
@@ -28,37 +19,25 @@ function PicSlider(props) {
       }
     }
   }
-  // const showCurrentPic = () => {
-  //   const currentPic = returnCurrentPic();
-  //   currentPic.classList.remove("hidden");
-  // }
 
   const checkCurrentDot = () => {
     const currentDot = returnCurrentDot();
     currentDot.checked = true;
   }
 
-  // const hideCurrentPic = () => {
-  //   const currentPic = returnCurrentPic();
-  //   currentPic.classList.add("hidden");
-  // }
  async function dissolve() {
     const slider = document.getElementById("slider");
     slider.classList.remove("fade-in");
     slider.classList.add("fade-out");
-    // setTimeout(function() { hideCurrentPic() }, 999);
   }
   function appear() {
     const slider = document.getElementById("slider");
-    // const currentPic = returnCurrentPic();
     slider.classList.remove("fade-out");
     slider.classList.add("fade-in");
-    // currentPic.classList.remove("hidden");
   }
 
   // SET STARTING PIC AND DOT ON MOUNT
   useEffect(() => {
-    // showCurrentPic();
     checkCurrentDot();
   }, []);
 
