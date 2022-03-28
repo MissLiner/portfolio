@@ -28,37 +28,37 @@ function PicSlider(props) {
       }
     }
   }
-  const showCurrentPic = () => {
-    const currentPic = returnCurrentPic();
-    currentPic.classList.remove("hidden");
-  }
+  // const showCurrentPic = () => {
+  //   const currentPic = returnCurrentPic();
+  //   currentPic.classList.remove("hidden");
+  // }
 
   const checkCurrentDot = () => {
     const currentDot = returnCurrentDot();
     currentDot.checked = true;
   }
 
-  const hideCurrentPic = () => {
-    const currentPic = returnCurrentPic();
-    currentPic.classList.add("hidden");
-  }
+  // const hideCurrentPic = () => {
+  //   const currentPic = returnCurrentPic();
+  //   currentPic.classList.add("hidden");
+  // }
  async function dissolve() {
     const slider = document.getElementById("slider");
     slider.classList.remove("fade-in");
     slider.classList.add("fade-out");
-    setTimeout(function() { hideCurrentPic() }, 999);
+    // setTimeout(function() { hideCurrentPic() }, 999);
   }
   function appear() {
     const slider = document.getElementById("slider");
-    const currentPic = returnCurrentPic();
+    // const currentPic = returnCurrentPic();
     slider.classList.remove("fade-out");
     slider.classList.add("fade-in");
-    currentPic.classList.remove("hidden");
+    // currentPic.classList.remove("hidden");
   }
 
   // SET STARTING PIC AND DOT ON MOUNT
   useEffect(() => {
-    showCurrentPic();
+    // showCurrentPic();
     checkCurrentDot();
   }, []);
 
@@ -73,7 +73,6 @@ function PicSlider(props) {
       dissolve();
       setTimeout(function() { 
         setCurrentIndex(currentIndex + 1);
-
       }, 1000);
       setTimeout(function() {
         setDisabled(false);
