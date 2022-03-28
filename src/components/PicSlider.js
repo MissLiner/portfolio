@@ -10,6 +10,7 @@ import NavDots from "./NavDots";
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [disabled, setDisabled] = useState(false);
   // const [newIndex, setNewIndex] = useState('');
   // const [currentPic, setCurrentPic] = useState('');
   // const [currentDot, setCurrentDot] = useState('');
@@ -71,17 +72,25 @@ function PicSlider(props) {
     checkCurrentDot();
   }, [currentIndex])
 
-  const handleRightClick = () => {
+  const handleRightClick = (e) => {
+    setDisabled(true);
     if(currentIndex < props.images.length - 1) {
       dissolve();
-      setTimeout(function() { setCurrentIndex(currentIndex + 1) }, 1000);
+      setTimeout(function() { 
+        setCurrentIndex(currentIndex + 1);
+        setDisabled(false);
+      }, 1000);
     }
   }
 
-  const handleLeftClick = () => {
+  const handleLeftClick = (e) => {
+    setDisabled(true);
     if(currentIndex > 0) {
       dissolve();
-      setTimeout(function() { setCurrentIndex(currentIndex - 1) }, 1000);
+      setTimeout(function() { 
+        setCurrentIndex(currentIndex - 1);
+        setDisabled(false);
+      }, 1000);
     }
 
   }
@@ -132,11 +141,13 @@ function PicSlider(props) {
     <div className="pic-frame-outer">
       <button 
         className="slider-btn slider-btn-left" 
+        disabled={disabled}
         onClick={handleLeftClick}
         ><ArrowCircleLeftRoundedIcon />
       </button>
       <button 
         className="slider-btn slider-btn-right"
+        disabled={disabled}
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon />
       </button>
