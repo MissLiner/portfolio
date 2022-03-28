@@ -46,18 +46,20 @@ function PicSlider(props) {
     const currentPic = returnCurrentPic();
     currentPic.classList.add("hidden");
   }
- function dissolve() {
+ async function dissolve() {
     const slider = document.getElementById("slider");
+    slider.classList.remove("fade-in");
     slider.classList.add("fade-out");
-    setTimeout(function() { hideCurrentPic() }, 1000);
+    setTimeout(function() { hideCurrentPic() }, 999);
   }
   function appear() {
     const slider = document.getElementById("slider");
     const currentPic = returnCurrentPic();
-    slider.classList.remove("fade-out")
-    currentPic.classList.remove("hidden");
+    slider.classList.remove("fade-out");
     slider.classList.add("fade-in");
+    currentPic.classList.remove("hidden");
   }
+
   // SET STARTING PIC AND DOT ON MOUNT
   useEffect(() => {
     showCurrentPic();
@@ -72,14 +74,14 @@ function PicSlider(props) {
   const handleRightClick = () => {
     if(currentIndex < props.images.length - 1) {
       dissolve();
-      setCurrentIndex(currentIndex + 1);
+      setTimeout(function() { setCurrentIndex(currentIndex + 1) }, 1000);
     }
   }
 
   const handleLeftClick = () => {
     if(currentIndex > 0) {
       dissolve();
-      setCurrentIndex(currentIndex - 1);
+      setTimeout(function() { setCurrentIndex(currentIndex - 1) }, 1000);
     }
 
   }
