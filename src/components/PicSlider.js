@@ -4,7 +4,7 @@ import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRound
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
 import SliderImage from "./SliderImage";
-import NavDots from "./NavDots";
+import NavPics from "./NavPics";
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,13 +84,6 @@ function PicSlider(props) {
       setDisabled(false);
     }, 2200);
   }
-    // dissolve(currentPic);
-    // setCurrentIndex(e.target.dataset.index);
-    // updateCurrentPic();
-    // updateCurrentDot();
-    // appear(currentPic);
-    // currentDot.checked = true;
-  }
   return(
     <div className="pic-frame-outer">
       <button 
@@ -108,7 +101,7 @@ function PicSlider(props) {
       <div className="pic-frame-inner" id="pic-frame-inner">
         <SliderImage images={props.images} index={currentIndex} />
       </div>
-      <NavDots images={props.images} disabled={disabled} clickFunc={handleDotClick} />
+      <NavPics images={props.images} disabled={disabled} clickFunc={handleDotClick} />
     </div>
   )
 }

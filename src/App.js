@@ -32,7 +32,7 @@ function App() {
     activateBtn(e);
   }
   useEffect(() => {
-    if(view !== "home") {
+    if(view !== "home" && view !== "portfolio") {
       setCanvasBtns(btnLabels[view]);
       setScreenClass("Canvas screen menu");
     } else {

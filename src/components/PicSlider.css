@@ -15,10 +15,10 @@
 .pic-frame-outer {
   display: grid;
   grid-template-columns: 1fr 16fr 1fr;
-  grid-template-rows: 10fr 1fr;
+  grid-template-rows: min-content min-content;
   margin: auto;
   /* height: 100%; */
-  width: 97%;
+  width: 90%;
 }
 .slider-btn {
   background-color: transparent;
@@ -46,6 +46,16 @@
   grid-row: 2;
   justify-content: space-between;
   width: 80%;
+}
+.nav-pic { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.nav-thumb {
+  height: 40px;
+  width: 40px;
 }
 .hidden {
   display: none;
