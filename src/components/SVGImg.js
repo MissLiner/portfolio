@@ -1,15 +1,15 @@
 import "./PicSlider.css";
 import '../index.css';
 
-function SliderImage(props) {
+function SVGImg(props) {
   const currentImage = props.images[props.index];
   return(
-    <div className={props.compName + " img-container"} id="img-container" data-index={currentImage}>
+    <div className={props.compName + " SVGImg container"} id="SVGImg-container" data-index={currentImage}>
       <img 
         src={currentImage[0]} 
         alt={currentImage[1]} 
-        className={props.compName + " svg-img"}
-        id="svg-img"
+        className={props.compName + " SVGImg image"}
+        id="SVGImg-image"
         data-name={currentImage[3]}
         onClick={props.clickFunc}
         >
@@ -17,4 +17,4 @@ function SliderImage(props) {
     </div>
   )
 }
-export default SliderImage;
+export default SVGImg;

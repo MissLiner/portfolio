@@ -3,7 +3,7 @@ import '../index.css';
 import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
-import SliderImage from "./SliderImage";
+import SVGImg from "./SVGImg";
 import NavPics from "./NavPics";
 import ProjectTitle from "./ProjectTitle";
 
@@ -33,12 +33,12 @@ function PicSlider(props) {
 
   // TRANSITION EFFECT FX
   function dissolve() {
-    const pic = document.getElementById("svg-img");
+    const pic = document.getElementById("SVGImg-image");
     pic.classList.remove("fade-in");
     pic.classList.add("fade-out");
   }
   function appear() {
-    const pic = document.getElementById("svg-img");
+    const pic = document.getElementById("SVGImg-image");
     pic.classList.remove("fade-out");
     pic.classList.add("fade-in");
   }
@@ -100,7 +100,7 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
-      <SliderImage 
+      <SVGImg 
         images={props.images} 
         compName="PicSlider"
         index={props.currentIndex} 
