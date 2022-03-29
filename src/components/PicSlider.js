@@ -8,9 +8,8 @@ import NavPics from "./NavPics";
 import ProjectTitle from "./ProjectTitle";
 
 function PicSlider(props) {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
-  const [title, setTitle] = useState("");
+
 
   // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
   useEffect(() => {
@@ -18,7 +17,7 @@ function PicSlider(props) {
         const dots = Array.from(document.querySelectorAll(".nav-dot"));
         for(let dot of dots) {
           const index = parseInt(dot.dataset.index);
-          if(index === currentIndex) {
+          if(index === props.currentIndex) {
             return dot;
           }
         }
@@ -27,10 +26,10 @@ function PicSlider(props) {
         const currentDot = returnCurrentDot();
         currentDot.checked = true;
       }
-      setTitle(props.images[currentIndex][3]);
+
       appear();
       checkCurrentDot();
-  }, [currentIndex]);
+  }, [props.currentIndex]);
 
   // TRANSITION EFFECT FX
   function dissolve() {
@@ -46,11 +45,12 @@ function PicSlider(props) {
 
   // NAVIGATION FX
   const handleRightClick = (e) => {
-    if(currentIndex < props.images.length - 1) {
+    if(props.currentIndex < props.images.length - 1) {
+      const newIndex = props.currentIndex + 1;
       setDisabled(true);
       dissolve();
       setTimeout(function() { 
-        setCurrentIndex(currentIndex + 1);
+        props.indexFunc(newIndex);
       }, 1000);
       setTimeout(function() {
         setDisabled(false);
@@ -59,11 +59,12 @@ function PicSlider(props) {
   }
 
   const handleLeftClick = (e) => {
-    if(currentIndex > 0) {
+    if(props.currentIndex > 0) {
+      const newIndex = props.currentIndex - 1;
       setDisabled(true);
       dissolve();
       setTimeout(function() { 
-        setCurrentIndex(currentIndex - 1);
+        props.indexFunc(newIndex);
       }, 1000);
       setTimeout(function() {
         setDisabled(false);
@@ -77,7 +78,7 @@ function PicSlider(props) {
     setDisabled(true);
     dissolve();
     setTimeout(function() { 
-      setCurrentIndex(newIndex);
+      props.indexFunc(newIndex);
     }, 1000);
     setTimeout(function() {
       setDisabled(false);
@@ -86,7 +87,7 @@ function PicSlider(props) {
 
   return(
     <div className="pic-frame-outer">
-      <ProjectTitle title={title}/>
+      <ProjectTitle title={props.title}/>
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}
@@ -100,7 +101,7 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
 
-        <SliderImage images={props.images} index={currentIndex} clickFunc={props.updateFunc} />
+        <SliderImage images={props.images} index={props.currentIndex} clickFunc={props.updateFunc} />
       <NavPics images={props.images} disabled={disabled} clickFunc={handleDotClick} />
     </div>
   )
