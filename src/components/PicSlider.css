@@ -1,4 +1,4 @@
-.pic-frame-inner {
+.PicSlider.img-container {
   background-color: black;
   border: solid;
   border-color:darkslateblue;
@@ -12,33 +12,33 @@
   text-align: center;
   width: 98%;
 }
-.pic-frame-outer {
+.PicSlider.container {
   display: grid;
   grid-template-columns: 1fr 16fr 1fr;
   grid-template-rows: min-content min-content min-content;
   margin: auto;
   width: 80%;
 }
-.slider-title {
+.PicSlider.title {
   grid-column: 2;
   grid-row: 1;
 }
-.slider-btn {
+.PicSlider.btn {
   background-color: transparent;
   border: none;
   color:darkgray;
   justify-self: center;
   align-self: center;
 }
-.slider-btn-left {
+.PicSlider.btn-left {
   grid-column: 1;
   grid-row:2;
 }
-.slider-btn-right {
+.PicSlider.btn-right {
   grid-column: 3;
   grid-row: 2;
 }
-.slider-pic {
+.PicSlider.svg-img {
   width: 100%;
 }
 .nav-dot-container {

@@ -128,9 +128,14 @@ q {
   width: 100%;
 }
 .ProjectDetail.exit-btn {
+  border: none;
+  background-color: transparent;
   position: absolute;
   right: 10px;
   top: 10px;
+}
+.ProjectDetail.title {
+  margin-top: 20px;
 }
 #root {
   height: 100%;

@@ -33,12 +33,12 @@ function PicSlider(props) {
 
   // TRANSITION EFFECT FX
   function dissolve() {
-    const pic = document.getElementById("slider-pic");
+    const pic = document.getElementById("svg-img");
     pic.classList.remove("fade-in");
     pic.classList.add("fade-out");
   }
   function appear() {
-    const pic = document.getElementById("slider-pic");
+    const pic = document.getElementById("svg-img");
     pic.classList.remove("fade-out");
     pic.classList.add("fade-in");
   }
@@ -86,22 +86,23 @@ function PicSlider(props) {
   }
 
   return(
-    <div className="pic-frame-outer">
-      <ProjectTitle title={props.title}/>
+    <div className="PicSlider container">
+      <ProjectTitle title={props.title} titleClass="PicSlider title" />
       <button 
-        className="slider-btn slider-btn-left" 
+        className="PicSlider btn btn-left" 
         disabled={disabled}
         onClick={handleLeftClick}
         ><ArrowCircleLeftRoundedIcon fontSize="large" />
       </button>
       <button 
-        className="slider-btn slider-btn-right"
+        className="PicSlider btn btn-right"
         disabled={disabled}
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <SliderImage 
         images={props.images} 
+        compName="PicSlider"
         index={props.currentIndex} 
         clickFunc={props.updateFunc} />
       <NavPics 

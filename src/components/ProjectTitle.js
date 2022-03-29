@@ -1,6 +1,6 @@
 function ProjectTitle(props) {
   return(
-    <h2 className="slider-title">{props.title}</h2>
+    <h2 className={props.titleClass}>{props.title}</h2>
   )
 }
 
