@@ -19,15 +19,15 @@ import TNLibraryImg from '../images/screenshots/screengallery/TN_library.svg';
 
 
 export const screenshotArray = [
-  [ FSRestImg, "restaurant site screenshot", TNRestImg ],
-  [ FSBattleImg, "battleship site screenshot", TNBattleImg ],
-  [ FSCalcImg, "calculator site screenshot", TNCalcImg],
-  [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot", TNMemoryWelcomeImg],
-  [ FSMemoryGameImg, "memorycard game screen site screenshot", TNMemoryGameImg],
-  [ FSCando1Img, "can do list site screenshot", TNCando1Img],
-  [ FSCando2Img, "can do list add task site screenshot", TNCando2Img],
-  [ FSTictacImg, "tic-tac-toe site screenshot", TNTictacImg],
-  [ FSLibraryImg, "libary site screenshot", TNLibraryImg],
+  [ FSRestImg, "restaurant site screenshot", TNRestImg, "Restaurant Homepage" ],
+  [ FSBattleImg, "battleship site screenshot", TNBattleImg, "Battleship Game" ],
+  [ FSCalcImg, "calculator site screenshot", TNCalcImg, "Calculator"],
+  [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot", TNMemoryWelcomeImg, "Memory Card"],
+  [ FSMemoryGameImg, "memorycard game screen site screenshot", TNMemoryGameImg, "Memory Card"],
+  [ FSCando1Img, "can do list site screenshot", TNCando1Img, "Can-Do List"],
+  [ FSCando2Img, "can do list add task site screenshot", TNCando2Img, "Can-Do List"],
+  [ FSTictacImg, "tic-tac-toe site screenshot", TNTictacImg, "Tic-Tac-Toe"],
+  [ FSLibraryImg, "libary site screenshot", TNLibraryImg, "Library App"],
 ]
 
 
