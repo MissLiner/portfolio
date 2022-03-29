@@ -1,6 +1,7 @@
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ProjectTitle from './ProjectTitle';
 import SVGImg from './SVGImg';
+import '../index.css';
 
 function ProjectDetail(props) {
   return(
