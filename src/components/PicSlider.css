@@ -17,7 +17,6 @@
   grid-template-columns: 1fr 16fr 1fr;
   grid-template-rows: min-content min-content;
   margin: auto;
-  /* height: 100%; */
   width: 90%;
 }
 .slider-btn {
