@@ -6,7 +6,7 @@ function Portfolio(props) {
   const [portView, setPortView] = useState("main");
 
   const handlePicClick = (e) => {
-    setPortView(e.target.dataset.view);
+    setPortView(e.target.dataset.name);
   }
   const renderPortfolio = () => {
     if(portView === "main") {
