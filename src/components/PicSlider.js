@@ -9,25 +9,32 @@ import NavPics from "./NavPics";
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
+  const [hidden, setHidden] = useState("hidden");
+
 
   // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
   useEffect(() => {
-    const returnCurrentDot = () => {
-      const dots = Array.from(document.querySelectorAll(".nav-dot"));
-      for(let dot of dots) {
-        const index = parseInt(dot.dataset.index);
-        if(index === currentIndex) {
-          return dot;
+      const returnCurrentDot = () => {
+        const dots = Array.from(document.querySelectorAll(".nav-dot"));
+        for(let dot of dots) {
+          const index = parseInt(dot.dataset.index);
+          if(index === currentIndex) {
+            return dot;
+          }
         }
       }
-    }
-    const checkCurrentDot = () => {
-      const currentDot = returnCurrentDot();
-      currentDot.checked = true;
-    }
-    appear();
-    checkCurrentDot();
-  }, [currentIndex])
+      const checkCurrentDot = () => {
+        const currentDot = returnCurrentDot();
+        currentDot.checked = true;
+      }
+      appear();
+      checkCurrentDot();
+  }, [currentIndex]);
+  
+  // PREVENT SLIDER FROM RENDERING UNTIL COMPLETE
+  useEffect(() => {
+    setHidden("");
+  }, []);
 
   // TRANSITION EFFECT FX
   function dissolve() {
@@ -80,9 +87,9 @@ function PicSlider(props) {
       setDisabled(false);
     }, 2200);
   }
-  
+
   return(
-    <div className="pic-frame-outer">
+    <div className={"pic-frame-outer " + hidden}>
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}
@@ -95,9 +102,8 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
-      <div className="pic-frame-inner" id="pic-frame-inner">
+
         <SliderImage images={props.images} index={currentIndex} />
-      </div>
       <NavPics images={props.images} disabled={disabled} clickFunc={handleDotClick} />
     </div>
   )
