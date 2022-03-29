@@ -115,7 +115,7 @@ q {
 .Canvas.content-container {
   display: grid;
   align-items: center;
-  min-height: 470px;
+  min-height: 460px;
   width: 100%;
 }
 
