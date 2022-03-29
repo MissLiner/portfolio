@@ -7,13 +7,14 @@ function NavPics(props) {
       props.images.map((image, i) => {
         return(
           <div>
-          <label className="nav-label">
+          <label className="nav-label" for={"nav-dot" + i}>
             <input 
               type="radio" 
               className="nav-dot nav-pic"
               data-index={i}
-              name={"nav-dot" + i}
+              name={"nav-dot"}
               onClick={props.clickFunc}
+              id={"nav-dot" + i}
               key={"nav-dot" + i}
               disabled={props.disabled}
               >

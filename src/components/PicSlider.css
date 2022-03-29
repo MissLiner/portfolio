@@ -56,9 +56,16 @@
   height: 40px;
   width: 40px;
 }
-.nav-label:checked {
-  outline: solid;
-  outline-color:coral;
+.nav-label {
+  height: 40px;
+  width: 40px;
+}
+:checked + .nav-thumb {
+  border: solid;
+  border-color:coral;
+}
+:unchecked + .nav-thumb {
+  
 }
 .hidden {
   display: none;
