@@ -37,6 +37,7 @@ function Portfolio(props) {
       return(
         <ProjectDetail 
           title={title}
+          images={screenshotArray}
           currentIndex={currentIndex}
           exitFunc={handleExit} />
       )

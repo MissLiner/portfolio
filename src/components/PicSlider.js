@@ -101,9 +101,8 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <SVGImg 
-        images={props.images} 
+        currentImage={props.images[props.currentIndex]}
         compName="PicSlider"
-        index={props.currentIndex} 
         clickFunc={props.updateFunc} />
       <NavPics 
         images={props.images} 

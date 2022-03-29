@@ -7,7 +7,9 @@ function ProjectDetail(props) {
     <div className="ProjectDetail container">
       <ProjectTitle title={props.title} titleClass="ProjectDetail title" />
       <button className="ProjectDetail exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
-      <SVGImg images={props.images} currentIndex={props.currentIndex} imageClass="ProjectDetail main-img" />
+      <SVGImg 
+        currentImage={props.images[props.currentIndex]} 
+        compName="ProjectDetail" />
     </div>
   )
 }
