@@ -10,22 +10,27 @@ function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
 
-  const returnCurrentDot = () => {
-    const dots = Array.from(document.querySelectorAll(".nav-dot"));
-    for(let dot of dots) {
-      const index = parseInt(dot.dataset.index);
-      if(index === currentIndex) {
-        return dot;
+  // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
+  useEffect(() => {
+    const returnCurrentDot = () => {
+      const dots = Array.from(document.querySelectorAll(".nav-dot"));
+      for(let dot of dots) {
+        const index = parseInt(dot.dataset.index);
+        if(index === currentIndex) {
+          return dot;
+        }
       }
     }
-  }
+    const checkCurrentDot = () => {
+      const currentDot = returnCurrentDot();
+      currentDot.checked = true;
+    }
+    appear();
+    checkCurrentDot();
+  }, [currentIndex])
 
-  const checkCurrentDot = () => {
-    const currentDot = returnCurrentDot();
-    currentDot.checked = true;
-  }
-
- async function dissolve() {
+  // TRANSITION EFFECT FX
+  function dissolve() {
     const pic = document.getElementById("slider-pic");
     pic.classList.remove("fade-in");
     pic.classList.add("fade-out");
@@ -36,16 +41,7 @@ function PicSlider(props) {
     pic.classList.add("fade-in");
   }
 
-  // SET STARTING PIC AND DOT ON MOUNT
-  useEffect(() => {
-    checkCurrentDot();
-  }, []);
-
-  useEffect(() => {
-    appear();
-    checkCurrentDot();
-  }, [currentIndex])
-
+  // NAVIGATION FX
   const handleRightClick = (e) => {
     if(currentIndex < props.images.length - 1) {
       setDisabled(true);
@@ -84,6 +80,7 @@ function PicSlider(props) {
       setDisabled(false);
     }, 2200);
   }
+  
   return(
     <div className="pic-frame-outer">
       <button 
