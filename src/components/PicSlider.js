@@ -5,6 +5,7 @@ import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRou
 import { useEffect, useState } from "react";
 import SliderImage from "./SliderImage";
 import NavPics from "./NavPics";
+import ProjectTitle from "./ProjectTitle";
 
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -85,7 +86,7 @@ function PicSlider(props) {
 
   return(
     <div className="pic-frame-outer">
-      <h2 className="slider-title">{title}</h2>
+      <ProjectTitle title={title}/>
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}
