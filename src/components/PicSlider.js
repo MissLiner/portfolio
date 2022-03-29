@@ -9,9 +9,8 @@ import NavPics from "./NavPics";
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
-  const [hidden, setHidden] = useState("hidden");
 
-
+  console.log("hello");
   // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
   useEffect(() => {
       const returnCurrentDot = () => {
@@ -30,11 +29,6 @@ function PicSlider(props) {
       appear();
       checkCurrentDot();
   }, [currentIndex]);
-  
-  // PREVENT SLIDER FROM RENDERING UNTIL COMPLETE
-  useEffect(() => {
-    setHidden("");
-  }, []);
 
   // TRANSITION EFFECT FX
   function dissolve() {
@@ -89,7 +83,7 @@ function PicSlider(props) {
   }
 
   return(
-    <div className={"pic-frame-outer " + hidden}>
+    <div className="pic-frame-outer">
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}
