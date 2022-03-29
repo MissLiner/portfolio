@@ -1,6 +1,6 @@
 import '../index.css';
 import PicSlider from './PicSlider';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProjectDetail from './ProjectDetail';
 
 function Portfolio(props) {
@@ -12,8 +12,9 @@ function Portfolio(props) {
     setCurrentIndex(newValue);
   }
 
-
-  setTitle(props.images[currentIndex][3]);
+  useEffect(() => {
+    setTitle(props.imageArr[currentIndex][3]);
+  }, [currentIndex]) 
 
   const handlePicClick = (e) => {
     setPortView(e.target.dataset.name);
