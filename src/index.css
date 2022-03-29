@@ -118,7 +118,20 @@ q {
   min-height: 460px;
   width: 100%;
 }
-
+.Portfolio.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.ProjectDetail.container {
+  height: 100%;
+  width: 100%;
+}
+.ProjectDetail.exit-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 #root {
   height: 100%;
   width: 100%;

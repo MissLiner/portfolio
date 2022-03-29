@@ -42,7 +42,7 @@ function Portfolio(props) {
     }
   }
   return(
-    <div>
+    <div className="Portfolio container">
       {renderPortfolio()}
     </div>
   )

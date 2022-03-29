@@ -3,9 +3,9 @@ import ProjectTitle from './ProjectTitle';
 
 function ProjectDetail(props) {
   return(
-    <div>
+    <div className="ProjectDetail container">
       <ProjectTitle title={props.title} />
-      <button className="exit-project-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
+      <button className="ProjectDetail exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
     </div>
   )
 }

@@ -100,9 +100,14 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
-
-        <SliderImage images={props.images} index={props.currentIndex} clickFunc={props.updateFunc} />
-      <NavPics images={props.images} disabled={disabled} clickFunc={handleDotClick} />
+      <SliderImage 
+        images={props.images} 
+        index={props.currentIndex} 
+        clickFunc={props.updateFunc} />
+      <NavPics 
+        images={props.images} 
+        disabled={disabled} 
+        clickFunc={handleDotClick} />
     </div>
   )
 }
