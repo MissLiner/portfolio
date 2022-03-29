@@ -56,6 +56,10 @@
   height: 40px;
   width: 40px;
 }
+.nav-label:checked {
+  outline: solid;
+  outline-color:coral;
+}
 .hidden {
   display: none;
 }
