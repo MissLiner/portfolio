@@ -30,6 +30,7 @@ export const screenshotArray = [
   [ FSLibraryImg, "libary site screenshot", TNLibraryImg],
 ]
 
+
 export const projectArray = [
   {
     name: "Restaurant Homepage",
@@ -115,18 +116,18 @@ export const projectArray = [
     live: 'https://missliner.github.io/library-app/',
     active: false,
   },
-  {
-    name: "ResuMaker",
-    image: [],
-    thumbnail: [],
-    addlImages: [],
-    addlThumbnails: [],
-    focus: ["ReactJS", "Basic Components"],
-    summary: "",
-    code: 'https://github.com/MissLiner/cv-project.git',
-    live: 'https://missliner.github.io/cv-project/',
-    active: false,
-  },
+  // {
+  //   name: "ResuMaker",
+  //   image: [],
+  //   thumbnail: [],
+  //   addlImages: [],
+  //   addlThumbnails: [],
+  //   focus: ["ReactJS", "Basic Components"],
+  //   summary: "",
+  //   code: 'https://github.com/MissLiner/cv-project.git',
+  //   live: 'https://missliner.github.io/cv-project/',
+  //   active: false,
+  // },
 ]
 // const projectTemplate = 
 //   {

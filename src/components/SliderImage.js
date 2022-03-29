@@ -10,6 +10,7 @@ function SliderImage(props) {
         alt={currentImage[1]} 
         className="slider-pic"
         id="slider-pic"
+        onClick={props.clickFunc}
         >
       </img>
     </div>

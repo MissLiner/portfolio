@@ -1,8 +1,26 @@
 import '../index.css';
+import PicSlider from './PicSlider';
+import { useState } from 'react';
 
-function Portfolio() {
+function Portfolio(props) {
+  const [portView, setPortView] = useState("main");
+
+  const handlePicClick = (e) => {
+    setPortView(e.target.dataset.view);
+  }
+  const renderPortfolio = () => {
+    if(portView === "main") {
+      return(
+        <PicSlider 
+          images={props.imageArr} 
+          updateFunc={handlePicClick} />
+      )
+    }
+  }
   return(
-    <div className="Canvas Portfolio content">Portfolio here . . . </div>
+    <div>
+      {renderPortfolio()}
+    </div>
   )
 }
 export default Portfolio;
