@@ -9,6 +9,7 @@ import NavPics from "./NavPics";
 function PicSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
+  const [title, setTitle] = useState("");
 
   // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
   useEffect(() => {
@@ -25,6 +26,7 @@ function PicSlider(props) {
         const currentDot = returnCurrentDot();
         currentDot.checked = true;
       }
+      setTitle(props.images[currentIndex][3]);
       appear();
       checkCurrentDot();
   }, [currentIndex]);
@@ -83,6 +85,7 @@ function PicSlider(props) {
 
   return(
     <div className="pic-frame-outer">
+      <h2>{title}</h2>
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}

@@ -15,6 +15,12 @@ function Portfolio(props) {
           images={props.imageArr} 
           updateFunc={handlePicClick} />
       )
+    } else {
+      return(
+        <PicSlider 
+        images={props.imageArr} 
+        updateFunc={handlePicClick} />
+      )
     }
   }
   return(
