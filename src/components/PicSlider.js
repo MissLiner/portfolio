@@ -85,7 +85,7 @@ function PicSlider(props) {
 
   return(
     <div className="pic-frame-outer">
-      <h2>{title}</h2>
+      <h2 className="slider-title">{title}</h2>
       <button 
         className="slider-btn slider-btn-left" 
         disabled={disabled}
