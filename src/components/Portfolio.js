@@ -2,6 +2,7 @@ import '../index.css';
 import PicSlider from './PicSlider';
 import { useEffect, useState } from 'react';
 import ProjectDetail from './ProjectDetail';
+import { screenshotArray } from './screenshotArray';
 
 function Portfolio(props) {
   const [portView, setPortView] = useState("main");
@@ -13,7 +14,7 @@ function Portfolio(props) {
   }
 
   useEffect(() => {
-    setTitle(props.imageArr[currentIndex][3]);
+    setTitle(screenshotArray[currentIndex][3]);
   }, [currentIndex]) 
 
   const handlePicClick = (e) => {
@@ -28,7 +29,7 @@ function Portfolio(props) {
         <PicSlider 
           title={title}
           currentIndex={currentIndex}
-          images={props.imageArr} 
+          images={screenshotArray} 
           updateFunc={handlePicClick}
           indexFunc={updateIndex} />
       )

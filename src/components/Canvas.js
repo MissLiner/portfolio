@@ -1,7 +1,6 @@
 import Experience from './Experience';
 import { screenContent } from './text';
 import '../index.css';
-import { screenshotArray } from "./screenshotArray";
 import React from 'react';
 import Portfolio from './Portfolio';
 
@@ -32,7 +31,7 @@ function Canvas(props) {
     }
     else if(props.mainView === "portfolio") {
       return(
-        <Portfolio imageArr={screenshotArray} />
+        <Portfolio />
       )
     }
   }

@@ -137,6 +137,9 @@ q {
 .ProjectDetail.title {
   margin-top: 20px;
 }
+.ProjectDetail.SVGImg.container {
+  float: left;
+}
 #root {
   height: 100%;
   width: 100%;
