@@ -1,0 +1,5 @@
+.ProjectTitle {
+  margin-top: 20px;
+  grid-area: title;
+  width: fit-content;
+}

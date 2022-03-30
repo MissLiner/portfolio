@@ -14,11 +14,7 @@
   right: 10px;
   top: 10px;
 }
-.ProjectTitle {
-  margin-top: 20px;
-  grid-area: title;
-  width: fit-content;
-}
+
 .ProjectDetail.SVGImg-container {
   grid-area: images;
   width: 25%;
