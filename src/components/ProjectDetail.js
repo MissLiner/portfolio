@@ -15,6 +15,10 @@ function ProjectDetail(props) {
         currentImage={props.images[props.currentIndex]} 
         compName="ProjectDetail" />
       <ProjectDetailTags currentProject={projectArray[props.currentIndex]} />
+      <div className="ProjectDetail-links-section">
+        <a href={projectArray[props.currentIndex].live}>Live site</a>
+        <a href={projectArray[props.currentIndex].code}>Git repo</a>
+      </div>
     </div>
   )
 }
