@@ -29,6 +29,9 @@ function ProjectDetail(props) {
           rel="noreferrer">
             :Git</a>
       </div>
+      <p 
+        className="ProjectDetail-summary">
+          {projectArray[props.currentIndex].summary}</p>
     </div>
   )
 }
