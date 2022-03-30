@@ -1,4 +1,4 @@
-import "./PicSlider.css";
+import "../styles/PicSlider.css";
 import '../index.css';
 import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';

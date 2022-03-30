@@ -1,4 +1,4 @@
-import "./PicSlider.css";
+import "../styles/PicSlider.css";
 import '../index.css';
 
 function SVGImg(props) {
