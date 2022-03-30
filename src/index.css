@@ -124,6 +124,11 @@ q {
   width: 100%;
 }
 .ProjectDetail.container {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "images tags tags"
+    "images text text";
   height: 100%;
   width: 100%;
 }
@@ -136,15 +141,20 @@ q {
 }
 .ProjectDetail.title {
   margin-top: 20px;
+  grid-area: title;
   width: fit-content;
 }
 .ProjectDetail.SVGImg-container {
-  float: left;
+  grid-area: images;
   width: 25%;
   height: 25%;
 }
 .ProjectDetail.SVGImg-image {
   width: 100%;
+}
+.ProjectDetailTags.focus-list {
+  grid-area: text;
+  width: 50%;
 }
 #root {
   height: 100%;

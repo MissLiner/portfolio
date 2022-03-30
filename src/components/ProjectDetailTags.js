@@ -5,13 +5,13 @@ function ProjectDetailTags(props) {
     return(
       props.currentProject.focus.map(item => {
         return(
-          <li className={props.compName + " focus-list-item"}>{item}</li>
+          <li className="ProjectDetailTags focus-list-item">{item}</li>
         )
       })
     )
   }
   return(
-    <ul className={props.compName + " focus-list"}>
+    <ul className="ProjectDetailTags focus-list">
       {renderTags()}
     </ul>
   )
