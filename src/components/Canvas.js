@@ -9,31 +9,32 @@ import { btnLabels } from '../components/text';
 import Navbar from './Navbar';
 
 function Canvas(props) {
-  const [canvasView, setCanvasView] = useState("home");
+  // const [canvasView, setCanvasView] = useState("home");
   const [canvasBtns, setCanvasBtns] = useState("");
   const [screenClass, setScreenClass] = useState("Canvas screen");
+  // const canvasNavBtns = document.getElementsByClassName("")
 
   const handleClickCanvas = (e) => {
-    setCanvasView(e.target.value);
+    // setCanvasView(e.target.value);
     activateBtn(e);
   }
 
   useEffect(() => {
     if(props.mainView === "home") {
-      setCanvasView("home");
+      // setCanvasView("home");
       setScreenClass("Canvas screen");
     }
   }, [props.mainView])
-  
+
   useEffect(() => {
-    if(canvasView !== "home" && canvasView !== "portfolio") {
-      setCanvasBtns(btnLabels[canvasView]);
+    if(props.mainView !== "home" && props.mainView !== "portfolio") {
+      setCanvasBtns(btnLabels[props.mainView]);
       setScreenClass("Canvas screen menu");
     } else {
       setCanvasBtns("");
       setScreenClass("Canvas screen");
     }
-  }, [canvasView]);
+  }, [props.mainView]);
 
   const renderCanvas = () => {
     if(props.mainView === "home") {

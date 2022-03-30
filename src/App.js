@@ -20,8 +20,9 @@ function App() {
   const handleClickEmail = () => {
     alert("Email");
   }
-  const handleClickMain = (e) => {
+  const handleClickNav = (e) => {
     setView(e.target.value);
+    removeAllActive();
     activateBtn(e);
   }
 
@@ -36,7 +37,7 @@ function App() {
           <EmailRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
         </IconButton>
 
-        <Navbar clickFunc={handleClickMain} 
+        <Navbar clickFunc={handleClickNav} 
                 addClasses="main" 
                 btnList={mainBtns}
                 symbol=":" />
