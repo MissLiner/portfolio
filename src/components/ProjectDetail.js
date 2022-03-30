@@ -3,6 +3,7 @@ import ProjectTitle from './ProjectTitle';
 import SVGImg from './SVGImg';
 import { projectArray } from "./screenshotArray";
 import '../index.css';
+import '../ProjectDetail.css';
 import ProjectDetailTags from './ProjectDetailTags';
 
 function ProjectDetail(props) {
