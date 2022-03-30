@@ -19,7 +19,7 @@
   margin: auto;
   width: 80%;
 }
-.PicSlider.title {
+.PicSlider .ProjectTitle {
   grid-column: 2;
   grid-row: 1;
 }

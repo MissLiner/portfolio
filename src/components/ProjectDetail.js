@@ -8,9 +8,9 @@ import ProjectDetailTags from './ProjectDetailTags';
 
 function ProjectDetail(props) {
   return(
-    <div className="ProjectDetail container">
+    <div className="ProjectDetail">
       <ProjectTitle title={props.title} />
-      <button className="ProjectDetail exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
+      <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
       <SVGImg 
         currentImage={props.images[props.currentIndex]} 
         compName="ProjectDetail" />

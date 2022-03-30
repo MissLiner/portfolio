@@ -1,4 +1,4 @@
-.ProjectDetail.container {
+.ProjectDetail {
   display: grid;
   grid-template-areas:
     "title title title"
@@ -7,14 +7,16 @@
   height: 100%;
   width: 100%;
 }
-.ProjectDetail.exit-btn {
+.ProjectDetail-exit-btn {
   border: none;
   background-color: transparent;
   position: absolute;
   right: 10px;
   top: 10px;
 }
-
+.ProjectDetail .ProjectTitle {
+  grid-area: title;
+}
 .ProjectDetail.SVGImg-container {
   grid-area: images;
   width: 25%;
