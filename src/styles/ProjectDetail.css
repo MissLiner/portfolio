@@ -1,9 +1,10 @@
 .ProjectDetail {
   display: grid;
-  grid-template-areas:
-    "title title title"
-    "images tags tags"
-    "images text text";
+  grid-template:
+    "title title title" 1fr
+    "images tags tags"  1.5fr
+    "images text text"  minmax(400px, min-content)
+    / 1fr 2fr 2fr;
   height: 100%;
   width: 100%;
 }
@@ -26,6 +27,6 @@
   width: 100%;
 }
 .ProjectDetailTags.focus-list {
-  grid-area: text;
+  grid-area: tags;
   width: 50%;
 }
