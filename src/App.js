@@ -5,8 +5,9 @@ import { btnLabels } from './components/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import IconButton from '@mui/material/IconButton';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import './index.css';
+import './styles/App.css';
 
 function App() {
   const [view, setView] = useState("home");
@@ -23,7 +24,7 @@ function App() {
     setView(e.target.value);
     activateBtn(e);
   }
-  
+
   return (
     <div>
       <div className="App header">
@@ -41,9 +42,7 @@ function App() {
                 symbol=":" />
       </div>
       {/* <div className={screenClass}> */}
-      <Canvas mainView={view}
-              // canvasView={canvasView}
-              />
+      <Canvas mainView={view} />
       </div>
       // </div>
   );

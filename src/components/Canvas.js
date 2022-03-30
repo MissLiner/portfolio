@@ -18,17 +18,19 @@ function Canvas(props) {
     activateBtn(e);
   }
   useEffect(() => {
-    if(props.view === "home") {
-      setCanvasView("home");
+    if(props.mainView === "home") {
+      setCanvasView("");
+      setScreenClass("Canvas screen");
     }
-    if(props.view !== "home" && props.view !== "portfolio") {
+    if(props.mainView !== "home" && props.mainView !== "portfolio") {
       setCanvasBtns(btnLabels[canvasView]);
       setScreenClass("Canvas screen menu");
     } else {
       setCanvasBtns("");
       setScreenClass("Canvas screen");
     }
-  }, [props.view]);
+  }, [props.mainView]);
+
   const renderCanvas = () => {
     if(props.mainView === "home") {
       return(
@@ -72,10 +74,13 @@ function Canvas(props) {
     }
   }
   return(
-    <div className={"Canvas content-container" + screenClass}>
+    <div className={screenClass}>
+          <div className={"Canvas content-container"}>
       {renderCanvas()}
       {renderCanvasNav()}
+    </div>  
     </div>
+
   )
 }
 export default Canvas;
