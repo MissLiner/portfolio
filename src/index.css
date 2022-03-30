@@ -78,46 +78,11 @@ q {
 .activeBtn {
   text-decoration:underline !important;
 }
-.Canvas {
-  background-color: rgb(255, 251, 252);
-  color: rgb(32, 32, 32);
-}
-.Canvas.screen {
-  display: grid;
-  margin-top: 130px;
-  padding: 2% 2% 2% 2%;
-  width: 80%;
-}
-.Canvas.screen.menu {
-  grid-template-columns: 1fr 5fr;
-}
-.Canvas.About {
-  margin-top: 30px;
-}
-.Canvas.Home {
-  margin-top: 75px;
-}
-.canvasNav.container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  margin-top: 70px;
 
-}
-.canvasNav.btn {
-  border: none;
-  font-size: 1.3em;
-  margin-bottom: 15px;
-  margin-left: 0;
-  padding: 0 0 0 0;
-  text-align: left;
-}
 
-.Canvas.content-container {
-  display: grid;
-  align-items: center;
-  min-height: 460px;
-  width: 100%;
-}
+
+
+
 .Portfolio.container {
   position: relative;
   height: 100%;

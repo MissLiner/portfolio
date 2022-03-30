@@ -1,4 +1,5 @@
 import '../index.css';
+import '../styles/Navbar.css';
 
 function Navbar(props) {
   const renderNavbar = () => {
@@ -7,7 +8,7 @@ function Navbar(props) {
       props.btnList.map(btn => {
         counter += 1
         return(
-          <button className={props.navClass + " btn"}
+          <button className="NavBar-btn"
                   onClick={props.clickFunc}
                   value={btn}
                   key={props.navClass + counter}>
@@ -18,7 +19,7 @@ function Navbar(props) {
     )
   }
   return(
-    <div className={props.navClass + " container"}>
+    <div className={"NavBar"}>
       {renderNavbar()}
     </div>
   )

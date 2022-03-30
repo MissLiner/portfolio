@@ -45,7 +45,6 @@ function App() {
     if(canvasBtns) {
       return(
         <Navbar clickFunc={handleClickCanvas} 
-        navClass="canvasNav Canvas"
         btnList={canvasBtns}
         symbol="." />
       )

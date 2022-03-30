@@ -1,6 +1,7 @@
 import Experience from './Experience';
 import { screenContent } from './text';
 import '../index.css';
+import '../styles/Canvas.css';
 import React from 'react';
 import Portfolio from './Portfolio';
 

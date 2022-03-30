@@ -1,0 +1,14 @@
+.NavBar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 70px;
+
+}
+.NavBar-btn {
+  border: none;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  margin-left: 0;
+  padding: 0 0 0 0;
+  text-align: left;
+}

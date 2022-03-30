@@ -1,0 +1,25 @@
+.Canvas {
+  background-color: rgb(255, 251, 252);
+  color: rgb(32, 32, 32);
+}
+.Canvas.screen {
+  display: grid;
+  margin-top: 130px;
+  padding: 2% 2% 2% 2%;
+  width: 80%;
+}
+.Canvas.screen.menu {
+  grid-template-columns: 1fr 5fr;
+}
+.Canvas.About {
+  margin-top: 30px;
+}
+.Canvas.Home {
+  margin-top: 75px;
+}
+.Canvas.content-container {
+  display: grid;
+  align-items: center;
+  min-height: 460px;
+  width: 100%;
+}
