@@ -16,8 +16,18 @@ function ProjectDetail(props) {
         compName="ProjectDetail" />
       <ProjectDetailTags currentProject={projectArray[props.currentIndex]} />
       <div className="ProjectDetail-links-section">
-        <a href={projectArray[props.currentIndex].live}>Live site</a>
-        <a href={projectArray[props.currentIndex].code}>Git repo</a>
+        <a 
+          className="ProjectDetail-link" 
+          href={projectArray[props.currentIndex].live}
+          target="_blank"
+          rel="noreferrer">
+            :Live</a>
+        <a 
+          className="ProjectDetail-link" 
+          href={projectArray[props.currentIndex].code}
+          target="_blank"
+          rel="noreferrer">
+            :Git</a>
       </div>
     </div>
   )
