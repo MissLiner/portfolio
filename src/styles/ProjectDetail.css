@@ -3,7 +3,7 @@
   grid-template:
     "title title title" 1fr
     "images tags tags"  1.5fr
-    "images text text"  minmax(400px, min-content)
+    "images text text"  minmax(300px, min-content)
     / 1fr 2fr 2fr;
   height: 100%;
   width: 100%;
@@ -18,13 +18,14 @@
 .ProjectDetail .ProjectTitle {
   grid-area: title;
 }
-.ProjectDetail.SVGImg-container {
+.ProjectDetail .SVGImg {
   grid-area: images;
-  width: 25%;
-  height: 25%;
+  height: fit-content;
+  margin-top: 0;
+  width: fit-content;
 }
-.ProjectDetail.SVGImg-image {
-  width: 100%;
+.ProjectDetail .SVGImg-image {
+  width: 90%;
 }
 .ProjectDetailTags.focus-list {
   grid-area: tags;
