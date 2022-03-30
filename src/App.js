@@ -26,9 +26,9 @@ function App() {
   }
 
   return (
-    <div>
-      <div className="App header">
-        <h1 className="App name">Caroline Stephenson</h1>
+    <div className="App">
+      <div className="App-header">
+        <h1 className="App-name">Caroline Stephenson</h1>
         <IconButton aria-label="home" onClick={handleClickHome}>
           <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
         </IconButton>
@@ -41,10 +41,8 @@ function App() {
                 btnList={mainBtns}
                 symbol=":" />
       </div>
-      {/* <div className={screenClass}> */}
       <Canvas mainView={view} />
-      </div>
-      // </div>
+    </div>
   );
 }
 

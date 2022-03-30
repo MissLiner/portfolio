@@ -1,4 +1,4 @@
-.App.header {
+.App-header {
   color: rgb(255, 251, 252);
   display: grid;
   grid-template-columns: 12fr 1fr 1fr 1fr;
@@ -8,7 +8,7 @@
   top: 15px;
   width: 100%;
 }
-.App.name {
+.App-name {
   grid-column: 1;
   margin-left: 20px;
   text-align: left;
