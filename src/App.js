@@ -10,14 +10,10 @@ import './index.css';
 
 function App() {
   const [view, setView] = useState("home");
-  const [canvasView, setCanvasView] = useState("home");
-  const [canvasBtns, setCanvasBtns] = useState("");
   const mainBtns = btnLabels.main;
-  const [screenClass, setScreenClass] = useState("Canvas screen")
 
   const handleClickHome = () => {
     setView("home");
-    setCanvasView("home");
     removeAllActive();
   }
   const handleClickEmail = () => {
@@ -27,34 +23,7 @@ function App() {
     setView(e.target.value);
     activateBtn(e);
   }
-  const handleClickCanvas = (e) => {
-    setCanvasView(e.target.value);
-    activateBtn(e);
-  }
-  useEffect(() => {
-    if(view !== "home" && view !== "portfolio") {
-      setCanvasBtns(btnLabels[view]);
-      setScreenClass("Canvas screen menu");
-    } else {
-      setCanvasBtns("");
-      setScreenClass("Canvas screen");
-    }
-  }, [view]);
-
-  const renderCanvasNav = () => {
-    if(canvasBtns) {
-      return(
-        <Navbar 
-          clickFunc={handleClickCanvas}
-          addClasses="side"
-          btnList={canvasBtns}
-          symbol="." />
-      )
-    } else {
-      return null;
-    }
-  }
-
+  
   return (
     <div>
       <div className="App header">
@@ -71,12 +40,12 @@ function App() {
                 btnList={mainBtns}
                 symbol=":" />
       </div>
-      <div className={screenClass}>
-      {renderCanvasNav()}
+      {/* <div className={screenClass}> */}
       <Canvas mainView={view}
-              canvasView={canvasView} />
+              // canvasView={canvasView}
+              />
       </div>
-      </div>
+      // </div>
   );
 }
 

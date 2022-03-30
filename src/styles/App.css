@@ -1,0 +1,15 @@
+.App.header {
+  color: rgb(255, 251, 252);
+  display: grid;
+  grid-template-columns: 12fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 100%;
+}
+.App.name {
+  grid-column: 1;
+  margin-left: 20px;
+  text-align: left;
+}
