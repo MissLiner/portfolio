@@ -26,7 +26,6 @@ function PicSlider(props) {
         const currentDot = returnCurrentDot();
         currentDot.checked = true;
       }
-
       appear();
       checkCurrentDot();
   }, [props.currentIndex]);

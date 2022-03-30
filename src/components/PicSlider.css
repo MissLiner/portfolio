@@ -1,4 +1,4 @@
-.PicSlider.SVGImg.container {
+.PicSlider.SVGImg-container {
   background-color: black;
   border: solid;
   border-color:darkslateblue;
@@ -38,7 +38,7 @@
   grid-column: 3;
   grid-row: 2;
 }
-.PicSlider.SVGImg.image {
+.PicSlider.SVGImg-image {
   width: 100%;
 }
 .nav-dot-container {
