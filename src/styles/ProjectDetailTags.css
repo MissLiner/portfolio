@@ -1,0 +1,5 @@
+.ProjectDetailTags {
+  display: inline;
+  grid-area: tags;
+  width: 50%;
+}

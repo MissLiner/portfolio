@@ -27,7 +27,3 @@
 .ProjectDetail .SVGImg-image {
   width: 90%;
 }
-.ProjectDetailTags.focus-list {
-  grid-area: tags;
-  width: 50%;
-}
