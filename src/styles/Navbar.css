@@ -1,10 +1,30 @@
 .NavBar {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  margin-top: 70px;
-
 }
 .NavBar-btn {
+  border: none;
+}
+
+.main.NavBar {
+  height: 40px;
+  grid-column: 1 / 2;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 100px;
+  width: 66%;
+}
+.main.NavBar-btn {
+  background-color: rgb(32, 32, 32);
+  color: rgb(255, 251, 252);
+  border: none;
+  font-size: 1.5em;
+}
+
+.side.NavBar {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 70px;
+}
+.side.NavBar-btn {
   border: none;
   font-size: 1.3em;
   margin-bottom: 15px;

@@ -44,7 +44,8 @@ function App() {
   const renderCanvasNav = () => {
     if(canvasBtns) {
       return(
-        <Navbar clickFunc={handleClickCanvas} 
+        <Navbar clickFunc={handleClickCanvas}
+        addClasses=""
         btnList={canvasBtns}
         symbol="." />
       )
