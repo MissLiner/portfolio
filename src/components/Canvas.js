@@ -17,19 +17,23 @@ function Canvas(props) {
     setCanvasView(e.target.value);
     activateBtn(e);
   }
+
   useEffect(() => {
     if(props.mainView === "home") {
-      setCanvasView("");
+      setCanvasView("home");
       setScreenClass("Canvas screen");
     }
-    if(props.mainView !== "home" && props.mainView !== "portfolio") {
+  }, [props.mainView])
+  
+  useEffect(() => {
+    if(canvasView !== "home" && canvasView !== "portfolio") {
       setCanvasBtns(btnLabels[canvasView]);
       setScreenClass("Canvas screen menu");
     } else {
       setCanvasBtns("");
       setScreenClass("Canvas screen");
     }
-  }, [props.mainView]);
+  }, [canvasView]);
 
   const renderCanvas = () => {
     if(props.mainView === "home") {
