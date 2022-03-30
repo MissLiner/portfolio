@@ -1,6 +1,6 @@
 function ProjectTitle(props) {
   return(
-    <h2 className={props.titleClass}>{props.title}</h2>
+    <h2 className="ProjectTitle">{props.title}</h2>
   )
 }
 

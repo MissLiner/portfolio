@@ -14,7 +14,7 @@
   right: 10px;
   top: 10px;
 }
-.ProjectDetail.title {
+.ProjectTitle {
   margin-top: 20px;
   grid-area: title;
   width: fit-content;
