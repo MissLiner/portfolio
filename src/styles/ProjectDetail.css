@@ -31,3 +31,8 @@
   font-size: 1.3em;
   padding: 2px 4px 2px 4px;
 }
+.ProjectDetail-summary {
+  grid-area: text;
+  margin: 30px auto 30px auto;
+  width: 80%;
+}

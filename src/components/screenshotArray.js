@@ -52,8 +52,8 @@ export const projectArray = [
     addlThumbnails: [],
     focus: [],
     summary: "",
-    code: 'https://github.com/MissLiner/battleship.git',
-    live: 'https://missliner.github.io/battleship/',
+    code: 'https://github.com/MissLiner/battleship_game.git',
+    live: 'https://missliner.github.io/battleship_game/',
     active: true,
   },
   {
@@ -64,8 +64,8 @@ export const projectArray = [
     addlThumbnails: [],
     focus: [],
     summary: "",
-    code: 'https://github.com/MissLiner/calculator.git',
-    live: 'https://missliner.github.io/calculator/',
+    code: 'https://github.com/MissLiner/Calculator.git',
+    live: 'https://missliner.github.io/Calculator/',
     active: false,
   },
   {
