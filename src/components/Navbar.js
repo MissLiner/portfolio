@@ -19,7 +19,7 @@ function Navbar(props) {
     )
   }
   return(
-    <div className={"NavBar" + props.addClasses}>
+    <div className={"NavBar " + props.addClasses}>
       {renderNavbar()}
     </div>
   )

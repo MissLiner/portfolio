@@ -26,6 +26,8 @@
 }
 .side.NavBar-btn {
   border: none;
+  background-color: rgb(255, 251, 252);
+  color: rgb(32, 32, 32);
   font-size: 1.3em;
   margin-bottom: 15px;
   margin-left: 0;
