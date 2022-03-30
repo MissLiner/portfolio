@@ -60,24 +60,8 @@ q {
   margin-left: 20px;
   text-align: left;
 }
-.mainNav.container {
-  display: grid;
-  height: 40px;
-  grid-column: 1 / 2;
-  grid-row: 2;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 100px;
-  width: 66%;
-}
-.mainNav.btn {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 251, 252);
-  border: none;
-  font-size: 1.5em;
-}
-.activeBtn {
-  text-decoration:underline !important;
-}
+
+
 
 
 
