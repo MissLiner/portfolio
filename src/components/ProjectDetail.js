@@ -1,7 +1,9 @@
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ProjectTitle from './ProjectTitle';
 import SVGImg from './SVGImg';
+import { projectArray } from "./screenshotArray";
 import '../index.css';
+import ProjectDetailTags from './ProjectDetailTags';
 
 function ProjectDetail(props) {
   return(
@@ -11,6 +13,7 @@ function ProjectDetail(props) {
       <SVGImg 
         currentImage={props.images[props.currentIndex]} 
         compName="ProjectDetail" />
+      <ProjectDetailTags currentProject={projectArray[props.currentIndex]} />
     </div>
   )
 }
