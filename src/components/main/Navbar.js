@@ -3,15 +3,13 @@ import './Navbar.css';
 
 function Navbar(props) {
   const renderNavbar = () => {
-    let counter = 0;
     return(
-      props.btnList.map(btn => {
-        counter += 1
+      props.btnList.map((btn, i) => {
         return(
           <button className={"NavBar-btn " + props.addClasses}
                   onClick={props.clickFunc}
                   value={btn}
-                  key={props.navClass + counter}>
+                  key={props.navClass + "-" + i}>
                     {props.symbol + btn}
           </button>
         )

@@ -4,30 +4,33 @@ import { projectArray } from "../shared/screenshotArray";
 import '../../index.css';
 import './ProjectDetail.css';
 import ProjectTags from './ProjectTags';
+import ProjectUnits from './ProjectUnits';
 
 function ProjectDetail(props) {
+  const currentProject = projectArray[props.currentIndex];
   return(
     <div className="ProjectDetail">
       <ProjectTitle title={props.title} />
       <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
-      <ProjectTags currentProject={projectArray[props.currentIndex]} />
+      <ProjectTags currentProject={currentProject} />
       <div className="ProjectDetail-links-section">
         <a 
           className="ProjectDetail-link" 
-          href={projectArray[props.currentIndex].live}
+          href={currentProject.live}
           target="_blank"
           rel="noreferrer">
             :Live</a>
         <a 
           className="ProjectDetail-link" 
-          href={projectArray[props.currentIndex].code}
+          href={currentProject.code}
           target="_blank"
           rel="noreferrer">
             :Git</a>
       </div>
       <p 
         className="ProjectDetail-summary">
-          {projectArray[props.currentIndex].summary}</p>
+          {currentProject.summary}</p>
+      <ProjectUnits currentProject={currentProject} />
     </div>
   )
 }

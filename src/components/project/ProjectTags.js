@@ -4,9 +4,10 @@ import './ProjectTags.css';
 function ProjectTags(props) {
   const renderTags = () => {
     return(
-      props.currentProject.focus.map(item => {
+      props.currentProject.focus.map((item, i) => {
         return(
-          <li className="ProjectTags-tag">{item}</li>
+          <li className="ProjectTags-tag" key={"tag" + i}
+          >{item}</li>
         )
       })
     )
