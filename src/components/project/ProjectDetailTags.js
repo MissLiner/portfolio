@@ -1,5 +1,5 @@
-import '../index.css';
-import '../styles/ProjectDetailTags.css';
+import '../../index.css';
+import './ProjectDetailTags.css';
 
 function ProjectDetailTags(props) {
   const renderTags = () => {

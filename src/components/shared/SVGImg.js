@@ -1,5 +1,5 @@
-import "../styles/PicSlider.css";
-import '../index.css';
+import "./SVGImg.css";
+import '../../index.css';
 
 function SVGImg(props) {
   return(

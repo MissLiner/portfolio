@@ -2,8 +2,8 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ProjectTitle from '../shared/ProjectTitle';
 import SVGImg from '../shared/SVGImg';
 import { projectArray } from "../shared/screenshotArray";
-import '../index.css';
-import '../styles/ProjectDetail.css';
+import '../../index.css';
+import './ProjectDetail.css';
 import ProjectDetailTags from './ProjectDetailTags';
 
 function ProjectDetail(props) {

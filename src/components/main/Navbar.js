@@ -1,5 +1,5 @@
-import '../index.css';
-import '../styles/Navbar.css';
+import '../../index.css';
+import './Navbar.css';
 
 function Navbar(props) {
   const renderNavbar = () => {

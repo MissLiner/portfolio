@@ -1,13 +1,13 @@
 import Canvas from './Canvas';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
 import { removeAllActive, activateBtn } from '../shared/helperFuncs';
 import { btnLabels } from '../shared/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import IconButton from '@mui/material/IconButton';
 import { useState } from "react";
-import './index.css';
-import './styles/App.css';
+import '../../index.css';
+import './App.css';
 
 function App() {
   const [view, setView] = useState("home");

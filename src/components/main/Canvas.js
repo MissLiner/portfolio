@@ -1,7 +1,7 @@
 import Experience from './Experience';
 import { screenContent } from '../shared/text';
-import '../index.css';
-import '../styles/Canvas.css';
+import '../../index.css';
+import './Canvas.css';
 import { React, useEffect, useState } from 'react';
 import Portfolio from './Portfolio';
 import { activateBtn } from '../shared/helperFuncs';

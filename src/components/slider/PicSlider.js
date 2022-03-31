@@ -1,11 +1,11 @@
-import "../styles/PicSlider.css";
-import '../index.css';
+import "./PicSlider.css";
+import '../../index.css';
 import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";
-import SVGImg from "./SVGImg";
+import SVGImg from "../shared/SVGImg";
 import NavPics from "./NavPics";
-import ProjectTitle from "./ProjectTitle";
+import ProjectTitle from "../shared/ProjectTitle";
 
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);

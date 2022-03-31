@@ -1,5 +1,5 @@
-import '../index.css';
-import '../styles/ProjectTitle.css';
+import '../../index.css';
+import './ProjectTitle.css';
 
 function ProjectTitle(props) {
   return(

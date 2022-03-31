@@ -1,5 +1,5 @@
-import "../styles/PicSlider.css";
-import '../index.css';
+import "./PicSlider.css";
+import '../../index.css';
 
 function NavPics(props) {
   const renderNavPics = () => {
