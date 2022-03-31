@@ -17,6 +17,9 @@ import TNTictacImg from '../../assets/images/thumbnails/TN_tictactoe.svg';
 import FSLibraryImg from '../../assets/images/screenshots/FS_library.svg';
 import TNLibraryImg from '../../assets/images/thumbnails/TN_library.svg';
 
+import RestFooter from "../../assets/images/examples/rest_footer.svg";
+import RestMenu from "../../assets/images/examples/rest_menu.svg";
+
 
 export const screenshotArray = [
   [ FSRestImg, "restaurant site screenshot", TNRestImg, "Restaurant Homepage" ],
@@ -36,12 +39,17 @@ export const projectArray = [
     name: "Restaurant Homepage",
     image: [FSRestImg, "restaurant homepage screenshot"],
     thumbnail: [TNRestImg, "restaurant homepage thumbnail"],
-    addlImages: [],
-    addlThumbnails: [],
-    focus: ["Dom manipulation", "Dynamic rendering", "Webpack", "Illustrator"],
-    summary: "A colorful site, inspired by my daughter's love of wild animals! This project emplyed classes, modules and Webpack for the first time to dynamically render the DOM. I created all images and icons using Adobe Illustrator.",
     code: 'https://github.com/MissLiner/restaurant-page.git',
     live: 'https://missliner.github.io/restaurant-page/',
+    focus: ["Dom manipulation", "Dynamic rendering", "Webpack", "Illustrator"],
+    summary: "A colorful site, inspired by my daughter's love of wild animals! This project emplyed classes, modules and Webpack for the first time to dynamically render the DOM. I created all images and icons using Adobe Illustrator.",
+    units: [{ name: "Custom Graphics",
+              image: [RestFooter, "restaurant footer example"], 
+              text: "I created the jungle silhouettes using public domain photographs that I transformed into simplified svg vector graphics with Adobe Illustrator. I designed the color palette with Adobe Color, based on the stunning hues of the savannah, tweaked to appeal to a young child's eye." },
+            { name: "Synthesized Composition",
+              image: [RestMenu, "restaurant menu example"], 
+              text: "I drew the cloud in Illustrator to create a custom active button style, and faded the nav bar into the background sky to add some depth. I learned all about spans when I spent a day figuring out how to get these dot leaders to be even and neat."
+            }],
     active: false,
   },
   {

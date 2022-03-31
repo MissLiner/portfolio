@@ -1,9 +1,9 @@
-.ProjectDetailTags {
+.ProjectTags {
   grid-area: tags;
   padding: 0;
   width: 70%;
 }
-.ProjectDetailTags-list-item {
+.ProjectTags-list-item {
   display: inline-block;
   font-size: 1.2em;
   padding: 2px 6px 2px 6px;

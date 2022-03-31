@@ -1,20 +1,16 @@
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ProjectTitle from '../shared/ProjectTitle';
-import SVGImg from '../shared/SVGImg';
 import { projectArray } from "../shared/screenshotArray";
 import '../../index.css';
 import './ProjectDetail.css';
-import ProjectDetailTags from './ProjectDetailTags';
+import ProjectTags from './ProjectTags';
 
 function ProjectDetail(props) {
   return(
     <div className="ProjectDetail">
       <ProjectTitle title={props.title} />
       <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
-      <SVGImg 
-        currentImage={props.images[props.currentIndex]} 
-        compName="ProjectDetail" />
-      <ProjectDetailTags currentProject={projectArray[props.currentIndex]} />
+      <ProjectTags currentProject={projectArray[props.currentIndex]} />
       <div className="ProjectDetail-links-section">
         <a 
           className="ProjectDetail-link" 
