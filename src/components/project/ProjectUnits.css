@@ -3,10 +3,9 @@
   width: 90%;
 }
 .ProjectUnits-unit {
-  grid-template:
-  "image title" auto
-  "image text" min-content
-  /1fr 2fr;
+  display: grid;
+  grid-template:  "image title" auto
+                  "image text" min-content / 1fr 2fr;
 }
 .ProjectUnits-title {
   grid-area: title;
