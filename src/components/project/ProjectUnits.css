@@ -3,7 +3,7 @@
   width: 90%;
 }
 .ProjectUnits-unit {
-  grid-template-areas:
+  grid-template:
   "image title" auto
   "image text" min-content
   /1fr 2fr;
