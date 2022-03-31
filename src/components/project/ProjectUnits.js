@@ -1,4 +1,6 @@
 import SVGImg from "../shared/SVGImg";
+import "./ProjectUnits.css"
+import "../../index.css"
 
 function ProjectUnits(props) {
   const project = props.currentProject;
