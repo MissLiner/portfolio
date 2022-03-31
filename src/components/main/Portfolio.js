@@ -1,8 +1,8 @@
 import '../index.css';
 import PicSlider from './PicSlider';
 import { useEffect, useState } from 'react';
-import ProjectDetail from './ProjectDetail';
-import { screenshotArray } from './screenshotArray';
+import ProjectDetail from './project/ProjectDetail';
+import { screenshotArray } from './shared/screenshotArray';
 
 function Portfolio(props) {
   const [portView, setPortView] = useState("main");

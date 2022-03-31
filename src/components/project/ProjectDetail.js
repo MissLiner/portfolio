@@ -1,7 +1,7 @@
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import ProjectTitle from './ProjectTitle';
-import SVGImg from './SVGImg';
-import { projectArray } from "./screenshotArray";
+import ProjectTitle from '../shared/ProjectTitle';
+import SVGImg from '../shared/SVGImg';
+import { projectArray } from "../shared/screenshotArray";
 import '../index.css';
 import '../styles/ProjectDetail.css';
 import ProjectDetailTags from './ProjectDetailTags';

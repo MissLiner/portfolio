@@ -1,7 +1,7 @@
-import Canvas from './components/Canvas';
+import Canvas from './Canvas';
 import Navbar from './components/Navbar';
-import { removeAllActive, activateBtn } from './components/helperFuncs';
-import { btnLabels } from './components/text';
+import { removeAllActive, activateBtn } from '../shared/helperFuncs';
+import { btnLabels } from '../shared/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import IconButton from '@mui/material/IconButton';

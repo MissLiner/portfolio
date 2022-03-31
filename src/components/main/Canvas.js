@@ -1,11 +1,11 @@
 import Experience from './Experience';
-import { screenContent } from './text';
+import { screenContent } from '../shared/text';
 import '../index.css';
 import '../styles/Canvas.css';
 import { React, useEffect, useState } from 'react';
 import Portfolio from './Portfolio';
-import { activateBtn } from './helperFuncs';
-import { btnLabels } from '../components/text';
+import { activateBtn } from '../shared/helperFuncs';
+import { btnLabels } from '../shared/text';
 import Navbar from './Navbar';
 
 function Canvas(props) {
