@@ -6,7 +6,7 @@ function ProjectTags(props) {
     return(
       props.currentProject.focus.map(item => {
         return(
-          <li className="ProjectTags-list-item">{item}</li>
+          <li className="ProjectTags-tag">{item}</li>
         )
       })
     )
