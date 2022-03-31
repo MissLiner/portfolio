@@ -1,0 +1,18 @@
+.ProjectUnits {
+  width: 90%;
+}
+.ProjectUnits-unit {
+  grid-template-areas:
+  "image title" auto
+  "image text" min-content
+  /1fr 2fr;
+}
+.ProjectUnits-title {
+  grid-area: title;
+}
+.ProjectUnits .SVGImg {
+  grid-area: image;
+}
+.ProjectUnits-text {
+  grid-area: text;
+}

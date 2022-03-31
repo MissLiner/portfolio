@@ -8,7 +8,7 @@ function ProjectUnits(props) {
         <div className="ProjectUnits-unit">
           <h3 className="ProjectUnits-title">{unit.name}</h3>
           <SVGImg currentImage={unit.image} />
-          <p>{unit.text}</p>
+          <p className="ProjectUnits-text">{unit.text}</p>
         </div>
       )
     })
