@@ -2,10 +2,15 @@
   height: fit-content;
   width: 90%;
 }
-.ProjectUnits-unit {
+.ProjectUnits-leftunit {
   display: grid;
   grid-template:  "image title" auto
                   "image text" min-content / 1fr 2fr;
+}
+.ProjectUnits-rightunit {
+  display: grid;
+  grid-template:  "title image" auto
+                  "text image" min-content / 1fr 2fr;
 }
 .ProjectUnits-title {
   grid-area: title;
