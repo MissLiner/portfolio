@@ -6,9 +6,6 @@
 }
 
 .main.NavBar {
-  border-bottom: solid;
-  border-color:darkolivegreen;
-  border-width: 5px;
   height: fit-content;
   grid-column: 1 / 2;
   grid-row: 2;

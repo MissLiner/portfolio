@@ -1,9 +1,9 @@
 .ProjectDetail {
   display: grid;
   grid-template:
-    "title" 1fr
-    "links" .5fr
-    "tags"  .5fr
+    "title" min-content
+    "links" min-content
+    "tags"  min-content
     "summary" min-content
     "units"  minmax(400px, min-content)
     / 100%;
@@ -30,6 +30,7 @@
   width: 90%;
 }
 .ProjectDetail-links-section {
+  margin-bottom: 10px;
   grid-area: links;
 }
 .ProjectDetail-link {

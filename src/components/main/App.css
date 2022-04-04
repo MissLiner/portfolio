@@ -1,5 +1,8 @@
 .App-header {
   background-color: rgb(32, 32, 32);
+  border-bottom: solid;
+  border-color:darkolivegreen;
+  border-width: 5px;
   color: rgb(255, 251, 252);
   display: grid;
   grid-template-columns: 12fr 1fr 1fr 1fr;
