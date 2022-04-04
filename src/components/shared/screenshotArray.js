@@ -20,6 +20,8 @@ import TNLibraryImg from '../../assets/images/thumbnails/TN_library.svg';
 import RestFooter from "../../assets/images/examples/rest_footer.svg";
 import RestMenu from "../../assets/images/examples/rest_menu.svg";
 
+import BattleSetup from "../../assets/images/examples/battle_setup.svg";
+import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
 export const screenshotArray = [
   [ FSRestImg, "restaurant site screenshot", TNRestImg, "Restaurant Homepage" ],
@@ -56,16 +58,16 @@ export const projectArray = [
     name: "Battleship Game",
     image: [FSBattleImg, "battleship game screenshot"],
     thumbnail: [TNBattleImg, "battleship game thumbnail"],
-    focus: [],
-    summary: "",
+    focus: ["Javascript", "Jest", "TDD", "Unit Testing", "Factory Functions"],
+    summary: "Single-player Battleship game against a very basic AI named 'Hal'. If playing Hal still isn't easy enough, you have the option to unmask Hal's ships, to quickly try out the gameplay.",
     code: 'https://github.com/MissLiner/battleship_game.git',
     live: 'https://missliner.github.io/battleship_game/',
-    units: [{ name: "highlight",
-              image: ["link", "restaurant footer example"], 
-              text: "description" },
-            { name: "highlight",
-              image: ["link", "restaurant menu example"], 
-              text: "description"
+    units: [{ name: "Intuitive Interaction",
+              image: [BattleSetup, "battleship setup armada menu example"], 
+              text: "Players are given a choice to have the computer assign ships randomly, or to place their own ships by clicking on a starting space and choosing the direction from a drop-down. Error handling ensures that ships will neither overlap nor overhang the board." },
+            { name: "Robust Factory Functions",
+              image: [BattleBoard, "battleship gameplay example"], 
+              text: "Gameboard and Player factory functions keep track of hits and misses. The Controller provides encouraging game messages, alerts when ships sink, and even generates unique messages depending on whether you won or lost, and how long it took."
             }],
     active: true,
   },
