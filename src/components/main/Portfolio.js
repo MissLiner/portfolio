@@ -1,4 +1,5 @@
 import '../../index.css';
+import './Portfolio.css';
 import PicSlider from '../slider/PicSlider';
 import { useEffect, useState } from 'react';
 import ProjectDetail from '../project/ProjectDetail';
@@ -44,7 +45,7 @@ function Portfolio(props) {
     }
   }
   return(
-    <div className="Portfolio container">
+    <div className="Portfolio">
       {renderPortfolio()}
     </div>
   )

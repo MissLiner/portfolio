@@ -19,3 +19,7 @@
   margin-left: 20px;
   text-align: left;
 }
+
+.homeBtn {
+  grid-column: 3;
+}

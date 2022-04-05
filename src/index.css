@@ -1,15 +1,16 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
-* {
+#root {
+  height: 100%;
+  width: 100%;
+}
 
+* {
   font-family: 'Montserrat', sans-serif;
   margin: auto;
   text-align: center;
 }
 body {
   background-color: rgb(32, 32, 32);
-
 }
-
 h1 {
   font-size: 2.5em;
   font-weight:300;
@@ -34,24 +35,6 @@ q {
   font-size: 1.7em;
 }
 
-.homeBtn {
-  grid-column: 3;
-}
-.thumbnail {
-  height: 80px;
-  width: 80px;
-}
-.image-gallery-thumbnail-image {
-  margin-top: 0;
-}
-
-.Portfolio.container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
+.colors1 {
+  background-color: rgb(32, 32, 32);
 }
