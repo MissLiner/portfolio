@@ -3,7 +3,7 @@ import './Canvas.css';
 import { React } from 'react';
 import Home from '../canvas_views/Home';
 import About from '../canvas_views/About';
-import Experience from '../canvas_views/Experience';
+import Skills from '../canvas_views/Skills';
 import Portfolio from '../canvas_views/Portfolio';
 
 function Canvas(props) {
@@ -20,7 +20,7 @@ function Canvas(props) {
     }
     else if(props.mainView === "experience") {
       return(
-        <Experience />
+        <Skills />
       )
     }
     else if(props.mainView === "portfolio") {
