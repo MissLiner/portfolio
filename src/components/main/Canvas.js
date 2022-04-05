@@ -1,14 +1,12 @@
-import Experience from './Experience';
-import { screenContent } from '../shared/text';
 import '../../index.css';
 import './Canvas.css';
 import { React } from 'react';
 import Home from '../canvas_views/Home'
-import Portfolio from './Portfolio';
+import Experience from '../canvas_views/Experience';
+import Portfolio from '../canvas_views/Portfolio';
+import { screenContent } from '../shared/text';
 
 function Canvas(props) {
-  // const [canvasView, setCanvasView] = useState("home");
-
   const renderCanvas = () => {
     if(props.mainView === "home") {
       return(
