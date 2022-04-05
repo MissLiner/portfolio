@@ -1,21 +1,8 @@
-export const btnLabels = {
-  main:          [  "about",
-                    "skills",
-                    "portfolio"],
-
-  about:         [  "overview",
-                    "career",
-                    "webdev",
-                    "personal"],
-
-  experience:    [  "webdev",
-                    "sales" ],
-
-  portfolio:     [  "design",
-                    "testing",
-                    "react",
-                    "modules"]
-}
+export const navLabels = [ "about",
+                           "skills",
+                           "portfolio",
+                          ]
+                          
 export const screenContent = {
   home:  {quote: "Make it simple, but significant", 
           author: "Don Draper", 

@@ -1,6 +1,6 @@
 import Canvas from './Canvas';
 import Navbar from './Navbar';
-import { btnLabels } from '../shared/text';
+import { navLabels } from '../shared/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import IconButton from '@mui/material/IconButton';
@@ -34,7 +34,7 @@ function App() {
 
         <Navbar clickFunc={handleClickNav} 
                 addClasses="colors1" 
-                btnList={btnLabels.main}
+                btnList={navLabels}
                 clearView="home"
                 view={view}
                 symbol=":" />
