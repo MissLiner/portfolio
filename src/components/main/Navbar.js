@@ -1,9 +1,12 @@
+import { useEffect } from 'react';
 import '../../index.css';
 import './Navbar.css';
 
 function Navbar(props) {
-  function removeActiveBtn(btnGroup) {
-    btnGroup.forEach(btn => {
+  
+  function removeActiveBtn() {
+    const navBtns = document.querySelectorAll(".Navbar-btn");
+    navBtns.forEach(btn => {
       if(btn.classList.contains("activeBtn")) {
         btn.classList.remove("activeBtn");
       }
@@ -15,10 +18,14 @@ function Navbar(props) {
       removeActiveBtn(navBtns);
     e.target.classList.add("activeBtn");
   }
+  useEffect(() => {
+    if(props.view === "home") {
+      removeActiveBtn();
+    }
+  })
   const handleClick = (e) => {
     props.clickFunc(e);
     activateBtn(e);
-
   }
   const renderNavbar = () => {
     return(
