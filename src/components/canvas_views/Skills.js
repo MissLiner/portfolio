@@ -5,14 +5,14 @@ import { skillsArr } from "../shared/skillsArr";
 function Skills() {
   const renderSkills = () => {
     return(
-      skillsArr[0].skills.map(skill => {
+      skillsArr[0].skills.map((skill, i) => {
         return(
-          <div className="Skills-skill-div">
-            <img  className="Skills-skill-icon" 
+          <div className={"Skills-div Skills-div-" + i}>
+            <img  className="Skills-icon" 
                   src={skill.image} 
                   alt={skill.name + " icon"}>
             </img>
-            <div className="Skills-skill-name">
+            <div className="Skills-name">
               {skill.name}
             </div>
           </div>
@@ -24,7 +24,9 @@ function Skills() {
     <div className="Skills colors2">
       <div className="Skills-table">
         <h3 className="Skills-category">{skillsArr[0].category}</h3>
+        <div className="Skills-list">
         {renderSkills()}
+        </div>
       </div>
     </div>
   )

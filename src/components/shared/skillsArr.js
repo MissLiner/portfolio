@@ -23,9 +23,9 @@ export const skillsArr = [
                 name: "Illustrator",
                 level: 1,
               },
-              { skillImg: reactIcon,
-                skillName: "ReactJS",
-                startDate: 2,
+              { image: reactIcon,
+                name: "ReactJS",
+                level: 2,
               },
     ]
               
