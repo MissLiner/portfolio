@@ -3,6 +3,7 @@ import { screenContent } from '../shared/text';
 import '../../index.css';
 import './Canvas.css';
 import { React } from 'react';
+import Home from '../canvas_views/Home'
 import Portfolio from './Portfolio';
 
 function Canvas(props) {
@@ -11,12 +12,7 @@ function Canvas(props) {
   const renderCanvas = () => {
     if(props.mainView === "home") {
       return(
-        <div className="Canvas Home content">
-          <q className="Canvas">{screenContent.home.quote}</q>
-          <h3 className="Canvas">{screenContent.home.author + ", "}
-            <i className="Canvas">{screenContent.home.source}</i>
-          </h3>
-      </div>
+        <Home />
       )
     } 
     else if(props.mainView === "about") {
@@ -38,7 +34,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className={"Canvas content-container colors2"}>
+    <div className={"Canvas colors2"}>
       {renderCanvas()}
     </div>  
   )

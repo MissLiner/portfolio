@@ -1,21 +1,16 @@
-.Canvas.screen {
+.Canvas {
+  align-items: center;
   display: grid;
   margin-top: 105px;
+  min-height: 460px;
   padding: 2% 2% 2% 2%;
   width: 80%;
 }
-.Canvas.screen.menu {
-  grid-template-columns: 1fr 5fr;
-}
-.Canvas.About {
-  margin-top: 30px;
-}
-.Canvas.Home {
-  margin-top: 75px;
-}
-.Canvas.content-container {
+
+
+/* .Canvas.content-container {
   display: grid;
   align-items: center;
   min-height: 460px;
   width: 100%;
-}
+} */
