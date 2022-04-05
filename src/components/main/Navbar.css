@@ -1,4 +1,4 @@
-.NavBar {
+.Navbar {
   display: grid;
   height: fit-content;
   grid-column: 1 / 2;
@@ -7,7 +7,7 @@
   margin-left: 100px;
   width: 66%;
 }
-.NavBar-btn {
+.Navbar-btn {
   border: none;
   border: none;
   font-size: 1.3em;
