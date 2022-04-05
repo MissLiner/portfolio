@@ -7,7 +7,7 @@ function Skills() {
     return(
       skillsArr[0].skills.map((skill, i) => {
         return(
-          <div className={"Skills-div Skills-div-" + i}>
+          <div className={"Skills-div Skills-div-" + i} key={"Skills-div" + i}>
             <img  className="Skills-icon" 
                   src={skill.image} 
                   alt={skill.name + " icon"}>

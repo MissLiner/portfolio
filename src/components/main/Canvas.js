@@ -18,7 +18,7 @@ function Canvas(props) {
         <About />
       )
     }
-    else if(props.mainView === "experience") {
+    else if(props.mainView === "skills") {
       return(
         <Skills />
       )

@@ -10,7 +10,6 @@ import './App.css';
 
 function App() {
   const [view, setView] = useState("home");
-  const mainBtns = btnLabels.main;
 
   const handleClickHome = () => {
     setView("home");
@@ -35,7 +34,7 @@ function App() {
 
         <Navbar clickFunc={handleClickNav} 
                 addClasses="colors1" 
-                btnList={mainBtns}
+                btnList={btnLabels.main}
                 clearView="home"
                 view={view}
                 symbol=":" />
