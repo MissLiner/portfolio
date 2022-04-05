@@ -2,9 +2,20 @@ import '../../index.css';
 import './About.css';
 import { screenContent } from "../shared/text"
 
-function About(props) {
-  <div className="About">
-    <p className="About-text">{screenContent.about[props.canvasView]}</p>
-  </div>
+function About() {
+  const renderAbout = () => {
+    return(
+      screenContent.about.map(para => {
+        return(
+          <p className="About-text">{para}</p>
+        )
+      })
+    )
+  }
+  return(
+    <div className="About">
+      {renderAbout()}
+    </div>
+  )
 }
 export default About;
