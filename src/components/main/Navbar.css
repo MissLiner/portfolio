@@ -1,11 +1,5 @@
 .NavBar {
   display: grid;
-}
-.NavBar-btn {
-  border: none;
-}
-
-.main.NavBar {
   height: fit-content;
   grid-column: 1 / 2;
   grid-row: 2;
@@ -13,15 +7,14 @@
   margin-left: 100px;
   width: 66%;
 }
-.main.NavBar-btn {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 251, 252);
+.NavBar-btn {
+  border: none;
   border: none;
   font-size: 1.3em;
   padding-bottom: 10px;
 }
 
-.side.NavBar {
+/* .side.NavBar {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 70px;
 }
@@ -34,7 +27,7 @@
   margin-left: 0;
   padding: 0 0 0 0;
   text-align: left;
-}
+} */
 
 .activeBtn {
   text-decoration:underline !important;

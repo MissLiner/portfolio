@@ -1,6 +1,5 @@
 import Canvas from './Canvas';
 import Navbar from './Navbar';
-import { removeAllActive, activateBtn } from '../shared/helperFuncs';
 import { btnLabels } from '../shared/text';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
@@ -15,15 +14,12 @@ function App() {
 
   const handleClickHome = () => {
     setView("home");
-    removeAllActive();
   }
   const handleClickEmail = () => {
     alert("Email");
   }
   const handleClickNav = (e) => {
     setView(e.target.value);
-    removeAllActive();
-    activateBtn(e);
   }
 
   return (
@@ -38,7 +34,7 @@ function App() {
         </IconButton>
 
         <Navbar clickFunc={handleClickNav} 
-                addClasses="main" 
+                addClasses="colors1" 
                 btnList={mainBtns}
                 symbol=":" />
       </div>

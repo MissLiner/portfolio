@@ -5,7 +5,6 @@ import Home from '../canvas_views/Home';
 import About from '../canvas_views/About';
 import Experience from '../canvas_views/Experience';
 import Portfolio from '../canvas_views/Portfolio';
-import { screenContent } from '../shared/text';
 
 function Canvas(props) {
   const renderCanvas = () => {
