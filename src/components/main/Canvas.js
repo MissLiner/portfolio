@@ -2,39 +2,11 @@ import Experience from './Experience';
 import { screenContent } from '../shared/text';
 import '../../index.css';
 import './Canvas.css';
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import Portfolio from './Portfolio';
-import { activateBtn } from '../shared/helperFuncs';
-import { btnLabels } from '../shared/text';
-import Navbar from './Navbar';
 
 function Canvas(props) {
   // const [canvasView, setCanvasView] = useState("home");
-  const [canvasBtns, setCanvasBtns] = useState("");
-  const [screenClass, setScreenClass] = useState("Canvas screen");
-  // const canvasNavBtns = document.getElementsByClassName("")
-
-  const handleClickCanvas = (e) => {
-    // setCanvasView(e.target.value);
-    activateBtn(e);
-  }
-
-  useEffect(() => {
-    if(props.mainView === "home") {
-      // setCanvasView("home");
-      setScreenClass("Canvas screen");
-    }
-  }, [props.mainView])
-
-  useEffect(() => {
-    if(props.mainView !== "home" && props.mainView !== "portfolio") {
-      setCanvasBtns(btnLabels[props.mainView]);
-      setScreenClass("Canvas screen menu");
-    } else {
-      setCanvasBtns("");
-      setScreenClass("Canvas screen");
-    }
-  }, [props.mainView]);
 
   const renderCanvas = () => {
     if(props.mainView === "home") {
@@ -65,27 +37,10 @@ function Canvas(props) {
       )
     }
   }
-  const renderCanvasNav = () => {
-    if(canvasBtns) {
-      return(
-        <Navbar 
-          clickFunc={handleClickCanvas}
-          addClasses="side"
-          btnList={canvasBtns}
-          symbol="." />
-      )
-    } else {
-      return null;
-    }
-  }
   return(
-    <div className={screenClass}>
-          <div className={"Canvas content-container colors2"}>
+    <div className={"Canvas content-container colors2"}>
       {renderCanvas()}
-      {renderCanvasNav()}
     </div>  
-    </div>
-
   )
 }
 export default Canvas;
