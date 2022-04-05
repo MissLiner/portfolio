@@ -80,7 +80,7 @@ function Canvas(props) {
   }
   return(
     <div className={screenClass}>
-          <div className={"Canvas content-container"}>
+          <div className={"Canvas content-container colors2"}>
       {renderCanvas()}
       {renderCanvasNav()}
     </div>  
