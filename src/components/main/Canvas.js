@@ -1,7 +1,8 @@
 import '../../index.css';
 import './Canvas.css';
 import { React } from 'react';
-import Home from '../canvas_views/Home'
+import Home from '../canvas_views/Home';
+import About from '../canvas_views/About';
 import Experience from '../canvas_views/Experience';
 import Portfolio from '../canvas_views/Portfolio';
 import { screenContent } from '../shared/text';
@@ -15,9 +16,7 @@ function Canvas(props) {
     } 
     else if(props.mainView === "about") {
       return(
-        <div className="Canvas About content">
-          <p className="Canvas">{screenContent.about[props.canvasView]}</p>
-          </div>
+        <About />
       )
     }
     else if(props.mainView === "experience") {
