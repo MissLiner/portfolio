@@ -1,11 +1,11 @@
 import '../../index.css';
 import './Portfolio.css';
-import PicSlider from '../slider/PicSlider';
 import { useEffect, useState } from 'react';
+import PicSlider from '../slider/PicSlider';
 import ProjectDetail from '../project/ProjectDetail';
 import { screenshotArray } from '../shared/screenshotArray';
 
-function Portfolio(props) {
+function Portfolio() {
   const [portView, setPortView] = useState("main");
   const [title, setTitle] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ function Portfolio(props) {
     }
   }
   return(
-    <div className="Portfolio">
+    <div className="Portfolio colors2">
       {renderPortfolio()}
     </div>
   )
