@@ -19,7 +19,7 @@ function Navbar(props) {
     e.target.classList.add("activeBtn");
   }
   useEffect(() => {
-    if(props.view === "home") {
+    if(props.view === props.clearView) {
       removeActiveBtn();
     }
   })

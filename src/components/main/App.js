@@ -36,6 +36,7 @@ function App() {
         <Navbar clickFunc={handleClickNav} 
                 addClasses="colors1" 
                 btnList={mainBtns}
+                clearView="home"
                 view={view}
                 symbol=":" />
       </div>
