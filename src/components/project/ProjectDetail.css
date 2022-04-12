@@ -18,6 +18,7 @@
   top: 10px;
 }
 .ProjectDetail .ProjectTitle {
+  font-weight: bold;
   grid-area: title;
 }
 .ProjectDetail .SVGImg {
@@ -40,5 +41,6 @@
 .ProjectDetail-summary {
   grid-area: summary;
   margin: 30px auto 30px auto;
+  text-align: left;
   width: 80%;
 }

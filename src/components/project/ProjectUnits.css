@@ -1,6 +1,6 @@
 .ProjectUnits {
   height: fit-content;
-  width: 90%;
+  width: 70%;
 }
 .ProjectUnits-unit {
   display: grid;
@@ -15,8 +15,12 @@
                   "text image" 1fr / 3fr 1fr;
 }
 .ProjectUnits-title {
+  font-weight: bold;
   grid-area: title;
   margin-top: 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: 80%;
 }
 .ProjectUnits .SVGImg {
   border: solid;
@@ -27,14 +31,15 @@
 .ProjectUnits-text {
   grid-area: text;
   margin-top: 1em;
+  text-align: justify;
+  width: 80%;
 }
-.ProjectUnits-text.left {
+/* .ProjectUnits-text.left {
   text-align: left;
 }
 .ProjectUnits-text.right {
   text-align: right;
-}
+} */
 .ProjectUnits .SVGImg-image {
-  /* height: 100%; */
   width: 100%;
 }
