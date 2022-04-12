@@ -18,7 +18,6 @@
   top: 10px;
 }
 .ProjectDetail .ProjectTitle {
-  font-weight: bold;
   grid-area: title;
 }
 .ProjectDetail .SVGImg {

@@ -80,7 +80,7 @@ export const projectArray = [
     units: [{ name: "Hooks",
     image: [MemoryScore, "score board example"], 
             text: "Using only functional components, I used useEffect to both update the current score on each guess, and update the best score when the current score is higher." },
-          { name: "Repurposed CSS",
+          { name: "Creative CSS",
             image: [TNMemoryWelcomeImg, "sun shaped welcome menu example"], 
             text: "I used a css dotted outline to create the rays of the sun for the Welcome Menu. While not a perfect solution, it was fun to use a native css property in an unexpected way."
             }],
