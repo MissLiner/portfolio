@@ -27,17 +27,15 @@ import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
 export const screenshotArray = [
   [ FSResumeImg, "resume maker site screenshot", 
-    TNResumeImg, "Resume Maker"]
-  [ FSRestImg, "restaurant site screenshot", 
-    TNRestImg, "Restaurant Homepage" ],
-  [ FSBattleImg, "battleship site screenshot", 
-    TNBattleImg, "Battleship Game" ],
-  [ FSCalcImg, "calculator site screenshot", 
-    TNCalcImg, "Calculator"],
+    TNResumeImg, "Resume Maker"],
   [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot",
     TNMemoryWelcomeImg, "Memory Card"],
   [ FSMemoryGameImg, "memorycard game screen site screenshot", 
     TNMemoryGameImg, "Memory Card"],
+  [ FSBattleImg, "battleship site screenshot", 
+    TNBattleImg, "Battleship Game" ],
+  [ FSRestImg, "restaurant site screenshot", 
+    TNRestImg, "Restaurant Homepage" ],
   [ FSCando1Img, "can do list site screenshot", 
     TNCando1Img, "Can-Do List"],
   [ FSCando2Img, "can do list add task site screenshot", 
@@ -46,6 +44,8 @@ export const screenshotArray = [
     TNTictacImg, "Tic-Tac-Toe"],
   [ FSLibraryImg, "libary site screenshot", 
     TNLibraryImg, "Library App"],
+  [ FSCalcImg, "calculator site screenshot", 
+    TNCalcImg, "Calculator"],
 ]
 
 
@@ -65,6 +65,23 @@ export const projectArray = [
               image: ["", "design element example"], 
               text: "I customized a glass effect that I found here [add link] to give the buttons depth and a more enjoyable user experience. After searching for a vector to use as the divider on each component, I decided I preferred to make my own, which I did using Illustrator. For customized icons and dividers, I often find that making my own is faster and more satisfying than repurposing someone else's work."
               }],
+    active: true,
+  },
+  {
+    name: "Memory Card",
+    image: [FSMemoryGameImg, "memory card game screenshot"],
+    thumbnail: [TNMemoryGameImg, "memory card game thumbnail"],
+    focus: [ "ReactJS", "Lifecycle Methods", "Hooks", "CSS"],
+    summary: "This simple memory game was created using national flags that feature a sun element found on [link here]. I pushed myself to make the design, code and user experience as simple and elegant as possible.",
+    code: 'https://github.com/MissLiner/memory-card.git',
+    live: 'https://missliner.github.io/memory-card/',
+    units: [{ name: "Hooks",
+    image: ["", "score board example"], 
+            text: "Using only functional components, I used useEffect to both update the current score on each guess, and update the best score when the current score is higher." },
+          { name: "Repurposed CSS",
+            image: [TNMemoryWelcomeImg, "sun shaped welcome menu example"], 
+            text: "I used a css dotted outline to create the rays of the sun for the Welcome Menu. While not a perfect solution, it was fun to use a native css property in an unexpected way."
+            }],
     active: true,
   },
   {
@@ -118,23 +135,7 @@ export const projectArray = [
             }],
     active: false,
   },
-  {
-    name: "Memory Card",
-    image: [FSMemoryGameImg, "memory card game screenshot"],
-    thumbnail: [TNMemoryGameImg, "memory card game thumbnail"],
-    focus: [],
-    summary: "",
-    code: 'https://github.com/MissLiner/memory-card.git',
-    live: 'https://missliner.github.io/memory-card/',
-    units: [{ name: "Custom Graphics",
-    image: [RestFooter, "restaurant footer example"], 
-            text: "I created the jungle silhouettes using public domain photographs that I transformed into simplified svg vector graphics with Adobe Illustrator. I designed the color palette with Adobe Color, based on the stunning hues of the savannah, tweaked to appeal to a young child's eye." },
-          { name: "Synthesized Composition",
-            image: [RestMenu, "restaurant menu example"], 
-            text: "I drew the cloud in Illustrator to create a custom active button style, and faded the nav bar into the background sky to add some depth. I learned all about spans when I spent a day figuring out how to get these dot leaders to be even and neat."
-            }],
-    active: true,
-  },
+
   {
     name: "Tic-Tac-Toe",
     image: [FSTictacImg, "tic-tac-toe site screenshot"],
