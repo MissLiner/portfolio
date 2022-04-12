@@ -9,7 +9,7 @@ function ProjectUnits(props) {
       <div className="ProjectUnits-unit left" key={"unit-" + keyNum}>
       <h3 className="ProjectUnits-title">{obj.name}</h3>
       <SVGImg currentImage={obj.image} />
-      <p className="ProjectUnits-text">{obj.text}</p>
+      <p className="ProjectUnits-text left">{obj.text}</p>
     </div>
     )
   }
@@ -18,7 +18,7 @@ function ProjectUnits(props) {
       <div className="ProjectUnits-unit right" key={"unit-" + keyNum}>
       <h3 className="ProjectUnits-title">{obj.name}</h3>
       <SVGImg currentImage={obj.image} />
-      <p className="ProjectUnits-text">{obj.text}</p>
+      <p className="ProjectUnits-text right">{obj.text}</p>
     </div>
     )
   }

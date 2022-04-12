@@ -7,15 +7,16 @@
   margin: 0px 0px 30px 0px;
 }
 .ProjectUnits-unit.left {
-  grid-template:  "image title" auto
-                  "image text" min-content / 1fr 3fr;
+  grid-template:  "image title" min-content
+                  "image text" 1fr / 1fr 3fr;
 }
 .ProjectUnits-unit.right {
-  grid-template:  "title image" auto
-                  "text image" min-content / 3fr 1fr;
+  grid-template:  "title image" min-content
+                  "text image" 1fr / 3fr 1fr;
 }
 .ProjectUnits-title {
   grid-area: title;
+  margin-top: 0;
 }
 .ProjectUnits .SVGImg {
   grid-area: image;
@@ -23,4 +24,11 @@
 }
 .ProjectUnits-text {
   grid-area: text;
+  margin-top: 1em;
+}
+.ProjectUnits-text.left {
+  text-align: left;
+}
+.ProjectUnits-text.right {
+  text-align: right;
 }
