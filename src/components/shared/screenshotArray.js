@@ -25,6 +25,8 @@ import RestMenu from "../../assets/images/examples/rest_menu.svg";
 import BattleSetup from "../../assets/images/examples/battle_setup.svg";
 import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
+import MemoryScore from "../../assets/images/examples/memory_score.svg";
+
 export const screenshotArray = [
   [ FSResumeImg, "resume maker site screenshot", 
     TNResumeImg, "Resume Maker"],
@@ -76,7 +78,7 @@ export const projectArray = [
     code: 'https://github.com/MissLiner/memory-card.git',
     live: 'https://missliner.github.io/memory-card/',
     units: [{ name: "Hooks",
-    image: ["", "score board example"], 
+    image: [MemoryScore, "score board example"], 
             text: "Using only functional components, I used useEffect to both update the current score on each guess, and update the best score when the current score is higher." },
           { name: "Repurposed CSS",
             image: [TNMemoryWelcomeImg, "sun shaped welcome menu example"], 
