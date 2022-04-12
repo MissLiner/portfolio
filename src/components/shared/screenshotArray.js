@@ -16,6 +16,8 @@ import FSTictacImg from '../../assets/images/screenshots/FS_tictactoe.svg';
 import TNTictacImg from '../../assets/images/thumbnails/TN_tictactoe.svg';
 import FSLibraryImg from '../../assets/images/screenshots/FS_library.svg';
 import TNLibraryImg from '../../assets/images/thumbnails/TN_library.svg';
+import FSResumeImg from '../../assets/images/screenshots/FS_resume.svg';
+import TNResumeImg from '../../assets/images/thumbnails/TN_resume.svg';
 
 import RestFooter from "../../assets/images/examples/rest_footer.svg";
 import RestMenu from "../../assets/images/examples/rest_menu.svg";
@@ -24,19 +26,47 @@ import BattleSetup from "../../assets/images/examples/battle_setup.svg";
 import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
 export const screenshotArray = [
-  [ FSRestImg, "restaurant site screenshot", TNRestImg, "Restaurant Homepage" ],
-  [ FSBattleImg, "battleship site screenshot", TNBattleImg, "Battleship Game" ],
-  [ FSCalcImg, "calculator site screenshot", TNCalcImg, "Calculator"],
-  [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot", TNMemoryWelcomeImg, "Memory Card"],
-  [ FSMemoryGameImg, "memorycard game screen site screenshot", TNMemoryGameImg, "Memory Card"],
-  [ FSCando1Img, "can do list site screenshot", TNCando1Img, "Can-Do List"],
-  [ FSCando2Img, "can do list add task site screenshot", TNCando2Img, "Can-Do List"],
-  [ FSTictacImg, "tic-tac-toe site screenshot", TNTictacImg, "Tic-Tac-Toe"],
-  [ FSLibraryImg, "libary site screenshot", TNLibraryImg, "Library App"],
+  [ FSResumeImg, "resume maker site screenshot", 
+    TNResumeImg, "Resume Maker"]
+  [ FSRestImg, "restaurant site screenshot", 
+    TNRestImg, "Restaurant Homepage" ],
+  [ FSBattleImg, "battleship site screenshot", 
+    TNBattleImg, "Battleship Game" ],
+  [ FSCalcImg, "calculator site screenshot", 
+    TNCalcImg, "Calculator"],
+  [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot",
+    TNMemoryWelcomeImg, "Memory Card"],
+  [ FSMemoryGameImg, "memorycard game screen site screenshot", 
+    TNMemoryGameImg, "Memory Card"],
+  [ FSCando1Img, "can do list site screenshot", 
+    TNCando1Img, "Can-Do List"],
+  [ FSCando2Img, "can do list add task site screenshot", 
+    TNCando2Img, "Can-Do List"],
+  [ FSTictacImg, "tic-tac-toe site screenshot", 
+    TNTictacImg, "Tic-Tac-Toe"],
+  [ FSLibraryImg, "libary site screenshot", 
+    TNLibraryImg, "Library App"],
 ]
 
 
 export const projectArray = [
+  {
+    name: "ResumeMaker",
+    image: [FSResumeImg, "resume maker screenshot"],
+    thumbnail: [TNResumeImg, "resume maker thumbnail"],
+    code: 'https://github.com/MissLiner/cv-project-func.git',
+    live: 'https://missliner.github.io/cv-project-func/',
+    focus: ["Functional Components", "Conditional rendering", "ReactJS", "Forms"],
+    summary: "This simple resume generator was my first major ReactJS project. I used fun colors and fonts, to make entering your info a little more cheerful, but it publishes a clean, professional resume.",
+    units: [{ name: "Conditional Rendering",
+              image: ["", "conditional rendering example"], 
+              text: "Each component is designed to be very flexible for data entry, adding, editing and publishing. The user can easily switch between different tasks, and hide or show each section to help focus." },
+            { name: "Design Elements",
+              image: ["", "design element example"], 
+              text: "I customized a glass effect that I found here [add link] to give the buttons depth and a more enjoyable user experience. After searching for a vector to use as the divider on each component, I decided I preferred to make my own, which I did using Illustrator. For customized icons and dividers, I often find that making my own is faster and more satisfying than repurposing someone else's work."
+              }],
+    active: true,
+  },
   {
     name: "Restaurant Homepage",
     image: [FSRestImg, "restaurant homepage screenshot"],
