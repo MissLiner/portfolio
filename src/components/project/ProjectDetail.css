@@ -1,7 +1,6 @@
 .ProjectDetail {
   display: grid;
   grid-template:
-    "title" min-content
     "links" min-content
     "tags"  min-content
     "summary" min-content
@@ -17,9 +16,7 @@
   right: 10px;
   top: 10px;
 }
-.ProjectDetail .ProjectTitle {
-  grid-area: title;
-}
+
 .ProjectDetail .SVGImg {
   grid-area: images;
   height: fit-content;
