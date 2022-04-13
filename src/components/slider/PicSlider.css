@@ -1,10 +1,10 @@
 .PicSlider {
   display: grid;
   grid-template:
-    "thumbs title title title" min-content
-    "thumbs lbutton mainpic rbutton" min-content
-    /* "thumbs thumbs thumbs" min-content */
-    / 1fr 1fr 14fr 1fr;
+    "thumbs thumbs thumbs" min-content
+    "title title title" min-content
+    "lbutton mainpic rbutton" min-content
+    / 1fr 14fr 1fr;
   margin: auto;
   width: 70%;
 }

@@ -1,11 +1,10 @@
 .NavPics {
-  margin-top: 3%;
+  /* margin-top: 3%; */
   background-color: transparent;
   display: flex;
-  flex-direction: column;
   grid-area: thumbs;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
 }
 .NavPics-input { 
   position: absolute;
@@ -14,12 +13,12 @@
   height: 0;
 }
 .NavPics-thumb {
-  height: 40px;
-  width: 40px;
+  height: 85%;
+  width: 85%;
 }
 .NavPics-label {
-  height: 40px;
-  width: 40px;
+  height: 85%;
+  width: 85%;
 }
 :checked + .NavPics-thumb {
   border: solid;
