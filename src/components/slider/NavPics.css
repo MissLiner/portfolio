@@ -1,4 +1,4 @@
-.nav-dot-container {
+.NavPics {
   margin-top: 3%;
   background-color: transparent;
   display: flex;
@@ -6,21 +6,21 @@
   justify-content: space-between;
   width: 80%;
 }
-.nav-pic { 
+.NavPics-input { 
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
-.nav-thumb {
+.NavPics-thumb {
   height: 40px;
   width: 40px;
 }
-.nav-label {
+.NavPics-label {
   height: 40px;
   width: 40px;
 }
-:checked + .nav-thumb {
+:checked + .NavPics-thumb {
   border: solid;
   border-color:coral;
 }

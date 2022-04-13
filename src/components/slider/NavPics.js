@@ -6,21 +6,21 @@ function NavPics(props) {
     return(
       props.images.map((image, i) => {
         return(
-          <div key={"nav-div" + i}>
+          <div key={"NavPics-div" + i}>
             <label 
-              className="nav-label" 
-              htmlFor={"nav-dot" + i} >
+              className="NavPics-label" 
+              htmlFor={"NavPics-input" + i} >
               <input 
                 type="radio" 
-                className="nav-dot nav-pic"
+                className="NavPics-input"
                 data-index={i}
-                name={"nav-dot"}
+                name={"NavPics-input"}
                 onClick={props.clickFunc}
-                id={"nav-dot" + i}
+                id={"NavPics-input" + i}
                 disabled={props.disabled}>
               </input>
               <img 
-                className="nav-thumb" 
+                className="NavPics-thumb" 
                 src={props.images[i][2]} 
                 alt={props.images[i][1]}>
               </img>
@@ -32,7 +32,7 @@ function NavPics(props) {
     )
   }
   return(
-    <div className="nav-dot-container">
+    <div className="NavPics">
       {renderNavPics()}
     </div>
   )
