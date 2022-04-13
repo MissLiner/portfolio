@@ -24,6 +24,11 @@
 .PicSlider-title {
   grid-column: 2;
   grid-row: 1;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: fit-content;
+  width: fit-content;
 }
 .PicSlider-btn {
   background-color: transparent;
@@ -40,7 +45,7 @@
   grid-column: 3;
   grid-row: 2;
 }
-.PicSlider-main-img.SVGImg-image {
+.PicSlider-main-img {
   width: 100%;
 }
 .nav-dot-container {

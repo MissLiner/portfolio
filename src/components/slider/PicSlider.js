@@ -5,7 +5,7 @@ import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRou
 import { useEffect, useState } from "react";
 import SVGImg from "../shared/SVGImg";
 import NavPics from "./NavPics";
-import ProjectTitle from "../shared/ProjectTitle";
+// import ProjectTitle from "../shared/ProjectTitle";
 
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);
@@ -85,7 +85,7 @@ function PicSlider(props) {
 
   return(
     <div className="PicSlider">
-      <ProjectTitle title={props.title} titleClass="PicSlider-title" />
+      <h2 className="PicSlider-title">{props.title}</h2>
       <button 
         className="PicSlider-btn btn-left" 
         disabled={disabled}
