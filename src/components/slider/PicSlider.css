@@ -1,4 +1,12 @@
-.PicSlider .SVGImg {
+.PicSlider {
+  display: grid;
+  grid-template-columns: 1fr 16fr 1fr;
+  grid-template-rows: min-content min-content min-content;
+  margin: auto;
+  width: 80%;
+}
+
+.PicSlider-main-img {
   background-color: black;
   border: solid;
   border-color:darkslateblue;
@@ -12,33 +20,27 @@
   text-align: center;
   width: 98%;
 }
-.PicSlider.container {
-  display: grid;
-  grid-template-columns: 1fr 16fr 1fr;
-  grid-template-rows: min-content min-content min-content;
-  margin: auto;
-  width: 80%;
-}
-.PicSlider .ProjectTitle {
+
+.PicSlider-title {
   grid-column: 2;
   grid-row: 1;
 }
-.PicSlider.btn {
+.PicSlider-btn {
   background-color: transparent;
   border: none;
   color:darkgray;
   justify-self: center;
   align-self: center;
 }
-.PicSlider.btn-left {
+.PicSlider-btn.btn-left {
   grid-column: 1;
   grid-row:2;
 }
-.PicSlider.btn-right {
+.PicSlider-btn.btn-right {
   grid-column: 3;
   grid-row: 2;
 }
-.PicSlider.SVGImg-image {
+.PicSlider-main-img.SVGImg-image {
   width: 100%;
 }
 .nav-dot-container {

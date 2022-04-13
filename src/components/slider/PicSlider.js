@@ -84,23 +84,23 @@ function PicSlider(props) {
   }
 
   return(
-    <div className="PicSlider container">
-      <ProjectTitle title={props.title} titleClass="PicSlider title" />
+    <div className="PicSlider">
+      <ProjectTitle title={props.title} titleClass="PicSlider-title" />
       <button 
-        className="PicSlider btn btn-left" 
+        className="PicSlider-btn btn-left" 
         disabled={disabled}
         onClick={handleLeftClick}
         ><ArrowCircleLeftRoundedIcon fontSize="large" />
       </button>
       <button 
-        className="PicSlider btn btn-right"
+        className="PicSlider-btn btn-right"
         disabled={disabled}
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <SVGImg 
         currentImage={props.images[props.currentIndex]}
-        compName="PicSlider"
+        compName="PicSlider-main-img"
         clickFunc={props.updateFunc} />
       <NavPics 
         images={props.images} 
