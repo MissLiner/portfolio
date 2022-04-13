@@ -27,33 +27,10 @@ import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
 import MemoryScore from "../../assets/images/examples/memory_score.svg";
 
-export const screenshotArray = [
-  [ FSResumeImg, "resume maker site screenshot", 
-    TNResumeImg, "Resume Maker"],
-  // [ FSMemoryWelcomeImg, "memorycard welcome screen site screenshot",
-  //   TNMemoryWelcomeImg, "Memory Card"],
-  [ FSMemoryGameImg, "memorycard game screen site screenshot", 
-    TNMemoryGameImg, "Memory Card"],
-  [ FSBattleImg, "battleship site screenshot", 
-    TNBattleImg, "Battleship Game" ],
-  [ FSRestImg, "restaurant site screenshot", 
-    TNRestImg, "Restaurant Homepage" ],
-  [ FSCando1Img, "can do list site screenshot", 
-    TNCando1Img, "Can-Do List"],
-  // [ FSCando2Img, "can do list add task site screenshot", 
-  //   TNCando2Img, "Can-Do List"],
-  [ FSTictacImg, "tic-tac-toe site screenshot", 
-    TNTictacImg, "Tic-Tac-Toe"],
-  [ FSLibraryImg, "libary site screenshot", 
-    TNLibraryImg, "Library App"],
-  [ FSCalcImg, "calculator site screenshot", 
-    TNCalcImg, "Calculator"],
-]
-
-
 export const projectArray = [
-  {
-    name: "ResumeMaker",
+  { name: "ResumeMaker",
+    sliderRefs: [ FSResumeImg, "resume maker site screenshot", 
+                  TNResumeImg, "Resume Maker"],
     image: [FSResumeImg, "resume maker screenshot"],
     thumbnail: [TNResumeImg, "resume maker thumbnail"],
     code: 'https://github.com/MissLiner/cv-project-func.git',
@@ -69,8 +46,9 @@ export const projectArray = [
               }],
     active: true,
   },
-  {
-    name: "Memory Card",
+  { name: "Memory Card",
+    sliderRefs: [ FSMemoryGameImg, "memorycard game screen site screenshot", 
+                  TNMemoryGameImg, "Memory Card"],
     image: [FSMemoryGameImg, "memory card game screenshot"],
     thumbnail: [TNMemoryGameImg, "memory card game thumbnail"],
     focus: [ "ReactJS", "Lifecycle Methods", "Hooks", "CSS"],
@@ -86,8 +64,9 @@ export const projectArray = [
             }],
     active: true,
   },
-  {
-    name: "Restaurant Homepage",
+  { name: "Restaurant Homepage",
+    sliderRefs: [ FSRestImg, "restaurant site screenshot", 
+                  TNRestImg, "Restaurant Homepage" ],
     image: [FSRestImg, "restaurant homepage screenshot"],
     thumbnail: [TNRestImg, "restaurant homepage thumbnail"],
     code: 'https://github.com/MissLiner/restaurant-page.git',
@@ -103,8 +82,9 @@ export const projectArray = [
               }],
     active: false,
   },
-  {
-    name: "Battleship Game",
+  { name: "Battleship Game",
+    sliderRefs: [ FSBattleImg, "battleship site screenshot", 
+                  TNBattleImg, "Battleship Game" ],
     image: [FSBattleImg, "battleship game screenshot"],
     thumbnail: [TNBattleImg, "battleship game thumbnail"],
     focus: ["Javascript", "Jest", "TDD", "Unit Testing", "Factory Functions"],
@@ -120,8 +100,9 @@ export const projectArray = [
             }],
     active: true,
   },
-  {
-    name: "Calculator",
+  { name: "Calculator",
+    sliderRefs: [ FSCalcImg, "calculator site screenshot", 
+                  TNCalcImg, "Calculator"],
     image: [FSCalcImg, "calculator screenshot"],
     thumbnail: [TNCalcImg, "calculator screenshot"],
     focus: [],
@@ -138,8 +119,9 @@ export const projectArray = [
     active: false,
   },
 
-  {
-    name: "Tic-Tac-Toe",
+  { name: "Tic-Tac-Toe",
+    sliderRefs:   [ FSTictacImg, "tic-tac-toe site screenshot", 
+                    TNTictacImg, "Tic-Tac-Toe"],
     image: [FSTictacImg, "tic-tac-toe site screenshot"],
     thumbnail: [TNTictacImg, "tic-tac-toe site screenshot"],
     focus: [],
@@ -155,8 +137,9 @@ export const projectArray = [
             }],
     active: false,
   },
-  {
-    name: "Can-Do List",
+  { name: "Can-Do List",
+    sliderRefs: [ FSCando1Img, "can do list site screenshot", 
+                  TNCando1Img, "Can-Do List"],
     image: [FSCando1Img, "can-do list screenshot"],
     thumbnail: [TNCando1Img, "can-do list thumbnail"],
     focus: [],
@@ -173,8 +156,9 @@ export const projectArray = [
             }],
     active: false,
   },
-  {
-    name: "Library App",
+  { name: "Library App",
+    sliderRefs: [ FSLibraryImg, "libary site screenshot", 
+                  TNLibraryImg, "Library App"],
     image: [FSLibraryImg, "library app screenshot"],
     thumbnail: [TNRestImg, "library app thumbnail"],
     focus: [],
@@ -190,29 +174,4 @@ export const projectArray = [
             }],
     active: false,
   },
-  // {
-  //   name: "ResuMaker",
-  //   image: [],
-  //   thumbnail: [],
-  //   addlImages: [],
-  //   addlThumbnails: [],
-  //   focus: ["ReactJS", "Basic Components"],
-  //   summary: "",
-  //   code: 'https://github.com/MissLiner/cv-project.git',
-  //   live: 'https://missliner.github.io/cv-project/',
-  //   active: false,
-  // },
 ]
-// const projectTemplate = 
-//   {
-//     name: "",
-//     image: [],
-//     thumbnail: [],
-//     addlImages: [],
-//     addlThumbnails: [],
-//     focus: [],
-//     summary: "",
-//     code: 'https://github.com/MissLiner/-.git',
-//     live: 'https://missliner.github.io/-/',
-//     active: false,
-//   };

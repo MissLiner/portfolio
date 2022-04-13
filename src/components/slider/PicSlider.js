@@ -44,7 +44,7 @@ function PicSlider(props) {
 
   // NAVIGATION FX
   const handleRightClick = (e) => {
-    if(props.currentIndex < props.images.length - 1) {
+    if(props.currentIndex < props.projects.length - 1) {
       const newIndex = props.currentIndex + 1;
       setDisabled(true);
       dissolve();
@@ -71,7 +71,7 @@ function PicSlider(props) {
     }
   }
 
-  function handleDotClick(e) {
+  function handleNavClick(e) {
     const newIndex = parseInt(e.target.dataset.index);
     setDisabled(true);
     dissolve();
@@ -85,7 +85,6 @@ function PicSlider(props) {
 
   return(
     <div className="PicSlider">
-      {/* <h2 className="PicSlider-title">{props.title}</h2> */}
       <button 
         className="PicSlider-btn btn-left" 
         disabled={disabled}
@@ -99,13 +98,13 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <SVGImg 
-        currentImage={props.images[props.currentIndex]}
+        currentImage={props.projects[props.currentIndex].sliderRefs}
         parentClass="PicSlider-main-img"
         clickFunc={props.updateFunc} />
       <NavPics 
-        images={props.images} 
+        projects={props.projects} 
         disabled={disabled} 
-        clickFunc={handleDotClick} />
+        clickFunc={handleNavClick} />
     </div>
   )
 }

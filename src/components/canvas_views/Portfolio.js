@@ -3,7 +3,7 @@ import './Portfolio.css';
 import { useEffect, useState } from 'react';
 import PicSlider from '../slider/PicSlider';
 import ProjectDetail from '../project/ProjectDetail';
-import { screenshotArray } from '../shared/screenshotArray';
+import { projectArray } from '../shared/screenshotArray';
 
 function Portfolio() {
   // const [portView, setPortView] = useState("main");
@@ -15,7 +15,7 @@ function Portfolio() {
   }
 
   useEffect(() => {
-    setTitle(screenshotArray[currentIndex][3]);
+    setTitle(projectArray[currentIndex].name);
   }, [currentIndex]) 
 
   // const renderPortfolio = () => {
@@ -37,14 +37,14 @@ function Portfolio() {
   return(
     <div className="Portfolio colors2">
       <PicSlider 
-        title={title}
+        // title={title}
         currentIndex={currentIndex}
-        images={screenshotArray} 
+        projects={projectArray} 
         indexFunc={updateIndex}
        />
       <ProjectDetail 
         title={title}
-        images={screenshotArray}
+        projects={projectArray}
         currentIndex={currentIndex}
          />
     </div>

@@ -4,7 +4,7 @@ import '../../index.css';
 function NavPics(props) {
   const renderNavPics = () => {
     return(
-      props.images.map((image, i) => {
+      props.projects.map((project, i) => {
         return(
           <div key={"NavPics-div" + i}>
             <label 
@@ -21,8 +21,8 @@ function NavPics(props) {
               </input>
               <img 
                 className="NavPics-thumb" 
-                src={props.images[i][2]} 
-                alt={props.images[i][1]}>
+                src={project.sliderRefs[2]} 
+                alt={project.sliderRefs[1]}>
               </img>
             </label>
           </div>
