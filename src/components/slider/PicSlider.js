@@ -13,21 +13,21 @@ function PicSlider(props) {
 
   // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
   useEffect(() => {
-      const returnCurrentDot = () => {
-        const dots = Array.from(document.querySelectorAll(".nav-dot"));
-        for(let dot of dots) {
-          const index = parseInt(dot.dataset.index);
+      const returnCurrentInput = () => {
+        const inputs = Array.from(document.querySelectorAll(".NavPics-input"));
+        for(let input of inputs) {
+          const index = parseInt(input.dataset.index);
           if(index === props.currentIndex) {
-            return dot;
+            return input;
           }
         }
       }
-      const checkCurrentDot = () => {
-        const currentDot = returnCurrentDot();
-        currentDot.checked = true;
+      const checkCurrentInput = () => {
+        const currentInput = returnCurrentInput();
+        currentInput.checked = true;
       }
       appear();
-      checkCurrentDot();
+      checkCurrentInput();
   }, [props.currentIndex]);
 
   // TRANSITION EFFECT FX
