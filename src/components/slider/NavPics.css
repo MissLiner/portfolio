@@ -1,2 +1,27 @@
-
+.nav-dot-container {
+  margin-top: 3%;
+  background-color: transparent;
+  display: flex;
+  grid-area: thumbs;
+  justify-content: space-between;
+  width: 80%;
+}
+.nav-pic { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.nav-thumb {
+  height: 40px;
+  width: 40px;
+}
+.nav-label {
+  height: 40px;
+  width: 40px;
+}
+:checked + .nav-thumb {
+  border: solid;
+  border-color:coral;
+}
 

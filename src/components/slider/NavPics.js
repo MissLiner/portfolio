@@ -1,4 +1,4 @@
-import "./PicSlider.css";
+import "./NavPics.css";
 import '../../index.css';
 
 function NavPics(props) {
