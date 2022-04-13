@@ -28,7 +28,7 @@ import BattleBoard from "../../assets/images/examples/battle_board.svg";
 import MemoryScore from "../../assets/images/examples/memory_score.svg";
 
 export const projectArray = [
-  { name: "ResumeMaker",
+  { name: "CV Builder",
     sliderRefs: [ FSResumeImg, "resume maker site screenshot", 
                   TNResumeImg, "Resume Maker"],
     image: [FSResumeImg, "resume maker screenshot"],
@@ -46,7 +46,7 @@ export const projectArray = [
               }],
     active: true,
   },
-  { name: "Memory Card",
+  { name: "Memory Card Game",
     sliderRefs: [ FSMemoryGameImg, "memorycard game screen site screenshot", 
                   TNMemoryGameImg, "Memory Card"],
     image: [FSMemoryGameImg, "memory card game screenshot"],
@@ -100,7 +100,7 @@ export const projectArray = [
             }],
     active: true,
   },
-  { name: "Calculator",
+  { name: "Calculator App",
     sliderRefs: [ FSCalcImg, "calculator site screenshot", 
                   TNCalcImg, "Calculator"],
     image: [FSCalcImg, "calculator screenshot"],
@@ -137,7 +137,7 @@ export const projectArray = [
             }],
     active: false,
   },
-  { name: "Can-Do List",
+  { name: "Task App",
     sliderRefs: [ FSCando1Img, "can do list site screenshot", 
                   TNCando1Img, "Can-Do List"],
     image: [FSCando1Img, "can-do list screenshot"],

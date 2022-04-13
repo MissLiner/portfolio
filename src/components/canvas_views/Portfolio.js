@@ -3,7 +3,7 @@ import './Portfolio.css';
 import { useEffect, useState } from 'react';
 import PicSlider from '../slider/PicSlider';
 import ProjectDetail from '../project/ProjectDetail';
-import { projectArray } from '../shared/screenshotArray';
+import { projectArray } from '../shared/projectArray';
 
 function Portfolio() {
   // const [portView, setPortView] = useState("main");

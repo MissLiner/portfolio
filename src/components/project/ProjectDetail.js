@@ -1,35 +1,23 @@
-// import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-// import ProjectTitle from '../shared/ProjectTitle';
-import { projectArray } from "../shared/screenshotArray";
+import { projectArray } from "../shared/projectArray";
 import '../../index.css';
 import './ProjectDetail.css';
-import ProjectTags from './ProjectTags';
 import ProjectUnits from './ProjectUnits';
+import ProjectSummary from "./ProjectSummary";
 
 function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
   return(
     <div className="ProjectDetail">
-      <h2 className="ProjectDetail-title">{props.title}</h2>
-      <ProjectTags currentProject={currentProject} />
-      <div className="ProjectDetail-links-section">
-        <a 
-          className="ProjectDetail-link" 
-          href={currentProject.live}
-          target="_blank"
-          rel="noreferrer">
-            :Live</a>
-        <a 
-          className="ProjectDetail-link" 
-          href={currentProject.code}
-          target="_blank"
-          rel="noreferrer">
-            :Git</a>
-      </div>
+      <ProjectSummary 
+        title={currentProject.name} 
+        currentProject={currentProject}
+       />
       <p 
         className="ProjectDetail-summary">
-          {currentProject.summary}</p>
-      <ProjectUnits currentProject={currentProject} />
+          {currentProject.summary}
+      </p>
+      <ProjectUnits currentProject={currentProject}
+       />
     </div>
   )
 }

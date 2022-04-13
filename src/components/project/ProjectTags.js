@@ -14,7 +14,10 @@ function ProjectTags(props) {
   }
   return(
     <ul className="ProjectTags">
-      {renderTags()}
+      <h3 className="ProjectTags-heading">Skills:</h3>
+      <div className="ProjectTags-tag-div">
+        {renderTags()}
+      </div>
     </ul>
   )
 }
