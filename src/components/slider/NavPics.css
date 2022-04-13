@@ -24,4 +24,7 @@
   border: solid;
   border-color:coral;
 }
+:not(:checked) + .NavPics-thumb {
+  opacity: .4;
+}
 
