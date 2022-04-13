@@ -1,5 +1,5 @@
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import ProjectTitle from '../shared/ProjectTitle';
+// import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+// import ProjectTitle from '../shared/ProjectTitle';
 import { projectArray } from "../shared/screenshotArray";
 import '../../index.css';
 import './ProjectDetail.css';
@@ -10,8 +10,8 @@ function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
   return(
     <div className="ProjectDetail">
-      <ProjectTitle title={props.title} />
-      <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button>
+      {/* <ProjectTitle title={props.title} /> */}
+      {/* <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button> */}
       <ProjectTags currentProject={currentProject} />
       <div className="ProjectDetail-links-section">
         <a 

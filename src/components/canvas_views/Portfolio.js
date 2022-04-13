@@ -6,7 +6,7 @@ import ProjectDetail from '../project/ProjectDetail';
 import { screenshotArray } from '../shared/screenshotArray';
 
 function Portfolio() {
-  const [portView, setPortView] = useState("main");
+  // const [portView, setPortView] = useState("main");
   const [title, setTitle] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -18,12 +18,12 @@ function Portfolio() {
     setTitle(screenshotArray[currentIndex][3]);
   }, [currentIndex]) 
 
-  const handlePicClick = (e) => {
-    setPortView(e.target.dataset.name);
-  }
-  const handleExit = () => {
-    setPortView("main");
-  }
+  // const handlePicClick = (e) => {
+  //   setPortView(e.target.dataset.name);
+  // }
+  // const handleExit = () => {
+  //   setPortView("main");
+  // }
   // const renderPortfolio = () => {
   //   if(portView === "main") {
   //     return(
@@ -46,14 +46,14 @@ function Portfolio() {
         title={title}
         currentIndex={currentIndex}
         images={screenshotArray} 
-        updateFunc={handlePicClick}
+        // updateFunc={handlePicClick}
         indexFunc={updateIndex}
        />
       <ProjectDetail 
         title={title}
         images={screenshotArray}
         currentIndex={currentIndex}
-        exitFunc={handleExit} 
+        // exitFunc={handleExit} 
          />
     </div>
   )
