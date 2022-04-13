@@ -10,8 +10,7 @@ function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
   return(
     <div className="ProjectDetail">
-      {/* <ProjectTitle title={props.title} /> */}
-      {/* <button className="ProjectDetail-exit-btn" onClick={props.exitFunc}><CloseRoundedIcon /></button> */}
+      <h2 className="ProjectDetail-title">{props.title}</h2>
       <ProjectTags currentProject={currentProject} />
       <div className="ProjectDetail-links-section">
         <a 
