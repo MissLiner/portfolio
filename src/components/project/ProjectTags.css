@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   grid-area: content;
-  /* width: 50%; */
+  /* width: 50%; */ 
 }
 .ProjectTags-tag {
   display: inline-block;
