@@ -24,29 +24,37 @@ function Portfolio() {
   const handleExit = () => {
     setPortView("main");
   }
-  const renderPortfolio = () => {
-    if(portView === "main") {
-      return(
-        <PicSlider 
-          title={title}
-          currentIndex={currentIndex}
-          images={screenshotArray} 
-          updateFunc={handlePicClick}
-          indexFunc={updateIndex} />
-      )
-    } else {
-      return(
-        <ProjectDetail 
-          title={title}
-          images={screenshotArray}
-          currentIndex={currentIndex}
-          exitFunc={handleExit} />
-      )
-    }
-  }
+  // const renderPortfolio = () => {
+  //   if(portView === "main") {
+  //     return(
+  //       <PicSlider 
+  //         title={title}
+  //         currentIndex={currentIndex}
+  //         images={screenshotArray} 
+  //         updateFunc={handlePicClick}
+  //         indexFunc={updateIndex} />
+  //     )
+  //   } else {
+  //     return(
+
+  //     )
+  //   }
+  // }
   return(
     <div className="Portfolio colors2">
-      {renderPortfolio()}
+      <PicSlider 
+        title={title}
+        currentIndex={currentIndex}
+        images={screenshotArray} 
+        updateFunc={handlePicClick}
+        indexFunc={updateIndex}
+       />
+      <ProjectDetail 
+        title={title}
+        images={screenshotArray}
+        currentIndex={currentIndex}
+        exitFunc={handleExit} 
+         />
     </div>
   )
 }
