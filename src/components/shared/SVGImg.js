@@ -3,16 +3,14 @@ import '../../index.css';
 
 function SVGImg(props) {
   return(
-    <div  className="SVGImg" 
-          id="SVGImg" >
+    <div  className={"SVGImg " + props.parentClass} >
       <img 
         src={props.currentImage[0]} 
         alt={props.currentImage[1]} 
-        className={"SVGImg-image" + props.parentClass}
-        id="SVGImg-image"
+        className={"SVGImg-image " + props.parentClass}
         data-name={props.currentImage[3]}
         onClick={props.clickFunc}
-        >
+       >
       </img>
     </div>
   )
