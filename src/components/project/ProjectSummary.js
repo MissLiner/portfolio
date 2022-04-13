@@ -9,18 +9,21 @@ function ProjectSummary(props) {
       <h3 className="ProjectSummary-title-label">Mission: </h3>
       <div className="ProjectSummary-title-content">{props.title}</div>
       <h3 className="ProjectSummary-links-label">Links: </h3>
-      <a  className="ProjectSummary-links-link" 
-          href={props.currentProject.live}
-          target="_blank"
-          rel="noreferrer">
-            Live
-      </a>
-      <a  className="ProjectSummary-links-link" 
-          href={props.currentProject.code}
-          target="_blank"
-          rel="noreferrer">
-            Git
-      </a>
+      <div className="ProjectSummary-links-content">
+        <a  className="ProjectSummary-links-link" 
+            href={props.currentProject.live}
+            target="_blank"
+            rel="noreferrer">
+              Live
+        </a>
+        <a  className="ProjectSummary-links-link" 
+            href={props.currentProject.code}
+            target="_blank"
+            rel="noreferrer">
+              Git
+        </a>
+      </div>
+
       <h3 className="ProjectSummary-tags-label">Skills:</h3>
       <ProjectTags 
         currentProject={props.currentProject}    

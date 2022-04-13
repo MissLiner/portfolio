@@ -1,19 +1,13 @@
 .ProjectSummary {
   display: grid;
+  grid-area: overview;
   grid-template: 
   "label1 content1"
   "label2 content2"
   "label3 content3"
     / 1fr 3fr;
 }
-/* .ProjectSummary-title {
-  display: grid;
-  grid-area: title;
-  grid-template:
-    "label1 content1"
-    "label2 content2"
-    "label3 content3";
-} */
+
 .ProjectSummary-title-label {
   grid-area: label1;
 }
@@ -23,12 +17,12 @@
 .ProjectSummary-links-label {
   grid-area: label2;
 }
-.ProjectSummary-links-link {
+.ProjectSummary-links-content {
   grid-area: content2;
 }
 .ProjectSummary-tags-label {
   grid-area: label3;
 }
-.ProjectSummary-tags {
+.ProjectSummary-tags-content {
   grid-area: content3;
 }
