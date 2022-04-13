@@ -18,12 +18,6 @@ function Portfolio() {
     setTitle(screenshotArray[currentIndex][3]);
   }, [currentIndex]) 
 
-  // const handlePicClick = (e) => {
-  //   setPortView(e.target.dataset.name);
-  // }
-  // const handleExit = () => {
-  //   setPortView("main");
-  // }
   // const renderPortfolio = () => {
   //   if(portView === "main") {
   //     return(
@@ -36,7 +30,7 @@ function Portfolio() {
   //     )
   //   } else {
   //     return(
-
+            
   //     )
   //   }
   // }
@@ -46,14 +40,12 @@ function Portfolio() {
         title={title}
         currentIndex={currentIndex}
         images={screenshotArray} 
-        // updateFunc={handlePicClick}
         indexFunc={updateIndex}
        />
       <ProjectDetail 
         title={title}
         images={screenshotArray}
         currentIndex={currentIndex}
-        // exitFunc={handleExit} 
          />
     </div>
   )

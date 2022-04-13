@@ -69,7 +69,6 @@ function PicSlider(props) {
         setDisabled(false);
       }, 2200);
     }
-
   }
 
   function handleDotClick(e) {
