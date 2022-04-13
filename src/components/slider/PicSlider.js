@@ -100,7 +100,7 @@ function PicSlider(props) {
       </button>
       <SVGImg 
         currentImage={props.images[props.currentIndex]}
-        compName="PicSlider-main-img"
+        parentClass="PicSlider-main-img"
         clickFunc={props.updateFunc} />
       <NavPics 
         images={props.images} 
