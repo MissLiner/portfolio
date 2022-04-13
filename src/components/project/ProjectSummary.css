@@ -1,3 +1,17 @@
+.ProjectSummary * {
+  font-family: 'Kalam', sans-serif;
+}
+.label {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  font-size: 1.5em;
+  margin-left: 1em;
+  text-align: left;
+  width: 100%;
+}
 .ProjectSummary {
   display: grid;
   grid-area: overview;
@@ -25,4 +39,17 @@
 }
 .ProjectSummary-tags-content {
   grid-area: content3;
+  list-style: none;
+  padding: 0;
+  /* list-style-image: url(../../assets/icons/box_checked.svg); */
+}
+.ProjectSummary-tags-tag::before {
+  content: '';
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  background-image: url(../../assets/icons/box_checked.svg);
+}
+.ProjectSummary-tags-tag {
+  text-align: left;
 }

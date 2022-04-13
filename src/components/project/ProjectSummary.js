@@ -6,10 +6,10 @@ import ProjectTags from "./ProjectTags";
 function ProjectSummary(props) {
   return(
     <div className="ProjectSummary">
-      <h3 className="ProjectSummary-title-label">Mission: </h3>
-      <div className="ProjectSummary-title-content">{props.title}</div>
-      <h3 className="ProjectSummary-links-label">Links: </h3>
-      <div className="ProjectSummary-links-content">
+      <h3 className="ProjectSummary-title-label label">Mission: </h3>
+      <div className="ProjectSummary-title-content content">{props.title}</div>
+      <h3 className="ProjectSummary-links-label label">Links: </h3>
+      <div className="ProjectSummary-links-content content">
         <a  className="ProjectSummary-links-link" 
             href={props.currentProject.live}
             target="_blank"
@@ -24,7 +24,7 @@ function ProjectSummary(props) {
         </a>
       </div>
 
-      <h3 className="ProjectSummary-tags-label">Skills:</h3>
+      <h3 className="ProjectSummary-tags-label label">Skills:</h3>
       <ProjectTags 
         currentProject={props.currentProject}    
         parentClass="ProjectSummary"

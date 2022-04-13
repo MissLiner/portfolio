@@ -15,7 +15,7 @@ function ProjectTags(props) {
     )
   }
   return(
-    <ul className={props.parentClass + "-tags-content"}>
+    <ul className={props.parentClass + "-tags-content content"}>
       {renderTags()}
     </ul>
   )
