@@ -1,6 +1,7 @@
 .StickyNav {
   background-color: #BACC72;
   border: none;
+  border-radius: .4em;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -9,7 +10,6 @@
   z-index: 1000;
 }
 .MuiButtonBase-root {
-  /* background-color: white !important; */
   color: #414728 !important;   
 }
 .MuiSvgIcon-root {

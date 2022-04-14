@@ -1,6 +1,7 @@
 .Canvas {
   align-items: center;
   background-color: #FCECD7;
+  border-radius: .4em;
   color: #283C47;
   display: grid;
   margin-top: 5em;
