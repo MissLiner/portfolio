@@ -1,9 +1,11 @@
 .Canvas {
   align-items: center;
+  background-color: #FCECD7;
+  color: #283C47;
   display: grid;
   margin-top: 5em;
   min-height: 460px;
   padding: 2% 2% 2% 2%;
-  width: 100%;
+  width: 80%;
   max-width: 1000px;
 }

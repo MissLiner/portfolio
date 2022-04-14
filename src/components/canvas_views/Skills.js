@@ -21,7 +21,7 @@ function Skills() {
     )
   }
   return(
-    <div className="Skills colors2">
+    <div className="Skills">
       <div className="Skills-table">
         <h3 className="Skills-category">{skillsArr[0].category}</h3>
         <div className="Skills-list">

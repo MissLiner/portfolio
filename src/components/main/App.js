@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <StickyNav homeFunc={handleClickHome} emailFunc={handleClickEmail} />
-      <div className="App-header">
+      <div className="App-header colors1">
         <h1 className="App-name">Caroline Stephenson</h1>
         <Navbar clickFunc={handleClickNav} 
                 addClasses="colors1" 

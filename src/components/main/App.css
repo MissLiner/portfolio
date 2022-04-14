@@ -1,6 +1,4 @@
 .App-header {
-  background-color: rgb(32, 32, 32);
-  color: rgb(255, 251, 252);
   display: grid;
   grid-template: 
     "name navbar"

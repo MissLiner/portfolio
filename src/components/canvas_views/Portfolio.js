@@ -35,7 +35,7 @@ function Portfolio() {
   //   }
   // }
   return(
-    <div className="Portfolio colors2">
+    <div className="Portfolio">
       <PicSlider 
         // title={title}
         currentIndex={currentIndex}
