@@ -1,0 +1,13 @@
+.StickyNav {
+  background-color: white;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 1em;
+  right: 0;
+  z-index: 1000;
+}
+.MuiSvgIcon-root {
+  color: black !important; 
+}

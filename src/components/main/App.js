@@ -1,9 +1,10 @@
 import Canvas from './Canvas';
 import Navbar from './Navbar';
+import StickyNav from './StickyNav';
 import { navLabels } from '../shared/text';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import IconButton from '@mui/material/IconButton';
+// import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+// import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+// import IconButton from '@mui/material/IconButton';
 import { useState } from "react";
 import '../../index.css';
 import './App.css';
@@ -23,15 +24,9 @@ function App() {
 
   return (
     <div className="App">
+      <StickyNav homeFunc={handleClickHome} emailFunc={handleClickEmail} />
       <div className="App-header">
         <h1 className="App-name">Caroline Stephenson</h1>
-        <IconButton aria-label="home" onClick={handleClickHome}>
-          <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
-        </IconButton>
-        <IconButton aria-label="email" onClick={handleClickEmail}>
-          <EmailRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
-        </IconButton>
-
         <Navbar clickFunc={handleClickNav} 
                 addClasses="colors1" 
                 btnList={navLabels}
