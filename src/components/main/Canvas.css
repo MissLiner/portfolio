@@ -1,9 +1,9 @@
 .Canvas {
   align-items: center;
   display: grid;
-  margin-top: 105px;
+  margin-top: 5em;
   min-height: 460px;
   padding: 2% 2% 2% 2%;
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
 }
