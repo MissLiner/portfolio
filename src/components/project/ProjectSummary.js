@@ -24,7 +24,7 @@ function ProjectSummary(props) {
         </a>
       </div>
 
-      <h3 className="ProjectSummary-tags-label label">Skills:</h3>
+      <h3 className="ProjectSummary-tags-label label">Focus:</h3>
       <ProjectTags 
         currentProject={props.currentProject}    
         parentClass="ProjectSummary"
