@@ -25,17 +25,17 @@ function PicSlider(props) {
         const currentInput = returnCurrentInput();
         currentInput.checked = true;
       }
-      appear();
+      appearPic();
       checkCurrentInput();
   }, [props.currentIndex]);
 
   // TRANSITION FX
-  function dissolve() {
+  function dissolvePic() {
     const pic = document.getElementById("SVGImg-image");
     pic.classList.remove("fade-in");
     pic.classList.add("fade-out");
   }
-  function appear() {
+  function appearPic() {
     const pic = document.getElementById("SVGImg-image");
     pic.classList.remove("fade-out");
     pic.classList.add("fade-in");
@@ -46,7 +46,7 @@ function PicSlider(props) {
     if(props.currentIndex < props.projects.length - 1) {
       const newIndex = props.currentIndex + 1;
       setDisabled(true);
-      dissolve();
+      dissolvePic();
       setTimeout(function() { 
         props.indexFunc(newIndex);
       }, 800);
@@ -60,7 +60,7 @@ function PicSlider(props) {
     if(props.currentIndex > 0) {
       const newIndex = props.currentIndex - 1;
       setDisabled(true);
-      dissolve();
+      dissolvePic();
       setTimeout(function() { 
         props.indexFunc(newIndex);
       }, 800);
@@ -73,7 +73,7 @@ function PicSlider(props) {
   function handleNavClick(e) {
     const newIndex = parseInt(e.target.dataset.index);
     setDisabled(true);
-    dissolve();
+    dissolvePic();
     setTimeout(function() { 
       props.indexFunc(newIndex);
     }, 800);
