@@ -2,7 +2,7 @@ import { projectArray } from "../shared/projectArray";
 import '../../index.css';
 import './ProjectDetail.css';
 import ProjectUnits from './ProjectUnits';
-import ProjectSummary from "./ProjectSummary";
+import ProjectHeader from "./ProjectHeader";
 
 function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
@@ -17,7 +17,7 @@ function ProjectDetail(props) {
   }
   return(
     <div className="ProjectDetail">
-      <ProjectSummary 
+      <ProjectHeader 
         title={currentProject.name} 
         currentProject={currentProject}
        />

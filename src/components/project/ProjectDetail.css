@@ -1,7 +1,7 @@
 .ProjectDetail {
   display: grid;
   grid-template:
-    "overview" min-content
+    "header" min-content
     "summary" min-content
     "units"  minmax(400px, min-content)
     / 100%;

@@ -1,4 +1,4 @@
-.ProjectSummary * {
+.ProjectHeader * {
   font-family: 'Inconsolata', sans-serif;
 }
 .label {
@@ -16,11 +16,11 @@
   width: 100%;
   
 }
-.ProjectSummary {
+.ProjectHeader {
   column-gap: 20px;
   row-gap: 10px;
   display: grid;
-  grid-area: overview;
+  grid-area: header;
   grid-template: 
   "label1 content1 label3 content3"
   "label2 content2 label3 content3"
@@ -28,37 +28,37 @@
     / max-content max-content min-content max-content;
 }
 
-.ProjectSummary-title-label {
+.ProjectHeader-title-label {
   grid-area: label1;
 }
-.ProjectSummary-title-content {
+.ProjectHeader-title-content {
   grid-area: content1;
 }
-.ProjectSummary-links-label {
+.ProjectHeader-links-label {
   grid-area: label2;
 }
-.ProjectSummary-links-content {
+.ProjectHeader-links-content {
   grid-area: content2;
 }
-.ProjectSummary-links-link {
+.ProjectHeader-links-link {
   padding-right: .5em;
 }
-.ProjectSummary-tags-label {
+.ProjectHeader-tags-label {
   grid-area: label3;
 }
-.ProjectSummary-tags-content {
+.ProjectHeader-tags-content {
   grid-area: content3;
   list-style: none;
   padding: 0;
 }
-.ProjectSummary-tags-tag::before {
+.ProjectHeader-tags-tag::before {
   content: '';
   display: inline-block;
   height: 1em;
   width: 1em;
   background-image: url(../../assets/icons/box_checked.svg);
 }
-.ProjectSummary-tags-tag {
+.ProjectHeader-tags-tag {
   font-size: .9 em;
   text-align: left;
 }
