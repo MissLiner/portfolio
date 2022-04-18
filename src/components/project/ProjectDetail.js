@@ -16,7 +16,7 @@ function ProjectDetail(props) {
     }
   }
   return(
-    <div className="ProjectDetail">
+    <div className="ProjectDetail" id="ProjectDetail">
       <ProjectHeader 
         title={currentProject.name} 
         currentProject={currentProject}

@@ -26,6 +26,7 @@ function PicSlider(props) {
         currentInput.checked = true;
       }
       appearPic();
+      appearText();
       checkCurrentInput();
   }, [props.currentIndex]);
 
@@ -40,6 +41,16 @@ function PicSlider(props) {
     pic.classList.remove("fade-out");
     pic.classList.add("fade-in");
   }
+  function dissolveText() {
+    const text = document.getElementById("ProjectDetail");
+    text.classList.remove("fade-in");
+    text.classList.add("fade-out");
+  }
+  function appearText() {
+    const text = document.getElementById("ProjectDetail");
+    text.classList.remove("fade-in");
+    text.classList.add("fade-out");
+  }
 
   // NAVIGATION FX
   const handleRightClick = (e) => {
@@ -47,6 +58,7 @@ function PicSlider(props) {
       const newIndex = props.currentIndex + 1;
       setDisabled(true);
       dissolvePic();
+      dissolveText();
       setTimeout(function() { 
         props.indexFunc(newIndex);
       }, 800);
@@ -61,6 +73,7 @@ function PicSlider(props) {
       const newIndex = props.currentIndex - 1;
       setDisabled(true);
       dissolvePic();
+      dissolveText();
       setTimeout(function() { 
         props.indexFunc(newIndex);
       }, 800);
