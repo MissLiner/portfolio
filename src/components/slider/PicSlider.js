@@ -48,8 +48,8 @@ function PicSlider(props) {
   }
   function appearText() {
     const text = document.getElementById("ProjectDetail");
-    text.classList.remove("fade-in");
-    text.classList.add("fade-out");
+    text.classList.remove("fade-out");
+    text.classList.add("fade-in");
   }
 
   // NAVIGATION FX
