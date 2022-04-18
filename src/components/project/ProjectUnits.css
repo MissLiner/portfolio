@@ -23,8 +23,6 @@
   width: 80%;
 }
 .ProjectUnits .SVGImg {
-  border: solid;
-  border-width: 4px;
   grid-area: image;
   width: 90%;
 }
@@ -34,12 +32,6 @@
   text-align: justify;
   width: 80%;
 }
-/* .ProjectUnits-text.left {
-  text-align: left;
-}
-.ProjectUnits-text.right {
-  text-align: right;
-} */
 .ProjectUnits .SVGImg-image {
   width: 100%;
 }

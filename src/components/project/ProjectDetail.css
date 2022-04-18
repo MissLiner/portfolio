@@ -7,7 +7,7 @@
     / 100%;
   height: 100%;
   margin-top: 20px;
-  width: 70%;
+  width: 100%;
 }
 .ProjectDetail-title-div {
   display: grid;
@@ -47,5 +47,5 @@
   grid-area: summary;
   margin: 30px auto 30px auto;
   text-align: left;
-  width: 80%;
+  width: 70%;
 }
