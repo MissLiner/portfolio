@@ -6,6 +6,15 @@ import ProjectSummary from "./ProjectSummary";
 
 function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
+  const renderUnits = () => {
+    if(currentProject.detailed) {
+      return(
+        <ProjectUnits currentProject={currentProject} />
+      )
+    } else {
+      return null;
+    }
+  }
   return(
     <div className="ProjectDetail">
       <ProjectSummary 
@@ -16,8 +25,7 @@ function ProjectDetail(props) {
         className="ProjectDetail-summary">
           {currentProject.summary}
       </p>
-      <ProjectUnits currentProject={currentProject}
-       />
+      {renderUnits()}
     </div>
   )
 }
