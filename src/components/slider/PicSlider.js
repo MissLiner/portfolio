@@ -5,13 +5,12 @@ import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRou
 import { useEffect, useState } from "react";
 import SVGImg from "../shared/SVGImg";
 import NavPics from "./NavPics";
-// import ProjectTitle from "../shared/ProjectTitle";
 
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);
 
 
-  // SELECT CURRENT NAV-DOT ON MOUNT AND WHEN USING ARROW BTNS
+  // SELECT CURRENT NAV-DOT
   useEffect(() => {
       const returnCurrentInput = () => {
         const inputs = Array.from(document.querySelectorAll(".NavPics-input"));
@@ -30,7 +29,7 @@ function PicSlider(props) {
       checkCurrentInput();
   }, [props.currentIndex]);
 
-  // TRANSITION EFFECT FX
+  // TRANSITION FX
   function dissolve() {
     const pic = document.getElementById("SVGImg-image");
     pic.classList.remove("fade-in");
@@ -50,7 +49,7 @@ function PicSlider(props) {
       dissolve();
       setTimeout(function() { 
         props.indexFunc(newIndex);
-      }, 1000);
+      }, 800);
       setTimeout(function() {
         setDisabled(false);
       }, 2200);
@@ -64,7 +63,7 @@ function PicSlider(props) {
       dissolve();
       setTimeout(function() { 
         props.indexFunc(newIndex);
-      }, 1000);
+      }, 800);
       setTimeout(function() {
         setDisabled(false);
       }, 2200);
@@ -77,7 +76,7 @@ function PicSlider(props) {
     dissolve();
     setTimeout(function() { 
       props.indexFunc(newIndex);
-    }, 1000);
+    }, 800);
     setTimeout(function() {
       setDisabled(false);
     }, 2200);
