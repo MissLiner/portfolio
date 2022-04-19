@@ -5,13 +5,14 @@ import { screenContent } from '../shared/text.js';
 function Home() {
   return(
     <div className="Home">
-      <q className="Home-quote">{screenContent.home.quote}</q>
-      <h3 className="Home-author">{screenContent.home.author + ", "}
-        <i className="Home-source">{screenContent.home.source}</i>
-      </h3>
+      <p>{screenContent.home.text1}
+        <a href={screenContent.home.gitLink[1]}>{screenContent.home.gitLink[0]}
+        </a>
+      </p>
     </div>
   )
 }
 
-// main div had Canvas and content classes
 export default Home;
+
+

@@ -6,7 +6,10 @@ export const navLabels = [ "about",
 export const screenContent = {
   home:  {quote: "Make it simple, but significant", 
           author: "Don Draper", 
-          source: "Mad Men" },
+          source: "Mad Men",
+          text1: "I created this portfolio site from scratch using ReactJS. Enjoy exploring, and please check out my code on ",
+          gitLink: ["Git", "https://github.com/MissLiner/portfolio"]
+        },
   about: [ 
           "A New Yorker by birth and by choice, after a successful   career in corporate sales and account management I am harnessing my creativity, puzzle-solving skills and process-oriented nature to launch a career in web development",
           "I've spent the last several months learning web development using The Odin Project open source curriculum. I'm comfortable working with HTML, CSS, Javascript, Webpack, ReactJS and more.",
