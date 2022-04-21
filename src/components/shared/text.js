@@ -1,3 +1,5 @@
+import bioPic from "../../assets/images/bio_pic.jpg";
+
 export const navLabels = [ "about",
                            "skills",
                            "portfolio",
@@ -7,8 +9,10 @@ export const screenContent = {
   home:  {quote: "Make it simple, but significant", 
           author: "Don Draper", 
           source: "Mad Men",
-          text1: "I created this portfolio site from scratch using ReactJS. Enjoy exploring, and please check out my code on ",
-          gitLink: ["Git", "https://github.com/MissLiner/portfolio"]
+          text1: "I created this portfolio site from scratch using ReactJS.",
+          text2: "Enjoy exploring, and please check out my code on ",
+          gitLink: ["Git", "https://github.com/MissLiner/portfolio"],
+          pic: bioPic,
         },
   about: [ 
           "A New Yorker by birth and by choice, after a successful   career in corporate sales and account management I am harnessing my creativity, puzzle-solving skills and process-oriented nature to launch a career in web development",

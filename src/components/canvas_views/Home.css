@@ -1,7 +1,16 @@
 .Home {
-  margin-top: 75px;
+  padding-top: 75px;
+  position: relative;
+  height: 90%;
+  width: 90%;
 }
-.Home-quote {
+.Home-pic {
+  right: 0;
+  top: 5%;
+  position: absolute;
+  width: 15%;
+}
+/* .Home-quote {
   font-weight: 400;
   font-size: 1.7em;
-}
+} */
