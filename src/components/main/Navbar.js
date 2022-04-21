@@ -31,7 +31,7 @@ function Navbar(props) {
     return(
       props.btnList.map((btn, i) => {
         return(
-          <button className={"Navbar-btn " + props.addClasses}
+          <button className={"Navbar-btn colors-nav-main"}
                   onClick={handleClick}
                   value={btn}
                   key={props.navClass + "-" + i}>
@@ -42,7 +42,7 @@ function Navbar(props) {
     )
   }
   return(
-    <div className={"Navbar " + props.addClasses}>
+    <div className={"Navbar colors-nav-main"}>
       {renderNavbar()}
     </div>
   )

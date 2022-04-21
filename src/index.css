@@ -24,8 +24,23 @@ h3 {
   font-size: 1.3em;
   margin-top: 15px;
 }
-
-.colors1 {
+.colors-primary {
+  background-color: #1C666C;
+  color:#A6DBED ;
+}
+.colors-secondary {
+  background-color: #D3ECFF;
+  color:#235B19;
+}
+.colors-nav-main {
+  background-color: transparent;
+  color: #A4FFBF;
+}
+.colors-nav-sticky {
+  color: black;
+  background-color: white;
+}
+.colors3 {
   background-color: #414728;
   color: #FFB000;
 }

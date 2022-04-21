@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 
 function StickyNav(props) {
   return(
-    <div className="StickyNav">
+    <div className="StickyNav colors-nav-sticky">
       <IconButton aria-label="home" onClick={props.homeFunc}>
         <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
       </IconButton>

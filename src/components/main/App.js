@@ -22,10 +22,9 @@ function App() {
   return (
     <div className="App">
       <StickyNav homeFunc={handleClickHome} emailFunc={handleClickEmail} />
-      <div className="App-header colors1">
+      <div className="App-header colors-primary">
         <h1 className="App-name">Caroline Stephenson</h1>
         <Navbar clickFunc={handleClickNav} 
-                addClasses="colors1" 
                 btnList={navLabels}
                 clearView="home"
                 view={view}
