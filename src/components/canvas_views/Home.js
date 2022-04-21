@@ -6,10 +6,15 @@ function Home() {
   return(
     <div className="Home">
       <img className="Home-pic" src={screenContent.home.pic} alt="Caroline Stephenson"></img>
-      <p>{screenContent.home.text1}
-        <a href={screenContent.home.gitLink[1]}>{screenContent.home.gitLink[0]}
-        </a>
-      </p>
+      <div className="Home-content">
+        <p className="Home-text">{screenContent.home.text1}</p>
+        <p className="Home-text">
+          {screenContent.home.text2}
+          <a href={screenContent.home.gitLink[1]}>
+            {screenContent.home.gitLink[0]}
+          </a>
+        </p>
+      </div>
     </div>
   )
 }

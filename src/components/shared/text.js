@@ -9,7 +9,7 @@ export const screenContent = {
   home:  {quote: "Make it simple, but significant", 
           author: "Don Draper", 
           source: "Mad Men",
-          text1: "I created this portfolio site from scratch using ReactJS.",
+          text1: "This portfolio site is the culmination of nine months spent learning web development through The Odin Project online curriculum.",
           text2: "Enjoy exploring, and please check out my code on ",
           gitLink: ["Git", "https://github.com/MissLiner/portfolio"],
           pic: bioPic,

@@ -5,10 +5,18 @@
   width: 90%;
 }
 .Home-pic {
-  right: 0;
-  top: 5%;
-  position: absolute;
+  float: right;
   width: 15%;
+}
+.Home-content {
+  font-size: 1.2em;
+  text-align: left;
+}
+.Home-text {
+  text-align: left;
+}
+.Home-text:not(:first-child) {
+  margin-top: 10px;
 }
 /* .Home-quote {
   font-weight: 400;
