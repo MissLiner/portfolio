@@ -23,7 +23,7 @@
   .Navbar {
     background-color: #FFF5FB;
     grid-template-columns: fit-content fit-content fit-content;
-    margin-left: 0px;
+    margin: 0px;
     width: 100%;
   }
   .Navbar-btn {
@@ -39,7 +39,7 @@
   .Navbar {
     background-color: #FFF5FB;
     grid-template-columns: fit-content fit-content fit-content;
-    margin-left: 0px;
+    margin: 0px;
     width: 100%;
   }
   .Navbar-btn {
@@ -47,7 +47,7 @@
     border-color: #ebf0eb;
     color:#C23484;
     font-size: 4em;
-    padding: 15px 0px 15px 0px;
+    padding: 18px 0px 18px 0px;
     text-align: center;
     width: 100%;
   }
