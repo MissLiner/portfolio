@@ -9,7 +9,7 @@
 }
 .Navbar-btn {
   border: none;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0;
   font-size: 1.3em;
   height: fit-content;
@@ -21,14 +21,19 @@
 }
 @media only screen and (max-width: 768px) {
   .Navbar {
-    background-color: white;
+    background-color: #FFF5FB;
     grid-template-columns: fit-content fit-content fit-content;
     margin-left: 0px;
     width: 100%;
   }
   .Navbar-btn {
-    text-align: left;
-    width: fit-content;
+    border:outset;
+    border-color: #ebf0eb;
+    color:#C23484;
+    /* color: #FF5D95; */
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    width: 100%;
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
