@@ -23,7 +23,7 @@ function Canvas(props) {
         <Skills />
       )
     }
-    else if(props.mainView === "portfolio") {
+    else if(props.mainView === "projects") {
       return(
         <Portfolio />
       )
