@@ -25,16 +25,16 @@ h3 {
   margin-top: 15px;
 }
 .colors-primary {
-  background-color: #1C666C;
-  color:#A6DBED ;
+  background-color: #16BA55;
+  color:white ;
 }
 .colors-secondary {
-  background-color: #D3ECFF;
-  color:#235B19;
+  background-color: white;
+  color:black;
 }
 .colors-nav-main {
   background-color: transparent;
-  color: #A4FFBF;
+  color: #FFBBE1;
 }
 .colors-nav-sticky {
   color: black;
