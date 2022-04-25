@@ -1,22 +1,35 @@
 .Skills {
-  height: 100%;
-  width: 100%;
+  margin-top: 0;
 }
-.Skills-list{
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin-top: 20px;
-  width: 90%;
+.Skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .Skills-div {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  grid-template-columns: 1fr;
-  height: 100%;
-  width: 100%;
-} 
+  padding: 10px 10px 10px 10px;
+  width: 100px;
+}
 .Skills-name {
   width: min-content;
 }
-
+@media only screen and (max-width: 768px) {
+  .Skills {
+    margin-top: 15%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .Skills {
+    font-size: 4em;
+    margin-top: 15%;
+  }
+  .Skills-category {
+    padding-bottom: 5%;
+  }
+  .Skills-div {
+    width: 400px;
+  }
+  .Skills-icon {
+    width: 50%;
+  }
+}

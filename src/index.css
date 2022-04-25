@@ -48,3 +48,9 @@ h3 {
   background-color: rgb(255, 251, 252);
   color: rgb(32, 32, 32);
 }
+
+/* @media only screen and (orientation: portrait) and (min-width: 1000px) {
+  * {
+    font-size: 2em;
+  }
+} */
