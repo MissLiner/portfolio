@@ -15,8 +15,8 @@
 @media only screen and (max-width: 768px) {
   .Canvas {
     border: none;
-    padding-top: 10%;
-    min-height: 100vh;
+    margin-top: 0;
+    padding-top: 30%;
     max-width: unset;
     width: 95%;
   }
@@ -34,8 +34,7 @@
   .Canvas {
     border: none;
     font-size: 2.5em;
-    padding-top: 20%;
-    min-height: 85vh;
+    padding-top: 35%;
     margin-top: 0;
     max-width: unset;
     width: 95%;

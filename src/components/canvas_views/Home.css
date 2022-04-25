@@ -27,12 +27,13 @@
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .Home {
+    padding-top: 0;
+  }
   .Home-pic {
-    margin-top: 5%;
+    float: none;
     padding: 0% 25% 10% 25%;
+    margin-top: 0;
     width: 50%;
   }
-  /* .Home-text {
-    font-size: 3em;
-  } */
 }

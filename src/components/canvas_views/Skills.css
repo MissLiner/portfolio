@@ -15,16 +15,18 @@
 }
 @media only screen and (max-width: 768px) {
   .Skills {
-    margin-top: 15%;
+    font-size: 1.2em;
+  }
+  .Skills-category {
+    padding: 5% 10% 10% 10%;
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
   .Skills {
-    font-size: 4em;
-    margin-top: 15%;
+    font-size: 1.5em;
   }
   .Skills-category {
-    padding-bottom: 5%;
+    padding: 0% 5% 5% 5%;
   }
   .Skills-div {
     width: 400px;
