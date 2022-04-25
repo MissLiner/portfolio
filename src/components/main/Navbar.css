@@ -30,14 +30,25 @@
     border:outset;
     border-color: #ebf0eb;
     color:#C23484;
-    /* color: #FF5D95; */
     padding: 5px 0px 5px 0px;
     text-align: center;
     width: 100%;
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .App-name {
-    font-size: 7em;
+  .Navbar {
+    background-color: #FFF5FB;
+    grid-template-columns: fit-content fit-content fit-content;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .Navbar-btn {
+    border:outset;
+    border-color: #ebf0eb;
+    color:#C23484;
+    font-size: 4em;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    width: 100%;
   }
 }
