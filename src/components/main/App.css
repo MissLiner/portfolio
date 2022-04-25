@@ -21,3 +21,13 @@
   margin-left: 20px;
   text-align: left;
 }
+@media only screen and (max-width: 768px) {
+  .App-name {
+    font-size: 2em;
+  }
+}
+@media only screen and (orientation: portrait), screen and (min-width: 1000px) {
+  .App-name {
+    font-size: 6em;
+  }
+}
