@@ -1,5 +1,6 @@
 .App {
-  min-height: 100vh;
+  height: fit-content;
+  position: relative;
 }
 .App-header {
   display: grid;
@@ -27,6 +28,7 @@
 @media only screen and (max-width: 768px) {
   .App {
     background: white;
+    min-height: 100vh;
   }
   .App-header {
     grid-template:
@@ -47,6 +49,7 @@
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
   .App {
     background: white;
+    min-height: 100vh;
   }
   .App-header {
     grid-template:
