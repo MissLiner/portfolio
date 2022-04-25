@@ -2,7 +2,7 @@ import bioPic from "../../assets/images/bio_pic.jpg";
 
 export const navLabels = [ "about",
                            "skills",
-                           "portfolio",
+                           "projects",
                           ]
                           
 export const screenContent = {

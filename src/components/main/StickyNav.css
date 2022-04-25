@@ -15,14 +15,14 @@
 
 @media only screen and (max-width: 768px) {
   .StickyNav {
-    bottom: 1em;
+    bottom: .3em;
     flex-direction: row;
     top: initial;
   }
   .StickyNav-icon {
-    height: 40px !important;
-    padding: 5px;
-    width: 40px !important;
+    height: 30px !important;
+    padding: 3px;
+    width: 30px !important;
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
