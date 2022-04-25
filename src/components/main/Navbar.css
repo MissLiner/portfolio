@@ -19,3 +19,20 @@
 .activeBtn {
   text-decoration:underline !important;
 }
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    background-color: white;
+    grid-template-columns: fit-content fit-content fit-content;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .Navbar-btn {
+    text-align: left;
+    width: fit-content;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .App-name {
+    font-size: 7em;
+  }
+}
