@@ -35,7 +35,7 @@ function Navbar(props) {
                   onClick={handleClick}
                   value={btn}
                   key={props.navClass + "-" + i}>
-                    {props.symbol + btn}
+                    {btn}
           </button>
         )
       })

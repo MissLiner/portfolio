@@ -28,7 +28,7 @@ function App() {
                 btnList={navLabels}
                 clearView="home"
                 view={view}
-                symbol=":" />
+         />
       </div>
       <Canvas mainView={view} />
     </div>
