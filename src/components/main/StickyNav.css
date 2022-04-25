@@ -9,9 +9,9 @@
   right: 1em;
   z-index: 1000;
 }
-.MuiButtonBase-root {
-  color: #FC3876 !important;   
+.StickyNav-btn {
+  color: white;
 }
-.MuiSvgIcon-root {
-  color: white !important; 
-}
+/* .MuiSvgIcon-root {
+  color: white; 
+} */

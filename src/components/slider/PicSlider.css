@@ -22,7 +22,7 @@
 .PicSlider-btn {
   background-color: transparent;
   border: none;
-  color:darkgray;
+  color:darkgray !important;
   justify-self: center;
   align-self: center;
 }

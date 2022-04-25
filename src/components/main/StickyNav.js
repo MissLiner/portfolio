@@ -8,10 +8,10 @@ import IconButton from '@mui/material/IconButton';
 function StickyNav(props) {
   return(
     <div className="StickyNav colors-nav-sticky">
-      <IconButton aria-label="home" onClick={props.homeFunc}>
+      <IconButton className="StickyNav-btn" aria-label="home" onClick={props.homeFunc}>
         <HomeRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
       </IconButton>
-      <IconButton aria-label="email" onClick={props.emailFunc}>
+      <IconButton className="StickyNav-btn" aria-label="email" onClick={props.emailFunc}>
         <EmailRoundedIcon style={{ color: "rgb(255, 251, 252)" }}/>
       </IconButton>
     </div>
