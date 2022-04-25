@@ -9,7 +9,7 @@
 }
 .Navbar-btn {
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0;
   font-size: 1.3em;
   height: fit-content;
@@ -17,7 +17,7 @@
 }
 
 .activeBtn {
-  text-decoration:underline !important;
+  font-weight: bolder;
 }
 @media only screen and (max-width: 768px) {
   .Navbar {

@@ -30,7 +30,14 @@ h3 {
 }
 .colors-nav-main {
   background-color: transparent;
-  color: #FFBBE1;
+  color: #D3FECF;
+  /* color: #FFBBE1; */
+}
+.colors-nav-main:hover {
+  color: #FFDBF1;
+}
+.colors-nav-main.activeBtn {
+  color:#FED5F2;
 }
 .colors-nav-sticky {
   color: black;
