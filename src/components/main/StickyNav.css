@@ -12,3 +12,18 @@
 .StickyNav-btn {
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .StickyNav-icon {
+    height: 30px !important;
+    padding: 3px;
+    width: 30px !important;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .StickyNav-icon {
+    height: 80px !important;
+    padding: 10px;
+    width: 80px !important;
+  }
+}
