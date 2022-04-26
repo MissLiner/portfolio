@@ -10,15 +10,14 @@
   height: min-content;
   left: 15px;
   position: fixed;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 10px 0px;
   top: 0px;
   width: 100%;
   z-index: 1;
 }
 .App-name {
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 3em;
-  font-weight: bold;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
   grid-area: name;
   height: fit-content;
   margin-bottom: 0;

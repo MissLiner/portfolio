@@ -3,7 +3,7 @@
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prompt', sans-serif;
   margin: auto;
   text-align: center;
 }
@@ -19,6 +19,9 @@ h3 {
   font-weight: 300;
   font-size: 1.3em;
   margin-top: 15px;
+}
+p {
+  font-size: 1.1em;
 }
 .colors-primary {
   background-color: #16BA55;
