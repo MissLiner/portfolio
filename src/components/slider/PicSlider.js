@@ -8,6 +8,7 @@ import NavPics from "./NavPics";
 
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);
+  const [touchStart, setTouchStart] = useState("");
 
 
   // SELECT CURRENT NAV-DOT
@@ -94,6 +95,25 @@ function PicSlider(props) {
       setDisabled(false);
     }, 2200);
   }
+  function handleTouchStart(e) {
+    const touchDown = e.touches[0].clientX;
+    setTouchStart(touchDown);
+  }
+  function handleTouchMove(e) {
+    const touchDown = touchStart;
+    if(touchDown === null) {
+      return;
+    }
+    const currentTouch = e.touches[0].clientX;
+    const movement = touchDown - currentTouch;
+    if(movement > 5) {
+      handleRightClick();
+    }
+    if(movement < -5) {
+      handleLeftClick();
+    }
+    setTouchStart(null);
+  }
 
   return(
     <div className="PicSlider">
@@ -112,8 +132,8 @@ function PicSlider(props) {
       <SVGImg 
         currentImage={props.projects[props.currentIndex].sliderRefs}
         parentClass="PicSlider-main-img"
-        swipeLeftFunc={handleLeftClick}
-        swipeRightFunc={handleRightClick} />
+        touchStartFunc={handleTouchStart}
+        touchMoveFunc={handleTouchMove} />
       <NavPics 
         projects={props.projects} 
         disabled={disabled} 

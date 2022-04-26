@@ -10,8 +10,8 @@ function SVGImg(props) {
         className={"SVGImg-image " + props.parentClass}
         id="SVGImg-image"
         data-name={props.currentImage[3]}
-        onSwipedLeft={props.swipeLeftFunc}
-        onSwipedRight={props.swipeRightFunc}
+        onTouchStart={props.touchStartFunc}
+        onTouchMove={props.touchMoveFunc}
        >
       </img>
     </div>
