@@ -112,7 +112,8 @@ function PicSlider(props) {
       <SVGImg 
         currentImage={props.projects[props.currentIndex].sliderRefs}
         parentClass="PicSlider-main-img"
-        clickFunc={props.updateFunc} />
+        swipeLeftFunc={handleLeftClick}
+        swipeRightFunc={handleRightClick} />
       <NavPics 
         projects={props.projects} 
         disabled={disabled} 
