@@ -14,6 +14,7 @@ function Home() {
             {screenContent.home.gitLink[0]}
           </a>
         </p>
+        <p className="Home-text">{screenContent.home.text3}</p>
       </div>
     </div>
   )
