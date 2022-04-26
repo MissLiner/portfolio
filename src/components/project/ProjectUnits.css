@@ -29,7 +29,7 @@
 .ProjectUnits-text {
   grid-area: text;
   margin-top: 1em;
-  text-align: justify;
+  text-align: left;
   width: 80%;
 }
 .ProjectUnits .SVGImg-image {
@@ -55,7 +55,6 @@
     text-align: center;
   }
   .ProjectUnits-text {
-    font-size: 1.2em;
     width: 95%;
   }
 }
@@ -76,5 +75,8 @@
   }
   .ProjectUnits-title {
     text-align: center;
+  }
+  .ProjectUnits-text {
+    width: 95%;
   }
 }
