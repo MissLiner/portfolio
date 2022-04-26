@@ -46,6 +46,10 @@
                     "text" min-content
                     / 1fr;
   }
+  .ProjectUnits-text {
+    font-size: 1.2em;
+    width: 95%;
+  }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
   .ProjectUnits {
@@ -57,5 +61,4 @@
                     "text" min-content
                     / 1fr;
   }
-}
 }
