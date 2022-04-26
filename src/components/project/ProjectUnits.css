@@ -35,3 +35,27 @@
 .ProjectUnits .SVGImg-image {
   width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+  .ProjectUnits {
+    width: 100%;
+  }
+  .ProjectUnits-unit.right, .ProjectUnits-unit.left {
+    grid-template:  "title" min-content
+                    "image" min-content
+                    "text" min-content
+                    / 1fr;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .ProjectUnits {
+    width: 100%;
+  }
+  .ProjectUnits-unit.right, .ProjectUnits-unit.left {
+    grid-template:  "title" min-content
+                    "image" min-content
+                    "text" min-content
+                    / 1fr;
+  }
+}
+}

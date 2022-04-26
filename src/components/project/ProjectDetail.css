@@ -48,3 +48,15 @@
   text-align: left;
   width: 70%;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .ProjectDetail {
+    width: 100%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  body {
+    min-height: 100vh;
+  }
+}
