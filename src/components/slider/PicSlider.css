@@ -140,3 +140,15 @@
     opacity:0;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .PicSlider {
+    width: 90%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  .PicSlider {
+    width: 90%;
+  }
+}

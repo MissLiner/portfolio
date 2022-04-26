@@ -1,5 +1,16 @@
-.Portfolio {
+/* .Portfolio {
   position: relative;
   height: 100%;
   width: 100%;
+} */
+/* 
+@media only screen and (max-width: 768px) {
+  .Portfolio {
+    min-height: 100vh;
+  }
 }
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+  body {
+    min-height: 100vh;
+  }
+} */

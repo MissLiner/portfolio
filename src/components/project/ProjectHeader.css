@@ -14,7 +14,6 @@
   margin-left: 0;
   text-align: left;
   width: 100%;
-  
 }
 .ProjectHeader {
   column-gap: 20px;
@@ -61,4 +60,47 @@
 .ProjectHeader-tags-tag {
   font-size: .9 em;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .ProjectHeader * {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  }
+  .ProjectHeader {
+    column-gap: 10px;
+    row-gap: 5px;
+    display: grid;
+    grid-area: header;
+    grid-template: 
+    "content1"
+    "content2"
+    "content3"
+      / max-content;
+  }
+  .label {
+    display: none;
+  }
+  .ProjectHeader-title-content {
+    font-size: 2em;
+    text-align: center;
+  }
+  .ProjectHeader-links-content {
+    text-align: center;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 1000px) {
+   .ProjectHeader {
+    column-gap: 10px;
+    row-gap: 5px;
+    display: grid;
+    grid-area: header;
+    grid-template: 
+    "label1 content1"
+    "label2 content2"
+    "label3 content3"
+      / max-content max-content;
+  }
+  .ProjectHeader-tags-tag::before {
+    content: none;
+  }
 }
