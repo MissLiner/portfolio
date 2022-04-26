@@ -14,7 +14,6 @@
   margin-bottom: 0;
   font-size: 1.3em;
   height: fit-content;
-  /* padding: .1em 2em .1em 0em; */
   text-align: left;
   width: 100%;
 }
@@ -24,33 +23,43 @@
 }
 @media only screen and (max-width: 768px) {
   .Navbar {
-    background-color: #FFF5FB;
+    /* background-color: #FFF5FB; */
+    background-color: white !important;
+    border: none;
     column-gap: 0;
     grid-template-columns: fit-content fit-content fit-content;
     margin: 0px;
     width: 100%;
   }
   .Navbar-btn {
-    border:outset;
-    border-color: #ebf0eb;
+    /* border:outset;
+    border-color: #ebf0eb; */
+    background-color: white !important;
     color:#C23484;
     font-size: 1.5em;
-    padding: 5px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     width: 100%;
+  }
+  .activeBtn {
+    background-color: white;
+    border: none;
+    font-weight: 500;
+    height: 100%;
+    /* padding: none; */
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
   .Navbar {
-    background-color: #FFF5FB;
+    background-color: white;
     column-gap: 0;
     grid-template-columns: fit-content fit-content fit-content;
     margin: 0px;
     width: 100%;
   }
   .Navbar-btn {
-    border:outset;
-    border-color: #ebf0eb;
+    /* border:outset;
+    border-color: #ebf0eb; */
     color:#C23484;
     font-size: 4em;
     padding: 18px 0px 18px 0px;
