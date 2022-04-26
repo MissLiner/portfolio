@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/https//missliner.github.io/react-gh-pages/static/css/main.dbef13e7.css",
+    "main.js": "/https//missliner.github.io/react-gh-pages/static/js/main.0c6b3d20.js",
+    "static/js/787.37faa4c4.chunk.js": "/https//missliner.github.io/react-gh-pages/static/js/787.37faa4c4.chunk.js",
+    "static/media/bio_pic.jpg": "/https//missliner.github.io/react-gh-pages/static/media/bio_pic.c2a8c6c2c1bea7b0e5a3.jpg",
+    "static/media/box_checked.svg": "/https//missliner.github.io/react-gh-pages/static/media/box_checked.ebc997906ee9b985e4f9.svg",
+    "static/media/FS_library.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_library.ceea3a67c3c958bc77f18de052a68467.svg",
+    "static/media/FS_restaurant.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_restaurant.82ff8c48679e5f41e6c24e136305dd0f.svg",
+    "static/media/FS_memory.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_memory.521dbaea79bc18afd1df375954e2bfd4.svg",
+    "static/media/TN_restaurant.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_restaurant.48d080b45896a3474a6327be72d0b366.svg",
+    "static/media/FS_tictactoe.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_tictactoe.8459ddd74c76ebf63a3dccc5814df5be.svg",
+    "static/media/FS_candolist.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_candolist.451a9c940f2c12092cd6d380881c6abc.svg",
+    "static/media/FS_calculator.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_calculator.cef8371bc43fc51a42e49c2db1630277.svg",
+    "static/media/FS_resume.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_resume.5887af855b216e44f0d943ed1f086af6.svg",
+    "static/media/FS_battleship.svg": "/https//missliner.github.io/react-gh-pages/static/media/FS_battleship.4ca1f725b364f1e953426c4e48619b0e.svg",
+    "static/media/TN_memory-welcome.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_memory-welcome.a54d68507f98c428b3b72a3316e2b851.svg",
+    "static/media/rest_footer.svg": "/https//missliner.github.io/react-gh-pages/static/media/rest_footer.2467276a2394a715485aaf67ca3a64f5.svg",
+    "static/media/battle_setup.svg": "/https//missliner.github.io/react-gh-pages/static/media/battle_setup.5e886bc7fbdf60ab83edc8bfa67c39f8.svg",
+    "static/media/TN_calculator.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_calculator.30aa5c21b3e64610f06521e8542a5a07.svg",
+    "static/media/TN_library.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_library.f15a3fac0fec20e5ade57a82155cd7b0.svg",
+    "static/media/TN_battleship.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_battleship.a952455050c92d1a2d0746193f768e0e.svg",
+    "static/media/rest_menu.svg": "/https//missliner.github.io/react-gh-pages/static/media/rest_menu.f05e653fba3e231a7e78df4be8271df3.svg",
+    "static/media/TN_memory.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_memory.302365bbea4b37700b91cb8a3f484789.svg",
+    "static/media/memory_score.svg": "/https//missliner.github.io/react-gh-pages/static/media/memory_score.35faae9bc9dbf6418957ac5170c9a852.svg",
+    "static/media/battle_board.svg": "/https//missliner.github.io/react-gh-pages/static/media/battle_board.29244f9e93c279fd5250d2554cff963c.svg",
+    "static/media/TN_resume.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_resume.627366a7bd9c6246ed35dc604906f2e0.svg",
+    "static/media/icons8-react.svg": "/https//missliner.github.io/react-gh-pages/static/media/icons8-react.f5409fbdda4614275dc95e167902dab6.svg",
+    "static/media/icons8-adobe-illustrator.svg": "/https//missliner.github.io/react-gh-pages/static/media/icons8-adobe-illustrator.a4bf3a305cd6ccf91cf493b8feffa479.svg",
+    "static/media/TN_candolist.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_candolist.4a09fe639ee4b0b656bc601c74e99cbc.svg",
+    "static/media/TN_tictactoe.svg": "/https//missliner.github.io/react-gh-pages/static/media/TN_tictactoe.d6da40f841e86b554ce40847f9b0e7e8.svg",
+    "index.html": "/https//missliner.github.io/react-gh-pages/index.html",
+    "main.dbef13e7.css.map": "/https//missliner.github.io/react-gh-pages/static/css/main.dbef13e7.css.map",
+    "main.0c6b3d20.js.map": "/https//missliner.github.io/react-gh-pages/static/js/main.0c6b3d20.js.map",
+    "787.37faa4c4.chunk.js.map": "/https//missliner.github.io/react-gh-pages/static/js/787.37faa4c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbef13e7.css",
+    "static/js/main.0c6b3d20.js"
+  ]
+}
