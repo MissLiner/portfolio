@@ -3,7 +3,7 @@
   grid-template:
     "header" min-content
     "summary" min-content
-    "units"  minmax(400px, min-content)
+    "units"  min-content
     / 100%;
   margin-top: 20px;
   width: 100%;

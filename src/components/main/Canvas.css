@@ -19,7 +19,8 @@
     margin-top: 0;
     padding-top: 30%;
     max-width: unset;
-    width: 95%;
+    min-height: 100vh;
+    width: 93%;
   }
   .Canvas::after {
     background-color: #16BA55;

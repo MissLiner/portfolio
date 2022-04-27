@@ -9,7 +9,6 @@
   width: 370px;
 }
 .Navbar-btn {
-  border: none;
   font-weight: 600;
   margin-bottom: 0;
   font-size: 1.5em;
@@ -33,15 +32,26 @@
   }
   .Navbar-btn {
     background-color: white !important;
+    border: 4px solid #16BA55;
+    /* border-bottom: solid; */
+    border-left: none;
+    border-right: none;
+    border-top: 10px solid #16BA55;
+    /* border-color: black; */
     color:#C23484;
     font-size: 1.5em;
-    padding: 10px 0px 10px 0px;
+    padding: 8px 0px 10px 0px;
     text-align: center;
     width: 100%;
   }
   .activeBtn {
     background-color: white;
-    border: none;
+    border: 4px solid #16BA55;
+    /* border-top: solid;
+    border-left: solid;
+    border-right: solid; */
+    border-bottom: 4px solid white;
+    /* border: none; */
     font-weight: 500;
     height: 100%;
   }

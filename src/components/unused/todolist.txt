@@ -1,0 +1,22 @@
+Add soft skills
+Add tabs to mobile layout
+Check on all different mobile devices
+Check on large screens
+Edit text
+Take new picture
+Move sticky nav
+Adjust footer on mobile
+Add email link
+Add resume
+Add links
+  -TOP on About tab
+  -glass effect
+Refine colors
+Refine fonts
+Refine layout
+
+PROJECTS
+Add readmes
+Add mobile queries
+Debug
+Clean code

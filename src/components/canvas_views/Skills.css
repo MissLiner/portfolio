@@ -7,6 +7,7 @@
     "category"
     "row1"
     "row2";
+    margin-top: 15%;
 }
 .Skills-list {
   display: flex;
