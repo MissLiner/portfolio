@@ -1,10 +1,18 @@
 .Skills {
   margin-top: 0;
 }
+.Skills-table {
+  display: grid;
+  grid-template:
+    "category"
+    "row1"
+    "row2";
+}
 .Skills-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  list-style: none;
 }
 .Skills-div {
   padding: 10px 10px 10px 10px;
@@ -12,6 +20,15 @@
 }
 .Skills-name {
   width: min-content;
+}
+.Skills-category {
+  grid-area: category;
+}
+.row1 {
+  grid-area: row1;
+}
+.row2 {
+  grid-area: row2;
 }
 @media only screen and (max-width: 768px) {
   .Skills {

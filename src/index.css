@@ -13,7 +13,7 @@ h1 {
   font-weight: 600;
   font-size: 2.5em;
 }
-/* PROJECT TITLE */
+/* SKILLS HEADER */
 h2 {
   font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-weight:400;
@@ -56,9 +56,9 @@ p {
   color:black;
 }
 .colors-nav-main {
-  background-color: transparent;
-  color: #D3FECF;
-  /* color: #FFBBE1; */
+  background-color: inherit;
+  /* color: #ddffda; */
+  color: rgb(243, 253, 234);
 }
 .colors-nav-main:hover {
   color: #FED5F2;
