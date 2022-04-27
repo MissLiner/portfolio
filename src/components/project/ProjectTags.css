@@ -1,26 +1,15 @@
 .ProjectTags {
-  display: grid;
-  grid-area: tags;
-  grid-template: "header content" 1fr 4fr;
+  grid-area: content3;
+  list-style: none;
   padding: 0;
-  width: 60%;
-}
-.ProjectTags-heading {
-  grid-area: header;
-  font-family: 'Kalam', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.ProjectTags-tag-div {
-  display: flex;
-  flex-wrap: wrap;
-  grid-area: content;
-  /* width: 50%; */ 
 }
 .ProjectTags-tag {
+  text-align: left;
+}
+.ProjectTags-tag::before {
+  content: '';
   display: inline-block;
-  font-family: 'Kalam', sans-serif;
-  font-size: 1.5em;
-  padding: 2px 6px 2px 6px;
-  width: max-content;
+  height: 1em;
+  width: 1em;
+  background-image: url(../../assets/icons/box_checked.svg);
 }

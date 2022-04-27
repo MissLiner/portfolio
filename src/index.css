@@ -3,26 +3,49 @@
 }
 
 * {
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Baskerville', serif;
   margin: auto;
   text-align: center;
 }
+/* HEADER NAME */
 h1 {
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-size: 2.5em;
-  font-weight:300;
 }
+/* PROJECT TITLE */
 h2 {
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-weight:400;
   margin-bottom: 15px;
 }
+/* PROJECT HEADER LABELS */
 h3 {
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* PROJECT HEADER CONTENT */
+h4 {
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+/* PROJECT UNIT TITLE */
+h5 {
   font-weight: 300;
   font-size: 1.3em;
   margin-top: 15px;
 }
-p {
+/* PROJECT TAGS */
+li {
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
 }
+p {
+  font-size: 1.2em;
+}
+
 .colors-primary {
   background-color: #16BA55;
   color:white ;
@@ -45,10 +68,6 @@ p {
 .colors-nav-sticky {
   color: black;
   background-color: white;
-}
-.colors3 {
-  background-color: #414728;
-  color: #FFB000;
 }
 .colors2 {
   background-color: rgb(255, 251, 252);
@@ -80,6 +99,7 @@ p {
     font-size: 6em;
   }
   h3 {
+    color:forestgreen;
     font-size: 1.7em;
   }
   p {

@@ -15,8 +15,6 @@
   z-index: 1;
 }
 .App-name {
-  font-family: "Prompt", sans-serif;
-  font-weight: 600;
   grid-area: name;
   height: fit-content;
   margin-bottom: 0;

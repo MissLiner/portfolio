@@ -7,7 +7,7 @@ function ProjectUnits(props) {
   const leftUnit = (obj, keyNum) => {
     return(
       <div className="ProjectUnits-unit left" key={"unit-" + keyNum}>
-      <h3 className="ProjectUnits-title">{obj.name}</h3>
+      <h5 className="ProjectUnits-title">{obj.name}</h5>
       <SVGImg currentImage={obj.image} />
       <p className="ProjectUnits-text left">{obj.text}</p>
     </div>
@@ -16,7 +16,7 @@ function ProjectUnits(props) {
   const rightUnit = (obj, keyNum) => {
     return(
       <div className="ProjectUnits-unit right" key={"unit-" + keyNum}>
-      <h3 className="ProjectUnits-title">{obj.name}</h3>
+      <h5 className="ProjectUnits-title">{obj.name}</h5>
       <SVGImg currentImage={obj.image} />
       <p className="ProjectUnits-text right">{obj.text}</p>
     </div>

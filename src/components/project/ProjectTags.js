@@ -1,4 +1,5 @@
 import '../../index.css';
+import './ProjectTags.css';
 
 function ProjectTags(props) {
   const renderTags = () => {
@@ -6,7 +7,7 @@ function ProjectTags(props) {
       props.currentProject.focus.map((item, i) => {
         return(
           <li 
-            className={props.parentClass + "-tags-tag"} 
+            className="ProjectTags-tag"
             key={"tag" + i}>
               {item}
           </li>
@@ -15,7 +16,7 @@ function ProjectTags(props) {
     )
   }
   return(
-    <ul className={props.parentClass + "-tags-content content"}>
+    <ul className={"ProjectTags content"}>
       {renderTags()}
     </ul>
   )

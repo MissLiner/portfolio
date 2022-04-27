@@ -7,9 +7,9 @@ function ProjectHeader(props) {
   return(
     <div className="ProjectHeader">
       <h3 className="ProjectHeader-title-label label">Mission: </h3>
-      <div className="ProjectHeader-title-content content">{props.title}</div>
+      <h4 className="ProjectHeader-title-content content">{props.title}</h4>
       <h3 className="ProjectHeader-links-label label">Links: </h3>
-      <div className="ProjectHeader-links-content content">
+      <h4 className="ProjectHeader-links-content content">
         <a  className="ProjectHeader-links-link" 
             href={props.currentProject.live}
             target="_blank"
@@ -22,12 +22,11 @@ function ProjectHeader(props) {
             rel="noreferrer">
               Git
         </a>
-      </div>
+      </h4>
 
       <h3 className="ProjectHeader-tags-label label">Focus:</h3>
       <ProjectTags 
         currentProject={props.currentProject}    
-        parentClass="ProjectHeader"
        />
     </div>
   )
