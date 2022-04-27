@@ -46,6 +46,7 @@ p {
   font-size: 1.2em;
 }
 
+/* COLORS */
 .colors-primary {
   background-color: #16BA55;
   color:white ;
@@ -60,20 +61,17 @@ p {
   /* color: #FFBBE1; */
 }
 .colors-nav-main:hover {
-  color: #FFDBF1;
+  color: #FED5F2;
 }
 .colors-nav-main.activeBtn {
   color:#FED5F2;
 }
 .colors-nav-sticky {
-  color: black;
-  background-color: white;
-}
-.colors2 {
-  background-color: rgb(255, 251, 252);
-  color: rgb(32, 32, 32);
+  background-color: #FF5D95;
+  color: white;
 }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   body {
     min-height: 100vh;
@@ -99,7 +97,6 @@ p {
     font-size: 6em;
   }
   h3 {
-    color:forestgreen;
     font-size: 1.7em;
   }
   p {

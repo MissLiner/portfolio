@@ -15,10 +15,12 @@ function ProjectTags(props) {
       })
     )
   }
+
   return(
     <ul className={"ProjectTags content"}>
       {renderTags()}
     </ul>
   )
 }
+
 export default ProjectTags;

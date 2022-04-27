@@ -32,8 +32,6 @@
     width: 100%;
   }
   .Navbar-btn {
-    /* border:outset;
-    border-color: #ebf0eb; */
     background-color: white !important;
     color:#C23484;
     font-size: 1.5em;
@@ -46,7 +44,6 @@
     border: none;
     font-weight: 500;
     height: 100%;
-    /* padding: none; */
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
@@ -58,8 +55,6 @@
     width: 100%;
   }
   .Navbar-btn {
-    /* border:outset;
-    border-color: #ebf0eb; */
     color:#C23484;
     font-size: 4em;
     padding: 18px 0px 18px 0px;
