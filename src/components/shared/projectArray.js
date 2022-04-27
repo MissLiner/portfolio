@@ -27,6 +27,9 @@ import BattleBoard from "../../assets/images/examples/battle_board.svg";
 
 import MemoryScore from "../../assets/images/examples/memory_score.svg";
 
+import ResumeBtns from "../../assets/images/examples/resume_btns.svg";
+import ResumeCustom from "../../assets/images/examples/resume_custom.svg";
+
 export const projectArray = [
   { name: "CV Builder",
     sliderRefs: [ FSResumeImg, "resume maker site screenshot", 
@@ -38,10 +41,10 @@ export const projectArray = [
     focus: ["Functional Components", "Conditional Rendering", "ReactJS", "Forms"],
     summary: "This simple resume generator was my first major ReactJS project. I used fun colors and fonts, to make entering your info a little more cheerful, but it publishes a clean, professional resume.",
     units: [{ name: "Conditional Rendering",
-              image: ["", "conditional rendering example"], 
+              image: [ResumeBtns, "conditional rendering example"], 
               text: "Each component is designed to be very flexible for data entry, adding, editing and publishing. The user can easily switch between different tasks, and hide or show each section to help focus." },
             { name: "Design Elements",
-              image: ["", "design element example"], 
+              image: [ResumeCustom, "design element example"], 
               text: "I customized a glass effect that I found here [add link] to give the buttons depth and a more enjoyable user experience. After searching for a vector to use as the divider on each component, I decided I preferred to make my own, which I did using Illustrator. For customized icons and dividers, I often find that making my own is faster and more satisfying than repurposing someone else's work."
               }],
     detailed: true,
