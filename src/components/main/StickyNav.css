@@ -4,20 +4,22 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 1em;
-  right: 1em;
+  top: 10em;
+  left: 1em;
   z-index: 1000;
 }
 
 @media only screen and (max-width: 768px) {
   .StickyNav {
-    bottom: .3em;
+    left: 50%;
+    margin-left: -52px;
+    bottom: 11px;
     flex-direction: row;
     top: initial;
   }
   .StickyNav-icon {
     height: 30px !important;
-    padding: 3px;
+    padding: 1px 3px 1px 3px;
     width: 30px !important;
   }
 }
