@@ -15,7 +15,7 @@ function App() {
     setView("home");
   }
   const handleClickEmail = () => {
-    setShowContact(!showContact);
+    setShowContact(true);
   }
   const handleClickNav = (e) => {
     setView(e.target.value);

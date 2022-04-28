@@ -20,7 +20,7 @@ function StickyNav(props) {
       <IconButton 
         className="StickyNav-btn" 
         aria-label="email" 
-        onClick={props.handleClickEmail}>
+        onClick={props.emailFunc}>
         <EmailRoundedIcon 
           className="StickyNav-icon" 
           style={{ color: "rgb(255, 251, 252)" }}
