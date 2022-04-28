@@ -22,6 +22,7 @@ Refine fonts
 Refine layout
 Check on all different mobile devices
 Check on large screens
+Uninstall emailjs and emailjs-com
 
 ??
 Make into single page option

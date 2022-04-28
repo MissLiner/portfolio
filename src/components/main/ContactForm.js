@@ -1,34 +1,45 @@
 import '../../index.css';
 import './ContactForm.css';
-import { send } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { React, useState } from 'react';
 
 function ContactForm() {
-  const [toSend, setToSend] = useState({
+  const [form, setForm] = useState({
     senderName: "",
     senderEmail: "",
     senderPhone: "",
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    send(
-      "service_p1cor7p",
-      "template_u2dllbh",
-      toSend,
-      "yhaJaUkUkfWSou52P",
-    )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
+
+    emailjs.sendForm("service_p1cor7p", "template_u2dllbh", form, "yhaJaUkUkfWSou52P")
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
       });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   send(
+  //     "service_p1cor7p",
+  //     "template_u2dllbh",
+  //     toSend,
+  //     "yhaJaUkUkfWSou52P",
+  //   )
+  //     .then((response) => {
+  //       console.log('SUCCESS!', response.status, response.text);
+  //     })
+  //     .catch((err) => {
+  //       console.log('FAILED...', err);
+  //     });
+  // };
+
   const handleChange = (e) => {
-    setToSend({...toSend, [e.target.name]: e.target.value });
+    setForm({...form, [e.target.name]: e.target.value });
   };
 
   return(
@@ -44,7 +55,7 @@ function ContactForm() {
         type="text"
         id="senderName"
         name="senderName"
-        value={toSend.senderName}
+        value={form.senderName}
         onChange={handleChange}
       />
       <div className="ContactForm-contactfield"
@@ -61,7 +72,7 @@ function ContactForm() {
             id="senderEmail"
             name="senderEmail"
             placeholder="you@abc.com"
-            value={toSend.senderEmail}
+            value={form.senderEmail}
             onChange={handleChange}
           />
         </div>
@@ -77,7 +88,7 @@ function ContactForm() {
             id="senderPhone"
             name="senderPhone"
             placeholder="(xxx) xxx-xxxx"
-            value={toSend.senderPhone}
+            value={form.senderPhone}
             onChange={handleChange}
           />
         </div>
@@ -93,14 +104,14 @@ function ContactForm() {
           type="text"
           id="message"
           name="message"
-          value={toSend.message}
+          value={form.message}
           onChange={handleChange}
         />
       </div>
       <button
         className="ContactForm-submitbtn"
         type="submit"
-        onSubmit={handleSubmit}
+        onSubmit={sendEmail}
         >submit
       </button>
     </form>
