@@ -1,9 +1,9 @@
 .Canvas {
   align-items: center;
-  border: solid;
-  border-color: black;
+  /* border: solid;
+  border-color: black; */
   border-radius: .4em;
-  border-width: 5px;
+  /* border-width: 5px; */
   display: grid;
   min-height: 460px;
   padding: 2% 2% 2% 2%;

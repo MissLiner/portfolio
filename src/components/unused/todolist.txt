@@ -1,6 +1,6 @@
 *Change git and live links to icons
 
-Add greyout filter for email form
+Enable clicking out of contact form and add cancel button
 Make slider work better
 Fix icons on slider to be the same size on mobile
 Add resume
@@ -35,3 +35,4 @@ Clean code
 
 DONE!!
 Add email link
+Add greyout filter for email form
