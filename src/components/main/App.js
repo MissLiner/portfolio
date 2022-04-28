@@ -26,7 +26,11 @@ function App() {
 
   const renderContactForm = () => {
     if(showContact) {
-      return(< ContactForm submitFunc={hideContact} />)
+      return(
+        <div className="App-filter">
+        < ContactForm submitFunc={hideContact} />
+        </div>
+      )
     } else {
       return null;
     }

@@ -41,6 +41,19 @@
     width: 100%;
   }
 }
+.App-filter {
+  background-color: black;
+  filter:blur(2px);
+  height: 100%;
+  opacity: 0.4;
+  position:absolute;
+  left: -10%;
+  right: -10%;
+  top: 0;
+  height: 100%;
+  width: 102%;
+  z-index: 1000;
+}
 @media only screen and (orientation: portrait) and (min-width: 1000px) {
   .App {
     background: white;

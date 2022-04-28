@@ -1,8 +1,8 @@
 *Change git and live links to icons
 
+Add greyout filter for email form
 Make slider work better
 Fix icons on slider to be the same size on mobile
-Add email link
 Add resume
 Add links
   -TOP on About tab
@@ -32,3 +32,6 @@ Add readmes
 Add mobile queries
 Debug
 Clean code
+
+DONE!!
+Add email link
