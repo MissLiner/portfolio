@@ -3,7 +3,7 @@ import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 import { React, useRef } from 'react';
 
-function ContactForm() {
+function ContactForm(props) {
 
   const form = useRef();
 
@@ -18,11 +18,16 @@ function ContactForm() {
       });
   };
 
+  const handleSubmit = (e) => {
+    sendEmail(e);
+    props.submitFunc();
+  }
+
   return(
     <form 
       className="ContactForm colors-contact-form" 
       ref={form}      
-      onSubmit={sendEmail}>
+      onSubmit={handleSubmit}>
       <h3 className="ContactForm-title">Contact</h3>
       <div className="ContactForm-unit ContactForm-unit-name">
       <label 

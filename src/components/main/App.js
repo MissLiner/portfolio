@@ -20,10 +20,13 @@ function App() {
   const handleClickNav = (e) => {
     setView(e.target.value);
   }
+  const hideContact = () => {
+    setShowContact(false);
+  }
 
   const renderContactForm = () => {
     if(showContact) {
-      return(< ContactForm />)
+      return(< ContactForm submitFunc={hideContact} />)
     } else {
       return null;
     }
