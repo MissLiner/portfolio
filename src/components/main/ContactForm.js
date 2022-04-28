@@ -1,6 +1,7 @@
 import '../../index.css';
 import './ContactForm.css';
 import { send } from 'emailjs-com';
+import { React, useState } from 'react';
 
 function ContactForm() {
   const [toSend, setToSend] = useState({
