@@ -1,15 +1,57 @@
 .ContactForm {
+  justify-content: start;
+  align-content: start;
   background-color:#7aebb2;
   border: 4px solid black;
   border-radius: .4em;
   color: black;
-  height: 300px; width: 500px;
+  display: grid;
+  grid-template:
+    "title" min-content
+    "name" 1fr
+    "email" 1fr
+    "message" 5fr;
+  height: 350px; width: max-content;
   margin: auto;
+  padding: 20px 30px 20px 30px;
   position: absolute;
   top: 50%; left: 50%;
-  text-align: left;
   transform: translate(-50%, -50%);
 }
-.ContactForm-input-div {
-  position: inline-block;
+.ContactForm-unit {
+  column-gap: 5px;
+  justify-content: start;
+  display: grid;
+  grid-template:
+    "label" min-content
+    "input" min-content
+    / 1fr;
+  margin-top: 0;
+  width: 100%;
+}
+.ContactForm-unit-name {
+  grid-area: name;
+}
+.ContactForm-unit-email {
+  grid-area: email;
+}
+.ContactForm-unit-message {
+  grid-area: message;
+}
+.ContactForm-label {
+  grid-area: label;
+  margin-top: 0;
+  text-align: left;
+  width: 100%;
+}
+.ContactForm-input {
+  border-radius: .4em;
+  grid-area: input;
+  margin-bottom: 10px;
+  margin-left: 0;
+  width: 235px;
+}
+.ContactForm-input-message {
+  height: 150px;
+  width: 300px !important;
 }

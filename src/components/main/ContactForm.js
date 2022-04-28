@@ -24,26 +24,29 @@ function ContactForm() {
       ref={form}      
       onSubmit={sendEmail}>
       <h3 className="ContactForm-title">Contact</h3>
+      <div className="ContactForm-unit ContactForm-unit-name">
       <label 
         htmlFor="senderName"
         className="ContactForm-label"
-        >your name:
+        >Name
       </label>
       <input
-        className="ContactForm-input"
+        className="ContactForm-input ContactForm-input-name"
         type="text"
         id="senderName"
         name="senderName"
+        placeholder="name"
         value={form.senderName}
       />
-      <div className="ContactForm-input-unit">
+      </div>
+      <div className="ContactForm-unit ContactForm-unit-email">
         <label 
           htmlFor="senderEmail"
           className="ContactForm-label"
-          >email me:
+          >Email
         </label>
         <input
-          className="ContactForm-input"
+          className="ContactForm-input ContactForm-input-email"
           type="email"
           id="senderEmail"
           name="senderEmail"
@@ -51,14 +54,14 @@ function ContactForm() {
           value={form.senderEmail}
         />
       </div>
-      <div className="ContactForm-input-unit">
+      <div className="ContactForm-unit ContactForm-unit-message">
         <label 
           htmlFor="message"
           className="ContactForm-label"
-          >your message:
+          >Message
         </label>
         <input
-          className="ContactForm-input"
+          className="ContactForm-input ContactForm-input-message"
           type="text"
           id="message"
           name="message"
