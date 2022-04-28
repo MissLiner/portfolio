@@ -1,19 +1,30 @@
-Add soft skills
-Style tabs on mobile layout
-Check on all different mobile devices
-Check on large screens
-Edit text
-Take new picture
-*Move sticky nav
-*Adjust footer on mobile
-*Add email link
-*Add resume
-*Add links
+*Change git and live links to icons
+
+Make slider work better
+Fix icons on slider to be the same size on mobile
+Add email link
+Add resume
+Add links
   -TOP on About tab
   -glass effect
+
+Style tabs on mobile layout
+Move sticky nav
+Adjust footer on mobile
+
+Add portfolio project to projects
+Add soft skills
+Edit text
+Take new picture
+
 Refine colors
 Refine fonts
 Refine layout
+Check on all different mobile devices
+Check on large screens
+
+??
+Make into single page option
 
 PROJECTS
 Add readmes

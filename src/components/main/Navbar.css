@@ -9,6 +9,7 @@
   width: 370px;
 }
 .Navbar-btn {
+  border: none;
   font-weight: 600;
   margin-bottom: 0;
   font-size: 1.5em;
