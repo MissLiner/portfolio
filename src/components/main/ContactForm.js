@@ -33,6 +33,7 @@ function ContactForm() {
 
   return(
     <form className="ContactForm">
+      <h3 className="ContactForm-title">Contact</h3>
       <label 
         for="senderName"
         className="ContactForm-label"
@@ -46,48 +47,56 @@ function ContactForm() {
         value={toSend.senderName}
         onChange={handleChange}
       />
-      <fieldset className="ContactForm-contactfield">
-        <legend>should I call or email you?</legend>
+      <div className="ContactForm-contactfield"
+        >should I call or email you?
+        <div className="ContactForm-input-unit">
+          <label 
+            for="senderEmail"
+            className="ContactForm-label"
+            >email me:
+          </label>
+          <input
+            className="ContactForm-input"
+            type="email"
+            id="senderEmail"
+            name="senderEmail"
+            placeholder="you@abc.com"
+            value={toSend.senderEmail}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="ContactForm-input-unit">
+          <label 
+            for="senderPhone"
+            className="ContactForm-label"
+            >call me:
+          </label>
+          <input
+            className="ContactForm-input"
+            type="number"
+            id="senderPhone"
+            name="senderPhone"
+            placeholder="(xxx) xxx-xxxx"
+            value={toSend.senderPhone}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+      <div className="ContactForm-input-unit">
         <label 
-          for="senderEmail"
+          for="message"
           className="ContactForm-label"
-          >your email:
+          >your message:
         </label>
         <input
           className="ContactForm-input"
-          type="email"
-          id="senderEmail"
-          name="senderEmail"
-          value={toSend.senderEmail}
+          type="text"
+          id="message"
+          name="message"
+          value={toSend.message}
           onChange={handleChange}
         />
-        <label 
-          for="senderPhone"
-          className="ContactForm-label"
-          >your phone number:
-        </label>
-        <input
-          className="ContactForm-input"
-          type="number"
-          id="senderPhone"
-          name="senderPhone"
-          value={toSend.senderPhone}
-          onChange={handleChange}
-        />
-      </fieldset>
-      <label 
-        for="message"
-        className="ContactForm-label"
-        >your message:
-      </label>
-      <input
-        className="ContactForm-input"
-        type="text"
-        id="message"
-        name="message"
-        value={toSend.message}
-        onChange={handleChange}
-      />
+      </div>
       <button
         className="ContactForm-submitbtn"
         type="submit"
