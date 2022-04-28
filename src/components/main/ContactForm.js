@@ -20,7 +20,7 @@ function ContactForm() {
 
   return(
     <form 
-      className="ContactForm" 
+      className="ContactForm colors-contact-form" 
       ref={form}      
       onSubmit={sendEmail}>
       <h3 className="ContactForm-title">Contact</h3>

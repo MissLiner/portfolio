@@ -70,6 +70,10 @@ p {
   background-color: #FF5D95;
   color: white;
 }
+.colors-contact-form {
+  background-color:#ffe7f8;
+  color: rgb(47, 47, 47);
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
