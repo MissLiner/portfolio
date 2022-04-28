@@ -35,7 +35,7 @@ function ContactForm() {
     <form className="ContactForm">
       <h3 className="ContactForm-title">Contact</h3>
       <label 
-        for="senderName"
+        htmlFor="senderName"
         className="ContactForm-label"
         >your name:
       </label>
@@ -51,7 +51,7 @@ function ContactForm() {
         >should I call or email you?
         <div className="ContactForm-input-unit">
           <label 
-            for="senderEmail"
+            htmlFor="senderEmail"
             className="ContactForm-label"
             >email me:
           </label>
@@ -67,7 +67,7 @@ function ContactForm() {
         </div>
         <div className="ContactForm-input-unit">
           <label 
-            for="senderPhone"
+            htmlFor="senderPhone"
             className="ContactForm-label"
             >call me:
           </label>
@@ -84,7 +84,7 @@ function ContactForm() {
       </div>
       <div className="ContactForm-input-unit">
         <label 
-          for="message"
+          htmlFor="message"
           className="ContactForm-label"
           >your message:
         </label>
