@@ -28,7 +28,7 @@ function ContactForm() {
       <label 
         htmlFor="senderName"
         className="ContactForm-label"
-        >Name
+        >NAME
       </label>
       <input
         className="ContactForm-input ContactForm-input-name"
@@ -37,13 +37,14 @@ function ContactForm() {
         name="senderName"
         placeholder="name"
         value={form.senderName}
+        required
       />
       </div>
       <div className="ContactForm-unit ContactForm-unit-email">
         <label 
           htmlFor="senderEmail"
           className="ContactForm-label"
-          >Email
+          >EMAIL
         </label>
         <input
           className="ContactForm-input ContactForm-input-email"
@@ -52,26 +53,29 @@ function ContactForm() {
           name="senderEmail"
           placeholder="you@abc.com"
           value={form.senderEmail}
+          required
         />
       </div>
       <div className="ContactForm-unit ContactForm-unit-message">
         <label 
           htmlFor="message"
           className="ContactForm-label"
-          >Message
+          >MESSAGE
         </label>
-        <input
+        <textarea
           className="ContactForm-input ContactForm-input-message"
           type="text"
           id="message"
           name="message"
+          placeholder="message"
           value={form.message}
+          required
         />
       </div>
       <button
-        className="ContactForm-submitbtn"
+        className="ContactForm-submit-btn"
         type="submit"
-        >submit
+        >SEND MESSAGE
       </button>
     </form>
   )
