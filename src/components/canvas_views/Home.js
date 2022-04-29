@@ -5,7 +5,11 @@ import { screenContent } from '../shared/text.js';
 function Home() {
   return(
     <div className="Home">
-      <img className="Home-pic" src={screenContent.home.pic} alt="Caroline Stephenson"></img>
+      <img 
+        className="Home-pic" 
+        src={screenContent.home.pic} 
+        alt="Caroline Stephenson">
+      </img>
       <div className="Home-content">
         <p className="Home-text">{screenContent.home.text1}</p>
         <p className="Home-text">

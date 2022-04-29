@@ -6,7 +6,8 @@
 }
 .Home-pic {
   float: right;
-  width: 15%;
+  border-radius: .5em;
+  width: 8em;
 }
 .Home-content {
   font-size: 1.2em;
