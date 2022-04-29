@@ -7,3 +7,8 @@
   text-align: left;
   width: 90%;
 }
+@media only screen and (max-width: 768px)  {
+  .About {
+    margin-top: 38% !important;
+  }
+}
