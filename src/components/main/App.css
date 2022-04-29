@@ -39,7 +39,6 @@
     min-height: 100vh;
   }
   .App-header {
-    /* background-color: white; */
     grid-template:
       "name" min-content
       "navbar" min-content;
@@ -47,9 +46,9 @@
     padding: 0;
   }
   .App-name {
-    /* background-color:#16BA55; */
+    font-weight: 200;
     margin-left: 0;
-    padding: 20px 0px 6px 0px;
+    padding: 10px 0px 2px 0px;
     text-align: center;
     width: 100%;
   }
