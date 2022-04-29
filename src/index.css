@@ -92,11 +92,15 @@ p {
   .Navbar {
     background-color: white;
   }
+  .colors-secondary {
+    background-color: #e0faea;
+    color:rgb(59, 59, 59);
+  }
   .colors-nav-main {
     color:#ff8ddd;
   }
   .colors-nav-main.activeBtn {
-    background-color: #cfeedb;
+    background-color: #e0faea;
     color: #FF5D95;
   }
 }

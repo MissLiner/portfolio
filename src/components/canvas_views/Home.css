@@ -20,6 +20,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Home-content {
+    font-size: unset;
+  }
   .Home-pic {
     margin-top: -15%;
     padding: 0% 25% 10% 25%;
