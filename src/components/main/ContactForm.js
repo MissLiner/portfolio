@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 import { React, useRef } from 'react';

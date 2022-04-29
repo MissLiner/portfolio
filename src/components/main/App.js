@@ -4,7 +4,7 @@ import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
 import { navLabels } from '../shared/text';
 import { useState } from "react";
-import '../../index.css';
+import '../../index.scss';
 import './App.css';
 
 function App() {

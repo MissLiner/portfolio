@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './Portfolio.css';
 import { useEffect, useState } from 'react';
 import PicSlider from '../slider/PicSlider';

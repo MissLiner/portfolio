@@ -1,5 +1,5 @@
 import "./NavPics.css";
-import '../../index.css';
+import '../../index.scss';
 
 function NavPics(props) {
   const renderNavPics = () => {

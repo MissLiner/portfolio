@@ -1,16 +1,20 @@
 .Home {
-  padding-top: 75px;
+  display: grid;
+  grid-template:
+    "text pic" min-content
+    / 3fr 1fr;
+  margin-top: 0px !important;
   position: relative;
-  height: 90%;
-  width: 90%;
+  width: 100%;
 }
 .Home-pic {
-  float: right;
   border-radius: .5em;
+  grid-area: pic;
   width: 8em;
 }
 .Home-content {
   font-size: 1.2em;
+  grid-area: text;
   text-align: left;
 }
 .Home-text {
@@ -21,12 +25,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Home {
+    grid-template:
+      "pic"
+      "text";
+    margin-top: 120px !important;
+  }
   .Home-content {
     font-size: unset;
+    width: 90%;
   }
   .Home-pic {
     margin-top: -15%;
-    padding: 0% 25% 10% 25%;
+    padding: 8% 25% 8% 25%;
     width: 50%;
   }
 }

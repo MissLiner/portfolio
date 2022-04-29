@@ -1,5 +1,5 @@
 import { projectArray } from "../shared/projectArray";
-import '../../index.css';
+import '../../index.scss';
 import './ProjectDetail.css';
 import ProjectUnits from './ProjectUnits';
 import ProjectHeader from "./ProjectHeader";

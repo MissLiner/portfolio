@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './ProjectHeader.css';
 
 import ProjectTags from "./ProjectTags";

@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './Skills.css';
 import { skillsArr } from "../shared/skillsArr";
 

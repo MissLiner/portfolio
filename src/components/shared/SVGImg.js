@@ -1,5 +1,5 @@
 import "./SVGImg.css";
-import '../../index.css';
+import '../../index.scss';
 
 function SVGImg(props) {
   return(

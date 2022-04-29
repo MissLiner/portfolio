@@ -7,8 +7,9 @@ export const navLabels = [ "about",
                           
 export const screenContent = {
   home:  {
-          text1: "This portfolio site is the culmination of nine months spent learning web development through The Odin Project online curriculum.",
-          text2: "Enjoy exploring! You can take a peek under the hood on ",
+          text1: "Welcome! I built this portfolio from scratch using ReactJS, and the web development skills I gained through ",
+          odinLink: ["The Odin Project", "https://www.theodinproject.com/"],
+          text2: "Enjoy exploring, and please take a peek under the hood on ",
           text3: 'My design mantra: "simple, intuitive, fun!"',
           gitLink: ["Git", "https://github.com/MissLiner/portfolio"],
           pic: bioPic,

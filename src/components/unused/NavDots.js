@@ -1,5 +1,5 @@
 import "./PicSlider.css";
-import '../index.css';
+import '../index.scss';
 
 function NavDots(props) {
   const renderNavDots = () => {

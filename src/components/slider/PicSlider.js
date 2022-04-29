@@ -1,5 +1,5 @@
 import "./PicSlider.css";
-import '../../index.css';
+import '../../index.scss';
 import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
 import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import { useEffect, useState } from "react";

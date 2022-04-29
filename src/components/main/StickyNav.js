@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './StickyNav.css';
 
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';

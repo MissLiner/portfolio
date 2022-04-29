@@ -1,4 +1,4 @@
-import '../../index.css';
+import '../../index.scss';
 import './Canvas.css';
 import { React } from 'react';
 import Home from '../canvas_views/Home';
