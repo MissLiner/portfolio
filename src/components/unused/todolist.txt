@@ -1,5 +1,5 @@
 *Change git and live links to icons
-
+Decide what to do about high res portrait queries
 Enable clicking out of contact form and add cancel button
 Make slider work better
 Fix icons on slider to be the same size on mobile

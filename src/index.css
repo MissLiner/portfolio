@@ -89,7 +89,14 @@ p {
   p {
     font-size: 1.3em;
   }
+  .Navbar {
+    background-color: white;
+  }
+  .colors-nav-main {
+    color:#ff8ddd;
+  }
   .colors-nav-main.activeBtn {
+    background-color: #cfeedb;
     color: #FF5D95;
   }
 }
