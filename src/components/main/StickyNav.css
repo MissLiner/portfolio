@@ -12,15 +12,20 @@
 @media only screen and (max-width: 768px) {
   .StickyNav {
     left: 50%;
-    margin-left: -52px;
-    bottom: 11px;
+    margin-left: -42px;
+    bottom: 5px;
     flex-direction: row;
     top: initial;
   }
   .StickyNav-icon {
-    height: 30px !important;
-    padding: 1px 3px 1px 3px;
-    width: 30px !important;
+    height: 25px !important;
+    width: 25px !important;
+  }
+  .StickyNav-btn-home {
+    padding-right: 10px !important;
+  }
+  .StickyNav-btn-email {
+    padding-left: 10px !important;
   }
 }
 @media only screen and (orientation: portrait) and (min-width: 1000px) {

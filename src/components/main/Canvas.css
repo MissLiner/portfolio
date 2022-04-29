@@ -13,16 +13,16 @@
 @media only screen and (max-width: 768px) {
   .Canvas {
     margin-top: 0;
-    padding-top: 30%;
+    padding: 30% 0 0 0;
     max-width: unset;
     min-height: 100vh;
-    width: 93%;
+    width: 100%;
   }
   .Canvas::after {
     background-color: #16BA55;
     bottom: 0;
     content: "";
-    height: 70px;
+    height: 50px;
     left: 0;
     position: fixed;
     width: 100%;

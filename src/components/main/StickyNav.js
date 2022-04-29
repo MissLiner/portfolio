@@ -9,7 +9,7 @@ function StickyNav(props) {
   return(
     <div className="StickyNav colors-nav-sticky">
       <IconButton 
-        className="StickyNav-btn" 
+        className="StickyNav-btn StickNav-btn-home" 
         aria-label="home" 
         onClick={props.homeFunc}>
         <HomeRoundedIcon 
@@ -18,7 +18,7 @@ function StickyNav(props) {
         />
       </IconButton>
       <IconButton 
-        className="StickyNav-btn" 
+        className="StickyNav-btn StickyNav-btn-email" 
         aria-label="email" 
         onClick={props.emailFunc}>
         <EmailRoundedIcon 
