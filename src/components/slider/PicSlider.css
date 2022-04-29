@@ -5,7 +5,7 @@
     "lbutton mainpic rbutton" min-content
     / 1fr 14fr 1fr;
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 .PicSlider-main-img {
   background-color: transparent;

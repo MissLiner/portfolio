@@ -45,7 +45,9 @@ export const projectArray = [
               text: "Each component is designed to be very flexible for data entry, adding, editing and publishing. The user can easily switch between different tasks, and hide or show each section to help focus." },
             { name: "Design Elements",
               image: [ResumeCustom, "design element example"], 
-              text: "I customized a glass effect that I found here [add link] to give the buttons depth and a more enjoyable user experience. After searching for a vector to use as the divider on each component, I decided I preferred to make my own, which I did using Illustrator. For customized icons and dividers, I often find that making my own is faster and more satisfying than repurposing someone else's work."
+              text: "I customized a glass effect that I found ",
+              text2: " to give the buttons depth and a more enjoyable user experience. After searching for a vector to use as the divider on each component, I decided I preferred to make my own, which I did using Illustrator. For customized icons and dividers, I often find that making my own is faster and more satisfying than repurposing someone else's work.",
+              link: ["here", "https://simplestepscode.com/css-glass-button-tutorial/"]
               }],
     detailed: true,
   },
