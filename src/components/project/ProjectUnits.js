@@ -7,12 +7,12 @@ function ProjectUnits(props) {
   const renderLink = (obj) => {
     if(obj.link) {
       return(
-        <div className="ProjectUnits-text2">
+        <span className="ProjectUnits-text2">
           <a href={obj.link[1]}>
             {obj.link[0]}
           </a>
           {obj.text2}
-        </div>
+        </span>
       )
     } else {
       return null;
