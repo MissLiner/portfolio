@@ -45,6 +45,9 @@ li {
 p {
   font-size: 1.2em;
 }
+a {
+  white-space: nowrap;
+}
 
 $link: #EC407A;
 .wrap {
@@ -59,7 +62,6 @@ $link: #EC407A;
 	}
   p {
     margin: 0 0 20px;
-    font-size: 25px;
     &:last-child {
       margin: 0;
     }
