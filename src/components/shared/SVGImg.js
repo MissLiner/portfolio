@@ -2,6 +2,7 @@ import "./SVGImg.css";
 import '../../index.scss';
 
 function SVGImg(props) {
+
   return(
     <div  className={"SVGImg " + props.parentClass} >
       <img 
@@ -12,6 +13,7 @@ function SVGImg(props) {
         data-name={props.currentImage[3]}
         onTouchStart={props.touchStartFunc}
         onTouchMove={props.touchMoveFunc}
+        onLoad={props.loadFunc}
        >
       </img>
     </div>

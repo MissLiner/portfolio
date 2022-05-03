@@ -9,7 +9,17 @@ import NavPics from "./NavPics";
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);
   const [touchStart, setTouchStart] = useState("");
+  const [sliderIndex, setSliderIndex] = useState(0);
 
+  const updateSlider = (newValue) => {
+    setSliderIndex(newValue);
+  }
+  const updateContent = () => {
+    props.updateContent(sliderIndex);
+  }
+  // useEffect(() => {
+  //   props.updateFunc(sliderIndex);
+  // });
 
   // SELECT CURRENT NAV-DOT
   useEffect(() => {
@@ -17,7 +27,7 @@ function PicSlider(props) {
         const inputs = Array.from(document.querySelectorAll(".NavPics-input"));
         for(let input of inputs) {
           const index = parseInt(input.dataset.index);
-          if(index === props.currentIndex) {
+          if(index === sliderIndex) {
             return input;
           }
         }
@@ -27,14 +37,14 @@ function PicSlider(props) {
         currentInput.checked = true;
       }
       checkCurrentInput();
-  }, [props.currentIndex]);
+  }, [sliderIndex]);
 
   // NAVIGATION FX
   const handleRightClick = (e) => {
-    if(props.currentIndex < props.projects.length - 1) {
-      const newIndex = props.currentIndex + 1;
+    if(sliderIndex < props.projects.length - 1) {
+      const newIndex = sliderIndex + 1;
       setDisabled(true);
-      props.indexFunc(newIndex);
+      updateSlider(newIndex);
       setTimeout(function() {
         setDisabled(false);
       }, 500);
@@ -42,10 +52,10 @@ function PicSlider(props) {
   }
 
   const handleLeftClick = (e) => {
-    if(props.currentIndex > 0) {
-      const newIndex = props.currentIndex - 1;
+    if(sliderIndex > 0) {
+      const newIndex = sliderIndex - 1;
       setDisabled(true);
-      props.indexFunc(newIndex);
+      updateSlider(newIndex);
       setTimeout(function() {
         setDisabled(false);
       }, 500);
@@ -55,11 +65,13 @@ function PicSlider(props) {
   function handleNavClick(e) {
     const newIndex = parseInt(e.target.dataset.index);
     setDisabled(true);
-    props.indexFunc(newIndex);
+    updateSlider(newIndex);
     setTimeout(function() {
       setDisabled(false);
     }, 500);
   }
+
+  // SWIPE FX
   function handleTouchStart(e) {
     const touchDown = e.touches[0].clientX;
     setTouchStart(touchDown);
@@ -95,14 +107,17 @@ function PicSlider(props) {
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <SVGImg 
-        currentImage={props.projects[props.currentIndex].sliderRefs}
+        currentImage={props.projects[sliderIndex].sliderRefs}
         parentClass="PicSlider-main-img"
         touchStartFunc={handleTouchStart}
-        touchMoveFunc={handleTouchMove} />
+        touchMoveFunc={handleTouchMove}
+        loadFunc={updateContent}
+      />
       <NavPics 
         projects={props.projects} 
         disabled={disabled} 
-        clickFunc={handleNavClick} />
+        clickFunc={handleNavClick} 
+      />
     </div>
   )
 }

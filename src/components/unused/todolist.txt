@@ -1,21 +1,17 @@
-*Change git and live links to icons
+?Change git and live links to icons
 Decide what to do about high res portrait queries
 Enable clicking out of contact form and add cancel button
+Fix contact form on mobile
 Make slider work better
+  -remove transitions
+  -add async so transitions are together from first image load
+  -refine swipe variables
 Fix icons on slider to be the same size on mobile
+
 Add resume
-Add links
-  -TOP on About tab
-  -glass effect
-
-Style tabs on mobile layout
-Move sticky nav
-Adjust footer on mobile
-
 Add portfolio project to projects
 Add soft skills
 Edit text
-Take new picture
 
 Refine colors
 Refine fonts
@@ -36,3 +32,17 @@ Clean code
 DONE!!
 Add email link
 Add greyout filter for email form
+Add links
+  -TOP on About tab
+  -glass effect
+Style tabs on mobile layout
+Move sticky nav
+Adjust footer on mobile
+
+examples:
+1. Changing text in sync with image:
+    -seperated indexes for slider and content
+    -moved slider index into slider
+    -had slider update content index, but still needed to be able to wait for this to be done after image is loaded
+    -tried udeEffect in SVGImage to trigger contentIndex update, but it totally failed
+    -finally looked up if onLoad was a parameter for img, it was, put the update function there

@@ -1,33 +1,27 @@
 import '../../index.scss';
 import './Portfolio.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PicSlider from '../slider/PicSlider';
 import ProjectDetail from '../project/ProjectDetail';
 import { projectArray } from '../shared/projectArray';
 
 function Portfolio() {
-  const [title, setTitle] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  
-  const updateIndex = (newValue) => {
-    setCurrentIndex(newValue);
-  }
 
-  useEffect(() => {
-    setTitle(projectArray[currentIndex].name);
-  }, [currentIndex]) 
+  const [contentIndex, setContentIndex] = useState(0);
+  
+  const updateContent = (newValue) => {
+    setContentIndex(newValue);
+  }
 
   return(
     <div className="Portfolio">
       <PicSlider 
-        currentIndex={currentIndex}
         projects={projectArray} 
-        indexFunc={updateIndex}
+        updateContent={updateContent}
        />
       <ProjectDetail 
-        title={title}
         projects={projectArray}
-        currentIndex={currentIndex}
+        currentIndex={contentIndex}
          />
     </div>
   )
