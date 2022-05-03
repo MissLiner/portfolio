@@ -31,12 +31,12 @@ All colors and element selectors are declared in index.css.
 I used [Mockplus](https://www.mockplus.com/) to create a very basic wireframe:
 
 <img src="./src/assets/images/screenshots/portfolio_mock.svg" width="300" 
-  alt="mock of portfolio site">
+  align="center" alt="mock of portfolio site">
 
 While I made some changes as I developed the site, the basic structure held up:
 
 <img src="./src/assets/images/screenshots/portfolio_actual.svg" width="300" 
-  alt="published portfolio site">
+  align="center" alt="published portfolio site">
 
 
 ### Color Scheme
