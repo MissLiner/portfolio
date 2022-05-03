@@ -30,6 +30,7 @@ All colors and element selectors are declared in index.css.
 
 I used [Mockplus](https://www.mockplus.com/) to create a very basic wireframe:
 ![mock of portfolio site](./src/assets/images/screenshots/portfolio_mock.svg)
+<img src="https://github.com/favicon.ico" width="48">
 While I made some changes as I developed the site, the basic structure held up:
 ![published portfolio site](./src/assets/images/screenshots/portfolio_actual.svg)
 
