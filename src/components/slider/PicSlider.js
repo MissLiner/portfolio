@@ -26,46 +26,18 @@ function PicSlider(props) {
         const currentInput = returnCurrentInput();
         currentInput.checked = true;
       }
-      appearPic();
-      appearText();
       checkCurrentInput();
   }, [props.currentIndex]);
-
-  // TRANSITION FX
-  function dissolvePic() {
-    const pic = document.getElementById("SVGImg-image");
-    pic.classList.remove("fade-in");
-    pic.classList.add("fade-out");
-  }
-  function appearPic() {
-    const pic = document.getElementById("SVGImg-image");
-    pic.classList.remove("fade-out");
-    pic.classList.add("fade-in");
-  }
-  function dissolveText() {
-    const text = document.getElementById("ProjectDetail");
-    text.classList.remove("fade-in");
-    text.classList.add("fade-out");
-  }
-  function appearText() {
-    const text = document.getElementById("ProjectDetail");
-    text.classList.remove("fade-out");
-    text.classList.add("fade-in");
-  }
 
   // NAVIGATION FX
   const handleRightClick = (e) => {
     if(props.currentIndex < props.projects.length - 1) {
       const newIndex = props.currentIndex + 1;
       setDisabled(true);
-      dissolvePic();
-      dissolveText();
-      setTimeout(function() { 
-        props.indexFunc(newIndex);
-      }, 800);
+      props.indexFunc(newIndex);
       setTimeout(function() {
         setDisabled(false);
-      }, 2200);
+      }, 500);
     }
   }
 
@@ -73,27 +45,20 @@ function PicSlider(props) {
     if(props.currentIndex > 0) {
       const newIndex = props.currentIndex - 1;
       setDisabled(true);
-      dissolvePic();
-      dissolveText();
-      setTimeout(function() { 
-        props.indexFunc(newIndex);
-      }, 800);
+      props.indexFunc(newIndex);
       setTimeout(function() {
         setDisabled(false);
-      }, 2200);
+      }, 500);
     }
   }
 
   function handleNavClick(e) {
     const newIndex = parseInt(e.target.dataset.index);
     setDisabled(true);
-    dissolvePic();
-    setTimeout(function() { 
-      props.indexFunc(newIndex);
-    }, 800);
+    props.indexFunc(newIndex);
     setTimeout(function() {
       setDisabled(false);
-    }, 2200);
+    }, 500);
   }
   function handleTouchStart(e) {
     const touchDown = e.touches[0].clientX;
