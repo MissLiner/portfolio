@@ -79,7 +79,7 @@ While I didn't follow mobile-first design principles, this project really increa
 I started with a very understated black and white color scheme, which I felt would best showcase my colorful portfolio. But as I built the site, it felt too austere, and didn't represent me well. I played around with a few options on [Adobe Color](https://color.adobe.com/):
 
 - **Blue/Purple**: two of my favorite colors, but blue felt too restrictive/generic, and purple too amateur
-- **Orange**: I love orange, but it didn't look good on my site, any more than it looks good on me in real life
+- **Orange**: I love orange, but it doesn't work with my complexion OR my portfolio!
 - **Olive**: olive green has a lovely sophisticated feel, but in this case it just felt drab
 
 Finally I played my way into **pink** and **green**, a combination that always makes me happy. In this case, I used watermelons as my inspiration, which hit several of the right notes:
