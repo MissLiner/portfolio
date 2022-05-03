@@ -7,6 +7,7 @@ This portfolio site was built from scratch in spring 2022 to represent my work l
 [Structure](https://github.com/MissLiner/portfolio#structure)
 - [File Structure](https://github.com/MissLiner/portfolio#file-structure)
 - [CSS Structure](https://github.com/MissLiner/portfolio#css-structure)
+
 [Development Story](https://github.com/MissLiner/portfolio#development-story)
 - [ReactJS](https://github.com/MissLiner/portfolio#reactjs)
 - [Image Slider](https://github.com/MissLiner/portfolio#image-slider)
