@@ -1,10 +1,10 @@
 import '../../index.scss';
 import './Canvas.css';
 import { React } from 'react';
-import Home from '../canvas_views/Home';
-import About from '../canvas_views/About';
-import Skills from '../canvas_views/Skills';
-import Portfolio from '../canvas_views/Portfolio';
+import Home from '../main_views/Home';
+import About from '../main_views/About';
+import Skills from '../main_views/Skills';
+import Portfolio from '../main_views/Portfolio';
 
 function Canvas(props) {
   const renderCanvas = () => {
