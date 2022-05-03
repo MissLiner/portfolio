@@ -2,6 +2,20 @@
 
 This portfolio site was built from scratch in spring 2022 to represent my work learning web development and design over the past year.
 
+### Table of Contents
+
+[Structure](https://github.com/MissLiner/portfolio#structure)
+- [File Structure](https://github.com/MissLiner/portfolio#file-structure)
+- [CSS Structure](https://github.com/MissLiner/portfolio#css-structure)
+[Development Story](https://github.com/MissLiner/portfolio#development-story)
+- [ReactJS](https://github.com/MissLiner/portfolio#reactjs)
+- [Image Slider](https://github.com/MissLiner/portfolio#image-slider)
+- [Organization](https://github.com/MissLiner/portfolio#organization)
+- [Content](https://github.com/MissLiner/portfolio#content)
+- [Layout](https://github.com/MissLiner/portfolio#layout)
+- [Mobile Development](https://github.com/MissLiner/portfolio#mobile-development)
+- [Color Scheme](https://github.com/MissLiner/portfolio#color-scheme)
+
 ## Structure
 
 ### File Structure
@@ -20,10 +34,8 @@ Images, screenshots, thumbnails, icons, etc. are housed in a separate **assets**
 
 All color schemes and element selectors are declared in *index.css*. Each component has its own css file, which shares both its name and location. I used only classes to style each element, with the naming convention as follows:
 
-Parent divs: 
-- `*"ComponentName"*`
-Child elements: 
-- `*"ComponentName-element-description"*`
+Parent divs: `*"ComponentName"*`
+Child elements: `*"ComponentName-element-description"*`
 
 ## Development Story
 
@@ -35,13 +47,15 @@ I adore the modular structure of ReactJS, and used only functional components to
 
 I quickly decided to use a carousel to show off my work. At first I used an existing library, but quickly became disatisfied as I tried to customize it to my purposes. Instead, I repurposed and refined an image slider I'd created for an earlier project. While I appreciate all of the resources available through ReactJS, building my own component has been worth it almost every single time.
 
+One of my favorite additions was the ability to swipe through the images on mobile - a little more complicated than I expected, but the solution (comparing touch position at the start and during a swipe) is so elegant.
+
 ### Organization
 
-Once I had my main components built, I took the time to organize them into category folders. I also decided that it was time to stop cramming all of my CSS into one or two files, and researched the best naming convention for my purposes. It took a while to reorganize, create the files/folders, and refactor the code, but development became so much smoother once I had!
+Once I had my main components built, I organized them into category folders. I also decided that it was time to stop cramming all of my CSS into one or two files, and researched the best naming convention for my purposes. It took a while to reorganize, create the files/folders, and refactor the code, but development became so much smoother once I had!
 
 ### Content
 
-I chose to gather all text, links and image references in separate files outside of my components. This definitely kept my component code cleaner, and enabled easier editing. However, I'm pretty ambivalent about this choice, since embedding links and non-standard shaped images became more difficult.
+I placed all text, links and image references in separate files outside of my components. This kept my component code cleaner, and enabled easier editing. However, I'm pretty ambivalent about this choice, since it made embedding links and non-standard shaped images more difficult.
 
 ### Layout
 
@@ -61,11 +75,11 @@ While I didn't follow mobile-first design principles, this project really increa
 
 ### Color Scheme
 
-I started with a very understated black and white color scheme, which I felt would best showcase my colorful portfolio. But as I built the site, it felt too austere, and didn't represent me well. I played around with a few options on Adobe Color:
+I started with a very understated black and white color scheme, which I felt would best showcase my colorful portfolio. But as I built the site, it felt too austere, and didn't represent me well. I played around with a few options on [Adobe Color](https://color.adobe.com/):
 
-- **Blue/Purple**: two of my favorite colors, but blue felt too restrictive/generic, and purple too amateur.
-- **Orange**: I love orange, but it didn't look good on my site, any more than it looks good on me in real life.
-- **Olive**: Olive green has a lovely sophisticated feel, but in this case it just felt drab.
+- **Blue/Purple**: two of my favorite colors, but blue felt too restrictive/generic, and purple too amateur
+- **Orange**: I love orange, but it didn't look good on my site, any more than it looks good on me in real life
+- **Olive**: olive green has a lovely sophisticated feel, but in this case it just felt drab
 
 Finally I played my way into **pink** and **green**, a combination that always makes me happy. In this case, I used watermelons as my inspiration, which hit several of the right notes:
 
