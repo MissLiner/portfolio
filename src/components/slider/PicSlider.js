@@ -83,17 +83,17 @@ function PicSlider(props) {
     }
     const currentTouch = e.touches[0].clientX;
     const movement = touchDown - currentTouch;
-    if(movement > 5) {
+    if(movement > 7) {
       handleRightClick();
     }
-    if(movement < -5) {
+    if(movement < -7) {
       handleLeftClick();
     }
     setTouchStart(null);
   }
 
   return(
-    <div className="PicSlider">
+    <div className="PicSlider" preventScrollOnSwipe="true">
       <button 
         className="PicSlider-btn btn-left" 
         disabled={disabled}
