@@ -15,10 +15,10 @@ export const screenContent = {
           pic: bioPic,
         },
   about: [ 
-          "A New Yorker by birth and by choice, after a successful   career in corporate sales and account management I am harnessing my creativity, puzzle-solving skills and process-oriented nature to launch a career in web development",
-          "I've spent the last several months learning web development using The Odin Project open source curriculum. I'm comfortable working with HTML, CSS, Javascript, Webpack, ReactJS and more.",
-          "Design is the most fundamental aspect of eveything we make, and even more so as we spend so much time online. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos and other images as needed in Adobe Illustrator",
-          "I live in Manhattan with my husband, seven year old daughter, and our goofy pandemic-pup, Jack."
+          "A New Yorker by birth and by choice, I live in Manhattan with my husband, seven-year-old daughter, and our goofy pandemic-pup, Jack. When my successful career in corporate sales and account management was interrupted by the pandemic, I realized that I wanted to spend the rest of my life doing something I truly loved. I decided to harness my creativity, puzzle-solving skills and process-oriented nature to launch a career in web development.",
+          "I've spent the last several months learning web development using The Odin Project (TOP) open source curriculum. Looking for a way to learn Javascript, I didn't quite trust the for-profit boot camps I found. TOP was created by a group of web devs with no profit motive, purely to give newbies the education they wish they'd had when they started. The moment I learned about it during some Reddit research, I knew it was the perfect fit.",
+          "TOP has a great support community on Discord, but they have you making projects on your own from the start. This has given me the most important development skill of all: the ability to find solutions on my own. While learning HTML, CSS, Javascript, and React.js,  I've used the Git workflow, Chrome Dev Tools, VSCode, and Webpack throughout.",
+          "I love design almost as much as I love puzzles, so I also focused on color, typefaces, layout, and learning Illustrator. I believe design is the most fundamental aspect of eveything we make, and even more so as we spend so much time online. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos and other images as needed in Illustrator.",
         ]
 }
 
