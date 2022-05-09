@@ -32,7 +32,7 @@ function ContactForm(props) {
     >
       <h3 className="ContactForm-title">Contact</h3>
       <button
-          className="ContactForm-cancel-btn"
+          className="ContactForm-cancel-btn colors-contact-form"
           type="button"
           onClick={props.cancelFunc}
           ><CloseRoundedIcon />
@@ -85,13 +85,11 @@ function ContactForm(props) {
           required
         />
       </div>
-      {/* <div className="ContactForm-btns"> */}
-        <button
-          className="ContactForm-submit-btn"
-          type="submit"
-          ><h4>SEND</h4>
-        </button>
-      {/* </div> */}
+      <button
+        className="ContactForm-submit-btn colors-contact-form"
+        type="submit"
+        ><h4>SEND</h4>
+      </button>
     </form>
   )
 }

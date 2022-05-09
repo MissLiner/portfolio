@@ -26,10 +26,7 @@ textarea {
   grid-area: title;
   padding-bottom: 20px;
 }
-.ContactForm-cancel-btn {
-  position: absolute;
-  top: 10px; right: 10px;
-}
+
 .ContactForm-unit {
   justify-content: start;
   display: grid;
@@ -69,6 +66,17 @@ textarea {
 .ContactForm-input-message {
   height: 150px;
   width: 322px !important;
+}
+.ContactForm-cancel-btn, .ContactForm-submit-btn {
+  border-radius: .3em;
+  border-width: 1px;
+}
+.ContactForm-cancel-btn {
+  border-radius: 50%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 15px; right: 15px;
 }
 .ContactForm-submit-btn {
   grid-area: submit;

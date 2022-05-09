@@ -81,13 +81,18 @@ a {
   }
 }
 
+
+
+svg.MuiSvgIcon-root {
+  display: block;
+}
+
+/* COLORS */
 body {
   background: #ECEFF1;
   font-family: 'Ubuntu', sans-serif;
   color: #2a2a2a;
 }
-
-/* COLORS */
 .colors-primary {
   background-color: #16BA55;
   color:white ;
