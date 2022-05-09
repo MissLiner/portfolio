@@ -30,21 +30,12 @@ function App() {
   const renderContactForm = () => {
     if(showContact) {
       return(
-        < ContactForm submitFunc={hideContact} />
+        < ContactForm submitFunc={hideContact} cancelFunc={hideContact} />
       )
     } else {
       return null;
     }
   }
-  // const renderFilter = () => {
-  //   if(showContact) {
-  //     return(
-  //       <div className="App-filter"></div>
-  //     )
-  //   } else {
-  //     return null;
-  //   }
-  // }
 
   return (
     <div className="App">
@@ -65,7 +56,6 @@ function App() {
         <Canvas mainView={view} />
         </div>
       {renderContactForm()}
-      {/* {renderFilter()} */}
     </div>
   );
 }

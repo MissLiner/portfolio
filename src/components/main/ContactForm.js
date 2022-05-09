@@ -2,6 +2,7 @@ import '../../index.scss';
 import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 import { React, useRef } from 'react';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 function ContactForm(props) {
 
@@ -29,6 +30,12 @@ function ContactForm(props) {
       ref={form}      
       onSubmit={handleSubmit}>
       <h3 className="ContactForm-title">Contact</h3>
+      <button
+          className="ContactForm-cancel-btn"
+          type="button"
+          onClick={props.cancelFunc}
+          ><CloseRoundedIcon />
+      </button>
       <div className="ContactForm-unit ContactForm-unit-name">
       <label 
         htmlFor="senderName"
@@ -77,11 +84,13 @@ function ContactForm(props) {
           required
         />
       </div>
-      <button
-        className="ContactForm-submit-btn"
-        type="submit"
-        >SEND MESSAGE
-      </button>
+      {/* <div className="ContactForm-btns"> */}
+        <button
+          className="ContactForm-submit-btn"
+          type="submit"
+          ><h4>SEND</h4>
+        </button>
+      {/* </div> */}
     </form>
   )
 }
