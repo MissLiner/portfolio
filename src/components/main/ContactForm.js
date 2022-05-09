@@ -28,7 +28,8 @@ function ContactForm(props) {
     <form 
       className="ContactForm colors-contact-form" 
       ref={form}      
-      onSubmit={handleSubmit}>
+      onSubmit={handleSubmit}
+    >
       <h3 className="ContactForm-title">Contact</h3>
       <button
           className="ContactForm-cancel-btn"

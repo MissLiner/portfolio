@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
 import { navLabels } from '../shared/text';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '../../index.scss';
 import './App.css';
 
@@ -27,25 +27,27 @@ function App() {
     setFilter("");
   }
 
-  const handleClickOut = (e) => {
-    if(e.target.className === "App-filter") {
-      hideContact();
-    }
-  }
-
   const renderContactForm = () => {
     if(showContact) {
       return(
-        < ContactForm submitFunc={hideContact} cancelFunc={hideContact} />
+        <ContactForm submitFunc={hideContact} cancelFunc={hideContact} />
       )
     } else {
       return null;
     }
   }
+  useEffect(() => {
+      if(filter === "App-filter") {
+        window.addEventListener('click', hideContact);
+      } else {
+        window.removeEventListener('click', hideContact);
+      }
+      return () => window.removeEventListener('click', hideContact);
+    }, [filter, setFilter]);
 
   return (
-    <div className="App" onClick={handleClickOut}>
-      <div className={filter + " App-screen"}>
+    <div className="App">
+      <div className={filter + " App-screen"} >
         <StickyNav 
           homeFunc={handleClickHome} 
           emailFunc={handleClickEmail} 

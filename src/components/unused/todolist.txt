@@ -1,4 +1,5 @@
 ?Change git and live links to icons
+Lock screen so you can't navigate when filter is on
 Decide what to do about high res portrait queries
 Enable clicking out of contact form
 Style close button in form
