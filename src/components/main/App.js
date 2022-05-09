@@ -27,6 +27,12 @@ function App() {
     setFilter("");
   }
 
+  const handleClickOut = (e) => {
+    if(e.target.className === "App-filter") {
+      hideContact();
+    }
+  }
+
   const renderContactForm = () => {
     if(showContact) {
       return(
@@ -38,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" onClick={handleClickOut}>
       <div className={filter + " App-screen"}>
         <StickyNav 
           homeFunc={handleClickHome} 

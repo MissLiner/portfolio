@@ -1,6 +1,7 @@
 ?Change git and live links to icons
 Decide what to do about high res portrait queries
-Enable clicking out of contact form and add cancel button
+Enable clicking out of contact form
+Style close button in form
 Fix contact form on mobile
 Make slider work better
   -remove transitions
