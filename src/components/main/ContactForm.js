@@ -25,72 +25,77 @@ function ContactForm(props) {
   }
 
   return(
-    <form 
-      className="ContactForm colors-contact-form" 
-      ref={form}      
-      onSubmit={handleSubmit}
-    >
-      <h3 className="ContactForm-title">Contact</h3>
-      <button
-          className="ContactForm-cancel-btn colors-contact-form"
-          type="button"
-          onClick={props.cancelFunc}
-          ><CloseRoundedIcon />
-      </button>
-      <div className="ContactForm-unit ContactForm-unit-name">
-      <label 
-        htmlFor="senderName"
-        className="ContactForm-label"
-        >NAME
-      </label>
-      <input
-        className="ContactForm-input ContactForm-input-name"
-        type="text"
-        id="senderName"
-        name="senderName"
-        placeholder="name"
-        value={form.senderName}
-        required
-      />
-      </div>
-      <div className="ContactForm-unit ContactForm-unit-email">
+    <div className="ContactForm">
+      <div className="ContactForm-blocker"></div>
+      <form 
+        className="ContactForm-form colors-contact-form" 
+        ref={form}      
+        onSubmit={handleSubmit}
+      >
+        
+        <h3 className="ContactForm-title">Contact</h3>
+        <button
+            className="ContactForm-cancel-btn colors-contact-form"
+            type="button"
+            onClick={props.cancelFunc}
+            ><CloseRoundedIcon />
+        </button>
+        <div className="ContactForm-unit ContactForm-unit-name">
         <label 
-          htmlFor="senderEmail"
+          htmlFor="senderName"
           className="ContactForm-label"
-          >EMAIL
+          >NAME
         </label>
         <input
-          className="ContactForm-input ContactForm-input-email"
-          type="email"
-          id="senderEmail"
-          name="senderEmail"
-          placeholder="you@abc.com"
-          value={form.senderEmail}
-          required
-        />
-      </div>
-      <div className="ContactForm-unit ContactForm-unit-message">
-        <label 
-          htmlFor="message"
-          className="ContactForm-label"
-          >MESSAGE
-        </label>
-        <textarea
-          className="ContactForm-input ContactForm-input-message"
+          className="ContactForm-input ContactForm-input-name"
           type="text"
-          id="message"
-          name="message"
-          placeholder="message"
-          value={form.message}
+          id="senderName"
+          name="senderName"
+          placeholder="name"
+          value={form.senderName}
           required
         />
-      </div>
-      <button
-        className="ContactForm-submit-btn colors-contact-form"
-        type="submit"
-        ><h4>SEND</h4>
-      </button>
-    </form>
+        </div>
+        <div className="ContactForm-unit ContactForm-unit-email">
+          <label 
+            htmlFor="senderEmail"
+            className="ContactForm-label"
+            >EMAIL
+          </label>
+          <input
+            className="ContactForm-input ContactForm-input-email"
+            type="email"
+            id="senderEmail"
+            name="senderEmail"
+            placeholder="you@abc.com"
+            value={form.senderEmail}
+            required
+          />
+        </div>
+        <div className="ContactForm-unit ContactForm-unit-message">
+          <label 
+            htmlFor="message"
+            className="ContactForm-label"
+            >MESSAGE
+          </label>
+          <textarea
+            className="ContactForm-input ContactForm-input-message"
+            type="text"
+            id="message"
+            name="message"
+            placeholder="message"
+            value={form.message}
+            required
+          />
+        </div>
+        <button
+          className="ContactForm-submit-btn colors-contact-form"
+          type="submit"
+          ><h4>SEND</h4>
+        </button>
+      </form>
+    </div>
+
   )
 }
 

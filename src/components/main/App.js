@@ -37,12 +37,16 @@ function App() {
     }
   }
   useEffect(() => {
+    const handleClickOut = (e) => {
+      if(e.target.className === "ContactForm-blocker")
+      hideContact();
+    }
       if(filter === "App-filter") {
-        window.addEventListener('click', hideContact);
+        window.addEventListener('click', handleClickOut);
       } else {
-        window.removeEventListener('click', hideContact);
+        window.removeEventListener('click', handleClickOut);
       }
-      return () => window.removeEventListener('click', hideContact);
+      return () => window.removeEventListener('click', handleClickOut);
     }, [filter, setFilter]);
 
   return (

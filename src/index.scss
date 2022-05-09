@@ -150,20 +150,21 @@ body {
     color: #FF5D95;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  body {
-    min-height: 100vh;
-  }
-  h1 {
-    font-size: 6em;
-  }
-  h3 {
-    font-size: 1.7em;
-  }
-  p {
-    font-size: 1.5em;
-  }
-  .colors-nav-main.activeBtn {
-    color: #FF5D95;
-  }
-}
+
+// @media only screen and (orientation: portrait) and (min-width: 1000px) {
+//   body {
+//     min-height: 100vh;
+//   }
+//   h1 {
+//     font-size: 6em;
+//   }
+//   h3 {
+//     font-size: 1.7em;
+//   }
+//   p {
+//     font-size: 1.5em;
+//   }
+//   .colors-nav-main.activeBtn {
+//     color: #FF5D95;
+//   }
+// }
