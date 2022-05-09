@@ -7,11 +7,16 @@
   margin: auto;
   text-align: center;
 }
-
+/* NAV BAR */
+button {
+  font-family: "Elsie Swash Caps";
+  font-weight: 400;
+}
 /* HEADER NAME */
 h1 {
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  // font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
+  font-weight: 900;
   font-size: 2.5em;
 }
 /* SKILLS HEADER */
