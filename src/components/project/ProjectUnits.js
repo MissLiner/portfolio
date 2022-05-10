@@ -8,8 +8,10 @@ function ProjectUnits(props) {
     if(obj.link) {
       return(
         <span className="ProjectUnits-text2">
-          <a href={obj.link[1]}>
-            {obj.link[0]}
+          <a 
+            className="ProjectUnits-link"
+            href={obj.link[1]}
+              >{obj.link[0]}
           </a>
           {obj.text2}
         </span>

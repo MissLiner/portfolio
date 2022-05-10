@@ -38,6 +38,9 @@
 .ProjectUnits .SVGImg-image {
   width: 100%;
 }
+.ProjectUnits-link::after {
+  width: calc(100% - 4px);
+}
 
 @media only screen and (max-width: 768px) {
   .ProjectUnits {

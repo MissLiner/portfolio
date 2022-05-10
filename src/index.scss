@@ -15,7 +15,7 @@ button {
 /* HEADER NAME (others: "Prompt", "Elsie Swish Caps") */
 h1 {
   font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 2.5em;
 }
 /* SKILLS HEADER */
@@ -72,10 +72,10 @@ a {
     content: "";
     background: rgba($link, 0.25);
     position: absolute;
-    left: 12px;
-    bottom: -6px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
+    left: .4em;
+    bottom: -.2em;
+    width: calc(100% - .2em);
+    height: calc(100% - .5em);
     transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
   }
   &:hover:after {

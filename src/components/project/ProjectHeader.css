@@ -34,8 +34,14 @@
 .ProjectHeader-links-link {
   padding-right: .5em;
 }
+.ProjectHeader-links-link::after {
+  width: calc(100% - 16px);
+}
 .ProjectHeader-tags-label {
   grid-area: label3;
+}
+.ProjectHeader a::after {
+  
 }
 
 

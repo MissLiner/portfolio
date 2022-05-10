@@ -2,11 +2,13 @@
 ?Add mobile portrait queries
 
 Make slider work better
-  -remove transitions
-  -add async so transitions are together from first image load
-  -refine swipe variables
-Fix icons on slider to be the same size on mobile
+  -Stop vertical scrolling when swiping
+  -Fix icons on slider to be the same size on mobile
 
+Fix live/git links long overflow
+Better skills icons
+?Make header in Illustrator
+Fix project layout for diff shaped images
 Add resume
 Add portfolio project to projects
 Add soft skills
@@ -41,6 +43,10 @@ Lock screen so you can't navigate when filter is on
 Enable clicking out of contact form
 Style close button in form
 Fix contact form on mobile
+Make slider work better
+  -remove transitions
+  -add async so transitions are together from first image load
+  -refine swipe variables
 
 examples:
 1. Changing text in sync with image:
