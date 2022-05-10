@@ -3,7 +3,6 @@
   grid-template:
     "text pic" 100%
     / 3fr 1fr;
-  /* margin-top: 5% !important; */
   position: relative;
   width: 100%;
 }
@@ -38,17 +37,6 @@
   .Home-pic {
     margin-top: -15%;
     padding: 8% 25% 8% 25%;
-    width: 50%;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .Home {
-    padding-top: 0;
-  }
-  .Home-pic {
-    float: none;
-    padding: 0% 25% 10% 25%;
-    margin-top: 0;
     width: 50%;
   }
 }

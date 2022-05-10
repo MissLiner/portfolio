@@ -12,10 +12,8 @@ button {
   font-family: "Elsie Swash Caps";
   font-weight: 400;
 }
-/* HEADER NAME */
+/* HEADER NAME (others: "Prompt", "Elsie Swish Caps") */
 h1 {
-  // font-family: "Prompt", Helvetica, Arial, sans-serif;
-  // font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
   font-family: "Inter", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-size: 2.5em;
@@ -49,15 +47,21 @@ li {
   font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
 }
+/* TEXT */
 p {
   font-size: 1.2em;
   line-height: 1.4;
 }
+/* LINKS */
 a {
   white-space: nowrap;
 }
+/* ICONS */
+svg.MuiSvgIcon-root {
+  display: block;
+}
 
-//LINK EFFECT - https://codepen.io/markmead/pen/drORWG
+/* LINK EFFECT - https://codepen.io/markmead/pen/drORWG */
 $link: #EC407A;
 a {
   position: relative;
@@ -82,38 +86,31 @@ a {
   }
 }
 
-
-
-svg.MuiSvgIcon-root {
-  display: block;
-}
-
 /* COLORS */
 body {
   background: #ECEFF1;
   font-family: 'Ubuntu', sans-serif;
   color: #2a2a2a;
 }
-.colors-primary {
+.colors-App {
   background-color: #16BA55;
   color:white ;
 }
-.colors-secondary {
+.colors-Canvas {
   background-color: #e0faea;
   color:rgb(59, 59, 59);
 }
-.colors-nav-main {
+.colors-Navbar {
   background-color: inherit;
-  /* color: #ddffda; */
   color: rgb(243, 253, 234);
 }
-.colors-nav-main:hover {
+.colors-Navbar:hover {
   color: #FED5F2;
 }
-.colors-nav-main.activeBtn {
+.colors-Navbar.activeBtn {
   color:#FED5F2;
 }
-.colors-nav-sticky {
+.colors-StickyNav {
   background-color: #FF5D95;
   color: white;
 }
@@ -143,29 +140,11 @@ body {
     background-color: #e0faea;
     color:rgb(59, 59, 59);
   }
-  .colors-nav-main {
+  .colors-Navbar {
     color:#ff8ddd;
   }
-  .colors-nav-main.activeBtn {
+  .colors-Navbar.activeBtn {
     background-color: #e0faea;
     color: #FF5D95;
   }
 }
-
-// @media only screen and (orientation: portrait) and (min-width: 1000px) {
-//   body {
-//     min-height: 100vh;
-//   }
-//   h1 {
-//     font-size: 6em;
-//   }
-//   h3 {
-//     font-size: 1.7em;
-//   }
-//   p {
-//     font-size: 1.5em;
-//   }
-//   .colors-nav-main.activeBtn {
-//     color: #FF5D95;
-//   }
-// }

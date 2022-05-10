@@ -61,25 +61,3 @@
     width: 95%;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .ProjectUnits {
-    width: 100%;
-  }
-  .ProjectUnits-unit.right, .ProjectUnits-unit.left {
-    grid-template:  
-                    "image" min-content
-                    "title" min-content
-                    "text" min-content
-                    / 1fr;
-  }
-  .ProjectUnits .SVGImg-image {
-    border: solid;
-    width: 50%;
-  }
-  .ProjectUnits-title {
-    text-align: center;
-  }
-  .ProjectUnits-text {
-    width: 95%;
-  }
-}

@@ -28,16 +28,3 @@
     padding-left: 10px !important;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .StickyNav {
-    bottom: 1em;
-    flex-direction: row;
-    right: 2em;
-    top: initial;
-  }
-  .StickyNav-icon {
-    height: 80px !important;
-    padding: 10px;
-    width: 80px !important;
-  }
-}

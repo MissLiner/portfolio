@@ -26,7 +26,6 @@ textarea {
   grid-area: title;
   padding-bottom: 20px;
 }
-
 .ContactForm-unit {
   justify-content: start;
   display: grid;
@@ -89,9 +88,3 @@ textarea {
   height: 100vh; width: 100vw;
   z-index: 999;
 }
-
-/* @media only screen and (max-width: 768px) {
-  .ContactForm-cancel-btn, .ContactForm-submit-btn {
-    border-color: black;
-  }
-} */

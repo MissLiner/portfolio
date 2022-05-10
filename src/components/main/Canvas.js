@@ -30,7 +30,7 @@ function Canvas(props) {
     }
   }
   return(
-    <div className={"Canvas colors-secondary"}>
+    <div className={"Canvas colors-Canvas"}>
       {renderCanvas()}
     </div>  
   )

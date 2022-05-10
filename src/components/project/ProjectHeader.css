@@ -19,7 +19,6 @@
   "...... ........ label3 content3"
     / max-content max-content min-content max-content;
 }
-
 .ProjectHeader-title-label {
   grid-area: label1;
 }
@@ -64,32 +63,5 @@
   }
   .ProjectHeader-tags-content {
     font-size: 1.4em;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .ProjectHeader {
-    column-gap: 10px;
-    row-gap: 5px;
-    display: grid;
-    grid-area: header;
-    grid-template: 
-    "content1"
-    "content2"
-    "content3"
-      / max-content;
-  }
-  .label {
-    display: none;
-  }
-  .ProjectHeader-title-content {
-    font-size: 2em;
-    text-align: center;
-  }
-  .ProjectHeader-links-content {
-    font-size: 1.5em;
-    text-align: center;
-  }
-  .ProjectHeader-tags-content {
-    font-size: 1.7em;
   }
 }

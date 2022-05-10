@@ -16,14 +16,12 @@
   text-align: left;
   width: 100%;
 }
-
 .activeBtn {
   font-weight: bolder;
 }
+
 @media only screen and (max-width: 768px) {
   .Navbar {
-    /* background-color: #FFF5FB; */
-
     border: none;
     column-gap: 0;
     grid-template-columns: fit-content fit-content fit-content;
@@ -31,43 +29,11 @@
     width: 100%;
   }
   .Navbar-btn {
-    /* border: 4px solid #16BA55; */
-    /* border-bottom: solid; */
     border-left: none;
     border-right: none;
-    /* border-top: 10px solid #16BA55; */
-    /* border-color: black; */
-    
     font-size: 1.3em;
     font-weight: 600;
     padding: 8px 0px 10px 0px;
-    text-align: center;
-    width: 100%;
-  }
-  /* .activeBtn {
-    background-color: white;
-    border: 4px solid #16BA55;
-    /* border-top: solid;
-    border-left: solid;
-    border-right: solid; */
-    /* border-bottom: 4px solid white;
-    border: none;
-    font-weight: 500;
-    height: 100%;
-  } */
-}
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .Navbar {
-    background-color: white;
-    column-gap: 0;
-    grid-template-columns: fit-content fit-content fit-content;
-    margin: 0px;
-    width: 100%;
-  }
-  .Navbar-btn {
-    color:#C23484;
-    font-size: 4em;
-    padding: 18px 0px 18px 0px;
     text-align: center;
     width: 100%;
   }
