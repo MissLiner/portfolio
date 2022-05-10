@@ -1,16 +1,16 @@
 .Home {
   display: grid;
   grid-template:
-    "text pic" min-content
+    "text pic" 100%
     / 3fr 1fr;
-  margin-top: 10% !important;
+  /* margin-top: 5% !important; */
   position: relative;
   width: 100%;
 }
 .Home-pic {
   border-radius: .5em;
   grid-area: pic;
-  width: 8em;
+  width: 10em;
 }
 .Home-content {
   font-size: 1.2em;
