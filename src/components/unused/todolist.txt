@@ -1,9 +1,6 @@
 ?Change git and live links to icons
-Lock screen so you can't navigate when filter is on
-Decide what to do about high res portrait queries
-Enable clicking out of contact form
-Style close button in form
-Fix contact form on mobile
+?Add mobile portrait queries
+
 Make slider work better
   -remove transitions
   -add async so transitions are together from first image load
@@ -40,6 +37,10 @@ Add links
 Style tabs on mobile layout
 Move sticky nav
 Adjust footer on mobile
+Lock screen so you can't navigate when filter is on
+Enable clicking out of contact form
+Style close button in form
+Fix contact form on mobile
 
 examples:
 1. Changing text in sync with image:

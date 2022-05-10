@@ -54,9 +54,8 @@ textarea {
 .ContactForm-input {
   background-color: transparent;
   border: none;
-  border-bottom: solid;
+  border-bottom: 1px solid black;
   border-radius: 0;
-  border-width: 1px;
   grid-area: input;
   margin-bottom: 30px;
   margin-left: 0;
