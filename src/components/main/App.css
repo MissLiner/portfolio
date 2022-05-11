@@ -7,7 +7,7 @@
   grid-template: 
     "name navbar"
     / max-content 1fr ;
-  left: 15px;
+  left: 0px;
   position: fixed;
   padding: 15px 0px 10px 0px;
   top: 0px;
@@ -22,13 +22,22 @@
   text-align: left;
 }
 .App-screen {
-  background-color:#16BA55 !important;
-  background-image: url("../../assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   position:absolute;
   min-height: 100vh;
   width: 100%;
+}
+.App-screen::before {
+  content: "";
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
 }
 .App-filter {
   filter:blur(2px);
