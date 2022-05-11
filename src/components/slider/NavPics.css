@@ -12,8 +12,9 @@
   height: 0;
 }
 .NavPics-thumb {
-  /* height: 85%; */
+  height: 85%;
   width: 85%;
+
 }
 .NavPics-label {
   height: 85%;
@@ -25,5 +26,10 @@
 }
 :not(:checked) + .NavPics-thumb {
   opacity: .4;
+}
+@media only screen and (max-width: 768px)  {
+  .NavPics-thumb {
+    width: 10vw;
+  }
 }
 

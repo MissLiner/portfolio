@@ -40,9 +40,6 @@
 .ProjectHeader-tags-label {
   grid-area: label3;
 }
-.ProjectHeader a::after {
-  
-}
 
 
 @media only screen and (max-width: 768px) {
