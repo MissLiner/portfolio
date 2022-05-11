@@ -4,7 +4,7 @@
 
 Make slider work better
   -Stop vertical scrolling when swiping
-  -Fix icons on slider to be the same size on mobile
+
 
 Better skills icons
 ?Make header in Illustrator
@@ -45,7 +45,9 @@ Make slider work better
   -remove transitions
   -add async so transitions are together from first image load
   -refine swipe variables
+  -Fix icons on slider to be the same size on mobile
 Fix live/git links long overflow
+
 
 examples:
 1. Changing text in sync with image:

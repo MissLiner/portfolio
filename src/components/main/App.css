@@ -23,6 +23,9 @@
 }
 .App-screen {
   background-color:#16BA55 !important;
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position:absolute;
   min-height: 100vh;
   width: 100%;

@@ -4,6 +4,7 @@ import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
 import { navLabels } from '../shared/text';
 import { useEffect, useState } from "react";
+// import backgroundImg from "../../assets/images/background.jpg"
 import '../../index.scss';
 import './App.css';
 
@@ -51,7 +52,10 @@ function App() {
 
   return (
     <div className="App">
-      <div className={filter + " App-screen"} >
+      <div 
+        className={filter + " App-screen"}
+        // style={{ backgroundImage: "url(" + {backgroundImg} + ")" }}
+      >
         <StickyNav 
           homeFunc={handleClickHome} 
           emailFunc={handleClickEmail} 
