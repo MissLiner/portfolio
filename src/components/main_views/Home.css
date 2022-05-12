@@ -2,8 +2,8 @@
   display: grid;
   grid-template:
     "text ..." min-content
-    "text pic" min-content
-    "text pic" min-content
+    "text pic" 1fr
+    "text pic" 1fr
     / 1fr 0;
   margin-left: 160px;
   margin-top: 40px;
@@ -13,12 +13,14 @@
 .Home-pic {
   border: 1px solid white;
   grid-area: pic;
-  margin-left: -162px;
-  margin-top: 130px;
+  margin-left: -52px;
+  margin-top: 150px;
   width: 10em;
 }
 .Home-content {
   grid-area: text;
+  height: fit-content;
+  margin: unset;
 }
 .Home-text {
   font-size: 1.4em;
@@ -26,21 +28,19 @@
   text-align: left;
 }
 .Home-text.first {
-  margin-left: 50px;
-  margin-top: 0;
-  text-indent: -50px;
-  width: 115% !important;
+  margin-top: 40px;
+  text-align: center;
+  width: 130% !important;
 }
 .Home-text.second {
-  margin-left: -40px;
-  margin-top: 40px;
+  margin-left: -120px;
+  margin-top: 70px;
   text-indent: 20px;
-  width: 70%;
+  width: 120%;
 }
 .Home-text.third {
-  margin-left: 20px;
-  margin-top: 40px;
-  overflow-wrap: nowrap;
+  margin-left: 165px;
+  margin-top: 90px;
   width: max-content;
 }
 .text-span {
