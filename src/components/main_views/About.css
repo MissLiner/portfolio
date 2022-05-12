@@ -1,5 +1,6 @@
 .About {
   margin-top: 30px;
+  z-index: 2;
 }
 .About-text {
   line-height: 1.5;

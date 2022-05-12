@@ -1,5 +1,6 @@
 .Skills {
   margin-top: 0;
+  z-index: 2;
 }
 .Skills-table {
   display: grid;
