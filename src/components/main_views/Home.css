@@ -1,26 +1,44 @@
 .Home {
   display: grid;
   grid-template:
-    "text pic" 100%
-    / 3fr 1fr;
+    "text ..." 1fr
+    "text pic" 1fr
+    "text pic" 1fr
+    / 1fr min-content;
   position: relative;
   width: 100%;
 }
 .Home-pic {
-  border-radius: .5em;
+  border: 1px solid white;
   grid-area: pic;
+  margin-left: -380px;
+  margin-top: 50px;
   width: 10em;
 }
 .Home-content {
   font-size: 1.2em;
   grid-area: text;
+  margin-top: 3em;
   text-align: left;
 }
 .Home-text {
   text-align: left;
 }
+.Home-text:first-child {
+  margin-left: 15%;
+  text-align: center;
+  width: 75%;
+}
 .Home-text:not(:first-child) {
-  margin-top: 10px;
+  margin-left: 18%;
+  margin-top: 40px;
+  width: 40%;
+}
+.Home-text:last-child {
+  margin-left: 25%;
+}
+.Home-text-span {
+  background-color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -35,8 +53,12 @@
     width: 90%;
   }
   .Home-pic {
+    border: none;
+    margin-left: unset;
     margin-top: -15%;
     padding: 8% 25% 8% 25%;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
     width: 50%;
   }
 }

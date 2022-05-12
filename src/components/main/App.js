@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className={filter + " App-screen"} >
+      <div className={filter + " App-screen colors-App-screen"}>
         <StickyNav 
           homeFunc={handleClickHome} 
           emailFunc={handleClickEmail} 

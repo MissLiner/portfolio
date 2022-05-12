@@ -12,25 +12,33 @@ function Home() {
       </img>
       <div className="Home-content">
         <p className="Home-text">
-          {screenContent.home.text1}
-          <a 
-            href={screenContent.home.odinLink[1]} 
-            target="_blank" rel="noreferrer">
-              {screenContent.home.odinLink[0]}
-          </a>
-          .
+          <span className="Home-text-span">
+            {screenContent.home.text1}
+            <a 
+              href={screenContent.home.odinLink[1]} 
+              target="_blank" rel="noreferrer">
+                {screenContent.home.odinLink[0]}
+            </a>
+            .
+          </span>
         </p>
         <p className="Home-text">
-          {screenContent.home.text2}
-          <a 
-            href={screenContent.home.gitLink[1]} 
-            target="_blank" 
-            rel="noreferrer">
-              {screenContent.home.gitLink[0]}
-          </a>
-          .
+          <span className="Home-text-span">
+            {screenContent.home.text2}
+            <a 
+              href={screenContent.home.gitLink[1]} 
+              target="_blank" 
+              rel="noreferrer">
+                {screenContent.home.gitLink[0]}
+            </a>
+            .
+          </span>
         </p>
-        <p className="Home-text">{screenContent.home.text3}</p>
+        <p className="Home-text">
+          <span className="Home-text-span">
+            {screenContent.home.text3}
+          </span>
+        </p>
       </div>
     </div>
   )
