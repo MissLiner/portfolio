@@ -1,6 +1,6 @@
-import cssIcon from "../../assets/icons/icons8-css-64.png";
-import jsIcon from "../../assets/icons/icons8-java-script-64.png";
-import htmlIcon from "../../assets/icons/icons8-html-64.png";
+import cssIcon from "../../assets/icons/css_icon.svg";
+import jsIcon from "../../assets/icons/js_icon.svg";
+import htmlIcon from "../../assets/icons/html_icon.svg";
 import aiIcon from "../../assets/icons/icons8-adobe-illustrator.svg";
 import reactIcon from "../../assets/icons/icons8-react.svg";
 

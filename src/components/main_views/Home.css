@@ -1,43 +1,49 @@
 .Home {
   display: grid;
   grid-template:
-    "text ..." 1fr
-    "text pic" 1fr
-    "text pic" 1fr
-    / 1fr min-content;
+    "text ..." min-content
+    "text pic" min-content
+    "text pic" min-content
+    / 1fr 0;
+  margin-left: 160px;
+  margin-top: 40px;
   position: relative;
-  width: 100%;
+  width: 550px;
 }
 .Home-pic {
   border: 1px solid white;
   grid-area: pic;
-  margin-left: -380px;
-  margin-top: 50px;
+  margin-left: -162px;
+  margin-top: 130px;
   width: 10em;
 }
 .Home-content {
-  font-size: 1.2em;
   grid-area: text;
-  margin-top: 3em;
-  text-align: left;
 }
 .Home-text {
+  font-size: 1.4em;
+  margin: unset;
   text-align: left;
 }
-.Home-text:first-child {
-  margin-left: 15%;
-  text-align: center;
-  width: 75%;
+.Home-text.first {
+  margin-left: 50px;
+  margin-top: 0;
+  text-indent: -50px;
+  width: 115% !important;
 }
-.Home-text:not(:first-child) {
-  margin-left: 18%;
+.Home-text.second {
+  margin-left: -40px;
   margin-top: 40px;
-  width: 40%;
+  text-indent: 20px;
+  width: 70%;
 }
-.Home-text:last-child {
-  margin-left: 25%;
+.Home-text.third {
+  margin-left: 20px;
+  margin-top: 40px;
+  overflow-wrap: nowrap;
+  width: max-content;
 }
-.Home-text-span {
+.text-span {
   background-color: white;
 }
 

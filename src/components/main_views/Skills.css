@@ -20,6 +20,9 @@
   padding: 10px 10px 10px 10px;
   width: 100px;
 }
+.Skills-icon {
+  width: 70%;
+}
 .Skills-name {
   width: min-content;
 }

@@ -20,8 +20,8 @@ h1 {
 }
 /* SKILLS HEADER */
 h2 {
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
-  font-weight:400;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 /* PROJECT HEADER LABELS */
@@ -44,8 +44,9 @@ h5 {
 }
 /* PROJECT TAGS */
 li {
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
+  font-weight: 600;
 }
 /* TEXT */
 p {
@@ -60,7 +61,11 @@ a {
 svg.MuiSvgIcon-root {
   display: block;
 }
-
+/* WHITE TEXT SPANS */
+.text-span {
+  background-color: white;
+  padding: 1px 10px 1px 10px;
+}
 /* LINK EFFECT - https://codepen.io/markmead/pen/drORWG */
 $link: #EC407A;
 a {
@@ -93,8 +98,8 @@ body {
   color: #2a2a2a;
 }
 .colors-App {
-  background-color: rgb(22, 186, 85);
-  color:yellow;
+  background-color: #16ba55;
+  color:#ffff00;
 }
 .colors-App-screen {
   background-color: #e0faea;
