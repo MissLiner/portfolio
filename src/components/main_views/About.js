@@ -13,7 +13,7 @@ function About() {
     )
   }
   return(
-    <div className="About">
+    <div className="About colors-Canvas">
       {renderAbout()}
     </div>
   )
