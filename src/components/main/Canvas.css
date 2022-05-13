@@ -1,13 +1,7 @@
 .Canvas {
   align-items: center;
-  border-radius: .4em;
-  display: grid;
-  min-height: 300px;
-  padding: 2em 4em 2em 4em;
-  margin-top: 6em;
-  margin-bottom: 50px;
-  width: 100%;
-  max-width: 1000px;
+  height: 100%; width: 100%;
+  margin-top: 46px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -16,7 +10,7 @@
     margin-top: 0;
     padding: 0px 0 0 0 !important;
     max-width: unset;
-    min-height:100vh;
+    min-height:100%;
     width: 100%;
   }
   .Canvas::after {

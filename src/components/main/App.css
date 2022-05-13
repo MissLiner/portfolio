@@ -65,4 +65,7 @@
     text-align: center;
     width: 100%;
   }
+  .App-screen::before {
+    content: none;
+  }
 }
