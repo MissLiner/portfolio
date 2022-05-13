@@ -3,7 +3,6 @@
 }
 
 * {
-  font-family: 'Baskerville', serif;
   margin: auto;
   text-align: center;
 }
@@ -20,36 +19,39 @@ h1 {
 }
 /* SKILLS HEADER */
 h2 {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", Helvetica, Arial, sans-serif !important;
+  font-size: 2em;
+  font-weight: 300;
   margin-bottom: 15px;
 }
 /* PROJECT HEADER LABELS */
 h3 {
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 600;
 }
 /* PROJECT HEADER CONTENT */
 h4 {
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 400;
 }
 /* PROJECT UNIT TITLE */
 h5 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.3em;
   margin-top: 15px;
 }
 /* PROJECT TAGS */
 li {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 600;
 }
 /* TEXT */
 p {
+  font-family: "Baskerville", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   line-height: 1.4;
 }

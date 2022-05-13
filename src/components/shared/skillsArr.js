@@ -1,8 +1,8 @@
 import cssIcon from "../../assets/icons/css_icon.svg";
 import jsIcon from "../../assets/icons/js_icon.svg";
 import htmlIcon from "../../assets/icons/html_icon.svg";
-import aiIcon from "../../assets/icons/icons8-adobe-illustrator.svg";
-import reactIcon from "../../assets/icons/icons8-react.svg";
+import aiIcon from "../../assets/icons/ai_icon.svg";
+import reactIcon from "../../assets/icons/react_icon.png";
 
 export const skillsArr = [
   { category: "Web Development & Design",
@@ -24,28 +24,28 @@ export const skillsArr = [
                 area: "row2",
               },
               { image: reactIcon,
-                name: "ReactJS",
+                name: "React",
                 area: "row2",
               },
     ]
               
   },
-  { skillCategory: "Design",
+  { skillCategory: "Life",
     mainImg: "",
     skills: [ { skillImg: "",
-                skillName: "",
+                skillName: "Self-Management",
                 startDate: "",
               },
               { skillImg: "",
-                skillName: "",
+                skillName: "Decision Making",
                 startDate: "",
               },
               { skillImg: "",
-                skillName: "",
+                skillName: "Problem-Solving",
                 startDate: "",
               },
               { skillImg: "",
-                skillName: "",
+                skillName: "Learning Agility",
                 startDate: "",
               },
             ]

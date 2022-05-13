@@ -14,6 +14,7 @@ function About() {
   }
   return(
     <div className="About colors-Canvas">
+      <h2>My Story</h2>
       {renderAbout()}
     </div>
   )
