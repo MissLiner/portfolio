@@ -37,8 +37,7 @@
 }
 @media only screen and (max-width: 768px) {
   .Skills {
-    font-size: 1.2em;
-    margin-top: 20%;
+    margin-top: 140px;
   }
   .Skills-category {
     padding: 5% 10% 10% 10%;

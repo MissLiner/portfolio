@@ -59,7 +59,6 @@
     width: 100vw;
   }
   .Home-content {
-    font-size: unset;
     width: 100%;
   }
   .Home-pic {
@@ -67,7 +66,7 @@
     margin-left: unset;
     margin: auto;
     margin-top: -15%;
-    /* padding: 8% 25% 8% 25%; */
+    padding: 20px 0 20px 0;
     -webkit-box-shadow: unset;
     box-shadow: unset;
     width: 50%;
