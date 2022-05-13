@@ -13,11 +13,11 @@ function Skills() {
                     src={skill.image} 
                     alt={skill.name + " icon"}>
               </img>
-              <li className="Skills-name">
+              {/* <li className="Skills-name">
                 <span className="text-span">
                   {skill.name}
                 </span>
-              </li>
+              </li> */}
             </div>
           )
         } else {
@@ -36,11 +36,11 @@ function Skills() {
                     src={skill.image} 
                     alt={skill.name + " icon"}>
               </img>
-              <li className="Skills-name">
+              {/* <li className="Skills-name">
                 <span className="text-span">
                   {skill.name}
                 </span>
-              </li>
+              </li> */}
             </div>
           )
         } else {

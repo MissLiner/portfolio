@@ -1,14 +1,15 @@
 ?Change git and live links to icons
 ?Add mobile portrait queries
 ?Make into single page option
+?Make header in Illustrator
 
 Make slider work better
   -Stop vertical scrolling when swiping
 
-
-Better skills icons
-?Make header in Illustrator
+Fix mobile queries for new layout
 Fix project layout for diff shaped images
+Add subject headers to About
+
 Add resume
 Add portfolio project to projects
 Add soft skills
@@ -47,6 +48,7 @@ Make slider work better
   -refine swipe variables
   -Fix icons on slider to be the same size on mobile
 Fix live/git links long overflow
+Better skills icons
 
 
 examples:

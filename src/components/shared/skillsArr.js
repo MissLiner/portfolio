@@ -1,8 +1,8 @@
-import cssIcon from "../../assets/icons/css_icon.svg";
-import jsIcon from "../../assets/icons/js_icon.svg";
-import htmlIcon from "../../assets/icons/html_icon.svg";
-import aiIcon from "../../assets/icons/ai_icon.svg";
-import reactIcon from "../../assets/icons/react_icon.png";
+import cssIcon from "../../assets/icons/css_icon2.svg";
+import jsIcon from "../../assets/icons/js_icon2.svg";
+import htmlIcon from "../../assets/icons/html_icon2.svg";
+import aiIcon from "../../assets/icons/ai_icon2.svg";
+import reactIcon from "../../assets/icons/react_icon2.svg";
 
 export const skillsArr = [
   { category: "Web Development & Design",
