@@ -4,18 +4,18 @@
 ?Add resume
 
 Fix project layout for diff shaped images
+Delete unused fonts and assets
+Clean code
+Check on all different mobile devices
+Check on large screens
+Uninstall emailjs and emailjs-com
+
 Add mobile portrait queries
 Add color and font palettes to readme
 
 Add portfolio project to projects
 Add soft skills
 Edit text
-
-Check on all different mobile devices
-Check on large screens
-Uninstall emailjs and emailjs-com
-Clean code
-
 
 **PROJECTS
 Add readmes
