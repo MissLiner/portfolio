@@ -1,13 +1,22 @@
 import '../../index.scss';
 import './About.css';
-import { screenContent } from "../shared/text"
+import { aboutContent } from "../shared/text"
 
 function About() {
   const renderAbout = () => {
     return(
-      screenContent.about.map(para => {
+      aboutContent.map(unit => {
         return(
-          <p className="About-text">{para}</p>
+          <div className="About-unit">
+            <h5 className="About-topic">
+              <span className="text-span">
+                {unit.topic}
+              </span>
+            </h5>
+            <p className="About-text">
+              {unit.text}
+            </p>
+          </div>
         )
       })
     )
