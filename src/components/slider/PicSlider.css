@@ -31,6 +31,9 @@
 .PicSlider-btn.btn-right {
   grid-area: rbutton;
 }
+.PicSlider-swipe-area {
+  width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
   .PicSlider {

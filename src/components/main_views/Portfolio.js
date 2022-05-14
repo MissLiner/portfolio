@@ -6,7 +6,7 @@ import ProjectDetail from '../project/ProjectDetail';
 import { projectArray } from '../shared/projectArray';
 
 function Portfolio() {
-  
+
   // UPDATE PROJECT DETAIL BASED ON SLIDER SELECTION
   const [contentIndex, setContentIndex] = useState(0);
   
@@ -15,7 +15,7 @@ function Portfolio() {
   }
 
   return(
-    <div className="Portfolio">
+    <div className="Portfolio colors-Portfolio">
       <PicSlider 
         projects={projectArray} 
         updateContent={updateContent}

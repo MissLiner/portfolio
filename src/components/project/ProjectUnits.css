@@ -1,10 +1,10 @@
 .ProjectUnits {
   height: fit-content;
-  width: 70%;
+  width: 90%;
 }
 .ProjectUnits-unit {
   display: grid;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .ProjectUnits-unit.left {
   grid-template:  "image title" min-content
@@ -15,12 +15,11 @@
                   "text image" 1fr / 3fr 1fr;
 }
 .ProjectUnits-title {
-  font-weight: bold;
   grid-area: title;
   margin-top: 0;
   text-align: left;
   text-transform: uppercase;
-  width: 80%;
+  width: 95%;
 }
 .ProjectUnits .SVGImg {
   grid-area: image;
@@ -28,14 +27,15 @@
 }
 .ProjectUnits-text {
   grid-area: text;
-  margin-top: 1em;
+  margin-top: .5em;
   text-align: left;
-  width: 80%;
+  width: 95%;
 }
 .ProjectUnits-text2 {
   text-align: left;
 }
 .ProjectUnits .SVGImg-image {
+  border: 2px solid rgb(184, 184, 184);
   width: 100%;
 }
 .ProjectUnits-link::after {
@@ -48,19 +48,23 @@
   }
   .ProjectUnits-unit.right, .ProjectUnits-unit.left {
     grid-template:  
-                    "image" min-content
-                    "title" min-content
-                    "text" min-content
-                    / 1fr;
+      "title" min-content
+      "image" min-content
+      "text" min-content
+      / 1fr;
   }
   .ProjectUnits .SVGImg-image {
     border: solid;
     width: 50%;
   }
   .ProjectUnits-title {
+    background-color: white;
+    margin-bottom: 15px;
     text-align: center;
+    width: 90%;
   }
   .ProjectUnits-text {
+    margin-top: 10px;
     width: 95%;
   }
 }

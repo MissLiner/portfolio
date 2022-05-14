@@ -87,7 +87,7 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
-      <div {...handlers}>
+      <div {...handlers} className="PicSlider-swipe-area">
         <SVGImg 
           currentImage={props.projects[sliderIndex].sliderRefs}
           parentClass="PicSlider-main-img"

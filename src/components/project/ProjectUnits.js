@@ -24,7 +24,9 @@ function ProjectUnits(props) {
   const leftUnit = (obj, keyNum) => {
     return(
       <div className="ProjectUnits-unit left" key={"unit-" + keyNum}>
-        <h5 className="ProjectUnits-title">{obj.name}</h5>
+        <h5 className="ProjectUnits-title">
+          {obj.name}
+        </h5>
         <SVGImg currentImage={obj.image} />
         <p className="ProjectUnits-text left">{obj.text}{renderLink(obj)}</p>
       </div>
@@ -33,7 +35,9 @@ function ProjectUnits(props) {
   const rightUnit = (obj, keyNum) => {
     return(
       <div className="ProjectUnits-unit right" key={"unit-" + keyNum}>
-      <h5 className="ProjectUnits-title">{obj.name}</h5>
+        <h5 className="ProjectUnits-title">
+          {obj.name}
+        </h5>
       <SVGImg currentImage={obj.image} />
       <p className="ProjectUnits-text right">{obj.text}{renderLink(obj)}</p>
     </div>

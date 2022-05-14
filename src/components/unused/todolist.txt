@@ -3,7 +3,6 @@
 ?Make header in Illustrator
 ?Add resume
 
-Add mobile footer back for About and Portfolio
 Fix project layout for diff shaped images
 Add mobile portrait queries
 Add color and font palettes to readme
@@ -52,6 +51,7 @@ Refine layout
 Fix mobile queries for new layout
 Go home on header click
 Adjust palette for skills icons and make more readable
+Add mobile footer back for About and Portfolio
 
 
 examples:
