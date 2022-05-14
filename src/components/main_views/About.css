@@ -36,4 +36,8 @@
     margin-top: 100px !important;
     width: 100%;
   }
+  .About-topic::before {
+    height: 1.2em; width: 1.2em;
+    margin-left: -.8em;
+  }
 }
