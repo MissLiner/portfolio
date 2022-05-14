@@ -6,7 +6,8 @@ import ProjectDetail from '../project/ProjectDetail';
 import { projectArray } from '../shared/projectArray';
 
 function Portfolio() {
-
+  
+  // UPDATE PROJECT DETAIL BASED ON SLIDER SELECTION
   const [contentIndex, setContentIndex] = useState(0);
   
   const updateContent = (newValue) => {

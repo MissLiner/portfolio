@@ -5,10 +5,10 @@ import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRou
 import { useEffect, useState } from "react";
 import SVGImg from "../shared/SVGImg";
 import NavPics from "./NavPics";
+import { useSwipeable } from "react-swipeable";
 
 function PicSlider(props) {
   const [disabled, setDisabled] = useState(false);
-  const [touchStart, setTouchStart] = useState("");
   const [sliderIndex, setSliderIndex] = useState(0);
 
   const updateSlider = (newValue) => {
@@ -17,9 +17,11 @@ function PicSlider(props) {
   const updateContent = () => {
     props.updateContent(sliderIndex);
   }
-  // useEffect(() => {
-  //   props.updateFunc(sliderIndex);
-  // });
+  const handlers = useSwipeable({
+    onSwipedRight: (e) => handleLeftClick(e),
+    onSwipedLeft: (e) => handleRightClick(e),
+    preventScrollOnSwipe: true,
+  })
 
   // SELECT CURRENT NAV-DOT
   useEffect(() => {
@@ -71,29 +73,8 @@ function PicSlider(props) {
     }, 500);
   }
 
-  // SWIPE FX
-  function handleTouchStart(e) {
-    const touchDown = e.touches[0].clientX;
-    setTouchStart(touchDown);
-  }
-  function handleTouchMove(e) {
-    const touchDown = touchStart;
-    if(touchDown === null) {
-      return;
-    }
-    const currentTouch = e.touches[0].clientX;
-    const movement = touchDown - currentTouch;
-    if(movement > 7) {
-      handleRightClick();
-    }
-    if(movement < -7) {
-      handleLeftClick();
-    }
-    setTouchStart(null);
-  }
-
   return(
-    <div className="PicSlider" preventScrollOnSwipe="true">
+    <div className="PicSlider">
       <button 
         className="PicSlider-btn btn-left" 
         disabled={disabled}
@@ -106,13 +87,13 @@ function PicSlider(props) {
         onClick={handleRightClick}
         ><ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
-      <SVGImg 
-        currentImage={props.projects[sliderIndex].sliderRefs}
-        parentClass="PicSlider-main-img"
-        touchStartFunc={handleTouchStart}
-        touchMoveFunc={handleTouchMove}
-        loadFunc={updateContent}
-      />
+      <div {...handlers}>
+        <SVGImg 
+          currentImage={props.projects[sliderIndex].sliderRefs}
+          parentClass="PicSlider-main-img"
+          loadFunc={updateContent}
+        />
+      </div>
       <NavPics 
         projects={props.projects} 
         disabled={disabled} 

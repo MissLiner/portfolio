@@ -35,28 +35,13 @@
 @media only screen and (max-width: 768px) {
   .PicSlider {
     grid-template:
-    "thumbs" min-content
-    "mainpic" min-content;
+      "thumbs" min-content
+      "mainpic" min-content;
     margin-top: 20px;
     width: 100%;
   }
   .PicSlider-main-img {
     margin-top: 10px;
-  }
-  .PicSlider-btn {
-    display: none;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 1000px) {
-  .PicSlider {
-    grid-template:
-    "thumbs" min-content
-    "mainpic" min-content;
-    margin-top: 20px;
-    width: 100%;
-  }
-  .PicSlider-main-img {
-    margin-top: 15px;
   }
   .PicSlider-btn {
     display: none;
