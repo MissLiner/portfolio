@@ -33,7 +33,7 @@
 @media only screen and (max-width: 768px)  {
   .About {
     margin-bottom: 50px;
-    margin-top: 100px !important;
+    margin-top: 90px !important;
     width: 100%;
   }
   .About-topic::before {

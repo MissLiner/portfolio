@@ -53,7 +53,7 @@
       "pic" min-content
       "text" min-content
       /100%;
-    margin-top: 170px !important;
+    margin-top: 90px !important;
     margin-left: unset;
     position: static;
     width: 100vw;
@@ -65,8 +65,7 @@
     border: none;
     margin-left: unset;
     margin: auto;
-    margin-top: -15%;
-    padding: 20px 0 20px 0;
+    padding: 35px 0 15px 0;
     -webkit-box-shadow: unset;
     box-shadow: unset;
     width: 50%;
