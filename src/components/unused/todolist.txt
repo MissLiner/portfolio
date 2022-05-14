@@ -2,25 +2,21 @@
 ?Add mobile portrait queries
 ?Make into single page option
 ?Make header in Illustrator
+?Add resume
 
+Go home on header click
 Make slider work better
   -Stop vertical scrolling when swiping
-
-Fix mobile queries for new layout
 Fix project layout for diff shaped images
-Add subject headers to About
 
-Add resume
 Add portfolio project to projects
 Add soft skills
 Edit text
 
-Refine colors
-Refine fonts
-Refine layout
 Check on all different mobile devices
 Check on large screens
 Uninstall emailjs and emailjs-com
+Clean code
 
 
 **PROJECTS
@@ -49,6 +45,11 @@ Make slider work better
   -Fix icons on slider to be the same size on mobile
 Fix live/git links long overflow
 Better skills icons
+Add subject headers to About
+Refine colors
+Refine fonts
+Refine layout
+Fix mobile queries for new layout
 
 
 examples:

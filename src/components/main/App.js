@@ -57,7 +57,11 @@ function App() {
           emailFunc={handleClickEmail} 
         />
         <div className="App-header colors-App">
-          <h1 className="App-name">Caroline Stephenson</h1>
+          <h1 
+            className="App-name"
+            onClick={handleClickHome}
+              >Caroline Stephenson
+          </h1>
           <Navbar 
             clickFunc={handleClickNav} 
             btnList={navLabels}
