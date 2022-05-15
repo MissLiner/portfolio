@@ -27,7 +27,6 @@
   width: min-content;
 }
 .Skills-category {
-  /* font-size: 4em !important; */
   grid-area: category;
 }
 .row1 {

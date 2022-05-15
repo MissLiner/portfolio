@@ -91,7 +91,7 @@
   }
   .App-screen::before {
     background-image: url("../../assets/images/background_mobile.jpg");
-    background-size: 100vw 100vh;
+    background-size: 100vw 100%;
   }
   /* .App-screen::before {
     content: none;

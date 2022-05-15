@@ -23,7 +23,7 @@
     background-image: url("../../assets/images/background_mobile.jpg");
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
     bottom: 0;
     content: "";
     height: 50px;
