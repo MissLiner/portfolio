@@ -1,35 +1,20 @@
-.label {
-  text-align: left;
-  margin: 0;
-}
-.content {
-  height: 100%;
-  margin-left: 0;
-  text-align: left;
-  width: 100%;
-}
 .ProjectHeader {
-  column-gap: 20px;
-  row-gap: 10px;
+  border-bottom: solid 1px black;
   display: grid;
   grid-area: header;
   grid-template: 
-  "label1 content1 label3 content3"
-  "label2 content2 label3 content3"
-  "...... ........ label3 content3"
-    / max-content max-content min-content max-content;
-}
-.ProjectHeader-title-label {
-  grid-area: label1;
+    ".. title links"
+    "tags tags tags"
+    / 1fr max-content 1fr;
+  padding-bottom: 15px;
+  width: 90%;
 }
 .ProjectHeader-title-content {
-  grid-area: content1;
-}
-.ProjectHeader-links-label {
-  grid-area: label2;
+  grid-area: title;
 }
 .ProjectHeader-links-content {
-  grid-area: content2;
+  grid-area: links;
+  margin-left: 0;
 }
 .ProjectHeader-links-link {
   padding-right: .5em;
@@ -37,31 +22,25 @@
 .ProjectHeader-links-link::after {
   width: calc(100% - 16px);
 }
-.ProjectHeader-tags-label {
-  grid-area: label3;
-}
-
 
 @media only screen and (max-width: 768px) {
   .ProjectHeader {
-    column-gap: 10px;
-    row-gap: 5px;
+    border-bottom: none;
+    row-gap: 10px;
     display: grid;
     grid-area: header;
     grid-template: 
-    "content1"
-    "content2"
-    "content3"
-      / max-content;
-  }
-  .label {
-    display: none;
+    "title" 31px
+    "links" 
+    "tags"  
+      / 100%;
+    padding-bottom: 0;
   }
   .ProjectHeader-title-content {
-    font-size: 1.7em;
     text-align: center;
   }
   .ProjectHeader-links-content {
+    margin: auto;
     text-align: center;
   }
   .ProjectHeader-tags-content {

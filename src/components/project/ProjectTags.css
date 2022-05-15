@@ -1,10 +1,14 @@
 .ProjectTags {
-  grid-area: content3;
+  display: flex;  
+  flex-wrap: wrap;
+  grid-area: tags;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
+  width: max-content;
 }
 .ProjectTags-tag {
-  text-align: left;
+  padding-right: 20px;
 }
 .ProjectTags-tag::before {
   content: '';
@@ -12,4 +16,15 @@
   height: 1em;
   width: 1em;
   background-image: url(../../assets/icons/box_checked.svg);
+}
+@media only screen and (max-width: 768px)  {
+  .ProjectTags {
+    flex-direction: column;
+    margin: auto;
+    width: max-content;
+  }
+  .ProjectTags-tag {
+    margin-left: 0;
+    padding-right: 0px;
+  }
 }

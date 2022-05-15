@@ -19,7 +19,7 @@ h1 {
   font-weight: 800;
   font-size: 2.5em;
 }
-/* SKILLS HEADER, ABOUT HEADER, PROJECT HEADER */
+/* SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
 h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif !important;
   font-size: 2em;
@@ -27,15 +27,15 @@ h2 {
   margin-bottom: 15px;
 }
 /* PROJECT HEADER LABELS */
-h3 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-}
-/* PROJECT HEADER CONTENT */
+// h3 {
+//   font-family: "Raleway", Helvetica, Arial, sans-serif;
+//   font-size: 1.5em;
+//   font-weight: 600;
+// }
+/* PROJECT HEADER LINKS */
 h4 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 /* PROJECT UNIT TITLE, ABOUT TOPIC HEADERS */
@@ -48,7 +48,7 @@ h5 {
 li {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
 }
 /* TEXT */
 p {
