@@ -3,9 +3,10 @@ textarea {
 }
 
 .ContactForm-form {
+  border: 1px solid lightgray !important;
+  outline: 8px solid white;
   justify-content: start;
   align-content: start;
-  border-radius: .4em;
   column-gap: 20px;
   display: grid;
   grid-template:
@@ -14,7 +15,6 @@ textarea {
     "message message" min-content
     "submit submit" min-content
     / 1fr 1fr;
-  height: 380px; width: max-content;
   margin: auto;
   padding: 20px 30px 20px 30px;
   position: absolute;
@@ -24,7 +24,7 @@ textarea {
 }
 .ContactForm-title {
   grid-area: title;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .ContactForm-unit {
   justify-content: start;
@@ -48,13 +48,13 @@ textarea {
 .ContactForm-label {
   grid-area: label;
   margin: 0px 0px 10px 0px;
-  text-align: left;
+  text-align: left !important;
   width: 100%;
 }
 .ContactForm-input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(105, 105, 105);
   border-radius: 0;
   grid-area: input;
   margin-bottom: 30px;
@@ -67,8 +67,7 @@ textarea {
   width: 322px !important;
 }
 .ContactForm-cancel-btn, .ContactForm-submit-btn {
-  border-color: black;
-  border-radius: .3em;
+  border-style: solid;
   border-width: 1px;
 }
 .ContactForm-cancel-btn {
@@ -79,7 +78,9 @@ textarea {
   top: 15px; right: 15px;
 }
 .ContactForm-submit-btn {
+  border-style: solid;
   grid-area: submit;
+  padding: 10px 10px 10px 10px;
 }
 .ContactForm-blocker {
   background-color: transparent;

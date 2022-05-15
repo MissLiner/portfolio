@@ -33,18 +33,18 @@ function ContactForm(props) {
         onSubmit={handleSubmit}
       >
         
-        <h3 className="ContactForm-title">Contact</h3>
+        <h2 className="ContactForm-title">Contact</h2>
         <button
             className="ContactForm-cancel-btn colors-contact-form"
             type="button"
             onClick={props.cancelFunc}
-            ><CloseRoundedIcon />
+            ><CloseRoundedIcon sx={{ color: "rgb(105, 105, 105)" }}/>
         </button>
         <div className="ContactForm-unit ContactForm-unit-name">
         <label 
           htmlFor="senderName"
           className="ContactForm-label"
-          >NAME
+          ><h4>NAME</h4>
         </label>
         <input
           className="ContactForm-input ContactForm-input-name"
@@ -60,7 +60,7 @@ function ContactForm(props) {
           <label 
             htmlFor="senderEmail"
             className="ContactForm-label"
-            >EMAIL
+            ><h4>EMAIL</h4>
           </label>
           <input
             className="ContactForm-input ContactForm-input-email"
@@ -76,7 +76,7 @@ function ContactForm(props) {
           <label 
             htmlFor="message"
             className="ContactForm-label"
-            >MESSAGE
+            ><h4>MESSAGE</h4>
           </label>
           <textarea
             className="ContactForm-input ContactForm-input-message"
@@ -91,7 +91,7 @@ function ContactForm(props) {
         <button
           className="ContactForm-submit-btn colors-contact-form"
           type="submit"
-          ><h4>SEND</h4>
+          ><h4><b>SEND</b></h4>
         </button>
       </form>
     </div>

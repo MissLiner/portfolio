@@ -20,7 +20,7 @@ function About() {
     )
   }
   return(
-    <div className="About colors-Canvas">
+    <div className="About ltgreen-bg">
       <h2 className="About-title">My Story</h2>
       {renderAbout()}
     </div>

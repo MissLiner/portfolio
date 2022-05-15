@@ -51,12 +51,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className={filter + " App-screen colors-App-screen"}>
+      <div className={filter + " App-screen"}>
         <StickyNav 
           homeFunc={handleClickHome} 
           emailFunc={handleClickEmail} 
         />
-        <div className="App-header colors-App">
+        <div className="App-header green-yellow">
           <h1 
             className="App-name"
             onClick={handleClickHome}

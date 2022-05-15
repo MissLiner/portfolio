@@ -5,14 +5,9 @@
 
 * {
   margin: auto;
-  text-align: center;
+  // text-align: center;
 }
-/* NAV BAR */
-button {
-  font-family: "Elsie Swash Caps";
-  font-size: 1.5em;
-  font-weight: 400;
-}
+
 /* HEADER NAME (others: "Prompt", "Inter") */
 h1 {
   font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
@@ -26,12 +21,12 @@ h2 {
   font-weight: 300;
   margin-bottom: 20px;
 }
-/* PROJECT HEADER LABELS */
-// h3 {
-//   font-family: "Raleway", Helvetica, Arial, sans-serif;
-//   font-size: 1.5em;
-//   font-weight: 600;
-// }
+/* NAVBAR BTNS */
+h3 {
+  font-family: "Elsie Swash Caps";
+  font-size: 1.7em;
+  font-weight: 400;
+}
 /* PROJECT HEADER LINKS */
 h4 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -95,23 +90,16 @@ a {
 }
 
 /* COLORS */
-body {
-  background: #ECEFF1;
-  font-family: 'Ubuntu', sans-serif;
-  color: #2a2a2a;
-}
-.colors-App {
+
+.green-yellow {
   // background-color: #16ba55;
   background-color: #14A64C;
   color:#ffff00;
 }
-.colors-App-screen {
+.ltgreen-bg {
   background-color: #e0faea;
 }
-.colors-Canvas {
-  background-color: #e0faea;
-  color:rgb(59, 59, 59);
-}
+
 .colors-Navbar {
   background-color:transparent;
   color: white;
@@ -123,22 +111,23 @@ body {
 .colors-Navbar.activeBtn {
   color:#FED5F2;
 }
+.ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
+  background-color:#FED5F2;
+}
 .colors-StickyNav {
   background-color: #FF5D95;
   color: white;
 }
 .colors-contact-form {
-  background-color:#ffe7f8;
-  color: rgb(59, 59, 59);
+  background-color:#ffeefa;
+  border-color: rgb(105, 105, 105) !important;
+  color: rgb(105, 105, 105);
 }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   body {
     min-height: 100vh;
-  }
-  button {
-    font-size: 1.3em;
   }
   h1 {
     font-size: 2em;
@@ -148,9 +137,9 @@ body {
     font-size: 1.5em;
     font-weight: 500;
   }
-  /* PROJECT HEADER LABELS */
+  /* NAVBAR BTNS */
   h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   /* PROJECT UNIT TITLE, ABOUT TOPIC HEADERS */
   h5 {
