@@ -152,20 +152,21 @@ a {
   p {
     font-size: 1.1em;
   }
-  .Navbar {
-    background-color: white;
-  }
+  // .Navbar {
+  //   background-color: white;
+  // }
   .App-screen {
-    background-color: #ecfaf1;
+    background-color: transparent;
   }
   .colors-Navbar {
-    color:#ff8ddd;
+    // color:#ff8ddd;
+    color: #ffe9f8;
   }
-  .colors-Navbar.activeBtn {
-    background-color: #ecfaf1;
-    color: #FF5D95;
-  }
-  .colors-Portfolio {
-    background-color: #ecfaf1 !important;
-  }
+  // .colors-Navbar.activeBtn {
+  //   background-color: #ecfaf1;
+  //   color: #FF5D95;
+  // }
+  // .colors-Portfolio {
+  //   background-color: #ecfaf1 !important;
+  // }
 }

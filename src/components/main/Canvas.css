@@ -19,7 +19,7 @@
     width: 100%;
   }
   .Canvas::after {
-    background-color: #14A64C;
+    background-color: rgb(211, 211, 211);
     bottom: 0;
     content: "";
     height: 50px;
