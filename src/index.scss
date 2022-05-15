@@ -65,7 +65,7 @@ svg.MuiSvgIcon-root {
 /* WHITE TEXT SPANS */
 .text-span {
   background-color: white;
-  padding: 1px 10px 1px 10px;
+  padding: 1px 0px 1px 0px;
 }
 /* LINK EFFECT - https://codepen.io/markmead/pen/drORWG */
 $link: #EC407A;
@@ -138,6 +138,7 @@ a {
   }
   /* SKILLS HEADER, ABOUT HEADER */
   h2 {
+    color: black;
     font-size: 1.5em;
     font-weight: 500;
   }
@@ -150,6 +151,7 @@ a {
     font-size: 1.2em;
   }
   p {
+    color: black;
     font-size: 1.1em;
   }
   .App-screen {

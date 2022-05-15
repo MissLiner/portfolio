@@ -70,6 +70,7 @@
     min-height: 100vh;
   }
   .App-header {
+    background-color: transparent;
     grid-template:
       "name" min-content
       "navbar" min-content;
@@ -86,7 +87,7 @@
     background-image: url("../../assets/images/background_mobile.jpg");
     background-size: 100vw 100vh;
     height: 78px;
-    opacity: 0.9;
+    opacity: 1;
   }
   .App-screen::before {
     background-image: url("../../assets/images/background_mobile.jpg");
