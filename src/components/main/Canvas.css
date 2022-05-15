@@ -20,6 +20,10 @@
   }
   .Canvas::after {
     background-color: rgb(211, 211, 211);
+    background-image: url("../../assets/images/background_mobile.jpg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 0;
     content: "";
     height: 50px;

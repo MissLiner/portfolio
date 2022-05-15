@@ -15,7 +15,7 @@
   width: 100%;
   z-index: 3;
 }
-.App-header::after {
+.App-header::before {
   background-image: url("../../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,12 +82,15 @@
     text-align: center;
     width: 100%;
   }
-  .App-header::after {
+  .App-header::before {
     background-image: url("../../assets/images/background_mobile.jpg");
-    height: 75px;
+    background-size: 100vw 100vh;
+    height: 78px;
+    opacity: 0.9;
   }
   .App-screen::before {
     background-image: url("../../assets/images/background_mobile.jpg");
+    background-size: 100vw 100vh;
   }
   /* .App-screen::before {
     content: none;

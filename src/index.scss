@@ -134,7 +134,7 @@ a {
     min-height: 100vh;
   }
   h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   /* SKILLS HEADER, ABOUT HEADER */
   h2 {
@@ -152,9 +152,6 @@ a {
   p {
     font-size: 1.1em;
   }
-  // .Navbar {
-  //   background-color: white;
-  // }
   .App-screen {
     background-color: transparent;
   }
@@ -162,10 +159,11 @@ a {
     // color:#ff8ddd;
     color: #ffe9f8;
   }
-  // .colors-Navbar.activeBtn {
-  //   background-color: #ecfaf1;
-  //   color: #FF5D95;
-  // }
+  .colors-Navbar.activeBtn {
+    // background-color: #ecfaf1;
+    // color: #FF5D95;
+    color: #ff98cf;
+  }
   // .colors-Portfolio {
   //   background-color: #ecfaf1 !important;
   // }
