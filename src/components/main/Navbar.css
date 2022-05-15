@@ -5,8 +5,10 @@
   grid-template-columns: repeat(3, 1fr);
   margin-left: 4em;
   margin-bottom: .4em;
+  position: relative;
   column-gap: 2em;
   width: 370px;
+  z-index: 5;
 }
 .Navbar-btn {
   border: none;

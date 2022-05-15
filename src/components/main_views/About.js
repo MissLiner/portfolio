@@ -20,7 +20,7 @@ function About() {
     )
   }
   return(
-    <div className="About ltgreen-bg">
+    <div className="About">
       <h2 className="About-title">My Story</h2>
       {renderAbout()}
     </div>

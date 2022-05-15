@@ -56,7 +56,7 @@ function App() {
           homeFunc={handleClickHome} 
           emailFunc={handleClickEmail} 
         />
-        <div className="App-header green-yellow">
+        <div className="App-header">
           <h1 
             className="App-name"
             onClick={handleClickHome}

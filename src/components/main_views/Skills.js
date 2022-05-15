@@ -45,7 +45,8 @@ function Skills() {
         <h2 className="Skills-category">
           <span className="text-span">
             {skillsArr[0].category}
-          </span></h2>
+          </span>
+          </h2>
         <div className="Skills-list row1">
         {renderFirstSkills()}
         </div>

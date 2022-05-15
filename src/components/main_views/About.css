@@ -1,5 +1,7 @@
 .About {
+  background-color: rgb(255, 255, 255, 0.95);
   margin-top: 10px;
+  overflow: hidden;
   padding-bottom: 35px;
   padding-top: 30px;
   width: 80%;
@@ -10,8 +12,7 @@
   width: 80%;
 }
 .About-title {
-  background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   padding: 10px 0 10px 0;
   width: 90%;

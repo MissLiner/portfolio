@@ -27,7 +27,7 @@
   width: min-content;
 }
 .Skills-category {
-  background-color: white;
+  /* font-size: 4em !important; */
   grid-area: category;
 }
 .row1 {

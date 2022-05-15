@@ -3,6 +3,7 @@
   position: relative;
 }
 .App-header {
+  background-color: white;
   display: grid;
   grid-template: 
     "name navbar"
@@ -14,12 +15,28 @@
   width: 100%;
   z-index: 3;
 }
+.App-header::after {
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 66px;
+  left: 0px;
+  opacity: 0.5;
+  position: fixed;
+  padding: 15px 0px 10px 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 4;
+}
 .App-name {
   grid-area: name;
   height: fit-content;
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 60px;
+  position: relative;
   text-align: left;
+  z-index: 5;
 }
 .App-screen {
   position:absolute;

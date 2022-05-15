@@ -8,24 +8,26 @@
   // text-align: center;
 }
 
-/* HEADER NAME (others: "Prompt", "Inter") */
+/* HEADER NAME (others: "Prompt", "Inter", "Elsie Swash Caps") */
 h1 {
-  font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
+  color:white;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 800;
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 /* SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
 h2 {
+  color:rgb(105, 105, 105);
   font-family: "Raleway", Helvetica, Arial, sans-serif !important;
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 800;
   margin-bottom: 20px;
 }
 /* NAVBAR BTNS */
 .Navbar-btn {
   font-family: "Elsie Swash Caps";
-  font-size: 1.4em;
-  font-weight: 400;
+  font-size: 1.8em;
+  font-weight: 600;
 }
 /* PROJECT HEADER LINKS */
 h4 {
@@ -47,6 +49,7 @@ li {
 }
 /* TEXT */
 p {
+  color:rgb(105, 105, 105);
   font-family: "Baskerville", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   line-height: 1.4;
@@ -98,7 +101,7 @@ a {
 }
 .ltgreen-bg {
   // background-color: #e0faea;
-  background-color: #ecfaf1;
+  background-color: #eafbf0;
 }
 
 .colors-Navbar {
