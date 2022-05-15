@@ -9,9 +9,7 @@ function About() {
         return(
           <div className="About-unit">
             <h5 className="About-topic">
-              <span className="text-span">
-                {unit.topic}
-              </span>
+                <i>{unit.topic}</i>
             </h5>
             <p className="About-text">
               {unit.text}
@@ -23,7 +21,7 @@ function About() {
   }
   return(
     <div className="About colors-Canvas">
-      <h2>My Story</h2>
+      <h2 className="About-title">My Story</h2>
       {renderAbout()}
     </div>
   )

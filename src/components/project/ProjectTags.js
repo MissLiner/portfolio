@@ -17,7 +17,7 @@ function ProjectTags(props) {
   }
 
   return(
-    <ul className={"ProjectTags content"}>
+    <ul className={"ProjectTags"}>
       {renderTags()}
     </ul>
   )

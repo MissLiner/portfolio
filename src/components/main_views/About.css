@@ -9,15 +9,21 @@
   margin-bottom: 15px;
   width: 80%;
 }
+.About-title {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 10px 0 10px 0;
+  width: 90%;
+}
 .About-topic {
   margin-bottom: 5px;
   margin-left: -10px;
   text-align: left;
 }
 .About-topic::before {
-  content: "";
   background-image: url("../../assets/r_arrow_pink.svg");
   background-repeat: no-repeat;
+  content: "";
   height: 1.5em; width: 1.5em;
   margin-left: -1.7em;
   position: absolute;
@@ -34,8 +40,11 @@
     margin-top: 90px !important;
     width: 100%;
   }
+  .About-topic {
+    margin-left: 0;
+  }
   .About-topic::before {
     height: 1.2em; width: 1.2em;
-    margin-left: -.8em;
+    margin-left: -1.5em;
   }
 }

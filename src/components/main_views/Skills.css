@@ -5,10 +5,10 @@
 .Skills-table {
   display: grid;
   grid-template:
-    "category"
+    "category" min-content
     "row1"
     "row2";
-    margin-top: 15%;
+  margin-top: 80px;
 }
 .Skills-list {
   display: flex;
@@ -27,6 +27,7 @@
   width: min-content;
 }
 .Skills-category {
+  background-color: white;
   grid-area: category;
 }
 .row1 {
@@ -37,9 +38,9 @@
 }
 @media only screen and (max-width: 768px) {
   .Skills {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .Skills-category {
-    padding: 5% 10% 10% 10%;
+    padding: 10px 0 10px 0;
   }
 }
