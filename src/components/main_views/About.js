@@ -7,7 +7,7 @@ function About() {
     return(
       aboutContent.map(unit => {
         return(
-          <div className="About-unit">
+          <div className="About-unit" key={unit.topic}>
             <h5 className="About-topic">
                 <i>{unit.topic}</i>
             </h5>

@@ -22,9 +22,9 @@ h2 {
   margin-bottom: 20px;
 }
 /* NAVBAR BTNS */
-h3 {
+.Navbar-btn {
   font-family: "Elsie Swash Caps";
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 /* PROJECT HEADER LINKS */
@@ -97,7 +97,8 @@ a {
   color:#ffff00;
 }
 .ltgreen-bg {
-  background-color: #e0faea;
+  // background-color: #e0faea;
+  background-color: #ecfaf1;
 }
 
 .colors-Navbar {
@@ -151,18 +152,17 @@ a {
   .Navbar {
     background-color: white;
   }
-  .colors-secondary {
-    background-color: #e0faea;
-    color:rgb(59, 59, 59);
+  .App-screen {
+    background-color: #ecfaf1;
   }
   .colors-Navbar {
     color:#ff8ddd;
   }
   .colors-Navbar.activeBtn {
-    background-color: #e0faea;
+    background-color: #ecfaf1;
     color: #FF5D95;
   }
   .colors-Portfolio {
-    background-color: #e0faea !important;
+    background-color: #ecfaf1 !important;
   }
 }

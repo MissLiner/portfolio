@@ -34,8 +34,9 @@ function Navbar(props) {
           <button className={"Navbar-btn colors-Navbar"}
                   onClick={handleClick}
                   value={btn}
-                  key={props.navClass + "-" + i}>
-                    <h3>{btn}</h3>
+                  key={props.navClass + "-" + i}
+          >
+            {btn}
           </button>
         )
       })
