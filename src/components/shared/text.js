@@ -16,16 +16,16 @@ export const homeContent = {
 
 export const aboutContent = [
   { topic: "In a nutshell . . . ", 
-    text: "A New Yorker by birth and by choice, I live in Manhattan with my husband, seven-year-old daughter, and our goofy pandemic-pup, Jack. When my successful career in corporate sales and account management was interrupted by the pandemic, I realized that I wanted to spend the rest of my life doing something I truly loved. I chose to focus my creativity, puzzle-solving skills and process-oriented nature to launch a career in web development."
+    text: "When my successful career in corporate sales and account management was interrupted by the pandemic, I realized that I wanted to spend the rest of my life doing something I truly loved. I decided to focus my creativity, puzzle-solving skills and process-oriented nature into a new career in web development."
   },
   { topic: "How I learned . . . ",
-    text: "I've spent the last several months learning web development using The Odin Project (TOP) open source curriculum. Looking for a way to learn Javascript, I didn't quite trust the for-profit boot camps I found. TOP was created by a group of web devs with no profit motive, purely to give newbies the education they wish they'd had when they started. The moment I learned about it during some Reddit research, I knew it was the perfect fit."
+    text: "As I started looking for a way to learn Javascript, I didn't quite trust the for-profit boot camps. Then I found The Odin Project (TOP) on Reddit. Open source and constantly evolving, it was created by a group of web devs to give newbies the knowledge they wish they'd had when they started. I've spent almost a year learning web development with TOP, and it's been wonderful."
   },
   { topic: "What I learned . . . ",
-    text: "TOP has a great support community on Discord, but they have you making projects on your own from the start. This has given me the most important development skill of all: the ability to find solutions on my own. While learning HTML, CSS, Javascript, and React.js,  I've used the Git workflow, Chrome Dev Tools, VSCode, and Webpack throughout."
+    text: "TOP has a great support community on Discord, but you code projects on your own from the start. This gave me the most useful development skill of all: the ability to find solutions on my own. While learning HTML, CSS, Javascript, and React.js, I've used the command line, Git, Chrome Dev Tools, VSCode, and Webpack throughout."
   },
   { topic: "Development meets design . . . ",
-    text: "I love design almost as much as I love puzzles, so I also focused on color, typefaces, layout, and learning Illustrator. I believe design is the most fundamental aspect of eveything we make, and even more so as we spend so much time online. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos and other images as needed in Illustrator."
+    text: "Web design effects everyone, every day, so I also spent time on color, fonts, layout, and learning Illustrator. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos, and other images in Illustrator."
   },
 ]
 
@@ -74,3 +74,4 @@ export const jobs = [
   },
 ]
 // career: "I've worked at leading market research companies and start-ups, worked with tiny drug developers and most of the largest Pharmaceutical companies in the world, sold little syndicated reports, complex custom projects, and everything in between.",
+// A New Yorker by birth and by choice, I live in Manhattan with my husband, seven-year-old daughter, and our goofy pandemic-pup, Jack. 

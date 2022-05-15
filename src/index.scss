@@ -19,7 +19,7 @@ h1 {
   font-weight: 800;
   font-size: 2.5em;
 }
-/* SKILLS HEADER */
+/* SKILLS HEADER, ABOUT HEADER, PROJECT HEADER */
 h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif !important;
   font-size: 2em;
@@ -143,14 +143,21 @@ body {
   h1 {
     font-size: 2em;
   }
+  /* SKILLS HEADER, ABOUT HEADER */
   h2 {
-    font-size: 2.1em;
+    font-size: 1.5em;
+    font-weight: 500;
   }
+  /* PROJECT HEADER LABELS */
   h3 {
     font-size: 1.5em;
   }
+  /* PROJECT UNIT TITLE, ABOUT TOPIC HEADERS */
+  h5 {
+    font-size: 1.2em;
+  }
   p {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .Navbar {
     background-color: white;
