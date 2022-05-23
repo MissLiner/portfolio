@@ -1,5 +1,7 @@
 .Portfolio {
   background-color: white;
+  border: 4px double #FED5F2;
+  outline: 10px solid white;
   padding-top: 20px;
   width: 80%;
   z-index: 2;
@@ -7,6 +9,8 @@
 
 @media only screen and (max-width: 768px) {
   .Portfolio {
+    border: none;
+    outline: none;
     margin-top: 90px;
     padding-top: 0;
     width: 100%;

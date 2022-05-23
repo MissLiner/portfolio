@@ -1,6 +1,8 @@
 .About {
   background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  border: 4px double #FED5F2;
+  margin-top: 50px;
+  outline: 10px solid white;
   overflow: hidden;
   padding-bottom: 35px;
   padding-top: 30px;
@@ -26,7 +28,7 @@
   background-image: url("../../assets/r_arrow_pink.svg");
   background-repeat: no-repeat;
   content: "";
-  height: 1.5em; width: 1.5em;
+  height: 1em; width: 1em;
   margin-left: -1.7em;
   position: absolute;
 }
@@ -38,6 +40,8 @@
 
 @media only screen and (max-width: 768px)  {
   .About {
+    border: none;
+    outline: none;
     margin-bottom: 50px;
     margin-top: 90px !important;
     width: 100%;

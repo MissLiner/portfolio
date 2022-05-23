@@ -1,5 +1,10 @@
 .Skills {
-  margin-top: 0;
+  background-color: white;
+  border: 4px double #FED5F2;
+  outline: 10px solid white;
+  margin-top: 50px;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
   z-index: 2;
 }
 .Skills-table {
@@ -8,7 +13,6 @@
     "category" min-content
     "row1"
     "row2";
-  margin-top: 80px;
 }
 .Skills-list {
   display: flex;
@@ -37,7 +41,13 @@
 }
 @media only screen and (max-width: 768px) {
   .Skills {
-    margin-top: 60px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .Skills-category {
     padding: 10px 0 10px 0;

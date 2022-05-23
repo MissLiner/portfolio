@@ -9,7 +9,7 @@ function About() {
         return(
           <div className="About-unit" key={unit.topic}>
             <h5 className="About-topic">
-                <i>{unit.topic}</i>
+                {unit.topic}
             </h5>
             <p className="About-text">
               {unit.text}
@@ -21,7 +21,7 @@ function About() {
   }
   return(
     <div className="About">
-      <h2 className="About-title">My Story</h2>
+      <h1 className="About-title">My Story</h1>
       {renderAbout()}
     </div>
   )

@@ -6,11 +6,11 @@ import ProjectTags from "./ProjectTags";
 function ProjectHeader(props) {
   return(
     <div className="ProjectHeader">
-      <h2 className="ProjectHeader-title">
+      <h1 className="ProjectHeader-title">
         <span className="text-span">
           {props.title}
         </span>
-      </h2>
+      </h1>
       <h4 className="ProjectHeader-links">
         <a  className="ProjectHeader-links-link" 
             href={props.currentProject.live}

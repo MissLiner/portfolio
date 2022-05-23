@@ -42,11 +42,9 @@ function Skills() {
   return(
     <div className="Skills">
       <div className="Skills-table">
-        <h2 className="Skills-category">
-          <span className="text-span">
+        <h1 className="Skills-category">
             {skillsArr[0].category}
-          </span>
-          </h2>
+          </h1>
         <div className="Skills-list row1">
         {renderFirstSkills()}
         </div>
