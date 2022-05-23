@@ -6,7 +6,7 @@ export const navLabels = [ "about",
                           ]
 
 export const homeContent = {
-  text1: "Welcome! I built this portfolio from scratch using ReactJS, and the web development skills I gained through ",
+  text1: "I built this portfolio from scratch using ReactJS, and the web development skills I gained through ",
   odinLink: ["The Odin Project", "https://www.theodinproject.com/"],
   text2: "Enjoy exploring, and please take a peek under the hood on ",
   text3: 'My design mantra: "simple, intuitive, fun!"',

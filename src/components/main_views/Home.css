@@ -9,6 +9,16 @@
   position: relative;
   width: 700px;
 }
+.Home-header {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.Home-footer {
+  font-size: 2em;
+  margin-left: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
 .Home-pic {
   background-color: white;
   border: 4px double #FED5F2;
@@ -16,7 +26,7 @@
   -webkit-box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49); 
   box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49);
   grid-area: pic;
-  margin-left: -240px;
+  margin-left: -230px;
   margin-top: -120px;
   outline: 5px solid white;
   padding: 5px;
@@ -31,7 +41,7 @@
   height: fit-content;
   margin: unset;
   outline: 10px solid white;
-  padding: 80px 40px 80px 40px;
+  padding: 30px 40px 20px 40px;
 }
 .Home-text {
   font-size: 1.4em;
@@ -39,10 +49,10 @@
   text-align: left;
 }
 .Home-text.first {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .Home-text.second {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .text-span {
   background-color: white;
