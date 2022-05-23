@@ -10,12 +10,11 @@
   width: 700px;
 }
 .Home-pic {
-  /* background-color: #eafbf0; */
   background-color: white;
   border: 4px double #FED5F2;
   border-style: double;
-  -webkit-box-shadow: -6px -4px 16px -3px rgba(74,74,74,0.67); 
-  box-shadow: -6px -4px 16px -3px rgba(74,74,74,0.67);
+  -webkit-box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49); 
+  box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49);
   grid-area: pic;
   margin-left: -240px;
   margin-top: -120px;
@@ -24,7 +23,6 @@
   position: relative;
   width: 12em;
   z-index: 500;
-  
 }
 .Home-content {
   background-color: white;
@@ -42,20 +40,10 @@
 }
 .Home-text.first {
   margin-bottom: 40px;
-  /* text-align: center; */
-  /* width: 130% !important; */
 }
 .Home-text.second {
   margin-bottom: 40px;
-  /* margin-top: 70px; */
-  /* text-indent: 20px; */
-  /* width: 120%; */
 }
-/* .Home-text.third { */
-  /* margin-left: 165px; */
-  /* margin-top: 70px; */
-  /* width: max-content; */
-/* } */
 .text-span {
   background-color: white;
 }

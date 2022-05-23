@@ -7,7 +7,7 @@
   display: grid;
   grid-template: 
     "name navbar"
-    / 1fr 1fr ;
+    / min-content 1fr ;
   left: 0px;
   position: fixed;
   padding: 15px 0px 0px 0px;
@@ -36,6 +36,7 @@
   margin-left: 60px;
   position: relative;
   text-align: left;
+  width: 455px;
   z-index: 5;
 }
 .App-screen {
