@@ -2,25 +2,38 @@
   display: grid;
   grid-template:
     "text ..." min-content
-    "text pic" 1fr
-    "text pic" 1fr
+    ".... pic" 1fr
     / 1fr 0;
   margin-left: 140px;
   margin-top: 50px;
   position: relative;
-  width: 550px;
+  width: 700px;
 }
 .Home-pic {
-  border: 1px solid white;
+  /* background-color: #eafbf0; */
+  background-color: white;
+  border: 4px double #FED5F2;
+  border-style: double;
+  -webkit-box-shadow: -6px -4px 16px -3px rgba(74,74,74,0.67); 
+  box-shadow: -6px -4px 16px -3px rgba(74,74,74,0.67);
   grid-area: pic;
-  margin-left: -52px;
-  margin-top: 120px;
-  width: 15em;
+  margin-left: -240px;
+  margin-top: -120px;
+  outline: 5px solid white;
+  padding: 5px;
+  position: relative;
+  width: 12em;
+  z-index: 500;
+  
 }
 .Home-content {
+  background-color: white;
+  border: 4px double #FED5F2;
   grid-area: text;
   height: fit-content;
   margin: unset;
+  outline: 10px solid white;
+  padding: 80px 40px 80px 40px;
 }
 .Home-text {
   font-size: 1.4em;
@@ -28,21 +41,21 @@
   text-align: left;
 }
 .Home-text.first {
-  margin-top: 40px;
-  text-align: center;
-  width: 130% !important;
+  margin-bottom: 40px;
+  /* text-align: center; */
+  /* width: 130% !important; */
 }
 .Home-text.second {
-  margin-left: -120px;
-  margin-top: 70px;
-  text-indent: 20px;
-  width: 120%;
+  margin-bottom: 40px;
+  /* margin-top: 70px; */
+  /* text-indent: 20px; */
+  /* width: 120%; */
 }
-.Home-text.third {
-  margin-left: 165px;
-  margin-top: 70px;
-  width: max-content;
-}
+/* .Home-text.third { */
+  /* margin-left: 165px; */
+  /* margin-top: 70px; */
+  /* width: max-content; */
+/* } */
 .text-span {
   background-color: white;
 }

@@ -25,7 +25,7 @@ export const aboutContent = [
     text: "TOP has a great support community on Discord, but you code projects on your own from the start. This gave me the most useful development skill of all: the ability to find solutions on my own. While learning HTML, CSS, Javascript, and React.js, I've used the command line, Git, Chrome Dev Tools, VSCode, and Webpack throughout."
   },
   { topic: "Development meets design . . . ",
-    text: "Web design effects everyone, every day, so I also spent time on color, fonts, layout, and learning Illustrator. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos, and other images in Illustrator."
+    text: "Web design affects everyone, every day, so I also spent time on color, fonts, layout, and learning Illustrator. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos, and other images in Illustrator."
   },
 ]
 

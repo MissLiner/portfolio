@@ -90,8 +90,29 @@ textarea {
 }
 @media only screen and (max-width: 768px) {
   .ContactForm-form {
-    margin-top: 100px;
+    transform: translate(-50%, 30%);
     padding: 20px 15px 20px 15px;
   }
-
+  .ContactForm-input-message {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .ContactForm-form {
+    grid-template:
+    "title" min-content
+    "name" min-content
+    "email" min-content
+    "message" min-content
+    "submit" min-content
+    / 1fr;
+    transform: translate(-50%, 20%);
+  }
+  .ContactForm-input {
+    width: 250px !important;
+  }
+  .ContactForm-input-message {
+    height: 150px;
+    width: 250px !important;
+  }
 }

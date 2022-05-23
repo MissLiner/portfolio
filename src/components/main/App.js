@@ -4,6 +4,7 @@ import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
 import { navLabels } from '../shared/text';
 import { useEffect, useState } from "react";
+import headerLogo from "../../assets/images/header_logo.svg";
 import '../../index.scss';
 import './App.css';
 
@@ -57,11 +58,13 @@ function App() {
           emailFunc={handleClickEmail} 
         />
         <div className="App-header">
-          <h1 
+          <img 
             className="App-name"
+            src={headerLogo}
+            alt="Caroline Stephenson logo"
             onClick={handleClickHome}
-              >Caroline Stephenson
-          </h1>
+          />
+       
           <Navbar 
             clickFunc={handleClickNav} 
             btnList={navLabels}
