@@ -44,7 +44,7 @@ function ContactForm(props) {
         <label 
           htmlFor="senderName"
           className="ContactForm-label"
-          ><h4>NAME</h4>
+          ><h5>NAME</h5>
         </label>
         <input
           className="ContactForm-input ContactForm-input-name"
@@ -60,7 +60,7 @@ function ContactForm(props) {
           <label 
             htmlFor="senderEmail"
             className="ContactForm-label"
-            ><h4>EMAIL</h4>
+            ><h5>EMAIL</h5>
           </label>
           <input
             className="ContactForm-input ContactForm-input-email"
@@ -76,7 +76,7 @@ function ContactForm(props) {
           <label 
             htmlFor="message"
             className="ContactForm-label"
-            ><h4>MESSAGE</h4>
+            ><h5>MESSAGE</h5>
           </label>
           <textarea
             className="ContactForm-input ContactForm-input-message"
@@ -91,7 +91,7 @@ function ContactForm(props) {
         <button
           className="ContactForm-submit-btn colors-contact-form"
           type="submit"
-          ><h4><b>SEND</b></h4>
+          ><h5><b>SEND</b></h5>
         </button>
       </form>
     </div>

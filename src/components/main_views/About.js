@@ -8,9 +8,9 @@ function About() {
       aboutContent.map(unit => {
         return(
           <div className="About-unit" key={unit.topic}>
-            <h5 className="About-topic">
+            <h3 className="About-topic">
                 {unit.topic}
-            </h5>
+            </h3>
             <p className="About-text">
               {unit.text}
             </p>

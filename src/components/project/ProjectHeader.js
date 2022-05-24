@@ -7,9 +7,7 @@ function ProjectHeader(props) {
   return(
     <div className="ProjectHeader">
       <h1 className="ProjectHeader-title">
-        <span className="text-span">
           {props.title}
-        </span>
       </h1>
       <h4 className="ProjectHeader-links">
         <a  className="ProjectHeader-links-link" 

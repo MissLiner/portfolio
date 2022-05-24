@@ -70,3 +70,27 @@ examples:
       #D4C6FF
 
       #16BA55
+
+  old color schemes:
+  .ltgreen-bg {
+  // background-color: #e0faea;
+  background-color: #eafbf0;
+}
+.colors-Navbar {
+    // color: rgb(243, 253, 234);
+}
+ (mobile) .colors-Navbar {
+    // color:#ff8ddd;
+    color: #ffe9f8;
+  }
+    .colors-Navbar.activeBtn {
+    // background-color: #ecfaf1;
+    // color: #FF5D95;
+    color: #ff98cf;
+  }
+  // .colors-Portfolio {
+  //   background-color: #ecfaf1 !important;
+  // }
+
+previous fonts -
+  SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE (others: "Prompt", "Inter", "Elsie Swash Caps")

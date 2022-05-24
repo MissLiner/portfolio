@@ -1,20 +1,18 @@
+* {
+  margin: auto;
+}
 #root {
   position: absolute;
   width: 100%; height: 100%;
 }
 
-* {
-  margin: auto;
-  // text-align: center;
-}
-
-/* HANDWRITING (others: "Prompt", "Inter", "Elsie Swash Caps") */
+/* HANDWRITING - SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
 h1 {
   color:rgb(150, 150, 150);
   font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
-/* SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
+/* CONTACT FORM HEADER */
 h2 {
   color:rgb(105, 105, 105);
   font-family: "Raleway", Helvetica, Arial, sans-serif !important;
@@ -22,28 +20,30 @@ h2 {
   font-weight: 800;
   margin-bottom: 20px;
 }
+/* ABOUT TOPIC HEADERS */
+h3 {
+  font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+/* PROJECT UNIT TOPICS */
+h4 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+/* PROJECT HEADER LINKS, CONTACT FORM SECTION TITLES */
+h5 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
 /* NAVBAR BTNS */
 .Navbar-btn {
   font-family: "Elsie Swash Caps";
   font-size: 1.8em;
   font-weight: 600;
-}
-/* PROJECT HEADER LINKS */
-h4 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-}
-/* PROJECT UNIT TITLE, ABOUT TOPIC HEADERS */
-h5 {
-  font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
-}
-h6 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.3em;
 }
 /* PROJECT TAGS */
 li {
@@ -66,11 +66,7 @@ a {
 svg.MuiSvgIcon-root {
   display: block;
 }
-/* WHITE TEXT SPANS */
-.text-span {
-  background-color: white;
-  padding: 1px 0px 1px 0px;
-}
+
 /* LINK EFFECT - https://codepen.io/markmead/pen/drORWG */
 $link: #EC407A;
 a {
@@ -98,33 +94,19 @@ a {
 
 /* COLORS */
 
-.green-yellow {
-  // background-color: #16ba55;
-  background-color: #14A64C;
-  color:#ffff00;
-}
-.ltgreen-bg {
-  // background-color: #e0faea;
-  background-color: #eafbf0;
-}
-
-.colors-Navbar {
-  background-color:transparent;
-  color: white;
-  // color: rgb(243, 253, 234);
-}
-.colors-Navbar:hover {
-  color: #FED5F2;
-}
-.colors-Navbar.activeBtn {
-  color:#FED5F2;
-}
-.ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
-  background-color:#FED5F2;
-}
 .colors-StickyNav {
   background-color: #FF5D95;
   color: white;
+}
+.colors-Navbar {
+  background-color:transparent;
+  color: white;
+}
+.colors-Navbar:hover, .colors-Navbar.activeBtn {
+  color: #FED5F2;
+}
+.ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
+  background-color:#FED5F2;
 }
 .colors-contact-form {
   background-color:#ffeefa;
@@ -134,43 +116,38 @@ a {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  body {
-    min-height: 100vh;
-  }
+  /* HANDWRITING - SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
   h1 {
     font-size: 2.2em;
   }
-  /* SKILLS HEADER, ABOUT HEADER */
+  /* CONTACT FORM HEADER */
   h2 {
-    color: black;
+    color: rgb(105, 105, 105);
     font-size: 1.5em;
     font-weight: 500;
+  }
+  /* ABOUT TOPIC HEADERS */
+  h3 {
+    font-size: 1.2em;
   }
   /* NAVBAR BTNS */
   .Navbar-btn {
     font-size: 1.4em;
   }
-  /* PROJECT UNIT TITLE, ABOUT TOPIC HEADERS */
-  h5 {
-    font-size: 1.2em;
-  }
+  /* TEXT */
   p {
     color: black;
     font-size: 1.1em;
   }
+
+  /* COLORS */
   .App-screen {
     background-color: transparent;
   }
   .colors-Navbar {
-    // color:#ff8ddd;
     color: #ffe9f8;
   }
   .colors-Navbar.activeBtn {
-    // background-color: #ecfaf1;
-    // color: #FF5D95;
     color: #ff98cf;
   }
-  // .colors-Portfolio {
-  //   background-color: #ecfaf1 !important;
-  // }
 }
