@@ -29,13 +29,15 @@ function Home() {
         <p className="Home-text third">
             {homeContent.text3}
         </p>
-        <h1 className="Home-footer">-Caroline</h1>
       </div>
-      <img 
-        className="Home-pic" 
-        src={homeContent.pic} 
-        alt="Caroline Stephenson">
-      </img>
+      <div className="Home-footer">
+          <h1 className="Home-sig">-Caroline</h1>
+          <img 
+            className="Home-pic" 
+            src={homeContent.pic} 
+            alt="Caroline Stephenson">
+          </img>
+        </div>
     </div>
   )
 }
