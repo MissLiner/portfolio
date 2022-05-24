@@ -57,20 +57,22 @@
     grid-template:
       "content"
       "footer";
-    margin: auto auto auto auto;
+    margin: auto auto auto -4px;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 85vw;
   }
   .Home-content {
-    padding: 20px 0px 70px 0px;
+    padding: 10px 0px 70px 0px;
+    width: 100%;
   }
   .Home-footer {
     margin-right: 10px;
     margin: -70px 20px auto auto;
   }
   .Home-header {
+    margin-bottom: 0px;
     text-align: center;
   }
   .Home-pic {
@@ -88,6 +90,9 @@
     margin: 20px auto auto auto;
     text-align: center;
     width: 95%;
+  }
+  .Home-text.first {
+    margin-top: 10px;
   }
   .Home-text.third {
     width: 10em;

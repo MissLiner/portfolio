@@ -41,15 +41,24 @@
 }
 @media only screen and (max-width: 768px) {
   .Skills {
-    border: none;
-    outline: none;
-    margin-top: 15px;
+    margin-top: unset;
+    padding: 0px 0px 20px 0px;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
   }
   .Skills-category {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 20px 0;
+  }
+  .row2 {
+    width: 100%;
+  }
+  .Skills-div {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .Skills-icon {
+    width: 80%;
   }
 }
