@@ -1,4 +1,4 @@
-import bioPic from "../../assets/images/bio_pic.jpg";
+import bioPic from "../../assets/images/bio_pic.webp";
 
 export const navLabels = [ "about",
                            "skills",

@@ -116,6 +116,16 @@ a {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
+  // #root {
+  //   height: -webkit-fill-available;
+  // }
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
   /* HANDWRITING - SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
   h1 {
     font-size: 2.2em;
