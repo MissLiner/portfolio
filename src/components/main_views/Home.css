@@ -68,22 +68,26 @@
     width: 100%;
   }
   .Home-footer {
-    margin-right: 10px;
-    margin: -70px 20px auto auto;
+    grid-template: 
+      "pic";
+    margin-top: -60px;
+    width: 80%;
   }
   .Home-header {
     margin-bottom: 0px;
     text-align: center;
   }
   .Home-pic {
-    border-width: 2px; outline-width: 2px; padding: 2px;
+    border-width: 1px; 
     grid-area: pic;
-    margin: 10px auto auto auto;
+    margin: 5px auto auto auto;
+    outline: none; 
+    padding: 0px;
     position: relative;
-    width: 70px;
+    width: 120px;
   }
   .Home-sig {
-    margin: 10px 20px auto auto;
+    display: none;
   }
   .Home-text {
     font-size: 1.2em;
