@@ -16,7 +16,7 @@
 }
 .ProjectHeader-links {
   grid-area: links;
-  margin-left: 0;
+  margin-left: 10px;
 }
 .ProjectHeader-links-link {
   padding-right: .5em;
@@ -42,7 +42,7 @@
     text-align: center;
   }
   .ProjectHeader-links {
-    margin: auto;
+    margin: -10px auto 10px auto;
     text-align: center;
   }
 }

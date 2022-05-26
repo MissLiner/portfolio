@@ -1,7 +1,7 @@
 .About {
   background-color: rgb(255, 255, 255);
   border: 4px double #FED5F2; outline: 10px solid white;
-  margin-top: 50px;
+  margin: 50px auto 100px auto;
   overflow: hidden;
   padding: 20px 0px 35px 0px;
   width: 80%;
@@ -35,8 +35,8 @@
 
 @media only screen and (max-width: 768px)  {
   .About {
-    margin: 40px auto 50px auto;
-    width: 90%;
+    margin: 40px auto 60px auto;
+    width: 85vw;
   }
   .About-topic {
     margin-left: 0;
@@ -44,5 +44,9 @@
   .About-topic::before {
     height: 1.2em; width: 1.2em;
     margin-left: -1.5em;
+  }
+  .About-unit {
+    margin-left: 10%;
+    width: 85%;
   }
 }

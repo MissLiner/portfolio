@@ -1,6 +1,7 @@
 .Portfolio {
   background-color: white;
   border: 4px double #FED5F2;
+  margin-bottom: 100px;
   outline: 10px solid white;
   padding-top: 20px;
   width: 80%;
@@ -11,7 +12,7 @@
   .Portfolio {
     border: none;
     outline: none;
-    margin-top: 30px;
+    margin: 30px auto 60px auto;
     padding-top: 0;
     width: 100%;
   }

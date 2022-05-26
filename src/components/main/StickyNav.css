@@ -4,27 +4,20 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 8em;
-  left: 1em;
+  top: 8em; left: 1em;
   z-index: 1000;
 }
 
 @media only screen and (max-width: 768px) {
   .StickyNav {
-    left: 50%;
-    margin-left: -42px;
-    bottom: 5px;
-    flex-direction: row;
-    top: initial;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: auto 0px 5px auto;
+    top: unset; bottom: 5px; right: 0px;
+    width: max-content;
   }
   .StickyNav-icon {
     height: 25px !important;
     width: 25px !important;
-  }
-  .StickyNav-btn-home {
-    padding-right: 10px !important;
-  }
-  .StickyNav-btn-email {
-    padding-left: 10px !important;
   }
 }
