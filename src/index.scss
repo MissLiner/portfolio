@@ -41,9 +41,10 @@ h5 {
 
 /* NAVBAR BTNS */
 .Navbar-btn {
-  font-family: "Elsie Swash Caps";
-  font-size: 1.8em;
-  font-weight: 600;
+  // font-family: "Elsie Swash Caps";
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 800;
 }
 /* PROJECT TAGS */
 li {
@@ -99,11 +100,17 @@ a {
   color: white;
 }
 .colors-Navbar {
-  background-color:transparent;
+  background: transparent;
   color: white;
 }
-.colors-Navbar:hover, .colors-Navbar.activeBtn {
+.colors-Navbar:hover {
   color: #FED5F2;
+}
+
+.colors-Navbar.activeBtn {
+  border-bottom: 3px solid white;
+  font-size: 2.2em;
+  margin-bottom: -3px;
 }
 .ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
   background-color:#FED5F2;

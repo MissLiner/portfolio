@@ -43,7 +43,7 @@ function Navbar(props) {
     )
   }
   return(
-    <div className={"Navbar colors-Navbar"}>
+    <div className={"Navbar"}>
       {renderNavbar()}
     </div>
   )
