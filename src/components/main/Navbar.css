@@ -7,7 +7,7 @@
   margin-bottom: .4em;
   position: relative;
   column-gap: 2em;
-  width: 370px;
+  width: 500px;
   z-index: 5;
 }
 .Navbar-btn {
@@ -15,10 +15,7 @@
   margin-bottom: 0;
   height: fit-content;
   text-align: left;
-  width: 100%;
-}
-.activeBtn {
-  font-weight: bolder;
+  width: min-content;
 }
 
 @media only screen and (max-width: 768px) {

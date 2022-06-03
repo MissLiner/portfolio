@@ -44,7 +44,7 @@ h5 {
   // font-family: "Elsie Swash Caps";
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 600;
 }
 /* PROJECT TAGS */
 li {
@@ -106,10 +106,13 @@ a {
 .colors-Navbar:hover {
   color: #FED5F2;
 }
+.colors-Navbar:hover.colors-Navbar.activeBtn {
+  border-bottom: 3px solid #FED5F2;
+}
 
 .colors-Navbar.activeBtn {
   border-bottom: 3px solid white;
-  font-size: 2.2em;
+  // font-size: 2.2em;
   margin-bottom: -3px;
 }
 .ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
@@ -150,6 +153,10 @@ a {
   /* NAVBAR BTNS */
   .Navbar-btn {
     font-size: 1.4em;
+    font-weight: 400;
+  }
+  .Navbar-btn.activeBtn {
+    font-weight: 600;
   }
   /* TEXT */
   p {
@@ -162,9 +169,9 @@ a {
     background-color: transparent;
   }
   .colors-Navbar {
-    color: #ffe9f8;
+    color: #fae9f5;
   }
-  .colors-Navbar.activeBtn {
-    color: #ff98cf;
+  .colors-Navbar:hover {
+    color: #ffe9f8;
   }
 }
