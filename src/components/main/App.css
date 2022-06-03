@@ -60,6 +60,7 @@
     grid-template:
       "name" 
       "navbar";
+      height: 84px;
     padding: 0;
   }
   .App-header::before, .App-screen::before {
@@ -75,8 +76,4 @@
     margin: auto;
     width: 90%;
   }
-  /* .App-screen {
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-  } */
 }
