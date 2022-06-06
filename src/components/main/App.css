@@ -33,8 +33,7 @@
 }
 .App-screen {
   position:absolute;
-  /* min-height: 70vh; */
-  width: 100vw; 
+  height: 100vh; width: 100vw; 
 }
 .App-screen::before {
   background-image: url("../../assets/images/background.webp");
@@ -75,5 +74,8 @@
   .App-name {
     margin: auto;
     width: 90%;
+  }
+  .App-screen {
+    height: unset;
   }
 }
