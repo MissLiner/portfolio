@@ -69,10 +69,17 @@ I did make some changes as I developed the site, but the basic structure held up
 
   <img src="./src/assets/images/screenshots/portfolio_actual.svg" width="300" 
   alt="published portfolio site">
+  
+When I designed a new look altogether, the original layout still holds up:
 
+  <img src="./src/assets/images/screenshots/portfolio_redesign.svg" width="300" 
+  alt="redesigned portfolio site">
+  
 ### Mobile Development
 
-While I didn't follow mobile-first design principles, this project really increased my media query savvy. It was very easy to change the layout for mobile with simple changes to my CSS grid-template declarations. CSS Grid wins again! (though Flexbox was perfect for my StickyNav)
+This project really increased my media query savvy. It was very easy to change the layout for mobile with simple changes to my CSS grid-template declarations. CSS Grid wins again! (though Flexbox was perfect for my StickyNav)
+
+I optimized the site to work for every cell phone size, though I haven't done so for tablets, yet.
 
 ### Color Scheme
 
@@ -90,4 +97,6 @@ Finally I played my way into **pink** and **green**, a combination that always m
 - Soft callback to the eighties
 - Full of good memories and positive associations
 
-After I had the color scheme, I happened to find a nice recent picture of myself in front of a wall of roses, which matched the scheme perfectly! Kismet.
+After I had the color scheme, I happened to find a nice recent picture of myself in front of a wall of roses, which matched the scheme perfectly!
+
+I also took some photographs at a cactus greenhouse, one of which ended up inspiring me so much, I used it as a background for the site. This required a total design overhaul, and I worked hard to make the transition between the fixed top nav bar and the rest of the site seamless. 
