@@ -8,7 +8,8 @@
 
 /* HANDWRITING - SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
 h1 {
-  color:rgb(150, 150, 150);
+  // color:rgb(150, 150, 150);
+  color: black;
   font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
@@ -62,6 +63,7 @@ p {
 /* LINKS */
 a {
   white-space: nowrap;
+  color: #ffffff;
 }
 /* ICONS */
 svg.MuiSvgIcon-root {
@@ -119,7 +121,7 @@ a {
 }
 .colors-contact-form {
   background-color:#fef3fb;
-  border-color: rgb(105, 105, 105) !important;
+  border-color: #696969 !important;
   color: rgb(105, 105, 105);
 }
 
@@ -141,7 +143,7 @@ a {
   }
   /* CONTACT FORM HEADER */
   h2 {
-    color: rgb(105, 105, 105);
+    color: #696969;
     font-size: 1.5em;
     font-weight: 500;
   }
