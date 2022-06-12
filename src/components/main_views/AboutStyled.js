@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../shared/colorsStyled.js';
+import { colors, device } from '../shared/templateStyles';
 
 export const Wrapper = styled.div`
   background-color: ${colors.bgMain};
@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
   padding: 20px 0px 35px 0px;
   width: 80%;
   z-index: 2;
+
+  @media ${device.mobileL} {
+    margin: 40px auto 60px auto;
+    width: 85vw;
+  }
 `;
 export const Title = styled.h1`
   padding: 0px 0 10px 0;
@@ -18,10 +23,18 @@ export const Title = styled.h1`
 export const Unit = styled.div`
   margin-bottom: 15px;
   width: 80%;
+
+  @media ${device.mobileL} {
+    margin-left: 10%;
+    width: 85%;
+  }
 `;
 export const Topic = styled.h3`
   margin: auto auto 5px -10px;
   text-align: left;
+  @media ${device.mobileL} {
+    margin-left: 0;
+  }
   &::before {
     background-image: url("../../assets/r_arrow_pink.svg");
     background-repeat: no-repeat;
@@ -29,15 +42,17 @@ export const Topic = styled.h3`
     height: 1em; width: 1em;
     margin-left: -1.7em;
     position: absolute;
+
+    @media ${device.mobileL} {
+      height: 1.2em; width: 1.2em;
+      margin-left: -1.5em;
+    }
   }
 `;
 export const Text = styled.p`
   line-height: 1.5;
   text-align: left;
 `;
-// export const Skills = styled.ul`
-// `;
 export const Skill = styled.li`
-color:rgb(105, 105, 105);
-font-family: "Baskerville", Helvetica, Arial, sans-serif;
+  font-family: "Baskerville", Helvetica, Arial, sans-serif;
 `;

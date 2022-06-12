@@ -1,5 +1,4 @@
 import '../../index.scss';
-import './About.css';
 import { Wrapper, Title, Unit, Topic, Text, Skill } from './AboutStyled';
 
 function About() {
