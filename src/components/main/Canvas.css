@@ -3,10 +3,12 @@
   display:grid;
   /* min-height: 300px; */
   padding: 2.5em 4em 2em 4em;
+  position: relative;
   margin-top: 4.5em;
   /* margin-bottom: 20px; */
   width: 100%;
   max-width: 1000px;
+  /* z-index: 5; */
 }
 
 @media only screen and (max-width: 768px) {

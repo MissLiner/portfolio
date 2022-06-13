@@ -7,7 +7,8 @@ export const Wrapper = styled.div`
   margin: 50px auto 100px auto;
   overflow: hidden;
   padding: 20px 0px 35px 0px;
-  width: 80%;
+  position: relative;
+  width: 800px;
   z-index: 2;
 
   @media ${device.mobileL} {
