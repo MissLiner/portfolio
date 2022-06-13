@@ -1,10 +1,9 @@
 .Skills {
   background-color: white;
-  border: 4px double #FED5F2;
-  outline: 10px solid white;
-  margin-top: 50px;
-  padding: 20px 40px 20px 40px;
+  margin-top: 30px;
+  padding: 40px 0px 40px 0px;
   text-align: center;
+  width: 800px;
   z-index: 2;
 }
 .Skills-table {
@@ -22,9 +21,13 @@
 }
 .Skills-div {
   padding: 10px 10px 10px 10px;
-  width: 100px;
+  width: 140px;
 }
 .Skills-icon {
+  background-color: rgb(195, 190, 190);
+  border-radius: 50%;
+  box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49);
+  -webkit-box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49); 
   width: 100%;
 }
 .Skills-name {
@@ -32,6 +35,7 @@
 }
 .Skills-category {
   grid-area: category;
+  padding-bottom: 20px;
 }
 .row1 {
   grid-area: row1;

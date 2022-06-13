@@ -3,10 +3,9 @@ import { colors, device } from '../shared/templateStyles';
 
 export const Wrapper = styled.div`
   background-color: ${colors.bgMain};
-  border: 4px double #FED5F2; outline: 10px solid white;
-  margin: 50px auto 100px auto;
+  margin: 30px auto 100px auto;
   overflow: hidden;
-  padding: 20px 0px 35px 0px;
+  padding: 40px 0px 45px 0px;
   position: relative;
   width: 800px;
   z-index: 2;

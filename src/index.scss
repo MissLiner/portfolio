@@ -42,10 +42,15 @@ h5 {
 
 /* NAVBAR BTNS */
 .Navbar-btn {
-  // font-family: "Elsie Swash Caps";
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
+  font-size: 1.9em;
   font-weight: 600;
+}
+.Navbar-btn:hover {
+  font-size: 2.1em;
+}
+.Navbar-btn.activeBtn {
+  font-size: 2.1em;
 }
 /* PROJECT TAGS */
 li {
@@ -98,29 +103,29 @@ a {
 /* COLORS */
 
 .colors-StickyNav {
-  background-color: #FF5D95;
-  color: white;
+  color: rgb(255, 93, 149);
+  background-color: white;
 }
 .colors-Navbar {
   background: transparent;
   color: white;
 }
-.colors-Navbar:hover {
-  color: #FED5F2;
+.colors-Navbar:hover, .colors-Navbar.activeBtn {
+  color: yellow;
 }
 .colors-Navbar:hover.colors-Navbar.activeBtn {
-  border-bottom: 3px solid #FED5F2;
+  border-bottom: 5px dotted yellow;
 }
 
 .colors-Navbar.activeBtn {
-  border-bottom: 3px solid white;
+  border-bottom: 5px dotted white;
   margin-bottom: -3px;
 }
 .ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
   background-color:#ffffff;
 }
 .colors-contact-form {
-  background-color:#fef3fb;
+  background-color:#f3fdef;
   border-color: #696969 !important;
   color: rgb(105, 105, 105);
 }

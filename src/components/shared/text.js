@@ -1,4 +1,4 @@
-import bioPic from "../../assets/images/bio_pic.webp";
+import bioPic from "../../assets/images/bio_pic.jpg";
 
 export const navLabels = [ "about",
                            "skills",
@@ -6,7 +6,7 @@ export const navLabels = [ "about",
                           ]
 
 export const homeContent = {
-  text1: "I built this portfolio from scratch using ReactJS, and the web development skills I gained through ",
+  text1: "I built this portfolio from scratch with React.js, using the web development skills I learned through ",
   odinLink: ["The Odin Project", "https://www.theodinproject.com/"],
   text2: "Enjoy exploring, and please take a peek under the hood on ",
   text3: 'My mantra: "simple, intuitive, fun!"',

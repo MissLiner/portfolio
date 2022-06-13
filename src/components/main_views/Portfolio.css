@@ -1,10 +1,8 @@
 .Portfolio {
   background-color: white;
-  border: 4px double #FED5F2;
-  margin-bottom: 100px;
-  outline: 10px solid white;
-  padding-top: 20px;
-  width: 80%;
+  margin: 30px auto 100px auto;
+  padding: 30px 0px 30px 0px;
+  width: 800px;
   z-index: 2;
 }
 

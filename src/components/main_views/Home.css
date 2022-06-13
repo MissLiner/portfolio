@@ -10,11 +10,9 @@
 }
 .Home-content {
   background-color: white;
-  border: 4px double #FED5F2;
   grid-area: content;
   height: fit-content;
-  outline: 10px solid white;
-  padding: 30px 40px 70px 40px;
+  padding: 40px 60px 80px 60px;
 }
 .Home-footer {
   display: grid;
@@ -22,7 +20,7 @@
   grid-template:
     "sig pic"
     / max-content min-content;
-  margin: -80px auto auto auto;
+  margin: -90px auto auto auto;
 }
 .Home-header {
   margin-bottom: 20px;
@@ -30,7 +28,7 @@
 }
 .Home-pic {
   background-color: white;
-  border: 3px dotted #FED5F2; outline: 3px solid white; padding: 3px;
+  border-radius: 50%;
   box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49);
   -webkit-box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49); 
   margin: -30px auto auto 440px;
