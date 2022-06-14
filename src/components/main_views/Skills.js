@@ -6,36 +6,30 @@ function Skills() {
   const renderFirstSkills = () => {
     return(
       skillsArr[0].skills.map((skill, i) => {
-        if(skill.area === "row1") {
-          return(
-            <div className={"Skills-div Skills-div-" + i} key={"Skills-div" + i}>
-              <img  className="Skills-icon" 
-                    src={skill.image} 
-                    alt={skill.name + " icon"}>
-              </img>
-            </div>
-          )
-        } else {
-          return null;
-        }
+        if(skill.area !== "row1") {return null}; 
+        return(
+          <div className={"Skills-div Skills-div-" + i} key={"Skills-div" + i}>
+            <img  className="Skills-icon" 
+                  src={skill.image} 
+                  alt={skill.name + " icon"}>
+            </img>
+          </div>
+        )
       })
     )
   }
   const renderSecondSkills = () => {
     return(
       skillsArr[0].skills.map((skill, i) => {
-        if(skill.area === "row2") {
-          return(
-            <div className={"Skills-div Skills-div-" + i} key={"Skills-div" + i}>
-              <img  className="Skills-icon" 
-                    src={skill.image} 
-                    alt={skill.name + " icon"}>
-              </img>
-            </div>
-          )
-        } else {
-          return null;
-        }
+        if(skill.area !== "row2") {return null};
+        return(
+          <div className={"Skills-div Skills-div-" + i} key={"Skills-div" + i}>
+            <img  className="Skills-icon" 
+                  src={skill.image} 
+                  alt={skill.name + " icon"}>
+            </img>
+          </div>
+        )
       })
     )
   }

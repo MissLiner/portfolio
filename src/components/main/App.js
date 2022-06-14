@@ -2,7 +2,6 @@ import Canvas from './Canvas';
 import Navbar from './Navbar';
 import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
-import { navLabels } from '../shared/text';
 import { useEffect, useState } from "react";
 import headerLogo from "../../assets/images/header_logo.svg";
 import '../../index.scss';
@@ -27,16 +26,13 @@ function App() {
     setShowContact(false);
     setFilter("");
   }
-
   const renderContactForm = () => {
-    if(showContact) {
+    if(!showContact) {return null}
       return(
         <ContactForm submitFunc={hideContact} cancelFunc={hideContact} />
       )
-    } else {
-      return null;
-    }
   }
+
   useEffect(() => {
     const handleClickOut = (e) => {
       if(e.target.className === "ContactForm-blocker")

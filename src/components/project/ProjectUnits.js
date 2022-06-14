@@ -5,20 +5,17 @@ import "../../index.scss"
 function ProjectUnits(props) {
   const project = props.currentProject;
   const renderLink = (obj) => {
-    if(obj.link) {
-      return(
-        <span className="ProjectUnits-text2">
-          <a 
-            className="ProjectUnits-link"
-            href={obj.link[1]}
-              >{obj.link[0]}
-          </a>
-          {obj.text2}
-        </span>
-      )
-    } else {
-      return null;
-    }
+    if(!obj.link) {return null};
+    return(
+      <span className="ProjectUnits-text2">
+        <a 
+          className="ProjectUnits-link"
+          href={obj.link[1]}
+            >{obj.link[0]}
+        </a>
+        {obj.text2}
+      </span>
+    )
   }
 
   const leftUnit = (obj, keyNum) => {

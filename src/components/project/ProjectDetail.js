@@ -7,13 +7,10 @@ import ProjectHeader from "./ProjectHeader";
 function ProjectDetail(props) {
   const currentProject = projectArray[props.currentIndex];
   const renderUnits = () => {
-    if(currentProject.detailed) {
-      return(
-        <ProjectUnits currentProject={currentProject} />
-      )
-    } else {
-      return null;
-    }
+    if(!currentProject.detailed) {return null};
+    return(
+      <ProjectUnits currentProject={currentProject} />
+    )
   }
   return(
     <div className="ProjectDetail" id="ProjectDetail">
