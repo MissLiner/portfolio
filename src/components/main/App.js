@@ -21,7 +21,7 @@ function App() {
     setFilter("App-filter");
   }
   const handleClickNav = (e) => {
-    setView(e.target.value);
+    setView(e.target.id);
   }
   const hideContact = () => {
     setShowContact(false);
@@ -67,7 +67,6 @@ function App() {
        
           <Navbar 
             clickFunc={handleClickNav} 
-            btnList={navLabels}
             clearView="home"
             view={view}
           />

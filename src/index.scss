@@ -46,12 +46,6 @@ h5 {
   font-size: 1.9em;
   font-weight: 600;
 }
-.Navbar-btn:hover {
-  font-size: 2.1em;
-}
-.Navbar-btn.activeBtn {
-  font-size: 2.1em;
-}
 /* PROJECT TAGS */
 li {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -110,16 +104,15 @@ a {
   background: transparent;
   color: white;
 }
-.colors-Navbar:hover, .colors-Navbar.activeBtn {
+.colors-Navbar:hover, .colors-Navbar.active {
   color: yellow;
 }
-.colors-Navbar:hover.colors-Navbar.activeBtn {
-  border-bottom: 5px dotted yellow;
+.colors-Navbar:hover.colors-Navbar.active {
+  border-color:yellow;
 }
 
-.colors-Navbar.activeBtn {
-  border-bottom: 5px dotted white;
-  margin-bottom: -3px;
+.colors-Navbar.active {
+  border-color:white;
 }
 .ContactForm-cancel-btn:hover, .ContactForm-submit-btn:hover {
   background-color:#ffffff;
@@ -161,7 +154,7 @@ a {
     font-size: 1.4em;
     font-weight: 600;
   }
-  .Navbar-btn.activeBtn {
+  .Navbar-btn.active {
     font-weight: 700;
   }
   /* TEXT */

@@ -1,50 +1,49 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../../index.scss';
 import './Navbar.css';
 
 function Navbar(props) {
-  
-  function removeActiveBtn() {
-    const navBtns = document.querySelectorAll(".Navbar-btn");
-    navBtns.forEach(btn => {
-      if(btn.classList.contains("activeBtn")) {
-        btn.classList.remove("activeBtn");
-      }
-    })
+  const [activeBtn, setActiveBtn] = useState({
+    current: null,
+    buttons: [{id: "projects"}, {id: "skills"}, {id: "about"}]
+  });
+
+  function toggleActive(index) {
+    setActiveBtn({...activeBtn, current: activeBtn.buttons[index]});
   }
   
-  function activateBtn(e) {
-    const navBtns = document.querySelectorAll(".Navbar-btn");
-      removeActiveBtn(navBtns);
-    e.target.classList.add("activeBtn");
-  }
   useEffect(() => {
     if(props.view === props.clearView) {
-      removeActiveBtn();
+      setActiveBtn({...activeBtn, current: null})
     }
-  })
+  }, [props.view, props.clearView])
+
+  const status = (index) => {
+    if(activeBtn.current === activeBtn.buttons[index]) {
+      return "Navbar-btn colors-Navbar active"
+    } else {
+      return "Navbar-btn colors-Navbar inactive"
+    }
+  }
   const handleClick = (e) => {
     props.clickFunc(e);
-    activateBtn(e);
+    toggleActive(e.target.value);
   }
-  const renderNavbar = () => {
-    return(
-      props.btnList.map((btn, i) => {
-        return(
-          <button className={"Navbar-btn colors-Navbar"}
-                  onClick={handleClick}
-                  value={btn}
-                  key={props.navClass + "-" + i}
-          >
-            {btn}
-          </button>
-        )
-      })
-    )
-  }
+
   return(
     <div className={"Navbar"}>
-      {renderNavbar()}
+      {activeBtn.buttons.map((btn, i) => {
+        return(
+          <button className={status(i)}
+                  onClick={handleClick}
+                  value={i}
+                  id={btn.id}
+                  key={i}
+          >
+            {btn.id}
+          </button>
+        )
+      })}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 .Navbar {
   display: grid;
-  height: fit-content;
+  height: 50px;
   grid-area: navbar;
   grid-template-columns: repeat(3, 1fr);
   margin-left: 4em;
@@ -12,10 +12,46 @@
 }
 .Navbar-btn {
   border: none;
-  margin-bottom: 0;
   height: fit-content;
+  position: relative;
   text-align: left;
   width: min-content;
+}
+.Navbar-btn::after {
+  border-bottom: 6px dotted;
+  content: "";
+  display: block;
+  left: 6px;
+  height: 0px; width: 10px;
+  bottom: -7px;
+  position: absolute;
+  z-index: 100;
+}
+.Navbar-btn.inactive:hover::after {
+  width: 18px;
+}
+@keyframes wider {
+  from {width: 18px; left: 6px; transform: translate(0%, 0%)}
+  to {width: 54px;  left: 50%;
+    transform: translate(-50%, 0%);}
+}
+@keyframes smaller {
+  from {width: 54px; left: 50%; transform: translate(-50%, 0%);}
+  to {width: 10px; left: 6px; transform: translate(0%, 0%)}
+}
+.Navbar-btn.active::after {
+  animation-name: wider;
+  animation-duration: .5s;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 54px;
+}
+.Navbar-btn.inactive::after {
+  animation-name: smaller;
+  animation-duration: .5s;
+  left: 6px;
+  transform: translate(0%, 0%);
+  width: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -34,7 +70,7 @@
     text-align: center;
     height: 100%; width: 100%;
   }
-  .Navbar-btn.activeBtn {
+  .Navbar-btn.active {
     padding: 1px 0px 7px 0px;
   }
 }

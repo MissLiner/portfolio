@@ -1,8 +1,8 @@
 import bioPic from "../../assets/images/bio_pic.jpg";
 
-export const navLabels = [ "about",
+export const navLabels = [ "projects",
                            "skills",
-                           "projects",
+                           "about",
                           ]
 
 export const homeContent = {

@@ -1,6 +1,7 @@
 ?Change git and live links to icons
 ?Make into single page option
 
+Use hooks for adding and removing functions usecallback
 Refactor Canvas using react router
 Update mobile styles
 Change header name font
