@@ -1,6 +1,7 @@
 .Portfolio {
   background-color: white;
   margin: 30px auto 100px auto;
+  outline: 10px solid grey;
   padding: 30px 0px 30px 0px;
   width: 800px;
   z-index: 2;

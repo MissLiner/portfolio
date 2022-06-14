@@ -4,6 +4,7 @@ import { colors, device } from '../shared/templateStyles';
 export const Wrapper = styled.div`
   background-color: ${colors.bgMain};
   margin: 30px auto 100px auto;
+  outline: 10px solid grey;
   overflow: hidden;
   padding: 40px 0px 45px 0px;
   position: relative;

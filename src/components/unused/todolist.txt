@@ -1,10 +1,16 @@
 ?Change git and live links to icons
 ?Make into single page option
-?Make header in Illustrator
-?Add resume
+
+Refactor Canvas using react router
+Update mobile styles
+Change header name font
+Change any if-null statements
+Make skill lists in About look better
+Change to styled componenents
+Make Stickynav icons black
 
 Fix project layout for diff shaped images
-Delete unused fonts and assets
+Delete unused assets
 Clean code
 Check on all different mobile devices
 Check on large screens
@@ -15,7 +21,7 @@ Add color and font palettes to readme
 
 Add portfolio project to projects
 Add soft skills
-Edit text
+
 
 **PROJECTS
 Add readmes
@@ -24,6 +30,9 @@ Debug
 Clean code
 
 **DONE!!
+Edit text
+Delete unused fonts
+Make header in Illustrator
 Add email link
 Add greyout filter for email form
 Add links

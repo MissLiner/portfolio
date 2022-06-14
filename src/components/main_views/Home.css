@@ -5,6 +5,7 @@
     "footer" 1fr
     / 1fr;
   margin: 50px auto auto 140px;
+  outline: 10px solid grey;
   position: relative;
   width: 700px;
 }
@@ -28,6 +29,7 @@
 }
 .Home-pic {
   background-color: white;
+  border: 1px solid black;
   border-radius: 50%;
   box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49);
   -webkit-box-shadow: 3px -3px 16px -1px rgba(74,74,74,0.49); 
