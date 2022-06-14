@@ -5,7 +5,6 @@
     "footer" 1fr
     / 1fr;
   margin: 50px auto auto 140px;
-  outline: 10px solid grey;
   position: relative;
   width: 700px;
 }
@@ -13,6 +12,7 @@
   background-color: white;
   grid-area: content;
   height: fit-content;
+  outline: 10px solid grey;
   padding: 40px 60px 80px 60px;
 }
 .Home-footer {
@@ -57,13 +57,14 @@
     grid-template:
       "content"
       "footer";
-    margin: auto auto auto -4px;
+    margin: auto;
     position: absolute;
-    top: 150px; left: 50%;
+    top: 80px; left: 50%;
     transform: translateX(-50%);
     width: 85vw;
   }
   .Home-content {
+    outline: none;
     padding: 10px 0px 70px 0px;
     width: 100%;
   }

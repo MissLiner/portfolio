@@ -1,14 +1,16 @@
 ?Change git and live links to icons
 ?Make into single page option
 
-Use hooks for adding and removing functions usecallback
-Refactor Canvas using react router
 Update mobile styles
+Shrink new jpgs
+Refactor Canvas using react router
+Use hooks for adding and removing functions usecallback
+
 Change header name font
-Change any if-null statements
 Make skill lists in About look better
-Change to styled componenents
 Make Stickynav icons black
+
+Change to styled componenents
 
 Fix project layout for diff shaped images
 Delete unused assets
@@ -31,6 +33,7 @@ Debug
 Clean code
 
 **DONE!!
+Change any if-null statements
 Edit text
 Delete unused fonts
 Make header in Illustrator

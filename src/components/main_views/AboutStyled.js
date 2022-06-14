@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
 
   @media ${device.mobileL} {
     margin: 40px auto 60px auto;
+    outline: none;
+    padding-top: 20px;
     width: 85vw;
   }
 `;
@@ -26,7 +28,6 @@ export const Unit = styled.div`
   width: 80%;
 
   @media ${device.mobileL} {
-    margin-left: 10%;
     width: 85%;
   }
 `;

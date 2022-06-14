@@ -1,10 +1,5 @@
 import bioPic from "../../assets/images/bio_pic.jpg";
 
-export const navLabels = [ "projects",
-                           "skills",
-                           "about",
-                          ]
-
 export const homeContent = {
   text1: "I built this portfolio from scratch with React.js, using the web development skills I learned through ",
   odinLink: ["The Odin Project", "https://www.theodinproject.com/"],
