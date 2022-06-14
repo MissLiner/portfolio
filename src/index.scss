@@ -97,7 +97,6 @@ a {
 /* COLORS */
 
 .colors-StickyNav {
-  color: rgb(255, 93, 149);
   background-color: white;
 }
 .colors-Navbar {
@@ -125,9 +124,6 @@ a {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  // #root {
-  //   height: -webkit-fill-available;
-  // }
   body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
@@ -166,5 +162,9 @@ a {
   /* COLORS */
   .App-screen {
     background-color: transparent;
+  }
+  .colors-StickyNav {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid darkgray !important;
   }
 }

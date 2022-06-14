@@ -2,13 +2,16 @@
 ?Make into single page option
 
 Update mobile styles
+Fix stickyNav 
+  -move to header? 
+  -mobile look
+  -figure out how to change icon colors)
 Shrink new jpgs
 Refactor Canvas using react router
 Use hooks for adding and removing functions usecallback
 
 Change header name font
 Make skill lists in About look better
-Make Stickynav icons black
 
 Change to styled componenents
 
@@ -27,6 +30,7 @@ Add soft skills
 
 
 **PROJECTS
+Make silly projects private
 Add readmes
 Add mobile queries
 Debug
