@@ -1,6 +1,8 @@
 ?Change git and live links to icons
 ?Make into single page option
 
+Update og card
+Embed Illustrator fonts - Archistico
 Update mobile styles
 Fix stickyNav 
   -move to header? 
