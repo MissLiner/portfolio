@@ -67,7 +67,7 @@
     background-color: transparent;
     grid-template:
       "name" 
-      "navbar";
+      "navbar"; 
     height: 100px;
     padding: 0;
   }

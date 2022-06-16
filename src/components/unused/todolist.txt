@@ -1,11 +1,10 @@
 ?Change git and live links to icons
 ?Make into single page option
 
+Make skill lists in About look better
 Shrink new jpgs
 Refactor Canvas using react router
 Use hooks for adding and removing functions usecallback
-
-Make skill lists in About look better
 
 Change to styled componenents
 
