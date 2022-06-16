@@ -50,7 +50,7 @@
     outline: none;
     padding: 0px 0px 20px 0px;
     position: absolute;
-    top: 80px; left: 50%;
+    top: 70px; left: 50%;
     transform: translateX(-50%);
     width: 85vw;
   }
