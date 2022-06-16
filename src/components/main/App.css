@@ -6,8 +6,9 @@
   clip-path: inset(0);
   display: grid;
   grid-template: 
-    "name navbar"
-    / min-content 1fr ;
+    "name navbar sticky"
+    / min-content 2fr 1fr;
+    overflow:visible;
   position: fixed;
   padding: 15px 0px 1px 0px;
   width: 100%;
@@ -51,27 +52,40 @@
   width: 100%;
   z-index: 500;
 }
-
+@media only screen and (max-width: 900px) {
+  .App-name {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .App-header::before, .App-screen::before {
+    background-image: url("../../assets/images/background_mobile_dark.jpg");
+  }
+}
 @media only screen and (max-width: 768px) {
   .App-header {
     background-color: transparent;
     grid-template:
       "name" 
       "navbar";
-      height: 84px;
+    height: 100px;
     padding: 0;
   }
-  .App-header::before, .App-screen::before {
-    background-image: url("../../assets/images/background_mobile_dark.jpg");
-    background-size: auto  100vh;
-  }
+
   .App-header::before {
-    height: 84px;
     opacity: 1;
     padding: 0;
   }
   .App-name {
     margin: auto;
-    width: 90%;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .App-header {
+    height: fit-content;
+  }
+  .App-name {
+    width: 100%;
   }
 }

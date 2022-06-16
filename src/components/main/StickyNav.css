@@ -1,23 +1,38 @@
 .StickyNav {
   border: none;
-  border-radius: .4em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
   position: fixed;
-  top: 8em; left: 1em;
-  z-index: 1000;
+  top: 1.6em; right: 4em;
+  z-index: 5000;
+}
+.StickyNav-icon {
+  margin-bottom: -12px;
+  height: 35px !important;  width: 35px !important;
+}
+@media only screen and (max-width: 1120px) {
+  .StickyNav{
+    right: 1em; 
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .StickyNav {
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    margin: auto 0px 5px auto;
-    top: unset; bottom: 5px; right: 0px;
+    background-color: black;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    flex-direction: column;
+    grid-area: none;
+    position: fixed;
+    top: auto; bottom: 10px; right: 0px;
     width: max-content;
+    z-index: 5000;
   }
   .StickyNav-icon {
-    height: 25px !important;
-    width: 25px !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin-bottom: auto;
   }
 }

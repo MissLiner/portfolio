@@ -14,7 +14,7 @@ function StickyNav(props) {
         onClick={props.homeFunc}>
         <HomeRoundedIcon 
           className="StickyNav-icon" 
-          style={{ color: "inherit" }}
+          style={{ color: "white" }}
         />
       </IconButton>
       <IconButton 
@@ -23,7 +23,7 @@ function StickyNav(props) {
         onClick={props.emailFunc}>
         <EmailRoundedIcon 
           className="StickyNav-icon" 
-          style={{ color: "inherit" }}
+          style={{ color: "white" }}
         />
       </IconButton>
     </div>

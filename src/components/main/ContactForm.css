@@ -16,7 +16,7 @@ textarea {
     "submit submit" min-content
     / 1fr 1fr;
   margin: auto;
-  padding: 20px 30px 20px 30px;
+  padding: 15px 30px 20px 30px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 25%);
@@ -56,6 +56,7 @@ textarea {
   border: none;
   border-bottom: 1px solid rgb(105, 105, 105);
   border-radius: 0;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
   grid-area: input;
   margin-bottom: 30px;
   margin-left: 0;

@@ -49,10 +49,6 @@ function App() {
   return (
     <div className="App">
       <div className={filter + " App-screen"}>
-        <StickyNav 
-          homeFunc={handleClickHome} 
-          emailFunc={handleClickEmail} 
-        />
         <div className="App-header">
           <img 
             className="App-name"
@@ -60,13 +56,16 @@ function App() {
             alt="Caroline Stephenson logo"
             onClick={handleClickHome}
           />
-       
           <Navbar 
             clickFunc={handleClickNav} 
             clearView="home"
             view={view}
           />
         </div>
+        <StickyNav 
+            homeFunc={handleClickHome} 
+            emailFunc={handleClickEmail} 
+          />
         <Canvas mainView={view} />
         </div>
       {renderContactForm()}

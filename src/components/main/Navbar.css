@@ -1,5 +1,5 @@
 .Navbar {
-  bottom: -5px;
+  bottom: -7px;
   display: grid;
   height: 50px;
   grid-area: navbar;
@@ -21,9 +21,8 @@
   border-bottom: 6px dotted;
   content: "";
   display: block;
-  left: 6px;
   height: 0px; width: 10px;
-  bottom: -7px;
+  bottom: -2px;
   position: absolute;
   z-index: 100;
 }
@@ -31,13 +30,13 @@
   width: 18px;
 }
 @keyframes wider {
-  from {width: 18px; left: 6px; transform: translate(0%, 0%)}
+  from {width: 18px; left: 7px; transform: translate(0%, 0%)}
   to {width: 54px;  left: 50%;
     transform: translate(-50%, 0%);}
 }
 @keyframes smaller {
   from {width: 54px; left: 50%; transform: translate(-50%, 0%);}
-  to {width: 10px; left: 6px; transform: translate(0%, 0%)}
+  to {width: 10px; left: 7px; transform: translate(0%, 0%)}
 }
 .Navbar-btn.active::after {
   animation-name: wider;
@@ -49,9 +48,23 @@
 .Navbar-btn.inactive::after {
   animation-name: smaller;
   animation-duration: .5s;
-  left: 6px;
+  left: 7px;
   transform: translate(0%, 0%);
   width: 10px;
+}
+@media only screen and (max-width: 1270px) {
+  .Navbar {
+    column-gap: 1em;
+    margin-left: 2em;
+    width: unset;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .Navbar {
+    column-gap: 1em;
+    margin-left: 0;
+ 
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,17 +73,26 @@
     bottom: 0px;
     column-gap: 0;
     grid-template-columns: fit-content fit-content fit-content;
-    margin: 0px;
-    height: 100%; width: 100%;
+    margin: auto;
+    height: 100%; 
+    width: 70%;
   }
   .Navbar-btn {
     border-left: none;
     border-right: none;
-    padding: 4px 0px 4px 0px;
+    padding: 4px 0px 8px 0px;
     text-align: center;
     height: 100%; width: 100%;
   }
   .Navbar-btn.active {
     text-decoration: underline;
+  }
+  .Navbar-btn::after {
+    content: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Navbar {
+    width: 80%;
   }
 }

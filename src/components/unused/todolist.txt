@@ -1,18 +1,10 @@
 ?Change git and live links to icons
 ?Make into single page option
 
-
-Embed Illustrator fonts - Archistico
-Update mobile styles
-Fix stickyNav 
-  -move to header? 
-  -mobile look
-  -figure out how to change icon colors)
 Shrink new jpgs
 Refactor Canvas using react router
 Use hooks for adding and removing functions usecallback
 
-Change header name font
 Make skill lists in About look better
 
 Change to styled componenents
@@ -20,7 +12,6 @@ Change to styled componenents
 Fix project layout for diff shaped images
 Delete unused assets
 Clean code
-Check on all different mobile devices
 Check on large screens
 Uninstall emailjs and emailjs-com
 
@@ -39,6 +30,14 @@ Debug
 Clean code
 
 **DONE!!
+Check on all different mobile devices
+Change header name font
+Fix stickyNav 
+  -move to header? 
+  -mobile look
+  -figure out how to change icon colors)
+Update mobile styles
+Embed Illustrator fonts - Archistico, Cooper Black, CCSignLanguage, 
 Update og card
 Change any if-null statements
 Edit text

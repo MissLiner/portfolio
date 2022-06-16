@@ -11,12 +11,12 @@ h1 {
   font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
-/* CONTACT FORM HEADER */
+/* PROJECT TITLE, CONTACT FORM HEADER */
 h2 {
-  font-family: Helvetica, Arial, sans-serif !important;
-  font-size: 2em;
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-family: "Heebo", Helvetica, Arial, sans-serif !important;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 /* ABOUT TOPIC HEADERS */
 h3 {
@@ -26,26 +26,26 @@ h3 {
 }
 /* PROJECT UNIT TOPICS */
 h4 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.3em;
 }
 /* PROJECT HEADER LINKS, CONTACT FORM SECTION TITLES */
 h5 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
 
 /* NAVBAR BTNS */
 .Navbar-btn {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
   font-size: 1.9em;
-  font-weight: 600;
+  font-weight: 500;
 }
 /* PROJECT TAGS */
 li {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 400;
 }
@@ -93,7 +93,7 @@ a {
 /* COLORS */
 
 .colors-StickyNav {
-  background-color: white;
+  background-color: transparent;
 }
 .colors-Navbar {
   background: transparent;
@@ -157,8 +157,8 @@ a {
   .App-screen {
     background-color: transparent;
   }
-  .colors-StickyNav {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid darkgray !important;
-  }
+  // .colors-StickyNav {
+  //   background-color: rgb(255, 255, 255);
+  //   border: 1px solid darkgray !important;
+  // }
 }

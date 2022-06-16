@@ -4,7 +4,7 @@
     "content" min-content
     "footer" 1fr
     / 1fr;
-  margin: 50px auto auto 140px;
+  margin: 50px auto auto auto;
   position: relative;
   width: 700px;
 }
@@ -101,5 +101,10 @@
   }
   .Home-text.third {
     width: 10em;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .Home {
+    top: 20px;
   }
 }
