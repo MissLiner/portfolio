@@ -8,15 +8,12 @@
 
 /* HANDWRITING - SKILLS HEADER, ABOUT HEADER, PROJECT HEADER TITLE */
 h1 {
-  // color:rgb(150, 150, 150);
-  color: black;
   font-family: "Nothing You Could Do", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
 /* CONTACT FORM HEADER */
 h2 {
-  color:rgb(105, 105, 105);
-  font-family: "Raleway", Helvetica, Arial, sans-serif !important;
+  font-family: Helvetica, Arial, sans-serif !important;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 20px;
@@ -29,32 +26,31 @@ h3 {
 }
 /* PROJECT UNIT TOPICS */
 h4 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.3em;
 }
 /* PROJECT HEADER LINKS, CONTACT FORM SECTION TITLES */
 h5 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
 
 /* NAVBAR BTNS */
 .Navbar-btn {
-  font-family: "Elsie Swash Caps", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.9em;
   font-weight: 600;
 }
 /* PROJECT TAGS */
 li {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 400;
 }
 /* TEXT */
 p {
-  // color:rgb(105, 105, 105);
   font-family: "Baskerville", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   line-height: 1.4;
@@ -118,8 +114,6 @@ a {
 }
 .colors-contact-form {
   background-color:#f3fdef;
-  border-color: #696969 !important;
-  color: rgb(105, 105, 105);
 }
 
 /* MEDIA QUERIES */

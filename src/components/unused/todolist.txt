@@ -1,7 +1,7 @@
 ?Change git and live links to icons
 ?Make into single page option
 
-Update og card
+
 Embed Illustrator fonts - Archistico
 Update mobile styles
 Fix stickyNav 
@@ -39,6 +39,7 @@ Debug
 Clean code
 
 **DONE!!
+Update og card
 Change any if-null statements
 Edit text
 Delete unused fonts

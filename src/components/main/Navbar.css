@@ -1,10 +1,10 @@
 .Navbar {
+  bottom: -5px;
   display: grid;
   height: 50px;
   grid-area: navbar;
   grid-template-columns: repeat(3, 1fr);
   margin-left: 4em;
-  margin-bottom: .4em;
   position: relative;
   column-gap: 2em;
   width: 500px;
