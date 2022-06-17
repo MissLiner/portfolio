@@ -59,7 +59,10 @@
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .App-header::before, .App-screen::before {
-    background-image: url("../../assets/images/background_mobile_dark.jpg");
+    background-image: url("../../assets/images/background_mobile3.svg");
+    background-size: cover;
+    overflow: hidden;
+   
   }
 }
 @media only screen and (max-width: 768px) {
