@@ -83,7 +83,7 @@
 }
 @media only screen and (max-width: 425px) {
   .App-header {
-    height: 90px;
+    height: 100px;
   }
   .App-name {
     width: 100%;

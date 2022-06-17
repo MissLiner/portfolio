@@ -80,12 +80,9 @@
   .Navbar-btn {
     border-left: none;
     border-right: none;
-    padding: 4px 0px 8px 0px;
+    padding: 0px 0px 8px 0px;
     text-align: center;
     height: 100%;
-  }
-  .Navbar-btn.active {
-    text-decoration: underline;
   }
   .Navbar-btn::after {
     content: none;
@@ -93,6 +90,9 @@
 }
 @media only screen and (max-width: 425px) {
   .Navbar {
-    width: 85%;
+    width: 80%;
+  }
+  .Navbar-btn {
+    font-weight: 400;
   }
 }

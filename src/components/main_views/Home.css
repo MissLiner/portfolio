@@ -61,7 +61,7 @@
     position: absolute;
     top: 70px; left: 50%;
     transform: translateX(-50%);
-    width: 85vw;
+    width: 90vw;
   }
   .Home-content {
     outline: none;
@@ -91,16 +91,19 @@
     display: none;
   }
   .Home-text {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 20px auto auto auto;
     text-align: center;
-    width: 95%;
+    width: 90%;
   }
   .Home-text.first {
     margin-top: 10px;
   }
   .Home-text.third {
     width: 10em;
+  }
+  .Home-text.fourth {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 325px) {

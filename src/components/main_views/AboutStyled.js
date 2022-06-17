@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     margin: 40px auto 60px auto;
     outline: none;
     padding-top: 20px;
-    width: 85vw;
+    width: 90vw;
   }
 `;
 export const Title = styled.h1`

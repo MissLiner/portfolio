@@ -29,6 +29,9 @@ function Home() {
         <p className="Home-text third">
             {homeContent.text3}
         </p>
+        <p className="Home-text fourth">
+            {homeContent.text4}
+        </p>
       </div>
       <div className="Home-footer">
           <h1 className="Home-sig">-Caroline</h1>

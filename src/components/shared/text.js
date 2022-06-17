@@ -4,27 +4,11 @@ export const homeContent = {
   text1: "I built this portfolio from scratch with React.js, using the web development skills I learned through ",
   odinLink: ["The Odin Project", "https://www.theodinproject.com/"],
   text2: "Enjoy exploring, and please take a peek under the hood on ",
-  text3: 'My mantra: "simple, intuitive, fun!"',
+  text3: 'My mantra:',
+  text4: '"Simple, intuitive, fun!"',
   gitLink: ["Git", "https://github.com/MissLiner/portfolio"],
   pic: bioPic,
 }
-
-export const aboutContent = [
-  { topic: "In a nutshell . . .",
-    text: "I'm new web developer with years of business success under my belt, making me an experienced and effective collaborator. I'm eager to put my coding skills to work, and prove how valuable I can be. I meet every challenge with an analytical mindset, finding the patterns, and tracing them to uncover solutions. I love problem-solving, whether structuring a new project or chasing down an erascible bug, I'm on the case."},
-  { topic: "A new career . . . ", 
-    text: "When my career in market research sales was interrupted by the pandemic, I realized it was an opportunity to shift into a more fulfilling career."
-  },
-  { topic: "How I learned . . . ",
-    text: "I learned through a self-guided, open source curriculum called The Odin Project (TOP). Created and maintained by a group of web devs to give newbies the knowledge they wish they'd had when they started, TOP prepared ,me with the experience I need to hit the ground running in my first job."
-  },
-  { topic: "What I learned . . . ",
-    text: "Since TOP had me coding my own projects from the start, I gained the most useful development skill of all: the ability to find solutions on my own. While learning HTML, CSS, Javascript, and React.js, I've used Git, Chrome Dev Tools, VSCode, CLI and Webpack throughout."
-  },
-  { topic: "Development meets design . . . ",
-    text: "Web design affects everyone, every day, so I also spent time on color, fonts, layout, and learning Illustrator. I care deeply about responsive and simple designs that make our time online useful, smooth, and sometimes even joyous! I've designed several websites, along with icons, logos, and other images in Illustrator."
-  },
-]
 
 export const jobs = [
   {
@@ -70,5 +54,3 @@ export const jobs = [
     summary: "Top salesperson while managing the highest revenue US BD team. Sold online market analysis to C-level clients at early-stage drug development companies, from cold call to close.",
   },
 ]
-// career: "I've worked at leading market research companies and start-ups, worked with tiny drug developers and most of the largest Pharmaceutical companies in the world, sold little syndicated reports, complex custom projects, and everything in between.",
-// A New Yorker by birth and by choice, I live in Manhattan with my husband, seven-year-old daughter, and our goofy pandemic-pup, Jack. 
