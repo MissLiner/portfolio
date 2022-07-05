@@ -1,4 +1,4 @@
-import bioPic from "../../assets/images/bio_pic.jpg";
+import bioPic from "../../assets/images/bio_pic.svg";
 
 export const homeContent = {
   text1: "I built this portfolio from scratch with React.js, using the web development skills I learned through ",
