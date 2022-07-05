@@ -54,7 +54,7 @@ export const projectArray = [
     image: [FSMemoryGameImg, "memory card game screenshot"],
     thumbnail: [TNMemoryGameImg, "memory card game thumbnail"],
     focus: [ "React", "Lifecycle Methods", "Hooks", "CSS"],
-    summary: "This simple memory game was created using national flags that feature a sun element found on [link here]. I pushed myself to make the design, code and user experience as simple and elegant as possible.",
+    summary: "This simple memory game was created using national flags that feature a sun element. I pushed myself to make the design, code and user experience as simple and elegant as possible.",
     code: 'https://github.com/MissLiner/memory-card.git',
     live: 'https://missliner.github.io/memory-card/',
     units: [{ name: "Hooks",

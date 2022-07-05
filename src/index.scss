@@ -56,10 +56,10 @@ p {
   line-height: 1.4;
 }
 /* LINKS */
-a {
-  white-space: nowrap;
-  color: #ffffff;
-}
+// .pinkLink {
+//   white-space: nowrap;
+//   color: #ffffff;
+// }
 /* ICONS */
 svg.MuiSvgIcon-root {
   display: block;
@@ -67,7 +67,9 @@ svg.MuiSvgIcon-root {
 
 /* LINK EFFECT - https://codepen.io/markmead/pen/drORWG */
 $link: #EC407A;
-a {
+.pinkLink {
+  white-space: nowrap;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
   text-decoration: none;

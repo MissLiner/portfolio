@@ -19,6 +19,7 @@ function Home() {
         <p className="Home-text second">
             {homeContent.text2}
             <a 
+              className="pinkLink"
               href={homeContent.gitLink[1]} 
               target="_blank" 
               rel="noreferrer">

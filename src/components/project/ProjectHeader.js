@@ -10,13 +10,13 @@ function ProjectHeader(props) {
           {props.title}
       </h2>
       <h4 className="ProjectHeader-links">
-        <a  className="ProjectHeader-links-link" 
+        <a  className="ProjectHeader-links-link pinkLink" 
             href={props.currentProject.live}
             target="_blank"
             rel="noreferrer">
               Live
         </a>
-        <a  className="ProjectHeader-links-link" 
+        <a  className="ProjectHeader-links-link pinkLink" 
             href={props.currentProject.code}
             target="_blank"
             rel="noreferrer">

@@ -10,7 +10,7 @@
     / min-content 2fr 1fr;
     overflow:visible;
   position: fixed;
-  padding: 15px 0px 1px 0px;
+  padding: 15px 0px 10px 0px;
   width: 100%;
   z-index: 3;
 }
@@ -26,7 +26,7 @@
 }
 .App-name {
   grid-area: name;
-  margin: auto auto 0 60px;
+  margin: auto auto auto 60px;
   position: relative;
   width: 455px;
   z-index: 5;
@@ -51,6 +51,11 @@
   position: absolute;
   width: 100%;
   z-index: 500;
+}
+@media only screen and (min-width: 1440px) {
+  .App-header {
+    width: 1440px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .App-name {

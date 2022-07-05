@@ -9,7 +9,7 @@ function ProjectUnits(props) {
     return(
       <span className="ProjectUnits-text2">
         <a 
-          className="ProjectUnits-link"
+          className="ProjectUnits-link pinkLink"
           href={obj.link[1]}
             >{obj.link[0]}
         </a>

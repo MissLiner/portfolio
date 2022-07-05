@@ -85,14 +85,21 @@ function PicSlider(props) {
         className="PicSlider-btn btn-right"
         disabled={disabled}
         onClick={handleRightClick}
-        ><ArrowCircleRightRoundedIcon fontSize="large" />
+      >
+        <ArrowCircleRightRoundedIcon fontSize="large" />
       </button>
       <div {...handlers} className="PicSlider-swipe-area">
+        <a 
+          href={props.projects[sliderIndex].live} 
+          target="_blank" 
+          rel="noreferrer"
+        >
         <SVGImg 
           currentImage={props.projects[sliderIndex].sliderRefs}
-          parentClass="PicSlider-main-img"
+          parentClass="PicSlider-main-img" 
           loadFunc={updateContent}
         />
+        </a>
       </div>
       <NavPics 
         projects={props.projects} 
