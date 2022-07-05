@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
 import { React, useEffect, useState } from "react";
-// import ReactDOM from "react-dom/client";
+import { useNavigate } from 'react-router-dom';
 import RouteSwitch from '../main_views/RouteSwitch';
 import headerLogo from "../../assets/images/header_logo.svg";
 import '../../index.scss';
@@ -14,8 +14,10 @@ function App() {
   const [showContact, setShowContact] = useState(false);
   const [filter, setFilter] = useState("");
 
+  const navigate = useNavigate();
   const handleClickHome = () => {
     setView("home");
+    navigate("/");
   }
   const handleClickEmail = () => {
     setShowContact(true);
@@ -68,10 +70,9 @@ function App() {
             homeFunc={handleClickHome} 
             emailFunc={handleClickEmail} 
           />
-        {/* <Canvas mainView={view} /> */}
-        {/* <React.StrictMode> */}
+        <div className="App-content">
           <RouteSwitch />
-        {/* </React.StrictMode> */}
+        </div>
         </div>
       {renderContactForm()}
     </div>

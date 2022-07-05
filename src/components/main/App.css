@@ -52,6 +52,15 @@
   width: 100%;
   z-index: 500;
 }
+.App-content {
+  align-items: center;
+  display:grid;
+  padding: 2.5em 4em 2em 4em;
+  position: relative;
+  margin-top: 4.5em;
+  width: 100%;
+  max-width: 1000px;
+}
 @media only screen and (min-width: 1440px) {
   .App-header {
     width: 1440px;
@@ -67,7 +76,9 @@
     background-image: url("../../assets/images/background_mobile3.svg");
     background-size: cover;
     overflow: hidden;
-   
+  }
+  .App-content {
+    padding: 0 0 0 0;
   }
 }
 @media only screen and (max-width: 768px) {

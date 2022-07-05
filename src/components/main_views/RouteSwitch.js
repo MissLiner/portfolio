@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import App from ".././App";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
@@ -7,14 +7,14 @@ import Skills from "./Skills";
 
 const RouteSwitch = () => {
   return(
-    <Router>
+    // <Router>
       <Routes>
-        <Route path="/"> <Home /> </Route>
-        <Route path="/projects"> <Portfolio /></Route>
-        <Route path="/skills"><Skills /></Route>
-        <Route path="/about"><About /></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </Router>
+    // </Router>
   )
 }
 

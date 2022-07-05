@@ -10,7 +10,6 @@ import IconButton from '@mui/material/IconButton';
 function StickyNav(props) {
   return(
     <div className="StickyNav colors-StickyNav">
-      {/* <Link to="/"> */}
         <IconButton 
           className="StickNav-btn-home" 
           aria-label="home" 
@@ -20,7 +19,6 @@ function StickyNav(props) {
             style={{ color: "white" }}
           />
         </IconButton>
-      {/* </Link> */}
       <IconButton 
         className="StickyNav-btn-email" 
         aria-label="email" 

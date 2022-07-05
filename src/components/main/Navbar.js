@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../index.scss';
 import './Navbar.css';
 
@@ -25,9 +26,11 @@ function Navbar(props) {
       return "Navbar-btn colors-Navbar inactive"
     }
   }
+  const navigate = useNavigate();
   const handleClick = (e) => {
     props.clickFunc(e);
     toggleActive(e.target.value);
+    navigate("/" + e.target.id);
   }
 
   return(
