@@ -10,6 +10,7 @@ function Home() {
         <p className="Home-text first">
             {homeContent.text1}
             <a 
+              className="pinkLink"
               href={homeContent.odinLink[1]} 
               target="_blank" rel="noreferrer">
                 {homeContent.odinLink[0]}
