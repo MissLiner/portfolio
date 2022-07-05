@@ -34,14 +34,13 @@ function Navbar(props) {
     <div className={"Navbar"}>
       {activeBtn.buttons.map((btn, i) => {
         return(
-          <button className={status(i)}
-                  onClick={handleClick}
-                  value={i}
-                  id={btn.id}
-                  key={i}
-          >
-            {btn.id}
-          </button>
+            <button className={status(i)}
+              onClick={handleClick}
+              value={i}
+              id={btn.id}
+              key={i}
+            >{btn.id}
+            </button>
         )
       })}
     </div>

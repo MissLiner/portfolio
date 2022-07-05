@@ -1,8 +1,10 @@
-import Canvas from './Canvas';
+// import Canvas from './Canvas';
 import Navbar from './Navbar';
 import StickyNav from './StickyNav';
 import ContactForm from './ContactForm';
-import { useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
+// import ReactDOM from "react-dom/client";
+import RouteSwitch from '../main_views/RouteSwitch';
 import headerLogo from "../../assets/images/header_logo.svg";
 import '../../index.scss';
 import './App.css';
@@ -66,7 +68,10 @@ function App() {
             homeFunc={handleClickHome} 
             emailFunc={handleClickEmail} 
           />
-        <Canvas mainView={view} />
+        {/* <Canvas mainView={view} /> */}
+        {/* <React.StrictMode> */}
+          <RouteSwitch />
+        {/* </React.StrictMode> */}
         </div>
       {renderContactForm()}
     </div>
