@@ -1,0 +1,23 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnused": [
+    "@fontsource/roboto",
+    "@testing-library/jest-dom",
+    "@testing-library/react",
+    "@testing-library/user-event",
+    "emailjs",
+    "emailjs-com",
+    "react-image-gallery",
+    "react-scripts",
+    "sass"
+  ],
+  "ignoreUnimported": [
+    "src/components/unused/Canvas.js",
+    "src/components/unused/CurrentView.js",
+    "src/components/unused/ImageSlider.js",
+    "src/components/unused/NavDots.js",
+    "src/components/unused/ProjectTitle.js",
+    "src/components/unused/ScreenGallery.js",
+    "src/setupTests.js"
+  ]
+}

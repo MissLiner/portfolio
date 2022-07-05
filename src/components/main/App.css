@@ -26,9 +26,9 @@
 }
 .App-name {
   grid-area: name;
+  height: auto; width: 455px;
   margin: auto auto auto 60px;
   position: relative;
-  width: 455px;
   z-index: 5;
 }
 .App-screen {
