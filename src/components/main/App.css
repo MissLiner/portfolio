@@ -11,7 +11,7 @@
     overflow:visible;
   position: fixed;
   padding: 15px 0px 10px 0px;
-  width: 100%;
+  height: auto; width: 100%;
   z-index: 3;
 }
 .App-header::before {
@@ -63,7 +63,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .App-header {
-    width: 1440px;
+    height: auto; width: 1440px;
   }
 }
 @media only screen and (max-width: 900px) {
