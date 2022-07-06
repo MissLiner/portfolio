@@ -30,7 +30,7 @@ function Navbar(props) {
   const handleClick = (e) => {
     props.clickFunc(e);
     toggleActive(e.target.value);
-    navigate("/" + e.target.id);
+    navigate("/portfolio/" + e.target.id);
   }
 
   return(

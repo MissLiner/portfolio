@@ -17,7 +17,7 @@ function App() {
   const navigate = useNavigate();
   const handleClickHome = () => {
     setView("home");
-    navigate("/");
+    navigate("/portfolio");
   }
   const handleClickEmail = () => {
     setShowContact(true);

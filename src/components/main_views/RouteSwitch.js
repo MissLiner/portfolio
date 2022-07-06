@@ -8,11 +8,11 @@ import Skills from "./Skills";
 const RouteSwitch = () => {
   return(
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Portfolio />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={ <Navigate to="/" /> } />
+        <Route path="/portfolio" element={<Home />} />
+        <Route path="/portfolio/projects" element={<Portfolio />} />
+        <Route path="/portfolio/skills" element={<Skills />} />
+        <Route path="/portfolio/about" element={<About />} />
+        <Route path="*" element={ <Navigate to="/portfolio" /> } />
       </Routes>
   )
 }
