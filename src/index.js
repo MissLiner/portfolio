@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import './index.scss';
 import App from './components/main/App';
 import reportWebVitals from './reportWebVitals';
+import "@fontsource/nothing-you-could-do";
+import "@fontsource/heebo";
 
 const root = reactDOM.createRoot(document.getElementById("root"));
 root.render( 
