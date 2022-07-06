@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c150c130.css",
+    "main.css": "/portfolio/static/css/main.1400fc63.css",
     "main.js": "/portfolio/static/js/main.f11b2a9e.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio/static/js/787.37faa4c4.chunk.js",
-    "static/media/background_mobile.svg": "/portfolio/static/media/background_mobile.3ad711d6c21aaf2422bf.svg",
+    "static/media/background_mobile.webp": "/portfolio/static/media/background_mobile.6b63cbc78dcbed7f3577.webp",
     "static/media/box_checked.svg": "/portfolio/static/media/box_checked.ebc997906ee9b985e4f9.svg",
     "static/media/bio_pic.svg": "/portfolio/static/media/bio_pic.2e74007a6360cf7195a62abe09659db1.svg",
     "static/media/FS_library.svg": "/portfolio/static/media/FS_library.ceea3a67c3c958bc77f18de052a68467.svg",
@@ -33,17 +33,22 @@
     "static/media/TN_memory.svg": "/portfolio/static/media/TN_memory.302365bbea4b37700b91cb8a3f484789.svg",
     "static/media/memory_score.svg": "/portfolio/static/media/memory_score.35faae9bc9dbf6418957ac5170c9a852.svg",
     "static/media/battle_board.svg": "/portfolio/static/media/battle_board.29244f9e93c279fd5250d2554cff963c.svg",
+    "static/media/nothing-you-could-do-all-400-normal.woff": "/portfolio/static/media/nothing-you-could-do-all-400-normal.0ec34870e5cb013f8b64.woff",
+    "static/media/heebo-all-400-normal.woff": "/portfolio/static/media/heebo-all-400-normal.ed2b401e397542da5b00.woff",
+    "static/media/nothing-you-could-do-latin-400-normal.woff2": "/portfolio/static/media/nothing-you-could-do-latin-400-normal.f8d4ec232aee14dd76e5.woff2",
     "static/media/TN_resume.svg": "/portfolio/static/media/TN_resume.627366a7bd9c6246ed35dc604906f2e0.svg",
     "static/media/TN_candolist.svg": "/portfolio/static/media/TN_candolist.4a09fe639ee4b0b656bc601c74e99cbc.svg",
     "static/media/header_logo.svg": "/portfolio/static/media/header_logo.a8ae2ebabf343cd8d74b7d1ee2c1759b.svg",
+    "static/media/heebo-latin-400-normal.woff2": "/portfolio/static/media/heebo-latin-400-normal.e708eef4a1fb9d34502f.woff2",
     "static/media/TN_tictactoe.svg": "/portfolio/static/media/TN_tictactoe.d6da40f841e86b554ce40847f9b0e7e8.svg",
+    "static/media/heebo-hebrew-400-normal.woff2": "/portfolio/static/media/heebo-hebrew-400-normal.202adb60ca307918dcb5.woff2",
     "index.html": "/portfolio/index.html",
-    "main.c150c130.css.map": "/portfolio/static/css/main.c150c130.css.map",
+    "main.1400fc63.css.map": "/portfolio/static/css/main.1400fc63.css.map",
     "main.f11b2a9e.js.map": "/portfolio/static/js/main.f11b2a9e.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c150c130.css",
+    "static/css/main.1400fc63.css",
     "static/js/main.f11b2a9e.js"
   ]
 }
