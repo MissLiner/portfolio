@@ -22,6 +22,9 @@ export const Title = styled.h1`
   padding: 0px 0 10px 0;
   text-align: center;
   width: 90%;
+  @media ${device.mobileL} {
+    font-size: 2em;
+  }
 `;
 export const Unit = styled.div`
   margin-bottom: 15px;
@@ -36,19 +39,6 @@ export const Topic = styled.h3`
   text-align: left;
   @media ${device.mobileL} {
     margin-left: 0;
-  }
-  &::before {
-    background-image: url("../../assets/r_arrow_pink.svg");
-    background-repeat: no-repeat;
-    content: "";
-    height: 1em; width: 1em;
-    margin-left: -1.7em;
-    position: absolute;
-
-    @media ${device.mobileL} {
-      height: 1.2em; width: 1.2em;
-      margin-left: -1.5em;
-    }
   }
 `;
 export const Text = styled.p`
