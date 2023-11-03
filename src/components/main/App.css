@@ -16,6 +16,7 @@
 }
 .App-header::before {
   /* background-image: url("../../assets/images/background_desktop.svg"); */
+  background-color: #3d3d65;
   background-repeat: no-repeat;
   background-size: cover; 
   content: "";
@@ -37,6 +38,7 @@
 }
 .App-screen::before {
   /* background-image: url("../../assets/images/background_desktop.svg"); */
+  background-color: #3d3d65;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
